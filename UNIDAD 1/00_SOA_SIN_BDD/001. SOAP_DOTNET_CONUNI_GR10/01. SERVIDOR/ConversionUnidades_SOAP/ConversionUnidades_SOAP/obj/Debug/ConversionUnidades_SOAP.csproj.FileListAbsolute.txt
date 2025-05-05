@@ -1,0 +1,14 @@
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll.config
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.pdb
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.AssemblyReference.cache
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.CoreCompileInputs.cache
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.dll
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.pdb
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll.config
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.pdb
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.AssemblyReference.cache
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.CoreCompileInputs.cache
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.dll
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.pdb

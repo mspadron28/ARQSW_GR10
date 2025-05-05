@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0705FEC9-3658-4E36-833A-D875EC7BDB80}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|d:\\soap_sin_bdd_dotnet_clientes_grupo_10\\03. cliente_escritorio\\clienteescritoriosoap\\clienteescritoriosoap\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0705FEC9-3658-4E36-833A-D875EC7BDB80}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0705FEC9-3658-4E36-833A-D875EC7BDB80}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\clienteescritoriosoap\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0705FEC9-3658-4E36-833A-D875EC7BDB80}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0705FEC9-3658-4E36-833A-D875EC7BDB80}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\clienteescritoriosoap\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{0705FEC9-3658-4E36-833A-D875EC7BDB80}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0705FEC9-3658-4E36-833A-D875EC7BDB80}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\clienteescritoriosoap\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0705FEC9-3658-4E36-833A-D875EC7BDB80}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0705FEC9-3658-4E36-833A-D875EC7BDB80}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\clienteescritoriosoap\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0705FEC9-3658-4E36-833A-D875EC7BDB80}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\Form1.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\Form1.cs",
+              "ToolTip": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T01:31:29.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\MainForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\MainForm.cs",
+              "ToolTip": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\MainForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\MainForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T01:31:27.564Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\Form1.resx",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\Form1.resx",
+              "ToolTip": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\Form1.resx",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-04T01:31:23.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\Form1.Designer.cs",
+              "ToolTip": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\Form1.Designer.cs",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\Form1.Designer.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T01:31:17.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\App.config",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\App.config",
+              "ToolTip": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\03. CLIENTE_ESCRITORIO\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\App.config",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-04T01:31:06.369Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
