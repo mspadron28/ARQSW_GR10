@@ -26,7 +26,6 @@ public class CONUNIService {
 
     public double pulgadasACentimetros(double pulgadas) throws Exception {
         SoapObject request = new SoapObject(SoapConstants.NAMESPACE, SoapConstants.PULGADAS_A_CENTIMETROS_METHOD);
-        // Convertir el double a String para evitar problemas de serialización
         request.addProperty("pulgadas", String.valueOf(pulgadas));
 
         SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
@@ -41,7 +40,6 @@ public class CONUNIService {
 
     public double centimetrosAPulgadas(double centimetros) throws Exception {
         SoapObject request = new SoapObject(SoapConstants.NAMESPACE, SoapConstants.CENTIMETROS_A_PULGADAS_METHOD);
-        // Convertir el double a String para evitar problemas de serialización
         request.addProperty("centimetros", String.valueOf(centimetros));
 
         SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
@@ -49,6 +47,62 @@ public class CONUNIService {
 
         HttpTransportSE transport = new HttpTransportSE(SoapConstants.URL);
         transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.CENTIMETROS_A_PULGADAS_METHOD, envelope);
+
+        SoapPrimitive response = (SoapPrimitive) envelope.getResponse();
+        return Double.parseDouble(response.toString());
+    }
+
+    public double metrosAPies(double metros) throws Exception {
+        SoapObject request = new SoapObject(SoapConstants.NAMESPACE, SoapConstants.METROS_A_PIES_METHOD);
+        request.addProperty("metros", String.valueOf(metros));
+
+        SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+        envelope.setOutputSoapObject(request);
+
+        HttpTransportSE transport = new HttpTransportSE(SoapConstants.URL);
+        transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.METROS_A_PIES_METHOD, envelope);
+
+        SoapPrimitive response = (SoapPrimitive) envelope.getResponse();
+        return Double.parseDouble(response.toString());
+    }
+
+    public double piesAMetros(double pies) throws Exception {
+        SoapObject request = new SoapObject(SoapConstants.NAMESPACE, SoapConstants.PIES_A_METROS_METHOD);
+        request.addProperty("pies", String.valueOf(pies));
+
+        SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+        envelope.setOutputSoapObject(request);
+
+        HttpTransportSE transport = new HttpTransportSE(SoapConstants.URL);
+        transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.PIES_A_METROS_METHOD, envelope);
+
+        SoapPrimitive response = (SoapPrimitive) envelope.getResponse();
+        return Double.parseDouble(response.toString());
+    }
+
+    public double metrosAYardas(double metros) throws Exception {
+        SoapObject request = new SoapObject(SoapConstants.NAMESPACE, SoapConstants.METROS_A_YARDAS_METHOD);
+        request.addProperty("metros", String.valueOf(metros));
+
+        SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+        envelope.setOutputSoapObject(request);
+
+        HttpTransportSE transport = new HttpTransportSE(SoapConstants.URL);
+        transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.METROS_A_YARDAS_METHOD, envelope);
+
+        SoapPrimitive response = (SoapPrimitive) envelope.getResponse();
+        return Double.parseDouble(response.toString());
+    }
+
+    public double yardasAMetros(double yardas) throws Exception {
+        SoapObject request = new SoapObject(SoapConstants.NAMESPACE, SoapConstants.YARDAS_A_METROS_METHOD);
+        request.addProperty("yardas", String.valueOf(yardas));
+
+        SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+        envelope.setOutputSoapObject(request);
+
+        HttpTransportSE transport = new HttpTransportSE(SoapConstants.URL);
+        transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.YARDAS_A_METROS_METHOD, envelope);
 
         SoapPrimitive response = (SoapPrimitive) envelope.getResponse();
         return Double.parseDouble(response.toString());
