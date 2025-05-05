@@ -6,21 +6,26 @@ package ec.edu.monster.servicio;
  */
 public class ConversionService {
 
-    /**
-     * Converts inches to centimeters.
-     * @param pulgadas the value in inches
-     * @return the value in centimeters
-     */
     public double pulgadasACentimetros(double pulgadas) {
         return pulgadas * 2.54;
     }
 
-    /**
-     * Converts centimeters to inches.
-     * @param centimetros the value in centimeters
-     * @return the value in inches
-     */
     public double centimetrosAPulgadas(double centimetros) {
         return centimetros / 2.54;
+    }
+    
+     public double metrosAPies(double metros) {
+        return metros * 3.28084;
+    }
+
+    public double piesAMetros(double pies) {
+        return pies / 3.28084;
+    }
+        public double metrosAYardas(double metros) {
+        return metros * 1.09361;
+    }
+
+    public double yardasAMetros(double yardas) {
+        return yardas / 1.09361;
     }
 }
