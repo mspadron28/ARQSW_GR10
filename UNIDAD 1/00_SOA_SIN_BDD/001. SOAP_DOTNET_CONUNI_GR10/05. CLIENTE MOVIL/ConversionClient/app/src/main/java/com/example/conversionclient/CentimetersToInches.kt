@@ -34,7 +34,7 @@ class CentimetersToInches : AppCompatActivity() {
                 val methodName = "CentimetersToInches"
                 val soapAction = "http://tempuri.org/IConversionService/$methodName"
 
-                val url = "http://192.168.100.11:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
+                val url = "http://10.40.20.154:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
                 val xmlInput = """
                     <?xml version="1.0" encoding="utf-8"?>
                     <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">

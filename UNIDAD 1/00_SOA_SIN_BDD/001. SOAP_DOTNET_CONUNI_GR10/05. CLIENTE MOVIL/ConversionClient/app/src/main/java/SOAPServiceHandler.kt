@@ -5,7 +5,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 
 class SOAPServiceHandler {
-    private val SOAP_URL = "http://192.168.100.11:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/?wsdl"
+    private val SOAP_URL = "http://10.40.20.154:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/?wsdl"
 
     fun centimetersToFeet(centimeters: Double): String? {
         var connection: HttpURLConnection? = null

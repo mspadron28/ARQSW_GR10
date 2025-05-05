@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\",
+  "WorkspaceRootPath": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente_Web_SOAP\\Login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente_Web_SOAP\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente_Web_SOAP\\Login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente_Web_SOAP\\Default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente_Web_SOAP\\Default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente_Web_SOAP\\Login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente_Web_SOAP\\Default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente_Web_SOAP\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,35 +38,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Web.config",
-              "DocumentMoniker": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Web.config",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Web.config",
               "RelativeDocumentMoniker": "Cliente_Web_SOAP\\Web.config",
-              "ToolTip": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Web.config",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Web.config",
               "RelativeToolTip": "Cliente_Web_SOAP\\Web.config",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAUwBcAAABmAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-07-08T22:03:27.783Z"
+              "WhenOpened": "2024-07-08T22:03:27.783Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Default.aspx.cs",
-              "DocumentMoniker": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx.cs",
               "RelativeDocumentMoniker": "Cliente_Web_SOAP\\Default.aspx.cs",
-              "ToolTip": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx.cs",
               "RelativeToolTip": "Cliente_Web_SOAP\\Default.aspx.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAkwDMAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-08T04:10:04.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Default.aspx",
-              "DocumentMoniker": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx",
               "RelativeDocumentMoniker": "Cliente_Web_SOAP\\Default.aspx",
-              "ToolTip": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Default.aspx",
               "RelativeToolTip": "Cliente_Web_SOAP\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -74,13 +75,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Login.aspx.cs",
-              "DocumentMoniker": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx.cs",
               "RelativeDocumentMoniker": "Cliente_Web_SOAP\\Login.aspx.cs",
-              "ToolTip": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx.cs",
               "RelativeToolTip": "Cliente_Web_SOAP\\Login.aspx.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBUAAAAQAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-03T20:26:47.229Z"
             },
@@ -88,9 +89,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Login.aspx",
-              "DocumentMoniker": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx",
               "RelativeDocumentMoniker": "Cliente_Web_SOAP\\Login.aspx",
-              "ToolTip": "D:\\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIENTE_WEB\\Cliente_Web_SOAP\\Cliente_Web_SOAP\\Login.aspx",
               "RelativeToolTip": "Cliente_Web_SOAP\\Login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",

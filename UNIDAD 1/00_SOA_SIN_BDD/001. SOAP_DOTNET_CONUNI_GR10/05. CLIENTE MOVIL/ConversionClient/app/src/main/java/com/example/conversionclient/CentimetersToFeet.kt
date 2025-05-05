@@ -2,12 +2,14 @@ package com.example.conversionclient
 
 import android.os.AsyncTask
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import org.w3c.dom.Element
 import java.io.BufferedInputStream
+import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.InputStream
 import java.net.HttpURLConnection
@@ -33,8 +35,8 @@ class CentimetersToFeet : AppCompatActivity() {
             if (centimeters != null) {
                 val methodName = "CentimetersToFeet"
                 val soapAction = "http://tempuri.org/IConversionService/$methodName"
+                val url = "http://10.40.20.154:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
 
-                val url = "http://192.168.100.11:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
                 val xmlInput = """
                     <?xml version="1.0" encoding="utf-8"?>
                     <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
@@ -48,20 +50,20 @@ class CentimetersToFeet : AppCompatActivity() {
 
                 AsyncTaskHandleSOAP().execute(url, soapAction, xmlInput)
             } else {
-                textViewResult.text = "Invalid input. Please enter a valid number."
+                textViewResult.text = "Entrada inválida. Por favor, ingrese un número válido."
             }
         }
     }
 
-    private inner class AsyncTaskHandleSOAP : AsyncTask<String, Void, String>() {
+    private inner class AsyncTaskHandleSOAP : AsyncTask<String, Void, Pair<String?, String?>>() {
 
-        override fun doInBackground(vararg params: String?): String {
+        override fun doInBackground(vararg params: String?): Pair<String?, String?> {
             val urlString = params[0]
             val soapAction = params[1]
             val xmlInput = params[2]
 
             if (urlString == null || soapAction == null || xmlInput == null) {
-                return "Error: One or more parameters are null"
+                return Pair(null, "Error: Uno o más parámetros son nulos")
             }
 
             try {
@@ -71,39 +73,83 @@ class CentimetersToFeet : AppCompatActivity() {
                 connection.setRequestProperty("Content-Type", "text/xml;charset=UTF-8")
                 connection.setRequestProperty("SOAPAction", soapAction)
                 connection.doOutput = true
+                connection.connectTimeout = 10000 // Timeout de 10 segundos
+                connection.readTimeout = 10000
 
                 val outputStream = connection.outputStream
-                outputStream.write(xmlInput.toByteArray())
+                outputStream.write(xmlInput.toByteArray(Charsets.UTF_8))
                 outputStream.flush()
 
-                val inputStream = BufferedInputStream(connection.inputStream)
+                val inputStream: InputStream = if (connection.responseCode == HttpURLConnection.HTTP_OK) {
+                    BufferedInputStream(connection.inputStream)
+                } else {
+                    BufferedInputStream(connection.errorStream)
+                }
+
                 val response = readStream(inputStream)
+                Log.d("SOAP_RESPONSE", response) // Imprimir respuesta XML para depuración
 
                 inputStream.close()
                 outputStream.close()
+                connection.disconnect()
 
-                return response
+                return Pair(response, null)
             } catch (e: Exception) {
                 e.printStackTrace()
-                return "Error: ${e.message}"
+                return Pair(null, "Error en la solicitud: ${e.message}")
             }
         }
 
-        override fun onPostExecute(result: String?) {
+        override fun onPostExecute(result: Pair<String?, String?>) {
             super.onPostExecute(result)
 
-            // Procesar el resultado XML y mostrarlo en textViewResult
+            val (response, error) = result
+            if (error != null) {
+                textViewResult.text = error
+                Log.e("SOAP_ERROR", error)
+                return
+            }
+
+            if (response == null) {
+                textViewResult.text = "Error: No se recibió respuesta"
+                Log.e("SOAP_ERROR", "No se recibió respuesta")
+                return
+            }
+
             try {
-                val xmlDoc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(result?.byteInputStream())
+                val xmlDoc = DocumentBuilderFactory.newInstance().apply {
+                    isNamespaceAware = true // Habilitar manejo de namespaces
+                }.newDocumentBuilder().parse(ByteArrayInputStream(response.toByteArray(Charsets.UTF_8)))
                 xmlDoc.documentElement.normalize()
 
-                val resultNode = xmlDoc.getElementsByTagName("CentimetersToFeetResult").item(0) as Element
-                val conversionResult = resultNode.textContent
-
-                textViewResult.text = "Centímetros a Pies: $conversionResult"
+                // Buscar el nodo con namespace
+                val resultNodeList = xmlDoc.getElementsByTagNameNS("http://tempuri.org/", "CentimetersToFeetResult")
+                if (resultNodeList.length > 0) {
+                    val resultNode = resultNodeList.item(0) as Element
+                    val conversionResult = resultNode.textContent.toDoubleOrNull()
+                    if (conversionResult != null) {
+                        textViewResult.text = "Centímetros a Pies: $conversionResult"
+                    } else {
+                        textViewResult.text = "Error: El valor recibido no es un número válido"
+                        Log.e("XML_PARSE", "Valor no numérico: ${resultNode.textContent}")
+                    }
+                } else {
+                    // Verificar si hay un error SOAP
+                    val faultNodeList = xmlDoc.getElementsByTagName("soap:Fault")
+                    if (faultNodeList.length > 0) {
+                        val faultNode = faultNodeList.item(0) as Element
+                        val faultString = faultNode.getElementsByTagName("faultstring").item(0)?.textContent
+                        textViewResult.text = "Error del servidor: $faultString"
+                        Log.e("SOAP_FAULT", "Error SOAP: $faultString")
+                    } else {
+                        textViewResult.text = "Error: Nodo CentimetersToFeetResult no encontrado"
+                        Log.e("XML_PARSE", "Nodo CentimetersToFeetResult no encontrado en la respuesta")
+                    }
+                }
             } catch (e: Exception) {
                 e.printStackTrace()
-                textViewResult.text = "Error parsing XML response"
+                textViewResult.text = "Error al parsear XML: ${e.message}"
+                Log.e("XML_PARSE", "Error al parsear XML: ${e.message}")
             }
         }
 
