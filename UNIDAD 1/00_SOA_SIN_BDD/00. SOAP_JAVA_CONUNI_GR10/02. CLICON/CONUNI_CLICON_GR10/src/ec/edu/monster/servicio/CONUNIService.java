@@ -47,4 +47,10 @@ public class CONUNIService {
         ec.edu.monster.CONUNI port = service.getCONUNIPort();
         return port.yardasAMetros(yardas);
     }
+
+    private static boolean login_1(java.lang.String usuario, java.lang.String contraseña) {
+        ec.edu.monster.CONUNI_Service service = new ec.edu.monster.CONUNI_Service();
+        ec.edu.monster.CONUNI port = service.getCONUNIPort();
+        return port.login(usuario, contraseña);
+    }
 }

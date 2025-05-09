@@ -5,6 +5,7 @@
 package conuni_clicon_gr10;
 
 import ec.edu.monster.controlador.AppControlador;
+import java.io.Console;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
@@ -14,7 +15,7 @@ import java.util.Scanner;
  */
 public class CONUNI_CLICON_GR10 {
 
-     private static AppControlador controlador = new AppControlador();
+    private static AppControlador controlador = new AppControlador();
     private static Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8);
 
     public static void main(String[] args) {
@@ -97,7 +98,9 @@ public class CONUNI_CLICON_GR10 {
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
         } catch (Exception e) {
             // Si falla en otros sistemas, usar líneas en blanco como alternativa
-            for (int i = 0; i < 50; i++) System.out.println();
+            for (int i = 0; i < 50; i++) {
+                System.out.println();
+            }
         }
     }
 
@@ -105,8 +108,19 @@ public class CONUNI_CLICON_GR10 {
         System.out.println("\n--- Inicio de Sesión ---");
         System.out.print("Usuario: ");
         String usuario = scanner.nextLine();
+
+        // Usar Console para leer la contraseña si está disponible
         System.out.print("Contraseña: ");
-        String contraseña = scanner.nextLine();
+        String contraseña;
+        Console console = System.console();
+        if (console != null) {
+            char[] passwordArray = console.readPassword();
+            contraseña = new String(passwordArray);
+        } else {
+            // Respaldo para entornos sin consola (como NetBeans)
+            System.out.println("(Advertencia: La contraseña será visible en este entorno)");
+            contraseña = scanner.nextLine();
+        }
 
         try {
             boolean success = controlador.login(usuario, contraseña);
@@ -336,5 +350,5 @@ public class CONUNI_CLICON_GR10 {
         }
         limpiarConsola();
     }
-    
+
 }

@@ -8,24 +8,59 @@
 
 <xs:element name="loginResponse" type="tns:loginResponse"/>
 
+<xs:element name="metrosAPies" type="tns:metrosAPies"/>
+
+<xs:element name="metrosAPiesResponse" type="tns:metrosAPiesResponse"/>
+
+<xs:element name="metrosAYardas" type="tns:metrosAYardas"/>
+
+<xs:element name="metrosAYardasResponse" type="tns:metrosAYardasResponse"/>
+
+<xs:element name="piesAMetros" type="tns:piesAMetros"/>
+
+<xs:element name="piesAMetrosResponse" type="tns:piesAMetrosResponse"/>
+
 <xs:element name="pulgadasACentimetros" type="tns:pulgadasACentimetros"/>
 
 <xs:element name="pulgadasACentimetrosResponse" type="tns:pulgadasACentimetrosResponse"/>
 
-<xs:element name="suma" type="tns:suma"/>
+<xs:element name="yardasAMetros" type="tns:yardasAMetros"/>
 
-<xs:element name="sumaResponse" type="tns:sumaResponse"/>
+<xs:element name="yardasAMetrosResponse" type="tns:yardasAMetrosResponse"/>
 
-<xs:complexType name="suma">
+<xs:complexType name="yardasAMetros">
 <xs:sequence>
-<xs:element name="a" type="xs:int"/>
-<xs:element name="b" type="xs:int"/>
+<xs:element name="yardas" type="xs:double"/>
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="sumaResponse">
+<xs:complexType name="yardasAMetrosResponse">
 <xs:sequence>
-<xs:element name="return" type="xs:int"/>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="piesAMetros">
+<xs:sequence>
+<xs:element name="pies" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="piesAMetrosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="metrosAPies">
+<xs:sequence>
+<xs:element name="metros" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="metrosAPiesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
 </xs:sequence>
 </xs:complexType>
 
@@ -61,6 +96,18 @@
 </xs:complexType>
 
 <xs:complexType name="centimetrosAPulgadasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="metrosAYardas">
+<xs:sequence>
+<xs:element name="metros" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="metrosAYardasResponse">
 <xs:sequence>
 <xs:element name="return" type="xs:double"/>
 </xs:sequence>
