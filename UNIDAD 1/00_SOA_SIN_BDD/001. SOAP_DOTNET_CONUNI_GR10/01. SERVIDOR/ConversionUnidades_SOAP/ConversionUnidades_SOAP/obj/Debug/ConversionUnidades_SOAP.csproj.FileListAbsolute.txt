@@ -12,3 +12,10 @@ D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\Con
 D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.CoreCompileInputs.cache
 D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.dll
 D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.pdb
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll.config
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.pdb
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.AssemblyReference.cache
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.CoreCompileInputs.cache
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.pdb
