@@ -18,8 +18,8 @@ namespace ClienteConsola_SOAP
 
         private static bool Login()
         {
-            const string correctUsername = "MasterMonster";
-            const string correctPassword = "Monster9";
+            const string correctUsername = "monster";
+            const string correctPassword = "monster9";
             bool loggedIn = false;
 
             Console.WriteLine("╔══════════════════════╗");

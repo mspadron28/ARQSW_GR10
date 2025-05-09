@@ -16,3 +16,12 @@ D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\04. CLIENTE_CONSOLA\ClienteConsola_SOAP\
 D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\04. CLIENTE_CONSOLA\ClienteConsola_SOAP\ClienteConsola_SOAP\obj\Debug\ClienteC.BECA247D.Up2Date
 D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\04. CLIENTE_CONSOLA\ClienteConsola_SOAP\ClienteConsola_SOAP\obj\Debug\ClienteConsola_SOAP.exe
 D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\04. CLIENTE_CONSOLA\ClienteConsola_SOAP\ClienteConsola_SOAP\obj\Debug\ClienteConsola_SOAP.pdb
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\02. CLICON\ClienteConsola_SOAP\ClienteConsola_SOAP\bin\Debug\ClienteConsola_SOAP.exe.config
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\02. CLICON\ClienteConsola_SOAP\ClienteConsola_SOAP\bin\Debug\ClienteConsola_SOAP.exe
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\02. CLICON\ClienteConsola_SOAP\ClienteConsola_SOAP\bin\Debug\ClienteConsola_SOAP.pdb
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\02. CLICON\ClienteConsola_SOAP\ClienteConsola_SOAP\bin\Debug\ConsoleColor.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\02. CLICON\ClienteConsola_SOAP\ClienteConsola_SOAP\obj\Debug\ClienteConsola_SOAP.csproj.AssemblyReference.cache
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\02. CLICON\ClienteConsola_SOAP\ClienteConsola_SOAP\obj\Debug\ClienteConsola_SOAP.csproj.CoreCompileInputs.cache
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\02. CLICON\ClienteConsola_SOAP\ClienteConsola_SOAP\obj\Debug\ClienteC.BECA247D.Up2Date
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\02. CLICON\ClienteConsola_SOAP\ClienteConsola_SOAP\obj\Debug\ClienteConsola_SOAP.exe
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\02. CLICON\ClienteConsola_SOAP\ClienteConsola_SOAP\obj\Debug\ClienteConsola_SOAP.pdb

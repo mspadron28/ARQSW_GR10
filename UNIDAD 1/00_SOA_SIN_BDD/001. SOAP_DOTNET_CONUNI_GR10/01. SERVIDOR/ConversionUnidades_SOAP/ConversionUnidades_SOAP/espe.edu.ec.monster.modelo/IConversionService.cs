@@ -6,21 +6,24 @@ namespace espe.edu.ec.monster.modelo
     public interface IConversionService
     {
         [OperationContract]
-        double CentimetersToFeet(double centimeters);
+        double pulgadasACentimetros(double pulgadas);
 
         [OperationContract]
-        double FeetToCentimeters(double feet);
+        double centimetrosAPulgadas(double centimetros);
 
         [OperationContract]
-        double MetersToYards(double meters);
+        double metrosAPies(double metros);
 
         [OperationContract]
-        double YardsToMeters(double yards);
+        double piesAMetros(double pies);
 
         [OperationContract]
-        double InchesToCentimeters(double inches);
+        double metrosAYardas(double metros);
 
         [OperationContract]
-        double CentimetersToInches(double centimeters);
+        double yardasAMetros(double yardas);
+
+        [OperationContract]
+        bool Login(string usuario, string contraseña);
     }
 }

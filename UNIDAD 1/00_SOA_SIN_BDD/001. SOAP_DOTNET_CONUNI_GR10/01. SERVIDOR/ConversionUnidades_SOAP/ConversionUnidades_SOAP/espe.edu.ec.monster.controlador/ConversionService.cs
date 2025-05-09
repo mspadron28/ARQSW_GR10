@@ -3,43 +3,41 @@ using System.ServiceModel;
 
 namespace espe.edu.ec.monster.controlador
 {
-    // Implementación de la interfaz IConversionService
     public class ConversionService : IConversionService
     {
-        public double CentimetersToFeet(double centimeters)
+        public double pulgadasACentimetros(double pulgadas)
         {
-            // Implementación de la conversión de centímetros a pies
-            return centimeters * 0.0328084;
+            return pulgadas * 2.54;
         }
 
-        public double FeetToCentimeters(double feet)
+        public double centimetrosAPulgadas(double centimetros)
         {
-            // Implementación de la conversión de pies a centímetros
-            return feet / 0.0328084;
+            return centimetros / 2.54;
         }
 
-        public double MetersToYards(double meters)
+        public double metrosAPies(double metros)
         {
-            // Implementación de la conversión de metros a yardas
-            return meters * 1.09361;
+            return metros * 3.28084;
         }
 
-        public double YardsToMeters(double yards)
+        public double piesAMetros(double pies)
         {
-            // Implementación de la conversión de yardas a metros
-            return yards / 1.09361;
+            return pies / 3.28084;
         }
 
-        public double InchesToCentimeters(double inches)
+        public double metrosAYardas(double metros)
         {
-            // Implementación de la conversión de pulgadas a centímetros
-            return inches * 2.54;
+            return metros * 1.09361;
         }
 
-        public double CentimetersToInches(double centimeters)
+        public double yardasAMetros(double yardas)
         {
-            // Implementación de la conversión de centímetros a pulgadas
-            return centimeters / 2.54;
+            return yardas / 1.09361;
+        }
+
+        public bool Login(string usuario, string contraseña)
+        {
+            return usuario.Equals("monster") && contraseña.Equals("monster9");
         }
     }
 }
