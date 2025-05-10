@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\CONUNI_CLIWEB_GR10.props" />
-</Project>
