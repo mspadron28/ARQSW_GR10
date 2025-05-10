@@ -1,0 +1,193 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\conversionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\conversionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\conversionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\conversionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\conversionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\conversionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\conversionform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\conversionform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConversionForm.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\ConversionForm.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\ConversionForm.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\ConversionForm.cs",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\ConversionForm.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwHIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T00:42:47.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConversionForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\ConversionForm.Designer.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\ConversionForm.Designer.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\ConversionForm.Designer.cs",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\ConversionForm.Designer.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAswIQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T00:10:25.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\LoginForm.Designer.cs",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\LoginForm.Designer.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAIA2wOUAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T00:08:59.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConversionForm.resx",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\ConversionForm.resx",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\ConversionForm.resx",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\ConversionForm.resx",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\ConversionForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-10T00:43:10.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\LoginForm.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\LoginForm.cs",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T00:52:35.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Program.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\Program.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Program.cs",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T00:58:12.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConversionForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\ConversionForm.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\ConversionForm.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\ConversionForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\ConversionForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T00:10:10.234Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginForm.resx",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\LoginForm.resx",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\LoginForm.resx",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\LoginForm.resx",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\LoginForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-10T00:08:57.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\LoginForm.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\LoginForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\LoginForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T00:08:31.67Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Form1.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\Form1.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T00:05:08.186Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
