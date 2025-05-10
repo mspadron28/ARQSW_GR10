@@ -238,7 +238,7 @@ fun ConversorScreen(modifier: Modifier = Modifier) {
             Text(
                 text = resultado,
                 fontSize = 16.sp,
-                color = Color.Green,
+                color = Color.Black,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(top = 8.dp)
