@@ -1,0 +1,215 @@
+﻿@model CONUNI_CLIWEB_GR10.Modelo.ConversionModel
+
+@if (Model.ConversionTypes == null || !Model.ConversionTypes.Any())
+{
+    <p class="error">Error: no se pudieron cargar los tipos de conversión.</p>
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Conversor de Unidades - CONUNI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f7f6;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #46535d;
+            color: white;
+            padding: 20px 20px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .header .logout-form {
+                margin: 0;
+            }
+
+            .header .logout-button {
+                background-color: #202224;
+                color: white;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+                .header .logout-button:hover {
+                    background-color: #333;
+                }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            flex-grow: 1;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .left-column, .right-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .left-column-content {
+            text-align: center;
+        }
+
+            .left-column-content h2 {
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .left-column-content img {
+                width: 400px;
+                height: 400px;
+            }
+
+        .right-column-content {
+            background-color: #b1c5c7;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+            .right-column-content label {
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                display: block;
+                text-align: left;
+                margin-bottom: 5px;
+            }
+
+            .right-column-content select, .right-column-content input {
+                width: 200px;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid black;
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+
+            .right-column-content button {
+                width: 200px;
+                padding: 10px;
+                background-color: #202224;
+                border: none;
+                color: white;
+                border-radius: 4px;
+                cursor: pointer;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+                .right-column-content button:hover {
+                    background-color: #333;
+                }
+
+        .error, .resultado {
+            margin: 10px 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .resultado {
+            color: green;
+        }
+
+        .result-container {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: white;
+            margin: 10px auto;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>Conversor de Unidades</div>
+        <form class="logout-form" method="post" asp-action="Logout">
+            <button type="submit" class="logout-button">Salir</button>
+        </form>
+    </div>
+    <div class="container">
+        <div class="left-column">
+            <div class="left-column-content">
+                <h2>¿Qué unidad requieres convertir?</h2>
+                <img src="/images/sulleyconuni.png" alt="Sulley">
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="right-column-content">
+                @if (ViewBag.Error != null)
+                {
+                    <p class="error">@ViewBag.Error</p>
+                }
+                @if (ViewBag.Resultado != null)
+                {
+                    <div class="result-container">
+                        <p class="resultado">@ViewBag.Resultado</p>
+                    </div>
+                }
+                <form method="post" asp-action="Convert">
+                    <label for="tipoConversion">Selecciona el tipo de cambio</label>
+                    <select id="tipoConversion" asp-for="ConversionType"
+                            asp-items="@(new SelectList(Model.ConversionTypes.Select(t => new SelectListItem {
+            Value = t,
+            Text = t == "pulgadasACentimetros" ? "Pulgadas a Centímetros" :
+                   t == "centimetrosAPulgadas" ? "Centímetros a Pulgadas" :
+                   t == "metrosAPies" ? "Metros a Pies" :
+                   t == "piesAMetros" ? "Pies a Metros" :
+                   t == "metrosAYardas" ? "Metros a Yardas" :
+                   t == "yardasAMetros" ? "Yardas a Metros" :
+                   t
+        }), "Value", "Text"))">
+                        <option value="">Seleccione una opción</option>
+                    </select>
+
+                    <label for="valor">Ingresa el valor</label>
+                    <input type="number" step="any" id="valor" asp-for="InputValue" placeholder="Ingrese valor" required />
+                    <button type="submit">Convertir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

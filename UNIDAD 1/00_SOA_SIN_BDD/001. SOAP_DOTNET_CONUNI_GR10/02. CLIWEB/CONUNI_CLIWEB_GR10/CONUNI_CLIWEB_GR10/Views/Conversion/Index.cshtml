@@ -1,0 +1,153 @@
+﻿@using CONUNI_CLIWEB_GR10.Models
+@model ConversionModel
+@{
+    ViewData["Title"] = "Conversor de Unidades - CONUNI";
+}
+
+@section Header {
+    <div>Conversor de Unidades</div>
+}
+
+<div class="container">
+    <div class="left-column">
+        <div class="left-column-content">
+            <h2>¿Qué unidad requieres convertir?</h2>
+            <img src="~/images/sulleyconuni.png" alt="Sulley">
+        </div>
+    </div>
+    <div class="right-column">
+        <div class="right-column-content">
+            @if (!string.IsNullOrEmpty(Model.Error))
+            {
+                <p class="error">@Model.Error</p>
+            }
+            @if (!string.IsNullOrEmpty(Model.Resultado))
+            {
+                <div class="result-container">
+                    <p class="resultado">@Model.Resultado</p>
+                </div>
+            }
+            <form asp-action="Index" asp-controller="Conversion" method="post">
+                <label for="Accion">Selecciona el tipo de cambio</label>
+                <select id="Accion" name="Accion">
+                    <option value="pulgadasACentimetros">Pulgadas a Centímetros</option>
+                    <option value="centimetrosAPulgadas">Centímetros a Pulgadas</option>
+                    <option value="metrosAPies">Metros a Pies</option>
+                    <option value="piesAMetros">Pies a Metros</option>
+                    <option value="metrosAYardas">Metros a Yardas</option>
+                    <option value="yardasAMetros">Yardas a Metros</option>
+                </select>
+                <label for="Valor">Ingresa el valor</label>
+                <input type="number" step="any" id="Valor" name="Valor" value="@Model.Valor" placeholder="Ingrese valor" required>
+                <button type="submit">Convertir</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        flex-grow: 1;
+        margin-top: 50px; /* Ajuste para el encabezado fijo */
+        padding: 20px;
+        width: 100%;
+    }
+
+    .left-column, .right-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    .left-column-content {
+        text-align: center;
+    }
+
+        .left-column-content h2 {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .left-column-content img {
+            width: 400px;
+            height: 400px;
+        }
+
+    .right-column-content {
+        background-color: #b1c5c7;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 300px;
+        text-align: center;
+    }
+
+        .right-column-content label {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .right-column-content select, .right-column-content input {
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .right-column-content button {
+            width: 200px;
+            padding: 10px;
+            background-color: #202224;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+            .right-column-content button:hover {
+                background-color: #333;
+            }
+
+    .error, .resultado {
+        margin: 10px 0;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    .error {
+        color: red;
+    }
+
+    .resultado {
+        color: green;
+    }
+
+    .result-container {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 4px;
+        background-color: white;
+        margin: 10px auto;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+</style>
