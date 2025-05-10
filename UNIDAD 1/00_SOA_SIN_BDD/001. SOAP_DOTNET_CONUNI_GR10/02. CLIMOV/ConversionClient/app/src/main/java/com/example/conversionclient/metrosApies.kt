@@ -16,7 +16,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import javax.xml.parsers.DocumentBuilderFactory
 
-class CentimetersToFeet : AppCompatActivity() {
+class centimetrosApies : AppCompatActivity() {
 
     private lateinit var editTextCentimeters: EditText
     private lateinit var buttonConvert: Button
