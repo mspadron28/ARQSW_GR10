@@ -39,12 +39,12 @@
 
         <!-- Aquí puedes agregar más actividades, servicios, receptores, etc. según sea necesario -->
 
-        <activity android:name=".CentimetersToFeet"/>
-        <activity android:name=".FeetToCentimeters"/>
-        <activity android:name=".MetersToYards"/>
-        <activity android:name=".YardsToMeters"/>
-        <activity android:name=".InchesToCentimeters"/>
-        <activity android:name=".CentimetersToInches"/>
+        <activity android:name=".metrosApies"/>
+        <activity android:name=".piesAMetros"/>
+        <activity android:name=".metrosAYardas"/>
+        <activity android:name=".yardasAMetros"/>
+        <activity android:name=".pulgadasACentimetros"/>
+        <activity android:name=".centimetrosAPulgadas"/>
 
     </application>
 

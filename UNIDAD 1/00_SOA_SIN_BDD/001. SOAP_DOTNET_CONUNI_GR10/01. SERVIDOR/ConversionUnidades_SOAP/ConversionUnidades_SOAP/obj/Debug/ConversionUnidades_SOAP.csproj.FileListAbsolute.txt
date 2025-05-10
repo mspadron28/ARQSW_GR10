@@ -19,3 +19,10 @@ C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\0
 C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.CoreCompileInputs.cache
 C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.dll
 C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.pdb
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll.config
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.pdb
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.AssemblyReference.cache
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.CoreCompileInputs.cache
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.pdb

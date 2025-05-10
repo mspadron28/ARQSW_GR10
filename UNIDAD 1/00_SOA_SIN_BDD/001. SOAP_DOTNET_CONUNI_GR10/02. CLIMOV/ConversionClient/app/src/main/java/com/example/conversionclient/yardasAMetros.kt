@@ -14,7 +14,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import javax.xml.parsers.DocumentBuilderFactory
 
-class YardsToMeters : AppCompatActivity() {
+class yardasAMetros : AppCompatActivity() {
 
     private lateinit var editTextYards: EditText
     private lateinit var buttonConvert: Button
@@ -31,16 +31,16 @@ class YardsToMeters : AppCompatActivity() {
         buttonConvert.setOnClickListener {
             val yards = editTextYards.text.toString().toDoubleOrNull()
             if (yards != null) {
-                val methodName = "YardsToMeters"
-                val soapAction = "http://tem puri.org/IConversionService/$methodName"
+                val methodName = "yardasAMetros"
+                val soapAction = "http://tempuri.org/IConversionService/$methodName"
 
-                val url = "http://10.40.13.165:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
+                val url = "http://192.168.100.11:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
                 val xmlInput = """
                     <?xml version="1.0" encoding="utf-8"?>
                     <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
                         <soap:Body>
                             <tem:$methodName>
-                                <tem:yards>$yards</tem:yards>
+                                <tem:yardas>$yards</tem:yardas>
                             </tem:$methodName>
                         </soap:Body>
                     </soap:Envelope>
@@ -97,7 +97,7 @@ class YardsToMeters : AppCompatActivity() {
                 val xmlDoc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(result?.byteInputStream())
                 xmlDoc.documentElement.normalize()
 
-                val resultNode = xmlDoc.getElementsByTagName("YardsToMetersResult").item(0) as Element
+                val resultNode = xmlDoc.getElementsByTagName("yardasAMetrosResult").item(0) as Element
                 val conversionResult = resultNode.textContent
 
                 textViewResult.text = "Yardas a Metros: $conversionResult"

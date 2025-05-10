@@ -14,7 +14,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import javax.xml.parsers.DocumentBuilderFactory
 
-class CentimetersToInches : AppCompatActivity() {
+class centimetrosAPulgadas : AppCompatActivity() {
 
     private lateinit var editTextCentimeters: EditText
     private lateinit var buttonConvert: Button
@@ -31,10 +31,11 @@ class CentimetersToInches : AppCompatActivity() {
         buttonConvert.setOnClickListener {
             val centimeters = editTextCentimeters.text.toString().toDoubleOrNull()
             if (centimeters != null) {
-                val methodName = "CentimetersToInches"
+                val methodName = "centimetrosAPulgadas"
                 val soapAction = "http://tempuri.org/IConversionService/$methodName"
 
-                val url = "http://10.40.13.165:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
+                // Update the URL to match your server's actual address
+                val url = "http://192.168.100.11:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
                 val xmlInput = """
                     <?xml version="1.0" encoding="utf-8"?>
                     <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
@@ -48,7 +49,7 @@ class CentimetersToInches : AppCompatActivity() {
 
                 AsyncTaskHandleSOAP().execute(url, soapAction, xmlInput)
             } else {
-                textViewResult.text = "Invalid input. Please enter a valid number."
+                textViewResult.text = "Entrada inválida. Por favor, ingrese un número válido."
             }
         }
     }
@@ -61,7 +62,7 @@ class CentimetersToInches : AppCompatActivity() {
             val xmlInput = params[2]
 
             if (urlString == null || soapAction == null || xmlInput == null) {
-                return "Error: One or more parameters are null"
+                return "Error: Uno o más parámetros son nulos"
             }
 
             try {
@@ -81,6 +82,7 @@ class CentimetersToInches : AppCompatActivity() {
 
                 inputStream.close()
                 outputStream.close()
+                connection.disconnect()
 
                 return response
             } catch (e: Exception) {
@@ -92,18 +94,22 @@ class CentimetersToInches : AppCompatActivity() {
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
 
-            // Procesar el resultado XML y mostrarlo en textViewResult
             try {
-                val xmlDoc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(result?.byteInputStream())
-                xmlDoc.documentElement.normalize()
+                if (result != null && !result.startsWith("Error")) {
+                    val xmlDoc = DocumentBuilderFactory.newInstance().newDocumentBuilder()
+                        .parse(result.byteInputStream())
+                    xmlDoc.documentElement.normalize()
 
-                val resultNode = xmlDoc.getElementsByTagName("CentimetersToInchesResult").item(0) as Element
-                val conversionResult = resultNode.textContent
+                    val resultNode = xmlDoc.getElementsByTagName("centimetrosAPulgadasResult").item(0) as Element
+                    val conversionResult = resultNode.textContent
 
-                textViewResult.text = "Centímetros a Pulgadas: $conversionResult"
+                    textViewResult.text = "Centímetros a Pulgadas: $conversionResult"
+                } else {
+                    textViewResult.text = "Error en la respuesta del servidor: $result"
+                }
             } catch (e: Exception) {
                 e.printStackTrace()
-                textViewResult.text = "Error parsing XML response"
+                textViewResult.text = "Error al procesar la respuesta XML: ${e.message}"
             }
         }
 

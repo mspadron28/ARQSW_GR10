@@ -14,7 +14,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import javax.xml.parsers.DocumentBuilderFactory
 
-class InchesToCentimeters : AppCompatActivity() {
+class pulgadasACentimetros : AppCompatActivity() {
 
     private lateinit var editTextInches: EditText
     private lateinit var buttonConvert: Button
@@ -31,16 +31,16 @@ class InchesToCentimeters : AppCompatActivity() {
         buttonConvert.setOnClickListener {
             val inches = editTextInches.text.toString().toDoubleOrNull()
             if (inches != null) {
-                val methodName = "InchesToCentimeters"
+                val methodName = "pulgadasACentimetros"
                 val soapAction = "http://tempuri.org/IConversionService/$methodName"
 
-                val url = "http://10.40.13.165:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
+                val url = "http://192.168.100.11:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
                 val xmlInput = """
                     <?xml version="1.0" encoding="utf-8"?>
                     <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
                         <soap:Body>
                             <tem:$methodName>
-                                <tem:inches>$inches</tem:inches>
+                                <tem:pulgadas>$inches</tem:pulgadas>
                             </tem:$methodName>
                         </soap:Body>
                     </soap:Envelope>
@@ -97,7 +97,7 @@ class InchesToCentimeters : AppCompatActivity() {
                 val xmlDoc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(result?.byteInputStream())
                 xmlDoc.documentElement.normalize()
 
-                val resultNode = xmlDoc.getElementsByTagName("InchesToCentimetersResult").item(0) as Element
+                val resultNode = xmlDoc.getElementsByTagName("pulgadasACentimetrosResult").item(0) as Element
                 val conversionResult = resultNode.textContent
 
                 textViewResult.text = "Pulgadas a Centímetros: $conversionResult"

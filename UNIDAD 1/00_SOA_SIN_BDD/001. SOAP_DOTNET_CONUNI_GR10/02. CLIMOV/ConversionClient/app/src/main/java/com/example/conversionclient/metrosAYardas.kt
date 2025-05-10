@@ -14,7 +14,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import javax.xml.parsers.DocumentBuilderFactory
 
-class MetersToYards : AppCompatActivity() {
+class metrosAYardas : AppCompatActivity() {
 
     private lateinit var editTextMeters: EditText
     private lateinit var buttonConvert: Button
@@ -31,16 +31,16 @@ class MetersToYards : AppCompatActivity() {
         buttonConvert.setOnClickListener {
             val meters = editTextMeters.text.toString().toDoubleOrNull()
             if (meters != null) {
-                val methodName = "MetersToYards"
+                val methodName = "metrosAYardas"
                 val soapAction = "http://tempuri.org/IConversionService/$methodName"
 
-                val url = "http://10.40.13.165:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
+                val url = "http://192.168.100.11:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
                 val xmlInput = """
                     <?xml version="1.0" encoding="utf-8"?>
                     <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
                         <soap:Body>
                             <tem:$methodName>
-                                <tem:meters>$meters</tem:meters>
+                                <tem:metros>$meters</tem:metros>
                             </tem:$methodName>
                         </soap:Body>
                     </soap:Envelope>
@@ -97,7 +97,7 @@ class MetersToYards : AppCompatActivity() {
                 val xmlDoc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(result?.byteInputStream())
                 xmlDoc.documentElement.normalize()
 
-                val resultNode = xmlDoc.getElementsByTagName("MetersToYardsResult").item(0) as Element
+                val resultNode = xmlDoc.getElementsByTagName("metrosAYardasResult").item(0) as Element
                 val conversionResult = resultNode.textContent
 
                 textViewResult.text = "Metros a Yardas: $conversionResult"

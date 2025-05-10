@@ -14,7 +14,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import javax.xml.parsers.DocumentBuilderFactory
 
-class FeetToCentimeters : AppCompatActivity() {
+class piesAMetros : AppCompatActivity() {
 
     private lateinit var editTextFeet: EditText
     private lateinit var buttonConvert: Button
@@ -31,16 +31,16 @@ class FeetToCentimeters : AppCompatActivity() {
         buttonConvert.setOnClickListener {
             val feet = editTextFeet.text.toString().toDoubleOrNull()
             if (feet != null) {
-                val methodName = "FeetToCentimeters"
+                val methodName = "piesAMetros"
                 val soapAction = "http://tempuri.org/IConversionService/$methodName"
 
-                val url = "http://10.40.13.165:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
+                val url = "http://192.168.100.11:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/"
                 val xmlInput = """
                     <?xml version="1.0" encoding="utf-8"?>
                     <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
                         <soap:Body>
                             <tem:$methodName>
-                                <tem:feet>$feet</tem:feet>
+                                <tem:pies>$feet</tem:pies>
                             </tem:$methodName>
                         </soap:Body>
                     </soap:Envelope>
@@ -97,10 +97,10 @@ class FeetToCentimeters : AppCompatActivity() {
                 val xmlDoc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(result?.byteInputStream())
                 xmlDoc.documentElement.normalize()
 
-                val resultNode = xmlDoc.getElementsByTagName("FeetToCentimetersResult").item(0) as Element
+                val resultNode = xmlDoc.getElementsByTagName("piesAMetrosResult").item(0) as Element
                 val conversionResult = resultNode.textContent
 
-                textViewResult.text = "Pies a Centímetros: $conversionResult"
+                textViewResult.text = "Pies a Metros: $conversionResult"
             } catch (e: Exception) {
                 e.printStackTrace()
                 textViewResult.text = "Error parsing XML response"
