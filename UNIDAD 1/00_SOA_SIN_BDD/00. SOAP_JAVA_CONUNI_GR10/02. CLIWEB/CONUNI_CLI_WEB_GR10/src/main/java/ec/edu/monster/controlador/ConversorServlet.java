@@ -26,6 +26,9 @@ public class ConversorServlet extends HttpServlet {
             return;
         }
 
+        // Guardar el tipo de conversión seleccionado para preseleccionarlo en el JSP
+        request.setAttribute("selectedAccion", accion);
+
         try {
             double inputValue = Double.parseDouble(valor.trim());
             double result = 0;

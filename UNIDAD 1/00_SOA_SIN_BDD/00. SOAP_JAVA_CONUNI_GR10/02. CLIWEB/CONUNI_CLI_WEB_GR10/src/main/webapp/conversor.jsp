@@ -30,9 +30,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 5px; /* Espacio reducido entre columnas, igual que en CONUNIVista */
+            gap: 5px;
             flex-grow: 1;
-            margin-top: 50px; /* Espacio para el encabezado fijo */
+            margin-top: 50px;
             padding: 20px;
         }
         .left-column, .right-column {
@@ -95,31 +95,39 @@
         .right-column-content button:hover {
             background-color: #333;
         }
-        .error, .resultado {
+        .error {
             margin: 10px 0;
             font-family: Arial, sans-serif;
             font-size: 14px;
-        }
-        .error {
             color: red;
         }
-        .resultado {
-            color: green;
+        .result-label {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
         .result-container {
-            width: 200px;
+            width: 175px;
             padding: 10px;
             border: 1px solid black;
             border-radius: 4px;
             background-color: white;
-            margin: 10px auto;
+            margin: 0 auto;
             font-family: Arial, sans-serif;
             font-size: 14px;
+            text-align: center;
+            min-height: 20px; /* Asegura que el contenedor tenga altura incluso si está vacío */
+        }
+        .resultado {
+            color: green;
         }
     </style>
 </head>
 <body>
-    <div class="header">Conversor de Unidades</div>
+    <div class="header">Conversor de Unidades JAVA SOAP</div>
     <div class="container">
         <div class="left-column">
             <div class="left-column-content">
@@ -132,24 +140,25 @@
                 <% if (request.getAttribute("error") != null) { %>
                     <p class="error"><%= request.getAttribute("error") %></p>
                 <% } %>
-                <% if (request.getAttribute("resultado") != null) { %>
-                    <div class="result-container">
-                        <p class="resultado"><%= request.getAttribute("resultado") %></p>
-                    </div>
-                <% } %>
                 <form action="convertir" method="post">
                     <label for="tipoConversion">Selecciona el tipo de cambio</label>
                     <select id="tipoConversion" name="accion">
-                        <option value="pulgadasACentimetros">Pulgadas a Centímetros</option>
-                        <option value="centimetrosAPulgadas">Centímetros a Pulgadas</option>
-                        <option value="metrosAPies">Metros a Pies</option>
-                        <option value="piesAMetros">Pies a Metros</option>
-                        <option value="metrosAYardas">Metros a Yardas</option>
-                        <option value="yardasAMetros">Yardas a Metros</option>
+                        <option value="pulgadasACentimetros" <%= "pulgadasACentimetros".equals(request.getAttribute("selectedAccion")) ? "selected" : "" %>>Pulgadas a Centímetros</option>
+                        <option value="centimetrosAPulgadas" <%= "centimetrosAPulgadas".equals(request.getAttribute("selectedAccion")) ? "selected" : "" %>>Centímetros a Pulgadas</option>
+                        <option value="metrosAPies" <%= "metrosAPies".equals(request.getAttribute("selectedAccion")) ? "selected" : "" %>>Metros a Pies</option>
+                        <option value="piesAMetros" <%= "piesAMetros".equals(request.getAttribute("selectedAccion")) ? "selected" : "" %>>Pies a Metros</option>
+                        <option value="metrosAYardas" <%= "metrosAYardas".equals(request.getAttribute("selectedAccion")) ? "selected" : "" %>>Metros a Yardas</option>
+                        <option value="yardasAMetros" <%= "yardasAMetros".equals(request.getAttribute("selectedAccion")) ? "selected" : "" %>>Yardas a Metros</option>
                     </select>
                     <label for="valor">Ingresa el valor</label>
                     <input type="number" step="any" id="valor" name="valor" placeholder="Ingrese valor" required>
                     <button type="submit">Convertir</button>
+                    <label class="result-label">Resultado</label>
+                    <div class="result-container">
+                        <% if (request.getAttribute("resultado") != null) { %>
+                            <span class="resultado"><%= request.getAttribute("resultado") %></span>
+                        <% } %>
+                    </div>
                 </form>
             </div>
         </div>

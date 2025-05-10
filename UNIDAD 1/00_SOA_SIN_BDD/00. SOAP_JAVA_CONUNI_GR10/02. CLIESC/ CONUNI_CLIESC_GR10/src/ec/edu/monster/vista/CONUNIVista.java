@@ -42,7 +42,7 @@ public class CONUNIVista extends javax.swing.JFrame {
         headerPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 20, 10));
         headerPanel.setPreferredSize(new Dimension(0, 50)); // Altura fija, ancho adaptable
 
-        JLabel headerLabel = new JLabel("Conversor de Unidades");
+        JLabel headerLabel = new JLabel("Conversor de Unidades JAVA SOAP");
         headerLabel.setFont(new Font("Segoe UI", Font.BOLD, 18));
         headerLabel.setForeground(Color.WHITE);
         headerPanel.add(headerLabel);

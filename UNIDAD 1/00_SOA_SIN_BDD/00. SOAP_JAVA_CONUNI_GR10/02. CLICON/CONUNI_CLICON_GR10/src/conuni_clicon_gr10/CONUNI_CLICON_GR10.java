@@ -158,7 +158,7 @@ public class CONUNI_CLICON_GR10 {
             limpiarConsola();
             mostrarSullivan();
             System.out.println("╔══════════════════════════════════════╗");
-            System.out.println("║    *** Conversor de Unidades ***     ║");
+            System.out.println("║   **Conversor de Unidades SOAP**     ║");
             System.out.println("╠══════════════════════════════════════╣");
             System.out.println("║ Seleccione el tipo de conversión:    ║");
             System.out.println("║                                      ║");
