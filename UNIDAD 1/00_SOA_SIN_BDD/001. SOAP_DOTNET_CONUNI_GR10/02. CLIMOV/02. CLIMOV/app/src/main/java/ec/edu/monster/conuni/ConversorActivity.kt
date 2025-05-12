@@ -9,7 +9,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -42,6 +41,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import android.util.Log
 import android.widget.Toast
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
@@ -80,6 +80,7 @@ fun ConversorScreen(modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val scope = CoroutineScope(Dispatchers.Main)
     val controlador = AppControlador()
+    val TAG = "ConversorScreen"
 
     Column(
         modifier = modifier
@@ -92,7 +93,7 @@ fun ConversorScreen(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Image(
-            painter = painterResource(id = R.drawable.sulleyconuni), // Asegúrate de agregar sulleyconuni.png
+            painter = painterResource(id = R.drawable.sulleyconuni),
             contentDescription = "Sulley",
             modifier = Modifier
                 .size(150.dp)
@@ -105,7 +106,6 @@ fun ConversorScreen(modifier: Modifier = Modifier) {
             modifier = Modifier.padding(bottom = 16.dp)
         )
 
-        // Selector de conversión
         var isExpanded by remember { mutableStateOf(false) }
         ExposedDropdownMenuBox(
             expanded = isExpanded,
@@ -179,7 +179,6 @@ fun ConversorScreen(modifier: Modifier = Modifier) {
             }
         }
 
-        // Campo de entrada
         TextField(
             value = valor,
             onValueChange = { valor = it },
@@ -189,7 +188,6 @@ fun ConversorScreen(modifier: Modifier = Modifier) {
                 .padding(vertical = 8.dp)
         )
 
-        // Botón de conversión
         Button(
             onClick = {
                 scope.launch {
@@ -217,9 +215,11 @@ fun ConversorScreen(modifier: Modifier = Modifier) {
                                 else -> ""
                             })
                         } else {
-                            Toast.makeText(context, "Ingrese un valor no negativo", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(context, "Ingrese un valor numérico no negativo", Toast.LENGTH_SHORT).show()
                         }
                     } catch (e: Exception) {
+                        Log.e(TAG, "Error en conversión: ${e.message}", e)
+                        e.printStackTrace()
                         Toast.makeText(context, "Error: ${e.message}", Toast.LENGTH_LONG).show()
                     }
                 }
@@ -233,7 +233,6 @@ fun ConversorScreen(modifier: Modifier = Modifier) {
             Text("Convertir", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
         }
 
-        // Resultado
         if (resultado.isNotEmpty()) {
             Text(
                 text = resultado,

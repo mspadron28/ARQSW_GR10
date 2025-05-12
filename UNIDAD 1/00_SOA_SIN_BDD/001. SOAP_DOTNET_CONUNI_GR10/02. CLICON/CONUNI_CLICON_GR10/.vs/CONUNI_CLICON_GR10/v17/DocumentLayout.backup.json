@@ -14,12 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,10 +24,14 @@
               "RelativeDocumentMoniker": "CONUNI_CLICON_GR10\\Program.cs",
               "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLICON\\CONUNI_CLICON_GR10\\CONUNI_CLICON_GR10\\Program.cs",
               "RelativeToolTip": "CONUNI_CLICON_GR10\\Program.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAYwHIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T23:18:53.051Z",
+              "WhenOpened": "2025-05-12T13:07:34.904Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
             }
           ]
         }
