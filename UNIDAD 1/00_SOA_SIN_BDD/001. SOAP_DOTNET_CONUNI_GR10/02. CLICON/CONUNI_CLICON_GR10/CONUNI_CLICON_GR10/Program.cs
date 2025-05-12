@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Text;
 using ConversionService;
 
@@ -27,7 +26,7 @@ namespace ClienteConsolaSOAP
 
             // Limpiar y mostrar menú tras login
             LimpiarConsola();
-    
+
             await MostrarMenuAsync();
         }
 

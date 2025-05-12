@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CONUNI_CLICON_GR10")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29f5087ab40546bc395e9626c46670d7538f8068")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9f3b2a650706480d3cd5bffe180df60546656ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("CONUNI_CLICON_GR10")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CONUNI_CLICON_GR10")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
