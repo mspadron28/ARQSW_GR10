@@ -77,7 +77,7 @@ public class CONUNI {
     public Response login(LoginRequest loginRequest) {
         boolean authenticated = loginService.autenticar(loginRequest.getUsuario(), loginRequest.getContraseña());
         if (authenticated) {
-            return Response.ok("Login successful").build();
+            return Response.ok("\"Login successful\"").build();
         } else {
             return Response.status(Response.Status.UNAUTHORIZED).entity("Invalid credentials").build();
         }

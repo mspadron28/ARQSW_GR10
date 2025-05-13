@@ -21,25 +21,26 @@
             {
                 <p class="error">@Model.Error</p>
             }
-            @if (!string.IsNullOrEmpty(Model.Resultado))
-            {
-                <div class="result-container">
-                    <p class="resultado">@Model.Resultado</p>
-                </div>
-            }
             <form asp-action="Index" asp-controller="Conversion" method="post">
                 <label for="Accion">Selecciona el tipo de cambio</label>
                 <select id="Accion" name="Accion">
-                    <option value="pulgadasACentimetros">Pulgadas a Centímetros</option>
-                    <option value="centimetrosAPulgadas">Centímetros a Pulgadas</option>
-                    <option value="metrosAPies">Metros a Pies</option>
-                    <option value="piesAMetros">Pies a Metros</option>
-                    <option value="metrosAYardas">Metros a Yardas</option>
-                    <option value="yardasAMetros">Yardas a Metros</option>
+                    <option value="pulgadasACentimetros" selected="@(Model.Accion == "pulgadasACentimetros" ? "selected" : null)">Pulgadas a Centímetros</option>
+                    <option value="centimetrosAPulgadas" selected="@(Model.Accion == "centimetrosAPulgadas" ? "selected" : null)">Centímetros a Pulgadas</option>
+                    <option value="metrosAPies" selected="@(Model.Accion == "metrosAPies" ? "selected" : null)">Metros a Pies</option>
+                    <option value="piesAMetros" selected="@(Model.Accion == "piesAMetros" ? "selected" : null)">Pies a Metros</option>
+                    <option value="metrosAYardas" selected="@(Model.Accion == "metrosAYardas" ? "selected" : null)">Metros a Yardas</option>
+                    <option value="yardasAMetros" selected="@(Model.Accion == "yardasAMetros" ? "selected" : null)">Yardas a Metros</option>
                 </select>
-                <label for="Valor">Ingresa el valor</label>
-                <input type="number" step="any" id="Valor" name="Valor" value="@Model.Valor" placeholder="Ingrese valor" required>
+                <label for="Valor">Ingresa el valor (use punto o coma como separador decimal, ej. 200.5)</label>
+                <input type="text" id="Valor" name="Valor" value="@Model.Valor" placeholder="Ingrese valor" required>
                 <button type="submit">Convertir</button>
+                <label class="result-label">Resultado</label>
+                <div class="result-container">
+                    @if (!string.IsNullOrEmpty(Model.Resultado))
+                    {
+                        <span class="resultado">@Model.Resultado</span>
+                    }
+                </div>
             </form>
         </div>
     </div>
@@ -126,28 +127,69 @@
                 background-color: #333;
             }
 
-    .error, .resultado {
+    .error {
         margin: 10px 0;
         font-family: Arial, sans-serif;
         font-size: 14px;
-    }
-
-    .error {
         color: red;
     }
 
-    .resultado {
-        color: green;
+    .result-label {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        display: block;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
 
     .result-container {
-        width: 200px;
+        width: 175px; /* Ajustado para coincidir con el JSP */
         padding: 10px;
         border: 1px solid black;
         border-radius: 4px;
         background-color: white;
-        margin: 10px auto;
+        margin: 0 auto;
         font-family: Arial, sans-serif;
         font-size: 14px;
+        text-align: center; /* Centrado del texto */
+        min-height: 20px; /* Asegura que el contenedor tenga altura incluso si está vacío */
+    }
+
+    .resultado {
+        color: black;
     }
 </style>
+
+<script>
+    const valorInput = document.getElementById("Valor");
+
+    valorInput.addEventListener("input", function(e) {
+        let value = this.value;
+        // Permitir solo números, un punto o una coma
+        value = value.replace(/[^0-9,.]/g, "");
+
+        // Reemplazar coma por punto para normalizar
+        value = value.replace(",", ".");
+
+        // Asegurar que solo haya un separador decimal
+        const parts = value.split(".");
+        if (parts.length > 2) {
+            value = parts[0] + "." + parts.slice(1).join("");
+        }
+
+        // Actualizar el valor en el input
+        this.value = value;
+    });
+
+    document.querySelector("form").addEventListener("submit", function(e) {
+        let valor = valorInput.value;
+        // Normalizar antes de enviar (por seguridad)
+        valorInput.value = valor.replace(",", ".");
+        // Validar que sea un número válido
+        if (!/^\d*\.?\d*$/.test(valor) || valor === "") {
+            e.preventDefault();
+            alert("Por favor, ingrese un número válido (ej. 200.5)");
+        }
+    });
+</script>

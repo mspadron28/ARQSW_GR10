@@ -1,4 +1,6 @@
 package ec.edu.monster.modelo
 
-class LoginRequest {
-}
+data class LoginRequest(
+    val usuario: String,
+    val contraseña: String
+)

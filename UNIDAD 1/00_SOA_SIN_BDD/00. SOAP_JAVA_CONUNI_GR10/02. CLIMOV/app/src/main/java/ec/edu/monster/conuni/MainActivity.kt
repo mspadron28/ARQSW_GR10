@@ -56,7 +56,7 @@ class MainActivity : ComponentActivity() {
                     topBar = {
                         TopAppBar(
                             title = { Text("Inicio de Sesión", color = Color.White, fontWeight = FontWeight.Bold) },
-                            colors = TopAppBarDefaults.smallTopAppBarColors(
+                            colors = TopAppBarDefaults.topAppBarColors(
                                 containerColor = Color(0xFF46535D)
                             )
                         )
@@ -129,7 +129,8 @@ fun LoginScreen(modifier: Modifier = Modifier, onLoginSuccess: () -> Unit) {
             label = { Text("Contraseña") },
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 8.dp)
+                .padding(vertical = 8.dp),
+            visualTransformation = androidx.compose.ui.text.input.PasswordVisualTransformation()
         )
 
         Button(

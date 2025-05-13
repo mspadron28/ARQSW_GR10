@@ -37,7 +37,7 @@ namespace espe.edu.ec.monster.controlador
 
         public bool Login(string usuario, string contraseña)
         {
-            return usuario.Equals("monster") && contraseña.Equals("monster9");
+            return usuario.Equals("MONSTER") && contraseña.Equals("MONSTER9");
         }
     }
 }

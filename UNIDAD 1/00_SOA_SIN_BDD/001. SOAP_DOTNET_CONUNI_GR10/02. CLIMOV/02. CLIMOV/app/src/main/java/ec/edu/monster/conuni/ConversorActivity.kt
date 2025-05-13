@@ -10,6 +10,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -84,7 +85,7 @@ fun ConversorScreen(modifier: Modifier = Modifier) {
 
     Column(
         modifier = modifier
-            .fillMaxWidth()
+            .fillMaxSize()
             .padding(16.dp)
             .background(Color(0xFFB1C5C7), shape = RoundedCornerShape(8.dp))
             .border(1.dp, Color.Black, shape = RoundedCornerShape(8.dp))
@@ -233,19 +234,26 @@ fun ConversorScreen(modifier: Modifier = Modifier) {
             Text("Convertir", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
         }
 
-        if (resultado.isNotEmpty()) {
-            Text(
-                text = resultado,
-                fontSize = 16.sp,
-                color = Color.Green,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(top = 8.dp)
-                    .background(Color.White, shape = RoundedCornerShape(4.dp))
-                    .border(1.dp, Color.Black, shape = RoundedCornerShape(4.dp))
-                    .padding(8.dp)
+        TextField(
+            value = resultado,
+            onValueChange = {}, // Campo de solo lectura
+            label = { Text("Resultado") },
+            readOnly = true,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 8.dp)
+                .background(Color.White, shape = RoundedCornerShape(4.dp))
+                .border(1.dp, Color.Black, shape = RoundedCornerShape(4.dp))
+                .padding(8.dp),
+            colors = androidx.compose.material3.TextFieldDefaults.colors(
+                focusedTextColor = Color.Black,
+                unfocusedTextColor = Color.Black,
+                disabledTextColor = Color.Black,
+                focusedContainerColor = Color.White,
+                unfocusedContainerColor = Color.White,
+                disabledContainerColor = Color.White
             )
-        }
+        )
     }
 }
 

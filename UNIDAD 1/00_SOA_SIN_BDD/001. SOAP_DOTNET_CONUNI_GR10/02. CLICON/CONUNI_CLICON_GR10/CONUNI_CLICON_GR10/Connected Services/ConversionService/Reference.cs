@@ -146,7 +146,7 @@ namespace ConversionService
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_IConversionService))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/");
+                return new System.ServiceModel.EndpointAddress("http://10.40.16.210:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/");
             }
             throw new System.InvalidOperationException(string.Format("No se pudo encontrar un punto de conexión con el nombre \"{0}\".", endpointConfiguration));
         }

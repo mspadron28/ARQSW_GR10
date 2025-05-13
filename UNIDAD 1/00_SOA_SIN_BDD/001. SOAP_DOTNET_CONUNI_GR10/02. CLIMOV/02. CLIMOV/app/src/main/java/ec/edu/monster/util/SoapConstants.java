@@ -2,7 +2,7 @@ package ec.edu.monster.util;
 
 public class SoapConstants {
     public static final String NAMESPACE = "http://tempuri.org/";
-    public static final String URL = "http://10.40.16.210:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/";
+    public static final String URL = "http://10.40.14.7:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/?wsdl";
     public static final String SOAP_ACTION_PREFIX = "http://tempuri.org/IConversionService/";
     public static final String LOGIN_METHOD = "Login";
     public static final String PULGADAS_A_CENTIMETROS_METHOD = "pulgadasACentimetros";

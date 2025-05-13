@@ -2,7 +2,7 @@ package ec.edu.monster.util;
 
 public class SoapConstants {
     public static final String NAMESPACE = "http://controlador.monster.edu.ec/";
-    public static final String URL = "http://192.168.100.20:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
+    public static final String URL = "http://10.40.14.7:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
     public static final String SOAP_ACTION_PREFIX = "http://controlador.monster.edu.ec/CONUNI/";
     public static final String LOGIN_METHOD = "login";
     public static final String PULGADAS_A_CENTIMETROS_METHOD = "pulgadasACentimetros";

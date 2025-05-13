@@ -204,60 +204,60 @@ public class CONUNIVista extends javax.swing.JFrame {
     }
 
     private void convertButtonActionPerformed(java.awt.event.ActionEvent evt) {
-        try {
-            // Obtener el valor de entrada
-            double value = Double.parseDouble(inputField.getText());
+    try {
+        // Obtener el valor de entrada y normalizar coma a punto
+        String inputText = inputField.getText().trim().replace(",", ".");
+        double value = Double.parseDouble(inputText);
 
-            // Validar que el valor sea no negativo
-            if (value < 0) {
-                JOptionPane.showMessageDialog(this, "Por favor, ingrese un valor no negativo.", "Error", JOptionPane.ERROR_MESSAGE);
-                return;
-            }
-
-            // Obtener la opción seleccionada
-            String selectedOption = (String) conversionSelector.getSelectedItem();
-            double result = 0;
-            String unit = "";
-
-            // Realizar la conversión según la opción seleccionada
-            switch (selectedOption) {
-                case "Pulgadas a Centímetros":
-                    result = controlador.pulgadasACentimetros(value);
-                    unit = "cm";
-                    break;
-                case "Centímetros a Pulgadas":
-                    result = controlador.centimetrosAPulgadas(value);
-                    unit = "pulgadas";
-                    break;
-                case "Metros a Pies":
-                    result = controlador.metrosAPies(value);
-                    unit = "pies";
-                    break;
-                case "Pies a Metros":
-                    result = controlador.piesAMetros(value);
-                    unit = "m";
-                    break;
-                case "Metros a Yardas":
-                    result = controlador.metrosAYardas(value);
-                    unit = "yardas";
-                    break;
-                case "Yardas a Metros":
-                    result = controlador.yardasAMetros(value);
-                    unit = "m";
-                    break;
-                default:
-                    throw new IllegalArgumentException("Opción de conversión no válida");
-            }
-
-            // Mostrar el resultado
-            resultLabel.setText(String.format("%.2f %s", result, unit));
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Por favor, ingrese un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Error al realizar la conversión: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        // Validar que el valor sea no negativo
+        if (value < 0) {
+            JOptionPane.showMessageDialog(this, "Por favor, ingrese un valor no negativo.", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
         }
-    }
 
+        // Obtener la opción seleccionada
+        String selectedOption = (String) conversionSelector.getSelectedItem();
+        double result = 0;
+        String resultado = "";
+
+        // Realizar la conversión según la opción seleccionada
+        switch (selectedOption) {
+            case "Pulgadas a Centímetros":
+                result = controlador.pulgadasACentimetros(value);
+                resultado = String.format("%.2f in = %.2f cm.", value, result);
+                break;
+            case "Centímetros a Pulgadas":
+                result = controlador.centimetrosAPulgadas(value);
+                resultado = String.format("%.2f cm = %.2f in.", value, result);
+                break;
+            case "Metros a Pies":
+                result = controlador.metrosAPies(value);
+                resultado = String.format("%.2f m = %.2f ft.", value, result);
+                break;
+            case "Pies a Metros":
+                result = controlador.piesAMetros(value);
+                resultado = String.format("%.2f ft = %.2f m.", value, result);
+                break;
+            case "Metros a Yardas":
+                result = controlador.metrosAYardas(value);
+                resultado = String.format("%.2f m = %.2f yd.", value, result);
+                break;
+            case "Yardas a Metros":
+                result = controlador.yardasAMetros(value);
+                resultado = String.format("%.2f yd = %.2f m.", value, result);
+                break;
+            default:
+                throw new IllegalArgumentException("Opción de conversión no válida");
+        }
+
+        // Mostrar el resultado
+        resultLabel.setText(resultado);
+    } catch (NumberFormatException e) {
+        JOptionPane.showMessageDialog(this, "Por favor, ingrese un número válido (use punto como separador decimal).", "Error", JOptionPane.ERROR_MESSAGE);
+    } catch (Exception e) {
+        JOptionPane.showMessageDialog(this, "Error al realizar la conversión: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+    }
+}
     /**
      * @param args the command line arguments
      */

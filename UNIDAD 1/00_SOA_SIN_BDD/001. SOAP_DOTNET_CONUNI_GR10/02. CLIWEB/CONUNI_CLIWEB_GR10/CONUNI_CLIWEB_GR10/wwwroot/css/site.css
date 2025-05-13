@@ -1,3 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+    overflow-y: hidden;
+}
+
 .content {
     min-height: 100vh;
     display: flex;
@@ -7,6 +19,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    flex-grow: 1;
 }
 
 .header {
@@ -20,5 +33,7 @@
     text-align: center;
     position: fixed;
     top: 0;
+    left: 0; /* Asegura que el header esté alineado a la izquierda */
     z-index: 1000;
+    box-sizing: border-box; /* Incluye padding en el ancho total */
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CONUNI_CLIESC_GR10")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33100cf2d38e0d7f1b03a568105863fe3886e9e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc5b84733a7a012f1f7f537ab53d62b3fafd12a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CONUNI_CLIESC_GR10")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CONUNI_CLIESC_GR10")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

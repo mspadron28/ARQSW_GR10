@@ -3,9 +3,9 @@
   <services/>
   <clients>
     <client name="CONUNI">
-      <wsdl-url>http://localhost:8080/CONUNI_GR10/CONUNI?wsdl</wsdl-url>
-      <local-wsdl-file>localhost_8080/CONUNI_GR10/CONUNI.wsdl</local-wsdl-file>
-      <package-name forceReplace="true">ec.edu.monster.ws</package-name>
+      <wsdl-url>http://192.168.137.1:8080/CONUNI_GR10/CONUNI?wsdl</wsdl-url>
+      <local-wsdl-file>192.168.137.1_8080/CONUNI_GR10/CONUNI.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">ec.edu.monster</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
         <wsimport-option>
@@ -22,7 +22,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://localhost:8080/CONUNI_GR10/CONUNI?wsdl</wsimport-option-value>
+          <wsimport-option-value>http://192.168.137.1:8080/CONUNI_GR10/CONUNI?wsdl</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>
@@ -34,7 +34,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>package</wsimport-option-name>
-          <wsimport-option-value>ec.edu.monster.ws</wsimport-option-value>
+          <wsimport-option-value>ec.edu.monster</wsimport-option-value>
         </wsimport-option>
       </wsimport-options>
     </client>

@@ -11,38 +11,38 @@ package ec.edu.monster.servicio;
 public class CONUNIService {
 
     public double centimetrosAPulgadas(double centimetros) {
-        ec.edu.monster.ws.CONUNI_Service service = new ec.edu.monster.ws.CONUNI_Service();
-        ec.edu.monster.ws.CONUNI port = service.getCONUNIPort();
+        ec.edu.monster.CONUNI_Service service = new ec.edu.monster.CONUNI_Service();
+        ec.edu.monster.CONUNI port = service.getCONUNIPort();
         return port.centimetrosAPulgadas(centimetros);
     }
 
     public double pulgadasACentimetros(double pulgadas) {
-        ec.edu.monster.ws.CONUNI_Service service = new ec.edu.monster.ws.CONUNI_Service();
-        ec.edu.monster.ws.CONUNI port = service.getCONUNIPort();
+        ec.edu.monster.CONUNI_Service service = new ec.edu.monster.CONUNI_Service();
+        ec.edu.monster.CONUNI port = service.getCONUNIPort();
         return port.pulgadasACentimetros(pulgadas);
     }
 
     public double metrosAPies(double metros) {
-        ec.edu.monster.ws.CONUNI_Service service = new ec.edu.monster.ws.CONUNI_Service();
-        ec.edu.monster.ws.CONUNI port = service.getCONUNIPort();
+        ec.edu.monster.CONUNI_Service service = new ec.edu.monster.CONUNI_Service();
+        ec.edu.monster.CONUNI port = service.getCONUNIPort();
         return port.metrosAPies(metros);
     }
 
     public double piesAMetros(double pies) {
-        ec.edu.monster.ws.CONUNI_Service service = new ec.edu.monster.ws.CONUNI_Service();
-        ec.edu.monster.ws.CONUNI port = service.getCONUNIPort();
+        ec.edu.monster.CONUNI_Service service = new ec.edu.monster.CONUNI_Service();
+        ec.edu.monster.CONUNI port = service.getCONUNIPort();
         return port.piesAMetros(pies);
     }
 
     public double metrosAYardas(double metros) {
-        ec.edu.monster.ws.CONUNI_Service service = new ec.edu.monster.ws.CONUNI_Service();
-        ec.edu.monster.ws.CONUNI port = service.getCONUNIPort();
+        ec.edu.monster.CONUNI_Service service = new ec.edu.monster.CONUNI_Service();
+        ec.edu.monster.CONUNI port = service.getCONUNIPort();
         return port.metrosAYardas(metros);
     }
 
     public double yardasAMetros(double yardas) {
-        ec.edu.monster.ws.CONUNI_Service service = new ec.edu.monster.ws.CONUNI_Service();
-        ec.edu.monster.ws.CONUNI port = service.getCONUNIPort();
+        ec.edu.monster.CONUNI_Service service = new ec.edu.monster.CONUNI_Service();
+        ec.edu.monster.CONUNI port = service.getCONUNIPort();
         return port.yardasAMetros(yardas);
     }
     
