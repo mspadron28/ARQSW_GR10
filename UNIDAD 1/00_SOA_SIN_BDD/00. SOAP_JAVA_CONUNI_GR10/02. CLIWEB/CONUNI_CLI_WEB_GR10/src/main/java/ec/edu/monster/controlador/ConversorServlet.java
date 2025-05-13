@@ -30,9 +30,9 @@ public class ConversorServlet extends HttpServlet {
         request.setAttribute("selectedAccion", accion);
 
         try {
-            double inputValue = Double.parseDouble(valor.trim());
-            double result = 0;
-            String unit = "";
+            // Normalizar el valor: reemplazar coma por punto
+            valor = valor.trim().replace(",", ".");
+            double inputValue = Double.parseDouble(valor);
 
             // Validar que el valor sea no negativo
             if (inputValue < 0) {
@@ -41,35 +41,38 @@ public class ConversorServlet extends HttpServlet {
                 return;
             }
 
+            double result = 0;
+            String resultado = "";
+
             switch (accion) {
                 case "pulgadasACentimetros":
                     result = controlador.pulgadasACentimetros(inputValue);
-                    unit = "centímetros";
+                    resultado = String.format("%.2f in = %.2f cm.", inputValue, result);
                     break;
 
                 case "centimetrosAPulgadas":
                     result = controlador.centimetrosAPulgadas(inputValue);
-                    unit = "pulgadas";
+                    resultado = String.format("%.2f cm = %.2f in.", inputValue, result);
                     break;
 
                 case "metrosAPies":
                     result = controlador.metrosAPies(inputValue);
-                    unit = "pies";
+                    resultado = String.format("%.2f m = %.2f ft.", inputValue, result);
                     break;
 
                 case "piesAMetros":
                     result = controlador.piesAMetros(inputValue);
-                    unit = "metros";
+                    resultado = String.format("%.2f ft = %.2f m.", inputValue, result);
                     break;
 
                 case "metrosAYardas":
                     result = controlador.metrosAYardas(inputValue);
-                    unit = "yardas";
+                    resultado = String.format("%.2f m = %.2f yd.", inputValue, result);
                     break;
 
                 case "yardasAMetros":
                     result = controlador.yardasAMetros(inputValue);
-                    unit = "metros";
+                    resultado = String.format("%.2f yd = %.2f m.", inputValue, result);
                     break;
 
                 default:
@@ -78,10 +81,10 @@ public class ConversorServlet extends HttpServlet {
                     return;
             }
 
-            request.setAttribute("resultado", String.format("%.2f %s", result, unit));
+            request.setAttribute("resultado", resultado);
 
         } catch (NumberFormatException e) {
-            request.setAttribute("error", "Por favor, ingrese un número válido.");
+            request.setAttribute("error", "Por favor, ingrese un número válido (use punto como separador decimal).");
         } catch (Exception e) {
             request.setAttribute("error", "Error al realizar la conversión: " + e.getMessage());
         }

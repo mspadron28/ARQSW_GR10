@@ -129,7 +129,8 @@ fun LoginScreen(modifier: Modifier = Modifier, onLoginSuccess: () -> Unit) {
             label = { Text("Contraseña") },
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 8.dp)
+                .padding(vertical = 8.dp),
+            visualTransformation = androidx.compose.ui.text.input.PasswordVisualTransformation()
         )
 
         Button(

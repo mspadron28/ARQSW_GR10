@@ -151,7 +151,7 @@
                         <option value="yardasAMetros" <%= "yardasAMetros".equals(request.getAttribute("selectedAccion")) ? "selected" : "" %>>Yardas a Metros</option>
                     </select>
                     <label for="valor">Ingresa el valor</label>
-                    <input type="number" step="any" id="valor" name="valor" placeholder="Ingrese valor" required>
+                  <input type="text" id="valor" name="valor" placeholder="Ingrese valor" required>
                     <button type="submit">Convertir</button>
                     <label class="result-label">Resultado</label>
                     <div class="result-container">
@@ -164,4 +164,36 @@
         </div>
     </div>
 </body>
+<script>
+    const valorInput = document.getElementById("valor");
+
+    valorInput.addEventListener("input", function(e) {
+        let value = this.value;
+        // Permitir solo números, un punto o una coma
+        value = value.replace(/[^0-9,.]/g, "");
+
+        // Reemplazar coma por punto para normalizar
+        value = value.replace(",", ".");
+
+        // Asegurar que solo haya un separador decimal
+        const parts = value.split(".");
+        if (parts.length > 2) {
+            value = parts[0] + "." + parts.slice(1).join("");
+        }
+
+        // Actualizar el valor en el input
+        this.value = value;
+    });
+
+    document.querySelector("form").addEventListener("submit", function(e) {
+        let valor = valorInput.value;
+        // Normalizar antes de enviar (por seguridad)
+        valorInput.value = valor.replace(",", ".");
+        // Validar que sea un número válido
+        if (!/^\d*\.?\d*$/.test(valor) || valor === "") {
+            e.preventDefault();
+            alert("Por favor, ingrese un número válido (ej. 200.5)");
+        }
+    });
+</script>
 </html>

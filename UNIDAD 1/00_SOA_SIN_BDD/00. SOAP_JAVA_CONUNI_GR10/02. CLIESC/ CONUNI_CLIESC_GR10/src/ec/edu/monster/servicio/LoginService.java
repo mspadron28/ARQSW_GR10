@@ -11,8 +11,8 @@ package ec.edu.monster.servicio;
 public class LoginService {
 
     public boolean login(java.lang.String usuario, java.lang.String contraseña) {
-        ec.edu.monster.ws.CONUNI_Service service = new ec.edu.monster.ws.CONUNI_Service();
-        ec.edu.monster.ws.CONUNI port = service.getCONUNIPort();
+        ec.edu.monster.CONUNI_Service service = new ec.edu.monster.CONUNI_Service();
+        ec.edu.monster.CONUNI port = service.getCONUNIPort();
         return port.login(usuario, contraseña);
     }
     
