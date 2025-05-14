@@ -31,7 +31,7 @@
                     <option value="metrosAYardas" selected="@(Model.Accion == "metrosAYardas" ? "selected" : null)">Metros a Yardas</option>
                     <option value="yardasAMetros" selected="@(Model.Accion == "yardasAMetros" ? "selected" : null)">Yardas a Metros</option>
                 </select>
-                <label for="Valor">Ingresa el valor (use punto o coma como separador decimal, ej. 200.5)</label>
+         
                 <input type="text" id="Valor" name="Valor" value="@Model.Valor" placeholder="Ingrese valor" required>
                 <button type="submit">Convertir</button>
                 <label class="result-label">Resultado</label>
