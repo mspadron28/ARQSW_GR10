@@ -77,7 +77,7 @@
                             <wsdlOptions>
                                 <!-- WSDL para CONUNI -->
                                 <wsdlOption>
-                                    <wsdl>http://10.40.17.133:8080/CONUNI_GR10/CONUNI?wsdl</wsdl>
+                                    <wsdl>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl>
                                     <extraargs>
                                         <extraarg>-verbose</extraarg>
                                         <extraarg>-p</extraarg>

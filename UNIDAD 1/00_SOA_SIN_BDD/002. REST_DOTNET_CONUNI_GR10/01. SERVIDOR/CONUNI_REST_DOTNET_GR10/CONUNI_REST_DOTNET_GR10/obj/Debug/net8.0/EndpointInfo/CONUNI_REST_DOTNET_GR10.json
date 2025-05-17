@@ -1,0 +1,171 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Conversion API V1",
+    "description": "API for unit conversions",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Conversion/pulgadas-a-centimetros": {
+      "get": {
+        "tags": [
+          "Conversion"
+        ],
+        "parameters": [
+          {
+            "name": "pulgadas",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Conversion/centimetros-a-pulgadas": {
+      "get": {
+        "tags": [
+          "Conversion"
+        ],
+        "parameters": [
+          {
+            "name": "centimetros",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Conversion/metros-a-pies": {
+      "get": {
+        "tags": [
+          "Conversion"
+        ],
+        "parameters": [
+          {
+            "name": "metros",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Conversion/pies-a-metros": {
+      "get": {
+        "tags": [
+          "Conversion"
+        ],
+        "parameters": [
+          {
+            "name": "pies",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Conversion/metros-a-yardas": {
+      "get": {
+        "tags": [
+          "Conversion"
+        ],
+        "parameters": [
+          {
+            "name": "metros",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Conversion/yardas-a-metros": {
+      "get": {
+        "tags": [
+          "Conversion"
+        ],
+        "parameters": [
+          {
+            "name": "yardas",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Conversion/login": {
+      "get": {
+        "tags": [
+          "Conversion"
+        ],
+        "parameters": [
+          {
+            "name": "usuario",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "contraseña",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

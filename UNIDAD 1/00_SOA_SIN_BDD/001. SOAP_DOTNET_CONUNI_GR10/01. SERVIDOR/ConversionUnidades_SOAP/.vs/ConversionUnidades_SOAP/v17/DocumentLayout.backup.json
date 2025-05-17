@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\01. SERVIDOR\\ConversionUnidades_SOAP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{008D3F30-A5AB-49D7-AEED-7755DE95AB47}|ConversionUnidades_SOAP\\ConversionUnidades_SOAP.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\01. servidor\\conversionunidades_soap\\conversionunidades_soap\\espe.edu.ec.monster.test\\conversionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{008D3F30-A5AB-49D7-AEED-7755DE95AB47}|ConversionUnidades_SOAP\\ConversionUnidades_SOAP.csproj|solutionrelative:conversionunidades_soap\\espe.edu.ec.monster.test\\conversionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{008D3F30-A5AB-49D7-AEED-7755DE95AB47}|ConversionUnidades_SOAP\\ConversionUnidades_SOAP.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\01. servidor\\conversionunidades_soap\\conversionunidades_soap\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{008D3F30-A5AB-49D7-AEED-7755DE95AB47}|ConversionUnidades_SOAP\\ConversionUnidades_SOAP.csproj|solutionrelative:conversionunidades_soap\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{008D3F30-A5AB-49D7-AEED-7755DE95AB47}|ConversionUnidades_SOAP\\ConversionUnidades_SOAP.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\01. SERVIDOR\\ConversionUnidades_SOAP\\conversionunidades_soap\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{008D3F30-A5AB-49D7-AEED-7755DE95AB47}|ConversionUnidades_SOAP\\ConversionUnidades_SOAP.csproj|solutionrelative:conversionunidades_soap\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{008D3F30-A5AB-49D7-AEED-7755DE95AB47}|ConversionUnidades_SOAP\\ConversionUnidades_SOAP.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\01. SERVIDOR\\ConversionUnidades_SOAP\\conversionunidades_soap\\espe.edu.ec.monster.test\\conversionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008D3F30-A5AB-49D7-AEED-7755DE95AB47}|ConversionUnidades_SOAP\\ConversionUnidades_SOAP.csproj|solutionrelative:conversionunidades_soap\\espe.edu.ec.monster.test\\conversionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{008D3F30-A5AB-49D7-AEED-7755DE95AB47}|ConversionUnidades_SOAP\\ConversionUnidades_SOAP.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\01. SERVIDOR\\ConversionUnidades_SOAP\\conversionunidades_soap\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,16 +38,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ConversionServiceTests.cs",
               "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\01. SERVIDOR\\ConversionUnidades_SOAP\\ConversionUnidades_SOAP\\espe.edu.ec.monster.test\\ConversionServiceTests.cs",
               "RelativeDocumentMoniker": "ConversionUnidades_SOAP\\espe.edu.ec.monster.test\\ConversionServiceTests.cs",
               "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\01. SERVIDOR\\ConversionUnidades_SOAP\\ConversionUnidades_SOAP\\espe.edu.ec.monster.test\\ConversionServiceTests.cs",
               "RelativeToolTip": "ConversionUnidades_SOAP\\espe.edu.ec.monster.test\\ConversionServiceTests.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAIA7wBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T02:02:39.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T02:02:39.104Z"
             },
             {
               "$type": "Document",
@@ -63,15 +62,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "App.config",
               "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\01. SERVIDOR\\ConversionUnidades_SOAP\\ConversionUnidades_SOAP\\App.config",
               "RelativeDocumentMoniker": "ConversionUnidades_SOAP\\App.config",
               "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\01. SERVIDOR\\ConversionUnidades_SOAP\\ConversionUnidades_SOAP\\App.config",
               "RelativeToolTip": "ConversionUnidades_SOAP\\App.config",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-05-14T01:55:46.615Z"
+              "WhenOpened": "2025-05-14T01:55:46.615Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

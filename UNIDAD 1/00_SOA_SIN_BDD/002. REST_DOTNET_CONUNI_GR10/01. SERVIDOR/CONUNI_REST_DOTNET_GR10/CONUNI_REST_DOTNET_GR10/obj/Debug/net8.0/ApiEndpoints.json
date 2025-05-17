@@ -1,0 +1,119 @@
+[
+  {
+    "ContainingType": "espe.edu.ec.monster.controlador.ConversionController",
+    "Method": "CentimetrosAPulgadas",
+    "RelativePath": "api/Conversion/centimetros-a-pulgadas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "centimetros",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "espe.edu.ec.monster.controlador.ConversionController",
+    "Method": "Login",
+    "RelativePath": "api/Conversion/login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "contrase\u00F1a",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "espe.edu.ec.monster.controlador.ConversionController",
+    "Method": "MetrosAPies",
+    "RelativePath": "api/Conversion/metros-a-pies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "metros",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "espe.edu.ec.monster.controlador.ConversionController",
+    "Method": "MetrosAYardas",
+    "RelativePath": "api/Conversion/metros-a-yardas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "metros",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "espe.edu.ec.monster.controlador.ConversionController",
+    "Method": "PiesAMetros",
+    "RelativePath": "api/Conversion/pies-a-metros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pies",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "espe.edu.ec.monster.controlador.ConversionController",
+    "Method": "PulgadasACentimetros",
+    "RelativePath": "api/Conversion/pulgadas-a-centimetros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pulgadas",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "espe.edu.ec.monster.controlador.ConversionController",
+    "Method": "YardasAMetros",
+    "RelativePath": "api/Conversion/yardas-a-metros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "yardas",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

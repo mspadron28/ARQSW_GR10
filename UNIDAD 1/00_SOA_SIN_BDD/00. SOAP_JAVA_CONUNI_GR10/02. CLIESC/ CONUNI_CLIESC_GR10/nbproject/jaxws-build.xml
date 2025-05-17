@@ -18,8 +18,8 @@
     </target>
     <target name="wsimport-client-CONUNI" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/CONUNI"/>
-        <property name="wsdl-CONUNI" location="xml-resources/web-service-references/CONUNI/wsdl/192.168.137.1_8080/CONUNI_GR10/CONUNI.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CONUNI" destdir="${build.generated.dir}/jax-wsCache/CONUNI" wsdl="${wsdl-CONUNI}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://192.168.137.1:8080/CONUNI_GR10/CONUNI?wsdl" xnocompile="true" xendorsed="true" package="ec.edu.monster">
+        <property name="wsdl-CONUNI" location="xml-resources/web-service-references/CONUNI/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CONUNI" destdir="${build.generated.dir}/jax-wsCache/CONUNI" wsdl="${wsdl-CONUNI}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl" xnocompile="true" xendorsed="true" package="ec.edu.monster">
             <depends file="${wsdl-CONUNI}"/>
             <produces dir="${build.generated.dir}/jax-wsCache/CONUNI"/>
         </wsimport>

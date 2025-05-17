@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "CONUNI", targetNamespace = "http://controlador.monster.edu.ec/", wsdlLocation = "http://192.168.137.1:8080/CONUNI_GR10/CONUNI?wsdl")
+@WebServiceClient(name = "CONUNI", targetNamespace = "http://controlador.monster.edu.ec/", wsdlLocation = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl")
 public class CONUNI_Service
     extends Service
 {
@@ -30,7 +30,7 @@ public class CONUNI_Service
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://192.168.137.1:8080/CONUNI_GR10/CONUNI?wsdl");
+            url = new URL("http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

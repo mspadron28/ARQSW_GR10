@@ -26,6 +26,36 @@ public interface CONUNI {
 
     /**
      * 
+     * @param centimetros
+     * @return
+     *     returns double
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "centimetrosAPulgadas", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.CentimetrosAPulgadas")
+    @ResponseWrapper(localName = "centimetrosAPulgadasResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.CentimetrosAPulgadasResponse")
+    @Action(input = "http://controlador.monster.edu.ec/CONUNI/centimetrosAPulgadasRequest", output = "http://controlador.monster.edu.ec/CONUNI/centimetrosAPulgadasResponse")
+    public double centimetrosAPulgadas(
+        @WebParam(name = "centimetros", targetNamespace = "")
+        double centimetros);
+
+    /**
+     * 
+     * @param pulgadas
+     * @return
+     *     returns double
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "pulgadasACentimetros", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.PulgadasACentimetros")
+    @ResponseWrapper(localName = "pulgadasACentimetrosResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.PulgadasACentimetrosResponse")
+    @Action(input = "http://controlador.monster.edu.ec/CONUNI/pulgadasACentimetrosRequest", output = "http://controlador.monster.edu.ec/CONUNI/pulgadasACentimetrosResponse")
+    public double pulgadasACentimetros(
+        @WebParam(name = "pulgadas", targetNamespace = "")
+        double pulgadas);
+
+    /**
+     * 
      * @param usuario
      * @param contraseña
      * @return
@@ -44,21 +74,6 @@ public interface CONUNI {
 
     /**
      * 
-     * @param yardas
-     * @return
-     *     returns double
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "yardasAMetros", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.YardasAMetros")
-    @ResponseWrapper(localName = "yardasAMetrosResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.YardasAMetrosResponse")
-    @Action(input = "http://controlador.monster.edu.ec/CONUNI/yardasAMetrosRequest", output = "http://controlador.monster.edu.ec/CONUNI/yardasAMetrosResponse")
-    public double yardasAMetros(
-        @WebParam(name = "yardas", targetNamespace = "")
-        double yardas);
-
-    /**
-     * 
      * @param metros
      * @return
      *     returns double
@@ -69,21 +84,6 @@ public interface CONUNI {
     @ResponseWrapper(localName = "metrosAPiesResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.MetrosAPiesResponse")
     @Action(input = "http://controlador.monster.edu.ec/CONUNI/metrosAPiesRequest", output = "http://controlador.monster.edu.ec/CONUNI/metrosAPiesResponse")
     public double metrosAPies(
-        @WebParam(name = "metros", targetNamespace = "")
-        double metros);
-
-    /**
-     * 
-     * @param metros
-     * @return
-     *     returns double
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "metrosAYardas", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.MetrosAYardas")
-    @ResponseWrapper(localName = "metrosAYardasResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.MetrosAYardasResponse")
-    @Action(input = "http://controlador.monster.edu.ec/CONUNI/metrosAYardasRequest", output = "http://controlador.monster.edu.ec/CONUNI/metrosAYardasResponse")
-    public double metrosAYardas(
         @WebParam(name = "metros", targetNamespace = "")
         double metros);
 
@@ -104,32 +104,32 @@ public interface CONUNI {
 
     /**
      * 
-     * @param pulgadas
+     * @param metros
      * @return
      *     returns double
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "pulgadasACentimetros", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.PulgadasACentimetros")
-    @ResponseWrapper(localName = "pulgadasACentimetrosResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.PulgadasACentimetrosResponse")
-    @Action(input = "http://controlador.monster.edu.ec/CONUNI/pulgadasACentimetrosRequest", output = "http://controlador.monster.edu.ec/CONUNI/pulgadasACentimetrosResponse")
-    public double pulgadasACentimetros(
-        @WebParam(name = "pulgadas", targetNamespace = "")
-        double pulgadas);
+    @RequestWrapper(localName = "metrosAYardas", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.MetrosAYardas")
+    @ResponseWrapper(localName = "metrosAYardasResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.MetrosAYardasResponse")
+    @Action(input = "http://controlador.monster.edu.ec/CONUNI/metrosAYardasRequest", output = "http://controlador.monster.edu.ec/CONUNI/metrosAYardasResponse")
+    public double metrosAYardas(
+        @WebParam(name = "metros", targetNamespace = "")
+        double metros);
 
     /**
      * 
-     * @param centimetros
+     * @param yardas
      * @return
      *     returns double
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "centimetrosAPulgadas", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.CentimetrosAPulgadas")
-    @ResponseWrapper(localName = "centimetrosAPulgadasResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.CentimetrosAPulgadasResponse")
-    @Action(input = "http://controlador.monster.edu.ec/CONUNI/centimetrosAPulgadasRequest", output = "http://controlador.monster.edu.ec/CONUNI/centimetrosAPulgadasResponse")
-    public double centimetrosAPulgadas(
-        @WebParam(name = "centimetros", targetNamespace = "")
-        double centimetros);
+    @RequestWrapper(localName = "yardasAMetros", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.YardasAMetros")
+    @ResponseWrapper(localName = "yardasAMetrosResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.YardasAMetrosResponse")
+    @Action(input = "http://controlador.monster.edu.ec/CONUNI/yardasAMetrosRequest", output = "http://controlador.monster.edu.ec/CONUNI/yardasAMetrosResponse")
+    public double yardasAMetros(
+        @WebParam(name = "yardas", targetNamespace = "")
+        double yardas);
 
 }
