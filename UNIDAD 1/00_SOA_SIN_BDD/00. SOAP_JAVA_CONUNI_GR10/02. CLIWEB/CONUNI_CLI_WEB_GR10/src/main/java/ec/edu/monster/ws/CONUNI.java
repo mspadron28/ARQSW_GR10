@@ -16,7 +16,11 @@ import jakarta.xml.ws.ResponseWrapper;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * 2025-05-14T11:47:42.118-05:00
+=======
+ * 2025-05-14T11:27:57.899-05:00
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
  * 2025-05-14T11:27:57.899-05:00
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
@@ -62,6 +66,20 @@ public interface CONUNI {
     );
 
     @WebMethod
+<<<<<<< HEAD
+=======
+    @Action(input = "http://controlador.monster.edu.ec/CONUNI/pulgadasACentimetrosRequest", output = "http://controlador.monster.edu.ec/CONUNI/pulgadasACentimetrosResponse")
+    @RequestWrapper(localName = "pulgadasACentimetros", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.ws.PulgadasACentimetros")
+    @ResponseWrapper(localName = "pulgadasACentimetrosResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.ws.PulgadasACentimetrosResponse")
+    @WebResult(name = "return", targetNamespace = "")
+    public double pulgadasACentimetros(
+
+        @WebParam(name = "pulgadas", targetNamespace = "")
+        double pulgadas
+    );
+
+    @WebMethod
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
     @Action(input = "http://controlador.monster.edu.ec/CONUNI/loginRequest", output = "http://controlador.monster.edu.ec/CONUNI/loginResponse")
     @RequestWrapper(localName = "login", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.ws.Login")
     @ResponseWrapper(localName = "loginResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.ws.LoginResponse")
@@ -75,6 +93,7 @@ public interface CONUNI {
     );
 
     @WebMethod
+<<<<<<< HEAD
     @Action(input = "http://controlador.monster.edu.ec/CONUNI/pulgadasACentimetrosRequest", output = "http://controlador.monster.edu.ec/CONUNI/pulgadasACentimetrosResponse")
     @RequestWrapper(localName = "pulgadasACentimetros", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.ws.PulgadasACentimetros")
     @ResponseWrapper(localName = "pulgadasACentimetrosResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.ws.PulgadasACentimetrosResponse")
@@ -86,6 +105,8 @@ public interface CONUNI {
     );
 
     @WebMethod
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
     @Action(input = "http://controlador.monster.edu.ec/CONUNI/metrosAPiesRequest", output = "http://controlador.monster.edu.ec/CONUNI/metrosAPiesResponse")
     @RequestWrapper(localName = "metrosAPies", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.ws.MetrosAPies")
     @ResponseWrapper(localName = "metrosAPiesResponse", targetNamespace = "http://controlador.monster.edu.ec/", className = "ec.edu.monster.ws.MetrosAPiesResponse")

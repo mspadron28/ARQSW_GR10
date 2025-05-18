@@ -1,7 +1,11 @@
 {
   "ExtendedData": {
     "inputs": [
+<<<<<<< HEAD
       "http://10.40.28.227:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/?wsdl"
+=======
+      "http://10.40.16.210:8733/Design_Time_Addresses/ConversionUnidades_SOAP/Service1/?wsdl"
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
     ],
     "collectionTypes": [
       "System.Array",

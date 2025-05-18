@@ -23,8 +23,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <property name="wsdl-CONUNI" location="xml-resources/web-service-references/CONUNI/wsdl/10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl"/>
         <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CONUNI" destdir="${build.generated.dir}/jax-wsCache/CONUNI" wsdl="${wsdl-CONUNI}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl" xnocompile="true" xendorsed="true" package="ec.edu.monster">
+=======
+        <property name="wsdl-CONUNI" location="xml-resources/web-service-references/CONUNI/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CONUNI" destdir="${build.generated.dir}/jax-wsCache/CONUNI" wsdl="${wsdl-CONUNI}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl" xnocompile="true" xendorsed="true" package="ec.edu.monster">
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
         <property name="wsdl-CONUNI" location="xml-resources/web-service-references/CONUNI/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl"/>
         <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CONUNI" destdir="${build.generated.dir}/jax-wsCache/CONUNI" wsdl="${wsdl-CONUNI}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl" xnocompile="true" xendorsed="true" package="ec.edu.monster">

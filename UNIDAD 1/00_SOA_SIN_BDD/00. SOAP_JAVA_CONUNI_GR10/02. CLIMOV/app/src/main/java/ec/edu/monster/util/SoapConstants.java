@@ -7,7 +7,11 @@ public class SoapConstants {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static final String URL = "http://10.40.28.227:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
+=======
+    public static final String URL = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
     public static final String URL = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b

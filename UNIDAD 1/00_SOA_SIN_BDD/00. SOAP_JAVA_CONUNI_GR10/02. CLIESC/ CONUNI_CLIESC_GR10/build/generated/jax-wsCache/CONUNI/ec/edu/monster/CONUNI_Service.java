@@ -22,7 +22,11 @@ import javax.xml.ws.WebServiceFeature;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @WebServiceClient(name = "CONUNI", targetNamespace = "http://controlador.monster.edu.ec/", wsdlLocation = "http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl")
+=======
+@WebServiceClient(name = "CONUNI", targetNamespace = "http://controlador.monster.edu.ec/", wsdlLocation = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl")
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 @WebServiceClient(name = "CONUNI", targetNamespace = "http://controlador.monster.edu.ec/", wsdlLocation = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl")
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
@@ -55,7 +59,11 @@ public class CONUNI_Service
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             url = new URL("http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl");
+=======
+            url = new URL("http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl");
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
             url = new URL("http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl");
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b

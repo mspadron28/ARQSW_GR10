@@ -7,8 +7,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <wsdl-url>http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl</wsdl-url>
       <local-wsdl-file>10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl</local-wsdl-file>
+=======
+      <wsdl-url>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl-url>
+      <local-wsdl-file>10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl</local-wsdl-file>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
       <wsdl-url>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl-url>
       <local-wsdl-file>10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl</local-wsdl-file>
@@ -46,7 +51,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           <wsimport-option-value>http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl</wsimport-option-value>
+=======
+          <wsimport-option-value>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsimport-option-value>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
           <wsimport-option-value>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsimport-option-value>
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b

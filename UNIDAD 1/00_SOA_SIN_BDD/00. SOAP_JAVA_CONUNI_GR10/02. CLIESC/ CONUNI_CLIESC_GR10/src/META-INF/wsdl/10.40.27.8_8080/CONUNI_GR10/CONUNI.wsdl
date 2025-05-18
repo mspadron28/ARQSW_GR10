@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<<< HEAD:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/xml-resources/web-service-references/CONUNI/wsdl/10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
@@ -29,6 +30,9 @@
 <xsd:import namespace="http://controlador.monster.edu.ec/" schemaLocation="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?xsd=1"/>
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 >>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/src/META-INF/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl
+=======
+<xsd:import namespace="http://controlador.monster.edu.ec/" schemaLocation="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?xsd=1"/>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 <xsd:import namespace="http://controlador.monster.edu.ec/" schemaLocation="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?xsd=1"/>
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
@@ -43,6 +47,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 </message>
 <<<<<<<< HEAD:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/xml-resources/web-service-references/CONUNI/wsdl/10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl
 <message name="loginResponse">
@@ -475,6 +480,9 @@
 =======
 </message>
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+</message>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 <message name="centimetrosAPulgadasResponse">
 <part name="parameters" element="tns:centimetrosAPulgadasResponse"/>
 </message>
@@ -549,8 +557,11 @@
 <operation name="centimetrosAPulgadas">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 >>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/src/META-INF/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
@@ -563,6 +574,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -595,6 +607,8 @@
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 <operation name="pulgadasACentimetros">
 <soap:operation soapAction=""/>
 <input>
@@ -656,12 +670,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<<< HEAD:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/xml-resources/web-service-references/CONUNI/wsdl/10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl
 >>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/src/META-INF/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl
 ========
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 >>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/src/META-INF/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======

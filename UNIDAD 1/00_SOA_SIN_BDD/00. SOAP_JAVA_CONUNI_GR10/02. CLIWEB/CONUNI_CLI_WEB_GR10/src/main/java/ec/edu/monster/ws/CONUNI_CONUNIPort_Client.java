@@ -26,7 +26,11 @@ import jakarta.xml.ws.ResponseWrapper;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * 2025-05-14T11:47:42.006-05:00
+=======
+ * 2025-05-14T11:27:57.808-05:00
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
  * 2025-05-14T11:27:57.808-05:00
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
@@ -87,6 +91,17 @@ public final class CONUNI_CONUNIPort_Client {
 
         }
         {
+<<<<<<< HEAD
+=======
+        System.out.println("Invoking pulgadasACentimetros...");
+        double _pulgadasACentimetros_pulgadas = 0.0;
+        double _pulgadasACentimetros__return = port.pulgadasACentimetros(_pulgadasACentimetros_pulgadas);
+        System.out.println("pulgadasACentimetros.result=" + _pulgadasACentimetros__return);
+
+
+        }
+        {
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
         System.out.println("Invoking login...");
         java.lang.String _login_usuario = "";
         java.lang.String _login_contraseña = "";
@@ -96,6 +111,7 @@ public final class CONUNI_CONUNIPort_Client {
 
         }
         {
+<<<<<<< HEAD
         System.out.println("Invoking pulgadasACentimetros...");
         double _pulgadasACentimetros_pulgadas = 0.0;
         double _pulgadasACentimetros__return = port.pulgadasACentimetros(_pulgadasACentimetros_pulgadas);
@@ -104,6 +120,8 @@ public final class CONUNI_CONUNIPort_Client {
 
         }
         {
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
         System.out.println("Invoking metrosAPies...");
         double _metrosAPies_metros = 0.0;
         double _metrosAPies__return = port.metrosAPies(_metrosAPies_metros);

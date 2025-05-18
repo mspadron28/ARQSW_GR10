@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_next.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- ImageView para mostrar el logo -->
+    <ImageView
+        android:layout_width="177dp"
+        android:layout_height="146dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/your_logo" />
+
+    <!-- Botones con estilo -->
+    <Button
+        android:id="@+id/buttonCentimetersToFeet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Centímetros a Pies"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonFeetToCentimeters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pies a Centímetros"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonMetersToYards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Metros a Yardas"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonYardsToMeters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yardas a Metros"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonInchesToCentimeters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pulgadas a Centímetros"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonCentimetersToInches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Centímetros a Pulgadas"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

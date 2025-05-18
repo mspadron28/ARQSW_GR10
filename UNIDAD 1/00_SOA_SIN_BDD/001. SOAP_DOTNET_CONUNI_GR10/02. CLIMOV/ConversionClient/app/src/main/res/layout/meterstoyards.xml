@@ -1,0 +1,29 @@
+<!-- meterstoyards.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextMeters"
+        android:layout_width="378dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Ingrese el valor"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:layout_below="@id/editTextMeters"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonConvert"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

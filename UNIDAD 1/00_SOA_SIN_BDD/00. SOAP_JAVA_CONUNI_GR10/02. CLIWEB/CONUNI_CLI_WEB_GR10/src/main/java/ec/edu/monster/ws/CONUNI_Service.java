@@ -15,7 +15,11 @@ import jakarta.xml.ws.Service;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * 2025-05-14T11:47:42.133-05:00
+=======
+ * 2025-05-14T11:27:57.912-05:00
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
  * 2025-05-14T11:27:57.912-05:00
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
@@ -40,7 +44,11 @@ import jakarta.xml.ws.Service;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   wsdlLocation = "http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl",
+=======
+                  wsdlLocation = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl",
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
                   wsdlLocation = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl",
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
@@ -71,17 +79,21 @@ public class CONUNI_Service extends Service {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             url = new URL("http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl");
         } catch (MalformedURLException e) {
             java.util.logging.Logger.getLogger(CONUNI_Service.class.getName())
                 .log(java.util.logging.Level.INFO,
                      "Can not initialize the default wsdl from {0}", "http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl");
 =======
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
             url = new URL("http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl");
         } catch (MalformedURLException e) {
             java.util.logging.Logger.getLogger(CONUNI_Service.class.getName())
                 .log(java.util.logging.Level.INFO,
                      "Can not initialize the default wsdl from {0}", "http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl");
+<<<<<<< HEAD
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
             url = new URL("http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl");
@@ -110,6 +122,8 @@ public class CONUNI_Service extends Service {
             java.util.logging.Logger.getLogger(CONUNI_Service.class.getName())
                 .log(java.util.logging.Level.INFO,
                      "Can not initialize the default wsdl from {0}", "http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl");
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
         }
         WSDL_LOCATION = url;

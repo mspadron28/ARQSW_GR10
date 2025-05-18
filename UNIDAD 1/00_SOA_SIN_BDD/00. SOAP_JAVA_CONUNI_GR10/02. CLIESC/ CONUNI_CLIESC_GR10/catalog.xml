@@ -9,8 +9,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <system systemId="http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl" uri="xml-resources/web-service-references/CONUNI/wsdl/10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl"/>
     <system systemId="http://10.40.28.227:8080/CONUNI_GR10/CONUNI?xsd=1" uri="xml-resources/web-service-references/CONUNI/wsdl/10.40.28.227_8080/CONUNI_GR10/CONUNI.xsd_1.xsd"/>
+=======
+    <system systemId="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl" uri="xml-resources/web-service-references/CONUNI/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl"/>
+    <system systemId="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?xsd=1" uri="xml-resources/web-service-references/CONUNI/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.xsd_1.xsd"/>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
     <system systemId="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl" uri="xml-resources/web-service-references/CONUNI/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl"/>
     <system systemId="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?xsd=1" uri="xml-resources/web-service-references/CONUNI/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.xsd_1.xsd"/>

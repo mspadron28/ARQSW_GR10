@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b91a5016-6534-4a14-aee5-12a4fbb4d514" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../01. SERVIDOR/ConversionUnidades_SOAP/.vs/ConversionUnidades_SOAP/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../01. SERVIDOR/ConversionUnidades_SOAP/.vs/ConversionUnidades_SOAP/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01. SERVIDOR/ConversionUnidades_SOAP/.vs/ConversionUnidades_SOAP/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../01. SERVIDOR/ConversionUnidades_SOAP/.vs/ConversionUnidades_SOAP/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/CONUNI_CLICON_GR10/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/CONUNI_CLICON_GR10/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/CONUNI_CLICON_GR10/FileContentIndex/6dc82491-533c-420f-9eeb-847ab6f4436c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/CONUNI_CLICON_GR10/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/CONUNI_CLICON_GR10/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/CONUNI_CLICON_GR10/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/CONUNI_CLICON_GR10/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/CONUNI_CLICON_GR10/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/CONUNI_CLICON_GR10/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/CONUNI_CLICON_GR10/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/CONUNI_CLICON_GR10/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/ProjectEvaluation/conuni_clicon_gr10.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/ProjectEvaluation/conuni_clicon_gr10.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/ProjectEvaluation/conuni_clicon_gr10.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/ProjectEvaluation/conuni_clicon_gr10.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/ProjectEvaluation/conuni_clicon_gr10.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/.vs/ProjectEvaluation/conuni_clicon_gr10.strings.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/bin/Debug/net8.0/CONUNI_CLICON_GR10.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/bin/Debug/net8.0/CONUNI_CLICON_GR10.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/bin/Debug/net8.0/CONUNI_CLICON_GR10.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/bin/Debug/net8.0/CONUNI_CLICON_GR10.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/bin/Debug/net8.0/CONUNI_CLICON_GR10.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/bin/Debug/net8.0/CONUNI_CLICON_GR10.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/CONUNI_CLICON_GR10.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/CONUNI_CLICON_GR10.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/CONUNI_CLICON_GR10.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/CONUNI_CLICON_GR10.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/CONUNI_CLICON_GR10.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/CONUNI_CLICON_GR10.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/CONUNI_CLICON_GR10.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/CONUNI_CLICON_GR10.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/CONUNI_CLICON_GR10.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/CONUNI_CLICON_GR10.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/ref/CONUNI_CLICON_GR10.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/ref/CONUNI_CLICON_GR10.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/refint/CONUNI_CLICON_GR10.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLICON/CONUNI_CLICON_GR10/CONUNI_CLICON_GR10/obj/Debug/net8.0/refint/CONUNI_CLICON_GR10.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/FileContentIndex/3b8b9448-ea9d-4f15-abd6-9582edf57025.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/FileContentIndex/44109da0-4fb3-4580-9cbd-e7b326d9dc77.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/FileContentIndex/4cefe928-6755-4442-a33b-a0472061fb16.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/FileContentIndex/d8a95bcf-6913-406c-94bf-f0d207e9c883.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/FileContentIndex/e3888047-9b27-4dbf-9797-c9f87d03d32c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/CONUNI_CLIWEB_GR10/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/ProjectEvaluation/conuni_cliweb_gr10.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/ProjectEvaluation/conuni_cliweb_gr10.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/ProjectEvaluation/conuni_cliweb_gr10.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/ProjectEvaluation/conuni_cliweb_gr10.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/ProjectEvaluation/conuni_cliweb_gr10.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/.vs/ProjectEvaluation/conuni_cliweb_gr10.strings.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/bin/Debug/net8.0/CONUNI_CLIWEB_GR10.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/bin/Debug/net8.0/CONUNI_CLIWEB_GR10.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/bin/Debug/net8.0/CONUNI_CLIWEB_GR10.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/bin/Debug/net8.0/CONUNI_CLIWEB_GR10.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/bin/Debug/net8.0/CONUNI_CLIWEB_GR10.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/bin/Debug/net8.0/CONUNI_CLIWEB_GR10.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/bin/Debug/net8.0/CONUNI_CLIWEB_GR10.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/bin/Debug/net8.0/CONUNI_CLIWEB_GR10.staticwebassets.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/bin/Debug/net8.0/CONUNI_CLIWEB_GR10.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/bin/Debug/net8.0/CONUNI_CLIWEB_GR10.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/CONUNI_CLIWEB_GR10.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/CONUNI_CLIWEB_GR10.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/CONUNI_CLIWEB_GR10.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/CONUNI_CLIWEB_GR10.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/CONUNI_CLIWEB_GR10.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/ref/CONUNI_CLIWEB_GR10.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/ref/CONUNI_CLIWEB_GR10.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/refint/CONUNI_CLIWEB_GR10.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/refint/CONUNI_CLIWEB_GR10.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets/msbuild.CONUNI_CLIWEB_GR10.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets/msbuild.CONUNI_CLIWEB_GR10.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets/msbuild.CONUNI_CLIWEB_GR10.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/Debug/net8.0/staticwebassets/msbuild.CONUNI_CLIWEB_GR10.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../02. CLIWEB/CONUNI_CLIWEB_GR10/CONUNI_CLIWEB_GR10/obj/project.nuget.cache" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\Mateo\.android\avd\Medium_Phone.avd)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2wbyKoaIpypiMzRBKEFanggYnUK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Arquitectura/ARQSW_GR10/UNIDAD 1/00_SOA_SIN_BDD/001. SOAP_DOTNET_CONUNI_GR10/02. CLIMOV/02. CLIMOV",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="ConversionClient.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b91a5016-6534-4a14-aee5-12a4fbb4d514" name="Changes" comment="" />
+      <created>1746324517140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746324517140</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="com.example.conversionclient">
+          <value>
+            <CheckInfo lastCheckTimestamp="1746673444788" />
+          </value>
+        </entry>
+        <entry key="com.example.conversionclient.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1746673444790" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

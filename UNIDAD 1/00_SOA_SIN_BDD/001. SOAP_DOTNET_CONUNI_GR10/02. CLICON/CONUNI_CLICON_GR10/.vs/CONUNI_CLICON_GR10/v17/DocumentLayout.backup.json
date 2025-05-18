@@ -22,7 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 2,
+=======
+          "SelectedChildIndex": 1,
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
           "Children": [
             {
               "$type": "Bookmark",

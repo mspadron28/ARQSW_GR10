@@ -79,6 +79,7 @@ public interface CONUNI {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param pulgadas
 =======
 =======
@@ -87,6 +88,8 @@ public interface CONUNI {
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
      * @param metros
      * @return
      *     returns double
@@ -121,6 +124,9 @@ public interface CONUNI {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
@@ -155,6 +161,7 @@ public interface CONUNI {
         @WebParam(name = "yardas", targetNamespace = "")
         double yardas);
 
+<<<<<<< HEAD
     /**
      * 
      * @param yardas
@@ -234,5 +241,7 @@ public interface CONUNI {
         @WebParam(name = "yardas", targetNamespace = "")
         double yardas);
 
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 }

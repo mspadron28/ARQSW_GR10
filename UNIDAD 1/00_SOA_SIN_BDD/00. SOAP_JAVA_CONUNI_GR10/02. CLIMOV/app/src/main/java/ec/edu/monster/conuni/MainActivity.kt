@@ -55,7 +55,11 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     topBar = {
                         TopAppBar(
+<<<<<<< HEAD
                             title = { Text("Inicio de Sesión Java", color = Color.White, fontWeight = FontWeight.Bold) },
+=======
+                            title = { Text("Inicio de Sesión", color = Color.White, fontWeight = FontWeight.Bold) },
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
                             colors = TopAppBarDefaults.topAppBarColors(
                                 containerColor = Color(0xFF46535D)
                             )

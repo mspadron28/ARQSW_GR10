@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLICON/CONUNI_CLICON_GR10/src/META-INF/wsdl/10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl
 <xsd:import namespace="http://controlador.monster.edu.ec/" schemaLocation="http://10.40.28.227:8080/CONUNI_GR10/CONUNI?xsd=1"/>
 ========
@@ -23,6 +24,9 @@
 ========
 <xsd:import namespace="http://controlador.monster.edu.ec/" schemaLocation="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?xsd=1"/>
 >>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/build/classes/META-INF/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+<xsd:import namespace="http://controlador.monster.edu.ec/" schemaLocation="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?xsd=1"/>
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 <xsd:import namespace="http://controlador.monster.edu.ec/" schemaLocation="http://10.40.27.8:8080/CONUNI_GR10/CONUNI?xsd=1"/>
@@ -54,6 +58,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLICON/CONUNI_CLICON_GR10/src/META-INF/wsdl/10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl
 <message name="pulgadasACentimetros">
 <part name="parameters" element="tns:pulgadasACentimetros"/>
@@ -73,6 +78,8 @@
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 <message name="metrosAPies">
 <part name="parameters" element="tns:metrosAPies"/>
 </message>
@@ -81,6 +88,7 @@
 </message>
 <message name="piesAMetros">
 <part name="parameters" element="tns:piesAMetros"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -136,10 +144,13 @@
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 </message>
 <message name="piesAMetrosResponse">
 <part name="parameters" element="tns:piesAMetrosResponse"/>
 </message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -152,6 +163,8 @@
 ========
 >>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLICON/CONUNI_CLICON_GR10/src/META-INF/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl
 ========
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
@@ -172,9 +185,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/build/classes/META-INF/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
@@ -197,6 +213,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLICON/CONUNI_CLICON_GR10/src/META-INF/wsdl/10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl
 =======
 <<<<<<<< HEAD:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/build/classes/META-INF/wsdl/10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl
@@ -217,6 +234,8 @@
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 <operation name="metrosAPies">
 <input wsam:Action="http://controlador.monster.edu.ec/CONUNI/metrosAPiesRequest" message="tns:metrosAPies"/>
 <output wsam:Action="http://controlador.monster.edu.ec/CONUNI/metrosAPiesResponse" message="tns:metrosAPiesResponse"/>
@@ -224,6 +243,7 @@
 <operation name="piesAMetros">
 <input wsam:Action="http://controlador.monster.edu.ec/CONUNI/piesAMetrosRequest" message="tns:piesAMetros"/>
 <output wsam:Action="http://controlador.monster.edu.ec/CONUNI/piesAMetrosResponse" message="tns:piesAMetrosResponse"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -261,11 +281,14 @@
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 </operation>
 <operation name="metrosAYardas">
 <input wsam:Action="http://controlador.monster.edu.ec/CONUNI/metrosAYardasRequest" message="tns:metrosAYardas"/>
 <output wsam:Action="http://controlador.monster.edu.ec/CONUNI/metrosAYardasResponse" message="tns:metrosAYardasResponse"/>
 </operation>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -289,6 +312,8 @@
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 <operation name="yardasAMetros">
 <input wsam:Action="http://controlador.monster.edu.ec/CONUNI/yardasAMetrosRequest" message="tns:yardasAMetros"/>
 <output wsam:Action="http://controlador.monster.edu.ec/CONUNI/yardasAMetrosResponse" message="tns:yardasAMetrosResponse"/>
@@ -296,9 +321,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/build/classes/META-INF/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
@@ -338,6 +366,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLICON/CONUNI_CLICON_GR10/src/META-INF/wsdl/10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl
 <operation name="pulgadasACentimetros">
 ========
@@ -355,6 +384,8 @@
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 <operation name="metrosAPies">
 <soap:operation soapAction=""/>
 <input>
@@ -365,6 +396,7 @@
 </output>
 </operation>
 <operation name="piesAMetros">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -415,6 +447,8 @@
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -436,6 +470,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <operation name="piesAMetros">
 =======
 <operation name="yardasAMetros">
@@ -446,6 +481,9 @@
 ========
 <operation name="yardasAMetros">
 >>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/build/classes/META-INF/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+<operation name="yardasAMetros">
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 <operation name="yardasAMetros">
@@ -464,6 +502,7 @@
 </binding>
 <service name="CONUNI">
 <port name="CONUNIPort" binding="tns:CONUNIPortBinding">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -487,6 +526,9 @@
 ========
 <soap:address location="http://10.40.27.8:8080/CONUNI_GR10/CONUNI"/>
 >>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b:UNIDAD 1/00_SOA_SIN_BDD/00. SOAP_JAVA_CONUNI_GR10/02. CLIESC/ CONUNI_CLIESC_GR10/build/classes/META-INF/wsdl/10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+<soap:address location="http://10.40.27.8:8080/CONUNI_GR10/CONUNI"/>
 >>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
 =======
 <soap:address location="http://10.40.27.8:8080/CONUNI_GR10/CONUNI"/>

@@ -1,0 +1,192 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.conversionclient"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permiso para acceder a Internet -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:6:5-67
+12-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:6:22-64
+13    <!-- Permiso para acceder al estado de la red -->
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:8:5-79
+14-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:8:22-76
+15
+16    <permission
+16-->[androidx.core:core:1.13.1] C:\Users\Mateo\.gradle\caches\transforms-4\30022ea1216467d72ebb088fa5890b87\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+17        android:name="com.example.conversionclient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.13.1] C:\Users\Mateo\.gradle\caches\transforms-4\30022ea1216467d72ebb088fa5890b87\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.13.1] C:\Users\Mateo\.gradle\caches\transforms-4\30022ea1216467d72ebb088fa5890b87\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.example.conversionclient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.13.1] C:\Users\Mateo\.gradle\caches\transforms-4\30022ea1216467d72ebb088fa5890b87\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.13.1] C:\Users\Mateo\.gradle\caches\transforms-4\30022ea1216467d72ebb088fa5890b87\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:10:5-49:19
+23        android:allowBackup="true"
+23-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:11:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.13.1] C:\Users\Mateo\.gradle\caches\transforms-4\30022ea1216467d72ebb088fa5890b87\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:18:9-65
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:19:9-54
+29        android:icon="@mipmap/ic_launcher"
+29-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:12:9-43
+30        android:label="@string/app_name"
+30-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:13:9-41
+31        android:networkSecurityConfig="@xml/network_security_config"
+31-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:17:9-69
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:14:9-54
+33        android:supportsRtl="true"
+33-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:15:9-35
+34        android:testOnly="true"
+35        android:theme="@style/Theme.ConversionClient" >
+35-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:16:9-54
+36
+37        <!-- Actividad principal -->
+38        <activity
+38-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:22:9-31:20
+39            android:name="com.example.conversionclient.MainActivity"
+39-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:23:13-41
+40            android:exported="true"
+40-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:24:13-36
+41            android:label="@string/app_name"
+41-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:25:13-45
+42            android:theme="@style/Theme.ConversionClient" >
+42-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:26:13-58
+43            <intent-filter>
+43-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:27:13-30:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:28:17-69
+44-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:28:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:29:17-77
+46-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:29:27-74
+47            </intent-filter>
+48        </activity>
+49
+50        <!-- Actividad siguiente -->
+51        <activity
+51-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:34:9-38:61
+52            android:name="com.example.conversionclient.NextActivity"
+52-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:35:13-41
+53            android:exported="false"
+53-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:36:13-37
+54            android:label="@string/title_activity_next"
+54-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:37:13-56
+55            android:theme="@style/Theme.ConversionClient" />
+55-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:38:13-58
+56
+57        <!-- Aquí puedes agregar más actividades, servicios, receptores, etc. según sea necesario -->
+58
+59        <activity android:name="com.example.conversionclient.CentimetersToFeet" />
+59-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:42:9-54
+59-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:42:19-52
+60        <activity android:name="com.example.conversionclient.FeetToCentimeters" />
+60-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:43:9-54
+60-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:43:19-52
+61        <activity android:name="com.example.conversionclient.MetersToYards" />
+61-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:44:9-50
+61-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:44:19-48
+62        <activity android:name="com.example.conversionclient.YardsToMeters" />
+62-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:45:9-50
+62-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:45:19-48
+63        <activity android:name="com.example.conversionclient.InchesToCentimeters" />
+63-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:46:9-56
+63-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:46:19-54
+64        <activity android:name="com.example.conversionclient.CentimetersToInches" />
+64-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:47:9-56
+64-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\05. CLIENTE MOVIL\ConversionClient\app\src\main\AndroidManifest.xml:47:19-54
+65        <activity
+65-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Mateo\.gradle\caches\transforms-4\970e826b709dda123ccc379d9082dd01\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+66            android:name="androidx.compose.ui.tooling.PreviewActivity"
+66-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Mateo\.gradle\caches\transforms-4\970e826b709dda123ccc379d9082dd01\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+67            android:exported="true" />
+67-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Mateo\.gradle\caches\transforms-4\970e826b709dda123ccc379d9082dd01\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+68        <activity
+68-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\Mateo\.gradle\caches\transforms-4\49545b22a26281a3118aa125c2e1f827\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:23:9-25:39
+69            android:name="androidx.activity.ComponentActivity"
+69-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\Mateo\.gradle\caches\transforms-4\49545b22a26281a3118aa125c2e1f827\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:24:13-63
+70            android:exported="true" />
+70-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\Mateo\.gradle\caches\transforms-4\49545b22a26281a3118aa125c2e1f827\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:25:13-36
+71
+72        <provider
+72-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\transforms-4\c9a0189493c858bb4c45180c599d3fc8\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+73            android:name="androidx.startup.InitializationProvider"
+73-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\transforms-4\c9a0189493c858bb4c45180c599d3fc8\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+74            android:authorities="com.example.conversionclient.androidx-startup"
+74-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\transforms-4\c9a0189493c858bb4c45180c599d3fc8\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+75            android:exported="false" >
+75-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\transforms-4\c9a0189493c858bb4c45180c599d3fc8\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+76            <meta-data
+76-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\transforms-4\c9a0189493c858bb4c45180c599d3fc8\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+77-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\transforms-4\c9a0189493c858bb4c45180c599d3fc8\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+78                android:value="androidx.startup" />
+78-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\transforms-4\c9a0189493c858bb4c45180c599d3fc8\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+79            <meta-data
+79-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Mateo\.gradle\caches\transforms-4\61b9b5b90e6b524628bc736c570e2444\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:29:13-31:52
+80                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+80-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Mateo\.gradle\caches\transforms-4\61b9b5b90e6b524628bc736c570e2444\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:30:17-78
+81                android:value="androidx.startup" />
+81-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Mateo\.gradle\caches\transforms-4\61b9b5b90e6b524628bc736c570e2444\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:31:17-49
+82            <meta-data
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+83                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+84                android:value="androidx.startup" />
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+85        </provider>
+86
+87        <receiver
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+88            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+89            android:directBootAware="false"
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+90            android:enabled="true"
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+91            android:exported="true"
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+92            android:permission="android.permission.DUMP" >
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+94                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+97                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+98            </intent-filter>
+99            <intent-filter>
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+100                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+101            </intent-filter>
+102            <intent-filter>
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+103                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mateo\.gradle\caches\transforms-4\68dcaf6113ad5bcca4c749cc5427b5b5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+104            </intent-filter>
+105        </receiver>
+106    </application>
+107
+108</manifest>
