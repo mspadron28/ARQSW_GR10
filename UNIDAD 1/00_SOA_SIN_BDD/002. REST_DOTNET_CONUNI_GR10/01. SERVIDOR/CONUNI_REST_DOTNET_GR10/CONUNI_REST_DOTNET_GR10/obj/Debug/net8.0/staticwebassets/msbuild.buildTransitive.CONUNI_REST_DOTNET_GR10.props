@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CONUNI_REST_DOTNET_GR10.props" />
+</Project>

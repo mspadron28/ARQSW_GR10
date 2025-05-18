@@ -1,0 +1,127 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ec.edu.monster</groupId>
+    <artifactId>CONUNI_CLI_WEB_GR10</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+    <name>CONUNI_CLI_WEB_GR10-1.0-SNAPSHOT</name>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jakartaee>10.0.0</jakartaee>
+        <cxf.version>4.0.3</cxf.version> 
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-api</artifactId>
+            <version>${jakartaee}</version>
+            <scope>provided</scope>
+        </dependency>
+         <!-- JAX-WS API para Jakarta EE -->
+        <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <!-- Implementación de JAX-WS (Metro) -->
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-rt</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <!-- Dependencias de Apache CXF -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxws</artifactId>
+            <version>${cxf.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+            <version>${cxf.version}</version>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <finalName>CONUNI_CLI_WEB_GR10</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                 <configuration>
+                    <source>17</source> <!-- Actualizado a Java 17 para consistencia con el ejemplo -->
+                    <target>17</target>
+                </configuration>
+            </plugin>
+           <!-- Plugin para empaquetar el WAR -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+            </plugin>
+            <!-- Plugin para generar clases a partir del WSDL -->
+            <plugin>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-codegen-plugin</artifactId>
+                <version>${cxf.version}</version>
+                <executions>
+                    <execution>
+                        <id>generate-sources</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <sourceRoot>${project.basedir}/src/main/java</sourceRoot>
+                            <wsdlOptions>
+                                <!-- WSDL para CONUNI -->
+                                <wsdlOption>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                    <wsdl>http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl</wsdl>
+=======
+                                    <wsdl>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+                                    <wsdl>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+                                    <wsdl>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+                                    <wsdl>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+                                    <wsdl>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+                                    <extraargs>
+                                        <extraarg>-verbose</extraarg>
+                                        <extraarg>-p</extraarg>
+                                        <extraarg>ec.edu.monster.ws</extraarg>
+                                        <extraarg>-client</extraarg> <!-- Genera solo el cliente -->
+                                    </extraargs>
+                                </wsdlOption>
+                            </wsdlOptions>
+                        </configuration>
+                        <goals>
+                            <goal>wsdl2java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <!-- Agregar transporte HTTP como dependencia del plugin -->
+                    <dependency>
+                        <groupId>org.apache.cxf</groupId>
+                        <artifactId>cxf-rt-transports-http</artifactId>
+                        <version>${cxf.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            
+        </plugins>
+    </build>
+</project>

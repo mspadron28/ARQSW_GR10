@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "IJRnUYguhsPDtDLnDVDmxuArF2YPvzjdOwIJqK4f1Gs=",
+  "Source": "CONUNI_REST_DOTNET_GR10",
+  "BasePath": "_content/CONUNI_REST_DOTNET_GR10",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

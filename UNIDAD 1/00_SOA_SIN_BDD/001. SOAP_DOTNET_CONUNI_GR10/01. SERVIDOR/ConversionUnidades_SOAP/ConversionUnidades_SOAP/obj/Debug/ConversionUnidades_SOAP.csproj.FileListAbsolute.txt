@@ -1,0 +1,43 @@
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll.config
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.pdb
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.AssemblyReference.cache
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.CoreCompileInputs.cache
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.dll
+C:\Users\pauls\OneDrive\Escritorio\ConversionUnidades_SOAP_DOTNET\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.pdb
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll.config
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.pdb
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.AssemblyReference.cache
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.CoreCompileInputs.cache
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.dll
+D:\SOAP_SIN_BDD_DOTNET_CLIENTES_GRUPO_4\01. SERVICIO\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.pdb
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll.config
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.pdb
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.AssemblyReference.cache
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.CoreCompileInputs.cache
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.pdb
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\es\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll.config
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\ConversionUnidades_SOAP.pdb
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.AssemblyReference.cache
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.csproj.CoreCompileInputs.cache
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\Conversi.B70723F3.Up2Date
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.dll
+D:\Arquitectura\ARQSW_GR10\UNIDAD 1\00_SOA_SIN_BDD\001. SOAP_DOTNET_CONUNI_GR10\01. SERVIDOR\ConversionUnidades_SOAP\ConversionUnidades_SOAP\obj\Debug\ConversionUnidades_SOAP.pdb

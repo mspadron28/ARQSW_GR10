@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\connected services\\conversionservicereference\\connectedservice.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\connected services\\conversionservicereference\\connectedservice.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\connected services\\conversionservicereference\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\connected services\\conversionservicereference\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\conversionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\conversionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliesc\\conuni_cliesc_gr10\\conuni_cliesc_gr10\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E47FB8-013C-4726-B434-FE28CF887964}|CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10.csproj|solutionrelative:conuni_cliesc_gr10\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConnectedService.json",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Connected Services\\ConversionServiceReference\\ConnectedService.json",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\Connected Services\\ConversionServiceReference\\ConnectedService.json",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Connected Services\\ConversionServiceReference\\ConnectedService.json",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\Connected Services\\ConversionServiceReference\\ConnectedService.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-16T21:33:22.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reference.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Connected Services\\ConversionServiceReference\\Reference.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\Connected Services\\ConversionServiceReference\\Reference.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Connected Services\\ConversionServiceReference\\Reference.cs",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\Connected Services\\ConversionServiceReference\\Reference.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T21:35:04.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Program.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\Program.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Program.cs",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T21:31:28.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\LoginForm.Designer.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\LoginForm.Designer.cs",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\LoginForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T21:30:58.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\Form1.Designer.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\Form1.Designer.cs",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\Form1.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T21:30:29.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConversionForm.Designer.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\ConversionForm.Designer.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIESC_GR10\\ConversionForm.Designer.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIESC\\CONUNI_CLIESC_GR10\\CONUNI_CLIESC_GR10\\ConversionForm.Designer.cs",
+              "RelativeToolTip": "CONUNI_CLIESC_GR10\\ConversionForm.Designer.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwEEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T21:28:52.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

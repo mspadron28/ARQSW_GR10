@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliweb\\conuni_cliweb_gr10\\conuni_cliweb_gr10\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|solutionrelative:conuni_cliweb_gr10\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliweb\\conuni_cliweb_gr10\\conuni_cliweb_gr10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|solutionrelative:conuni_cliweb_gr10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliweb\\conuni_cliweb_gr10\\conuni_cliweb_gr10\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|solutionrelative:conuni_cliweb_gr10\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliweb\\conuni_cliweb_gr10\\conuni_cliweb_gr10\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|solutionrelative:conuni_cliweb_gr10\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliweb\\conuni_cliweb_gr10\\conuni_cliweb_gr10\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|solutionrelative:conuni_cliweb_gr10\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliweb\\conuni_cliweb_gr10\\conuni_cliweb_gr10\\views\\conversion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|solutionrelative:conuni_cliweb_gr10\\views\\conversion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliweb\\conuni_cliweb_gr10\\conuni_cliweb_gr10\\models\\conversionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|solutionrelative:conuni_cliweb_gr10\\models\\conversionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliweb\\conuni_cliweb_gr10\\conuni_cliweb_gr10\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|solutionrelative:conuni_cliweb_gr10\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliweb\\conuni_cliweb_gr10\\conuni_cliweb_gr10\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|solutionrelative:conuni_cliweb_gr10\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\00_soa_sin_bdd\\001. soap_dotnet_conuni_gr10\\02. cliweb\\conuni_cliweb_gr10\\conuni_cliweb_gr10\\controllers\\conversioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743AFD2A-3756-4D30-974E-F712E380EFE9}|CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10.csproj|solutionrelative:conuni_cliweb_gr10\\controllers\\conversioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\appsettings.json",
+              "RelativeDocumentMoniker": "CONUNI_CLIWEB_GR10\\appsettings.json",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\appsettings.json",
+              "RelativeToolTip": "CONUNI_CLIWEB_GR10\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-16T22:35:28.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Program.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIWEB_GR10\\Program.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Program.cs",
+              "RelativeToolTip": "CONUNI_CLIWEB_GR10\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T22:35:21.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "CONUNI_CLIWEB_GR10\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "CONUNI_CLIWEB_GR10\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T22:35:08.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CONUNI_CLIWEB_GR10\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CONUNI_CLIWEB_GR10\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T22:35:01.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Views\\Conversion\\Index.cshtml",
+              "RelativeDocumentMoniker": "CONUNI_CLIWEB_GR10\\Views\\Conversion\\Index.cshtml",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Views\\Conversion\\Index.cshtml",
+              "RelativeToolTip": "CONUNI_CLIWEB_GR10\\Views\\Conversion\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T22:34:48.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "CONUNI_CLIWEB_GR10\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "CONUNI_CLIWEB_GR10\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T22:34:44.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConversionModel.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Models\\ConversionModel.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIWEB_GR10\\Models\\ConversionModel.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Models\\ConversionModel.cs",
+              "RelativeToolTip": "CONUNI_CLIWEB_GR10\\Models\\ConversionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T22:34:39.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIWEB_GR10\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "CONUNI_CLIWEB_GR10\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T22:34:37.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CONUNI_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T22:34:34.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConversionController.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Controllers\\ConversionController.cs",
+              "RelativeDocumentMoniker": "CONUNI_CLIWEB_GR10\\Controllers\\ConversionController.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\001. SOAP_DOTNET_CONUNI_GR10\\02. CLIWEB\\CONUNI_CLIWEB_GR10\\CONUNI_CLIWEB_GR10\\Controllers\\ConversionController.cs",
+              "RelativeToolTip": "CONUNI_CLIWEB_GR10\\Controllers\\ConversionController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T22:34:29.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

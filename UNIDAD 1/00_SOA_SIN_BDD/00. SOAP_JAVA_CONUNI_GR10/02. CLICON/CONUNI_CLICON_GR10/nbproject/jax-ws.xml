@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services/>
+  <clients>
+    <client name="CONUNI">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <wsdl-url>http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl</wsdl-url>
+      <local-wsdl-file>10.40.28.227_8080/CONUNI_GR10/CONUNI.wsdl</local-wsdl-file>
+=======
+      <wsdl-url>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl-url>
+      <local-wsdl-file>10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl</local-wsdl-file>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+      <wsdl-url>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl-url>
+      <local-wsdl-file>10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl</local-wsdl-file>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+      <wsdl-url>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl-url>
+      <local-wsdl-file>10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl</local-wsdl-file>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+      <wsdl-url>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsdl-url>
+      <local-wsdl-file>10.40.27.8_8080/CONUNI_GR10/CONUNI.wsdl</local-wsdl-file>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+      <package-name forceReplace="true">ec.edu.monster</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <wsimport-option-value>http://10.40.28.227:8080/CONUNI_GR10/CONUNI?wsdl</wsimport-option-value>
+=======
+          <wsimport-option-value>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsimport-option-value>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+          <wsimport-option-value>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsimport-option-value>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+          <wsimport-option-value>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsimport-option-value>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+=======
+          <wsimport-option-value>http://10.40.27.8:8080/CONUNI_GR10/CONUNI?wsdl</wsimport-option-value>
+>>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>package</wsimport-option-name>
+          <wsimport-option-value>ec.edu.monster</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+  </clients>
+</jax-ws>
