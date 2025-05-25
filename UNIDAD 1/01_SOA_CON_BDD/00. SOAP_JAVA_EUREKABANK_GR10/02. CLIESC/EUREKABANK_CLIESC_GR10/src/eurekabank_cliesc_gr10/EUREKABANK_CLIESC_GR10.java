@@ -4,7 +4,7 @@
  */
 package eurekabank_cliesc_gr10;
 
-import ec.edu.monster.vista.MainApp;
+import ec.edu.monster.vista.LoginView;
 
 /**
  *
@@ -16,7 +16,7 @@ public class EUREKABANK_CLIESC_GR10 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MainApp.main(args);
+        LoginView.main(args);
     }
     
 }

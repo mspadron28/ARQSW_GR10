@@ -85,4 +85,25 @@ public class EurekaService {
     public double obtenerCostoMovimiento(String cuenta) {
         return port.obtenerCostoMovimiento(cuenta);
     }
+
+    /**
+     * Inicia sesión para un usuario.
+     *
+     * @param usuario Nombre de usuario (vch_emplusuario).
+     * @param clave Clave del usuario (vch_emplclave).
+     * @return Objeto Usuario si la autenticación es exitosa, null si falla.
+     */
+    public ec.edu.monster.modelo.Usuario iniciarSesion(String usuario, String clave) {
+        ec.edu.monster.ws.Usuario wsUser = port.iniciarSesion(usuario, clave);
+        if (wsUser != null) {
+            return new ec.edu.monster.modelo.Usuario(
+                    wsUser.getCodigo(),
+                    wsUser.getUsuario(),
+                    wsUser.getClave(),
+                    wsUser.getEstado()
+            );
+        }
+        return null;
+    }
+
 }

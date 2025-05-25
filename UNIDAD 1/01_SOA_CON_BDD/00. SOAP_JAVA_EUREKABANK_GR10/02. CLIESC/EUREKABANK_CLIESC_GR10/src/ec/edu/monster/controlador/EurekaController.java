@@ -2,6 +2,7 @@ package ec.edu.monster.controlador;
 
 import ec.edu.monster.servicio.EurekaService;
 import ec.edu.monster.ws.Movimiento;
+import ec.edu.monster.modelo.Usuario;
 
 import java.util.List;
 
@@ -48,6 +49,22 @@ public class EurekaController {
             throw new Exception("Error al obtener el costo del movimiento");
         }
         return costo;
+    }
+
+    /**
+     * Inicia sesión para un usuario.
+     *
+     * @param usuario Nombre de usuario (vch_emplusuario).
+     * @param clave Clave del usuario (vch_emplclave).
+     * @return true si la autenticación es exitosa, false si falla.
+     * @throws Exception si ocurre un error en el proceso.
+     */
+    public boolean iniciarSesion(String usuario, String clave) throws Exception {
+        Usuario user = service.iniciarSesion(usuario, clave);
+        if (user == null) {
+            return false;
+        }
+        return true;
     }
 
 }

@@ -4,29 +4,11 @@
 <xsd:import namespace="http://controlador.monster.edu.ec/" schemaLocation="http://localhost:8080/EUREKABANK_GR10/WSEureka?xsd=1"/>
 </xsd:schema>
 </types>
-<message name="registrarRetiro">
-<part name="parameters" element="tns:registrarRetiro"/>
+<message name="iniciarSesion">
+<part name="parameters" element="tns:iniciarSesion"/>
 </message>
-<message name="registrarRetiroResponse">
-<part name="parameters" element="tns:registrarRetiroResponse"/>
-</message>
-<message name="verificarSaldo">
-<part name="parameters" element="tns:verificarSaldo"/>
-</message>
-<message name="verificarSaldoResponse">
-<part name="parameters" element="tns:verificarSaldoResponse"/>
-</message>
-<message name="leerMovimientos">
-<part name="parameters" element="tns:leerMovimientos"/>
-</message>
-<message name="leerMovimientosResponse">
-<part name="parameters" element="tns:leerMovimientosResponse"/>
-</message>
-<message name="registrarDeposito">
-<part name="parameters" element="tns:registrarDeposito"/>
-</message>
-<message name="registrarDepositoResponse">
-<part name="parameters" element="tns:registrarDepositoResponse"/>
+<message name="iniciarSesionResponse">
+<part name="parameters" element="tns:iniciarSesionResponse"/>
 </message>
 <message name="realizarTransferencia">
 <part name="parameters" element="tns:realizarTransferencia"/>
@@ -40,22 +22,34 @@
 <message name="obtenerCostoMovimientoResponse">
 <part name="parameters" element="tns:obtenerCostoMovimientoResponse"/>
 </message>
+<message name="leerMovimientos">
+<part name="parameters" element="tns:leerMovimientos"/>
+</message>
+<message name="leerMovimientosResponse">
+<part name="parameters" element="tns:leerMovimientosResponse"/>
+</message>
+<message name="registrarDeposito">
+<part name="parameters" element="tns:registrarDeposito"/>
+</message>
+<message name="registrarDepositoResponse">
+<part name="parameters" element="tns:registrarDepositoResponse"/>
+</message>
+<message name="verificarSaldo">
+<part name="parameters" element="tns:verificarSaldo"/>
+</message>
+<message name="verificarSaldoResponse">
+<part name="parameters" element="tns:verificarSaldoResponse"/>
+</message>
+<message name="registrarRetiro">
+<part name="parameters" element="tns:registrarRetiro"/>
+</message>
+<message name="registrarRetiroResponse">
+<part name="parameters" element="tns:registrarRetiroResponse"/>
+</message>
 <portType name="WSEureka">
-<operation name="registrarRetiro">
-<input wsam:Action="http://controlador.monster.edu.ec/WSEureka/registrarRetiroRequest" message="tns:registrarRetiro"/>
-<output wsam:Action="http://controlador.monster.edu.ec/WSEureka/registrarRetiroResponse" message="tns:registrarRetiroResponse"/>
-</operation>
-<operation name="verificarSaldo">
-<input wsam:Action="http://controlador.monster.edu.ec/WSEureka/verificarSaldoRequest" message="tns:verificarSaldo"/>
-<output wsam:Action="http://controlador.monster.edu.ec/WSEureka/verificarSaldoResponse" message="tns:verificarSaldoResponse"/>
-</operation>
-<operation name="leerMovimientos">
-<input wsam:Action="http://controlador.monster.edu.ec/WSEureka/leerMovimientosRequest" message="tns:leerMovimientos"/>
-<output wsam:Action="http://controlador.monster.edu.ec/WSEureka/leerMovimientosResponse" message="tns:leerMovimientosResponse"/>
-</operation>
-<operation name="registrarDeposito">
-<input wsam:Action="http://controlador.monster.edu.ec/WSEureka/registrarDepositoRequest" message="tns:registrarDeposito"/>
-<output wsam:Action="http://controlador.monster.edu.ec/WSEureka/registrarDepositoResponse" message="tns:registrarDepositoResponse"/>
+<operation name="iniciarSesion">
+<input wsam:Action="http://controlador.monster.edu.ec/WSEureka/iniciarSesionRequest" message="tns:iniciarSesion"/>
+<output wsam:Action="http://controlador.monster.edu.ec/WSEureka/iniciarSesionResponse" message="tns:iniciarSesionResponse"/>
 </operation>
 <operation name="realizarTransferencia">
 <input wsam:Action="http://controlador.monster.edu.ec/WSEureka/realizarTransferenciaRequest" message="tns:realizarTransferencia"/>
@@ -65,10 +59,26 @@
 <input wsam:Action="http://controlador.monster.edu.ec/WSEureka/obtenerCostoMovimientoRequest" message="tns:obtenerCostoMovimiento"/>
 <output wsam:Action="http://controlador.monster.edu.ec/WSEureka/obtenerCostoMovimientoResponse" message="tns:obtenerCostoMovimientoResponse"/>
 </operation>
+<operation name="leerMovimientos">
+<input wsam:Action="http://controlador.monster.edu.ec/WSEureka/leerMovimientosRequest" message="tns:leerMovimientos"/>
+<output wsam:Action="http://controlador.monster.edu.ec/WSEureka/leerMovimientosResponse" message="tns:leerMovimientosResponse"/>
+</operation>
+<operation name="registrarDeposito">
+<input wsam:Action="http://controlador.monster.edu.ec/WSEureka/registrarDepositoRequest" message="tns:registrarDeposito"/>
+<output wsam:Action="http://controlador.monster.edu.ec/WSEureka/registrarDepositoResponse" message="tns:registrarDepositoResponse"/>
+</operation>
+<operation name="verificarSaldo">
+<input wsam:Action="http://controlador.monster.edu.ec/WSEureka/verificarSaldoRequest" message="tns:verificarSaldo"/>
+<output wsam:Action="http://controlador.monster.edu.ec/WSEureka/verificarSaldoResponse" message="tns:verificarSaldoResponse"/>
+</operation>
+<operation name="registrarRetiro">
+<input wsam:Action="http://controlador.monster.edu.ec/WSEureka/registrarRetiroRequest" message="tns:registrarRetiro"/>
+<output wsam:Action="http://controlador.monster.edu.ec/WSEureka/registrarRetiroResponse" message="tns:registrarRetiroResponse"/>
+</operation>
 </portType>
 <binding name="WSEurekaPortBinding" type="tns:WSEureka">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
-<operation name="registrarRetiro">
+<operation name="iniciarSesion">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -77,7 +87,16 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="verificarSaldo">
+<operation name="realizarTransferencia">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="obtenerCostoMovimiento">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -104,7 +123,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="realizarTransferencia">
+<operation name="verificarSaldo">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -113,7 +132,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="obtenerCostoMovimiento">
+<operation name="registrarRetiro">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

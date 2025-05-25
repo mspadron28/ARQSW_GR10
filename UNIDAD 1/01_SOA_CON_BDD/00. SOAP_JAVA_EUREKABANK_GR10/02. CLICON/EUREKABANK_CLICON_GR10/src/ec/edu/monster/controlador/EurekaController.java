@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * Controller to coordinate between console input and service layer.
+ *
  * @author MATIAS
  */
 public class EurekaController {
@@ -94,5 +95,21 @@ public class EurekaController {
             throw new Exception("Error al obtener el costo del movimiento.");
         }
         return costo;
+    }
+
+    /**
+     * Inicia sesión para un usuario.
+     *
+     * @param usuario Nombre de usuario (vch_emplusuario).
+     * @param clave Clave del usuario (vch_emplclave).
+     * @return true si la autenticación es exitosa, false si falla.
+     * @throws Exception si ocurre un error en el proceso.
+     */
+    public boolean iniciarSesion(String usuario, String clave) throws Exception {
+        if (usuario == null || usuario.trim().isEmpty() || clave == null || clave.trim().isEmpty()) {
+            throw new Exception("Usuario y contraseña son requeridos.");
+        }
+        ec.edu.monster.modelo.Usuario user = service.iniciarSesion(usuario, clave);
+        return user != null;
     }
 }
