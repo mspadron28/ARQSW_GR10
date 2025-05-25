@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dAnrm4nX7B4=",
+  "dgSpecHash": "qvZZrQ2xY4s=",
   "success": true,
-  "projectFilePath": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\00_SOA_SIN_BDD\\002. REST_DOTNET_CONUNI_GR10\\02. CLICON\\CONUNI_CLICON_GR10\\CONUNI_CLICON_GR10\\CONUNI_CLICON_GR10.csproj",
+  "projectFilePath": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\00_SOA_SIN_BDD\\002. REST_DOTNET_CONUNI_GR10\\02. CLICON\\CONUNI_CLICON_GR10\\CONUNI_CLICON_GR10\\CONUNI_CLICON_GR10.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mateo\\.nuget\\packages\\system.io.pipelines\\9.0.5\\system.io.pipelines.9.0.5.nupkg.sha512",
-    "C:\\Users\\Mateo\\.nuget\\packages\\system.text.encodings.web\\9.0.5\\system.text.encodings.web.9.0.5.nupkg.sha512",
-    "C:\\Users\\Mateo\\.nuget\\packages\\system.text.json\\9.0.5\\system.text.json.9.0.5.nupkg.sha512"
+    "C:\\Users\\MATIAS\\.nuget\\packages\\system.io.pipelines\\9.0.5\\system.io.pipelines.9.0.5.nupkg.sha512",
+    "C:\\Users\\MATIAS\\.nuget\\packages\\system.text.encodings.web\\9.0.5\\system.text.encodings.web.9.0.5.nupkg.sha512",
+    "C:\\Users\\MATIAS\\.nuget\\packages\\system.text.json\\9.0.5\\system.text.json.9.0.5.nupkg.sha512"
   ],
   "logs": []
 }

@@ -54,9 +54,9 @@
             headerPanel.Controls.Add(headerLabel);
             headerPanel.Dock = DockStyle.Top;
             headerPanel.Location = new Point(0, 0);
-            headerPanel.Margin = new Padding(4, 5, 4, 5);
+            headerPanel.Margin = new Padding(4, 4, 4, 4);
             headerPanel.Name = "headerPanel";
-            headerPanel.Size = new Size(1821, 92);
+            headerPanel.Size = new Size(1404, 69);
             headerPanel.TabIndex = 0;
             // 
             // headerLabel
@@ -64,10 +64,10 @@
             headerLabel.AutoSize = true;
             headerLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             headerLabel.ForeColor = Color.White;
-            headerLabel.Location = new Point(27, 23);
+            headerLabel.Location = new Point(24, 17);
             headerLabel.Margin = new Padding(4, 0, 4, 0);
             headerLabel.Name = "headerLabel";
-            headerLabel.Size = new Size(234, 41);
+            headerLabel.Size = new Size(192, 32);
             headerLabel.TabIndex = 0;
             headerLabel.Text = "Inicio de sesión";
             // 
@@ -75,11 +75,11 @@
             // 
             containerPanel.Controls.Add(mainPanel);
             containerPanel.Dock = DockStyle.Fill;
-            containerPanel.Location = new Point(0, 92);
-            containerPanel.Margin = new Padding(4, 5, 4, 5);
+            containerPanel.Location = new Point(0, 69);
+            containerPanel.Margin = new Padding(4, 4, 4, 4);
             containerPanel.Name = "containerPanel";
-            containerPanel.Padding = new Padding(27, 31, 27, 31);
-            containerPanel.Size = new Size(1821, 963);
+            containerPanel.Padding = new Padding(24, 23, 24, 23);
+            containerPanel.Size = new Size(1404, 592);
             containerPanel.TabIndex = 1;
             // 
             // mainPanel
@@ -87,10 +87,10 @@
             mainPanel.Anchor = AnchorStyles.None;
             mainPanel.BackColor = Color.FromArgb(246, 247, 246);
             mainPanel.Controls.Add(layoutPanel);
-            mainPanel.Location = new Point(577, 20);
-            mainPanel.Margin = new Padding(4, 5, 4, 5);
+            mainPanel.Location = new Point(411, -50);
+            mainPanel.Margin = new Padding(4, 4, 4, 4);
             mainPanel.Name = "mainPanel";
-            mainPanel.Size = new Size(667, 923);
+            mainPanel.Size = new Size(584, 692);
             mainPanel.TabIndex = 0;
             // 
             // layoutPanel
@@ -107,29 +107,30 @@
             layoutPanel.Controls.Add(btnIniciarSesión, 0, 7);
             layoutPanel.Dock = DockStyle.Fill;
             layoutPanel.Location = new Point(0, 0);
-            layoutPanel.Margin = new Padding(4, 5, 4, 5);
+            layoutPanel.Margin = new Padding(4, 4, 4, 4);
             layoutPanel.Name = "layoutPanel";
             layoutPanel.RowCount = 8;
-            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 123F));
-            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 77F));
-            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 277F));
-            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 77F));
-            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 77F));
-            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 77F));
-            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 77F));
-            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 123F));
-            layoutPanel.Size = new Size(667, 923);
+            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 92F));
+            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 58F));
+            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 208F));
+            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 58F));
+            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 58F));
+            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 58F));
+            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 58F));
+            layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 92F));
+            layoutPanel.Size = new Size(584, 692);
             layoutPanel.TabIndex = 0;
+            layoutPanel.Paint += layoutPanel_Paint;
             // 
             // welcomeLabel
             // 
             welcomeLabel.Anchor = AnchorStyles.None;
             welcomeLabel.AutoSize = true;
             welcomeLabel.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            welcomeLabel.Location = new Point(216, 34);
+            welcomeLabel.Location = new Point(198, 23);
             welcomeLabel.Margin = new Padding(4, 0, 4, 0);
             welcomeLabel.Name = "welcomeLabel";
-            welcomeLabel.Size = new Size(234, 54);
+            welcomeLabel.Size = new Size(188, 45);
             welcomeLabel.TabIndex = 0;
             welcomeLabel.Text = "Bienvenido";
             welcomeLabel.TextAlign = ContentAlignment.MiddleCenter;
@@ -140,10 +141,10 @@
             subtextLabel.AutoSize = true;
             subtextLabel.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             subtextLabel.ForeColor = Color.FromArgb(102, 102, 102);
-            subtextLabel.Location = new Point(146, 145);
+            subtextLabel.Location = new Point(142, 108);
             subtextLabel.Margin = new Padding(4, 0, 4, 0);
             subtextLabel.Name = "subtextLabel";
-            subtextLabel.Size = new Size(375, 32);
+            subtextLabel.Size = new Size(299, 25);
             subtextLabel.TabIndex = 1;
             subtextLabel.Text = "Por favor, ingresa tus credenciales";
             subtextLabel.TextAlign = ContentAlignment.MiddleCenter;
@@ -153,10 +154,10 @@
             avatarLabel.AccessibleRole = AccessibleRole.None;
             avatarLabel.Anchor = AnchorStyles.None;
             avatarLabel.Image = Properties.Resources.sulley;
-            avatarLabel.Location = new Point(233, 223);
-            avatarLabel.Margin = new Padding(4, 5, 4, 5);
+            avatarLabel.Location = new Point(204, 167);
+            avatarLabel.Margin = new Padding(4, 4, 4, 4);
             avatarLabel.Name = "avatarLabel";
-            avatarLabel.Size = new Size(200, 231);
+            avatarLabel.Size = new Size(175, 173);
             avatarLabel.SizeMode = PictureBoxSizeMode.Zoom;
             avatarLabel.TabIndex = 2;
             avatarLabel.TabStop = false;
@@ -166,10 +167,10 @@
             userLabel.Anchor = AnchorStyles.None;
             userLabel.AutoSize = true;
             userLabel.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            userLabel.Location = new Point(286, 499);
+            userLabel.Location = new Point(253, 374);
             userLabel.Margin = new Padding(4, 0, 4, 0);
             userLabel.Name = "userLabel";
-            userLabel.Size = new Size(94, 32);
+            userLabel.Size = new Size(77, 25);
             userLabel.TabIndex = 3;
             userLabel.Text = "Usuario";
             // 
@@ -178,10 +179,10 @@
             txtUsuario.Anchor = AnchorStyles.None;
             txtUsuario.BorderStyle = BorderStyle.FixedSingle;
             txtUsuario.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsuario.Location = new Point(134, 575);
-            txtUsuario.Margin = new Padding(4, 5, 4, 5);
+            txtUsuario.Location = new Point(117, 430);
+            txtUsuario.Margin = new Padding(4, 4, 4, 4);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(399, 34);
+            txtUsuario.Size = new Size(349, 29);
             txtUsuario.TabIndex = 4;
             txtUsuario.TextChanged += txtUsuario_TextChanged;
             // 
@@ -190,10 +191,10 @@
             passwordLabel.Anchor = AnchorStyles.None;
             passwordLabel.AutoSize = true;
             passwordLabel.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            passwordLabel.Location = new Point(266, 653);
+            passwordLabel.Location = new Point(238, 490);
             passwordLabel.Margin = new Padding(4, 0, 4, 0);
             passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new Size(134, 32);
+            passwordLabel.Size = new Size(108, 25);
             passwordLabel.TabIndex = 5;
             passwordLabel.Text = "Contraseña";
             // 
@@ -202,11 +203,11 @@
             txtContraseña.Anchor = AnchorStyles.None;
             txtContraseña.BorderStyle = BorderStyle.FixedSingle;
             txtContraseña.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtContraseña.Location = new Point(134, 729);
-            txtContraseña.Margin = new Padding(4, 5, 4, 5);
+            txtContraseña.Location = new Point(117, 546);
+            txtContraseña.Margin = new Padding(4, 4, 4, 4);
             txtContraseña.Name = "txtContraseña";
             txtContraseña.PasswordChar = '*';
-            txtContraseña.Size = new Size(399, 34);
+            txtContraseña.Size = new Size(349, 29);
             txtContraseña.TabIndex = 6;
             // 
             // btnIniciarSesión
@@ -216,10 +217,10 @@
             btnIniciarSesión.FlatStyle = FlatStyle.Flat;
             btnIniciarSesión.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnIniciarSesión.ForeColor = Color.White;
-            btnIniciarSesión.Location = new Point(133, 808);
-            btnIniciarSesión.Margin = new Padding(4, 5, 4, 5);
+            btnIniciarSesión.Location = new Point(117, 606);
+            btnIniciarSesión.Margin = new Padding(4, 4, 4, 4);
             btnIniciarSesión.Name = "btnIniciarSesión";
-            btnIniciarSesión.Size = new Size(400, 92);
+            btnIniciarSesión.Size = new Size(350, 69);
             btnIniciarSesión.TabIndex = 7;
             btnIniciarSesión.Text = "Iniciar Sesión";
             btnIniciarSesión.UseVisualStyleBackColor = false;
@@ -227,14 +228,14 @@
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(1821, 1055);
+            ClientSize = new Size(1404, 661);
             Controls.Add(containerPanel);
             Controls.Add(headerPanel);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(4, 5, 4, 5);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inicio de Sesión";

@@ -1,4 +1,4 @@
-@CONUNI_REST_DOTNET_GR10_HostAddress = http://localhost:5130
+@CONUNI_REST_DOTNET_GR10_HostAddress = http://10.40.23.154:5130
 
 GET {{CONUNI_REST_DOTNET_GR10_HostAddress}}/weatherforecast/
 Accept: application/json

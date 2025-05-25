@@ -7,7 +7,7 @@ namespace CONUNI_CLICON_GR10
 {
     class Program
     {
-        private static readonly HttpClient client = new HttpClient(); private const string BaseUrl = "http://localhost:5000/api/Conversion/";
+        private static readonly HttpClient client = new HttpClient(); private const string BaseUrl = "http://10.40.23.154:5000/api/Conversion/";
         static async Task Main(string[] args)
         {
             // Configurar la salida para usar UTF-8

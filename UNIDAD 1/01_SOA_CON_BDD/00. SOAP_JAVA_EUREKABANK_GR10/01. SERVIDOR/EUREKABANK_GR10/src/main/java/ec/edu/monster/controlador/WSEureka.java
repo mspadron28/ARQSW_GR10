@@ -1,6 +1,7 @@
 package ec.edu.monster.controlador;
 
 import ec.edu.monster.modelo.Movimiento;
+import ec.edu.monster.modelo.Usuario;
 import ec.edu.monster.servicio.EurekaService;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
@@ -147,6 +148,25 @@ public class WSEureka {
             return eurekaService.obtenerCostoMovimiento(cuenta);
         } catch (Exception e) {
             return -1.0;
+        }
+    }
+    
+        /**
+     * Inicia sesión para un usuario y registra la entrada en LOGSESSION.
+     *
+     * @param usuario Nombre de usuario (vch_emplusuario).
+     * @param clave Clave del usuario (vch_emplclave).
+     * @return Objeto Usuario con los datos del usuario autenticado, o null si hay error.
+     */
+    @WebMethod(operationName = "iniciarSesion")
+    @WebResult(name = "usuario")
+    public Usuario iniciarSesion(
+            @WebParam(name = "usuario") String usuario,
+            @WebParam(name = "clave") String clave) {
+        try {
+            return eurekaService.iniciarSesion(usuario, clave);
+        } catch (Exception e) {
+            return null;
         }
     }
 }

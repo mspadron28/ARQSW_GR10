@@ -2,21 +2,21 @@
     "iisSettings": {
         "windowsAuthentication": false,
         "anonymousAuthentication": true,
-        "iisExpress": {
-            "applicationUrl": "http://localhost:5000",
-            "sslPort": 7073
-        }
+      "iisExpress": {
+        "applicationUrl": "http://10.40.23.154:5000",
+        "sslPort": 7073
+      }
     },
     "profiles": {
-        "ConversionUnidades_REST": {
-            "commandName": "Project",
-            "dotnetRunMessages": true,
-            "launchBrowser": true,
-            "launchUrl": "swagger",
-            "applicationUrl": "http://localhost:5000",
-            "environmentVariables": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
-            }
+      "ConversionUnidades_REST": {
+        "commandName": "Project",
+        "dotnetRunMessages": true,
+        "launchBrowser": true,
+        "launchUrl": "swagger",
+        "applicationUrl": "http://10.40.23.154:5000",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
         }
+      }
     }
 }

@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // Register HttpClient as a singleton with the base URL for the REST service
-builder.Services.AddSingleton(new HttpClient { BaseAddress = new Uri("http://localhost:5000/api/Conversion/") });
+builder.Services.AddSingleton(new HttpClient { BaseAddress = new Uri("http://10.40.23.154:5000/api/Conversion/") });
 
 var app = builder.Build();
 

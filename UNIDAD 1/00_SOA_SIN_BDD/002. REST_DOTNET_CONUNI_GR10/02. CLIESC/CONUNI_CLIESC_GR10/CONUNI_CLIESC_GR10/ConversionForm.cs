@@ -7,7 +7,7 @@ namespace CONUNI_CLIESC_GR10
 {
     public partial class ConversionForm : Form
     {
-        private static readonly HttpClient client = new HttpClient(); private const string BaseUrl = "http://localhost:5000/api/Conversion/";
+        private static readonly HttpClient client = new HttpClient(); private const string BaseUrl = "http://10.40.23.154:5000/api/Conversion/";
         public ConversionForm()
         {
             InitializeComponent();
@@ -130,6 +130,11 @@ namespace CONUNI_CLIESC_GR10
         }
 
         private void sulleyLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void containerPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

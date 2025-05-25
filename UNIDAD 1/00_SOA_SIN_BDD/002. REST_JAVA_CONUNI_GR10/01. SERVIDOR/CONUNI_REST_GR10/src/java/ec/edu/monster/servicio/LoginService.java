@@ -6,6 +6,6 @@ package ec.edu.monster.servicio;
  */
 public class LoginService {
     public boolean autenticar(String user, String password) {
-        return user.equals("monster") && password.equals("monster9");
+        return user.equals("MONSTER") && password.equals("MONSTER9");
     }
 }

@@ -14,25 +14,25 @@ import retrofit2.http.POST
 import retrofit2.http.Query
 
 interface CONUNIApi {
-    @GET("conuni/pulgadas-a-centimetros")
+    @GET("pulgadas-a-centimetros")
     suspend fun pulgadasACentimetros(@Query("pulgadas") pulgadas: Double): Double
 
-    @GET("conuni/centimetros-a-pulgadas")
+    @GET("centimetros-a-pulgadas")
     suspend fun centimetrosAPulgadas(@Query("centimetros") centimetros: Double): Double
 
-    @GET("conuni/metros-a-pies")
+    @GET("metros-a-pies")
     suspend fun metrosAPies(@Query("metros") metros: Double): Double
 
-    @GET("conuni/pies-a-metros")
+    @GET("pies-a-metros")
     suspend fun piesAMetros(@Query("pies") pies: Double): Double
 
-    @GET("conuni/metros-a-yardas")
+    @GET("metros-a-yardas")
     suspend fun metrosAYardas(@Query("metros") metros: Double): Double
 
-    @GET("conuni/yardas-a-metros")
+    @GET("yardas-a-metros")
     suspend fun yardasAMetros(@Query("yardas") yardas: Double): Double
 
-    @POST("conuni/login")
+    @POST("login")
     suspend fun login(@Body loginRequest: LoginRequest): Response<String>
 }
 

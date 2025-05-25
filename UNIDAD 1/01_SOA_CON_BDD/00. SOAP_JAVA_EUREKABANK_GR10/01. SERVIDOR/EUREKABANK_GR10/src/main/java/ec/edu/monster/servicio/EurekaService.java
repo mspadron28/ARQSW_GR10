@@ -2,6 +2,8 @@ package ec.edu.monster.servicio;
 
 import ec.edu.monster.db.AccesoDB;
 import ec.edu.monster.modelo.Movimiento;
+import ec.edu.monster.modelo.Usuario;
+import java.net.InetAddress;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -324,4 +326,57 @@ public class EurekaService {
         }
     }
 }
+    
+    public Usuario iniciarSesion(String usuario, String clave) throws Exception {
+        Connection conn = null;
+        try {
+            conn = getConnection();
+            conn.setAutoCommit(false);
+
+            // Validar credenciales
+            PreparedStatement ps = conn.prepareStatement(
+                "SELECT chr_emplcodigo, vch_emplusuario, vch_emplclave, vch_emplestado " +
+                "FROM Usuario WHERE vch_emplusuario = ? AND vch_emplclave = ? AND vch_emplestado = 'ACTIVO'");
+            ps.setString(1, usuario);
+            ps.setString(2, clave);
+            ResultSet rs = ps.executeQuery();
+            if (!rs.next()) {
+                throw new Exception("Credenciales inválidas o usuario inactivo.");
+            }
+
+            // Crear objeto Usuario
+            Usuario user = new Usuario();
+            user.setCodigo(rs.getString("chr_emplcodigo"));
+            user.setUsuario(rs.getString("vch_emplusuario"));
+            user.setClave(rs.getString("vch_emplclave"));
+            user.setEstado(rs.getString("vch_emplestado"));
+
+            // Registrar sesión en LOGSESSION
+            String ip = "127.0.0.1"; // IP por defecto, puedes obtener la real si es necesario
+            String hostname = "localhost"; // Hostname por defecto
+            try {
+                InetAddress inetAddress = InetAddress.getLocalHost();
+                ip = inetAddress.getHostAddress();
+                hostname = inetAddress.getHostName();
+            } catch (Exception e) {
+                // Ignorar errores de red, usar valores por defecto
+            }
+
+            ps = conn.prepareStatement(
+                "INSERT INTO LOGSESSION (chr_emplcodigo, fec_ingreso, ip, hostname) " +
+                "VALUES (?, NOW(), ?, ?)");
+            ps.setString(1, user.getCodigo());
+            ps.setString(2, ip);
+            ps.setString(3, hostname);
+            ps.executeUpdate();
+
+            conn.commit();
+            return user;
+        } catch (Exception e) {
+            if (conn != null) conn.rollback();
+            throw e;
+        } finally {
+            if (conn != null) conn.close();
+        }
+    }
 }

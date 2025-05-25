@@ -12,7 +12,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  */
 public class CONUNIService {
 
-    private static final String BASE_URL = "http://localhost:8080/CONUNI_REST_GR10/api/conuni";
+    private static final String BASE_URL = "http://10.9.6.218:8080/CONUNI_REST_GR10/api/conuni";
     private final HttpClient client;
     private final ObjectMapper mapper;
 

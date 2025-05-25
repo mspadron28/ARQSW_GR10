@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Mateo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Mateo\\.nuget\\packages",
+      "C:\\Users\\MATIAS\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\MATIAS\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
