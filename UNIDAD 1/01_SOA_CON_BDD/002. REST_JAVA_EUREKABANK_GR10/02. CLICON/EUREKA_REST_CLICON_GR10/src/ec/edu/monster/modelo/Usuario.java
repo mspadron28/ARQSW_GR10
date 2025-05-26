@@ -1,0 +1,57 @@
+package ec.edu.monster.modelo;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+/**
+ * Modelo para la entidad Usuario en el cliente.
+ * @author MATIAS
+ */
+public class Usuario {
+    
+    @JsonProperty("codigo")
+    private String codigo; // chr_emplcodigo
+    
+    @JsonProperty("usuario")
+    private String usuario; // vch_emplusuario
+    
+    @JsonProperty("clave")
+    private String clave; // vch_emplclave
+    
+    @JsonProperty("estado")
+    private String estado; // vch_emplestado
+
+    public Usuario() {
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+}

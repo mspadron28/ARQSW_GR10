@@ -1,0 +1,15 @@
+ec\edu\monster\config\RestApplication.class
+ec\edu\monster\controlador\EurekaRestResource.class
+ec\edu\monster\eurekabank_rest_gr10\JakartaRestConfiguration.class
+ec\edu\monster\controlador\EurekaRestResource$DepositoRequest.class
+ec\edu\monster\controlador\EurekaRestResource$TransferenciaRequest.class
+ec\edu\monster\modelo\Movimiento.class
+ec\edu\monster\controlador\EurekaRestResource$SaldoResponse.class
+ec\edu\monster\servicio\EurekaService.class
+ec\edu\monster\controlador\EurekaRestResource$ResponseMessage.class
+ec\edu\monster\db\AccesoDB.class
+ec\edu\monster\controlador\EurekaRestResource$LoginRequest.class
+ec\edu\monster\controlador\EurekaRestResource$RetiroRequest.class
+ec\edu\monster\eurekabank_rest_gr10\resources\JakartaEE10Resource.class
+ec\edu\monster\modelo\Usuario.class
+ec\edu\monster\controlador\EurekaRestResource$CostoResponse.class
