@@ -150,21 +150,22 @@ public class WSEureka {
             return -1.0;
         }
     }
-    
-        /**
+
+    /**
      * Inicia sesión para un usuario y registra la entrada en LOGSESSION.
      *
-     * @param usuario Nombre de usuario (vch_emplusuario).
+     * @param username Nombre de usuario (vch_emplusuario).
      * @param clave Clave del usuario (vch_emplclave).
-     * @return Objeto Usuario con los datos del usuario autenticado, o null si hay error.
+     * @return Objeto Usuario con los datos del usuario autenticado, o null si
+     * hay error.
      */
     @WebMethod(operationName = "iniciarSesion")
     @WebResult(name = "usuario")
     public Usuario iniciarSesion(
-            @WebParam(name = "usuario") String usuario,
+            @WebParam(name = "username") String username, // Cambiar 'usuario' a 'username'
             @WebParam(name = "clave") String clave) {
         try {
-            return eurekaService.iniciarSesion(usuario, clave);
+            return eurekaService.iniciarSesion(username, clave); // Actualizar el nombre del parámetro
         } catch (Exception e) {
             return null;
         }

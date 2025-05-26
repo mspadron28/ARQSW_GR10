@@ -1,0 +1,15 @@
+<jaxb:bindings
+    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://controlador.monster.edu.ec/"
+    jaxb:version="2.1">
+
+    <!-- Apuntar al esquema incrustado en el WSDL -->
+    <jaxb:bindings schemaLocation="http://localhost:8080/EUREKABANK_GR10/WSEureka?xsd=1">
+        <!-- Renombrar el parámetro 'usuario' en el elemento 'iniciarSesion' -->
+        <jaxb:bindings node="xs:element[@name='iniciarSesion']/xs:complexType/xs:sequence/xs:element[@name='usuario']">
+            <jaxb:property name="username"/>
+        </jaxb:bindings>
+    </jaxb:bindings>
+
+</jaxb:bindings>

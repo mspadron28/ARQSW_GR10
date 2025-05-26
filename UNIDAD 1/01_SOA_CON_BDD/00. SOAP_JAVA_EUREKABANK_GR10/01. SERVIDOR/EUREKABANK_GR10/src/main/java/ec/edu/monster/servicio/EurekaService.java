@@ -15,6 +15,7 @@ import java.util.Map;
 
 /**
  * Servicio para operaciones bancarias de EurekaBank.
+ *
  * @author MATIAS
  */
 public class EurekaService {
@@ -25,12 +26,11 @@ public class EurekaService {
 
     public List<Movimiento> leerMovimientos(String cuenta) throws SQLException {
         List<Movimiento> lista = new ArrayList<>();
-        String sql = "SELECT m.chr_cuencodigo, m.int_movinumero, m.dtt_movifecha, m.chr_tipocodigo, " +
-                    "t.vch_tipoaccion, m.dec_moviimporte " +
-                    "FROM Movimiento m JOIN TipoMovimiento t ON m.chr_tipocodigo = t.chr_tipocodigo " +
-                    "WHERE m.chr_cuencodigo = ?";
-        try (Connection conn = getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql)) {
+        String sql = "SELECT m.chr_cuencodigo, m.int_movinumero, m.dtt_movifecha, m.chr_tipocodigo, "
+                + "t.vch_tipoaccion, m.dec_moviimporte "
+                + "FROM Movimiento m JOIN TipoMovimiento t ON m.chr_tipocodigo = t.chr_tipocodigo "
+                + "WHERE m.chr_cuencodigo = ?";
+        try (Connection conn = getConnection(); PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setString(1, cuenta);
             try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
@@ -56,7 +56,7 @@ public class EurekaService {
 
             // Validar cuenta
             PreparedStatement ps = conn.prepareStatement(
-                "SELECT dec_cuensaldo, chr_monecodigo FROM Cuenta WHERE chr_cuencodigo = ? AND vch_cuenestado = 'ACTIVO'");
+                    "SELECT dec_cuensaldo, chr_monecodigo FROM Cuenta WHERE chr_cuencodigo = ? AND vch_cuenestado = 'ACTIVO'");
             ps.setString(1, cuenta);
             ResultSet rs = ps.executeQuery();
             if (!rs.next()) {
@@ -78,8 +78,8 @@ public class EurekaService {
 
             // Registrar movimiento de depósito
             ps = conn.prepareStatement(
-                "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) " +
-                "VALUES (?, ?, CURDATE(), ?, '003', ?, NULL)");
+                    "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) "
+                    + "VALUES (?, ?, CURDATE(), ?, '003', ?, NULL)");
             ps.setString(1, cuenta);
             ps.setInt(2, moviNumero);
             ps.setString(3, codEmp);
@@ -89,8 +89,8 @@ public class EurekaService {
             // Registrar costo, si aplica
             if (costo > 0) {
                 ps = conn.prepareStatement(
-                    "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) " +
-                    "VALUES (?, ?, CURDATE(), ?, '010', ?, NULL)");
+                        "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) "
+                        + "VALUES (?, ?, CURDATE(), ?, '010', ?, NULL)");
                 ps.setString(1, cuenta);
                 ps.setInt(2, moviNumero + 1);
                 ps.setString(3, codEmp);
@@ -100,7 +100,7 @@ public class EurekaService {
 
             // Actualizar cuenta
             ps = conn.prepareStatement(
-                "UPDATE Cuenta SET dec_cuensaldo = dec_cuensaldo + ? - ?, int_cuencontmov = int_cuencontmov + ? WHERE chr_cuencodigo = ?");
+                    "UPDATE Cuenta SET dec_cuensaldo = dec_cuensaldo + ? - ?, int_cuencontmov = int_cuencontmov + ? WHERE chr_cuencodigo = ?");
             ps.setDouble(1, importe);
             ps.setDouble(2, costo);
             ps.setInt(3, costo > 0 ? 2 : 1);
@@ -109,10 +109,14 @@ public class EurekaService {
 
             conn.commit();
         } catch (Exception e) {
-            if (conn != null) conn.rollback();
+            if (conn != null) {
+                conn.rollback();
+            }
             throw e;
         } finally {
-            if (conn != null) conn.close();
+            if (conn != null) {
+                conn.close();
+            }
         }
     }
 
@@ -124,7 +128,7 @@ public class EurekaService {
 
             // Validar cuenta
             PreparedStatement ps = conn.prepareStatement(
-                "SELECT dec_cuensaldo, chr_monecodigo FROM Cuenta WHERE chr_cuencodigo = ? AND vch_cuenestado = 'ACTIVO'");
+                    "SELECT dec_cuensaldo, chr_monecodigo FROM Cuenta WHERE chr_cuencodigo = ? AND vch_cuenestado = 'ACTIVO'");
             ps.setString(1, cuenta);
             ResultSet rs = ps.executeQuery();
             if (!rs.next()) {
@@ -152,8 +156,8 @@ public class EurekaService {
 
             // Registrar movimiento de retiro
             ps = conn.prepareStatement(
-                "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) " +
-                "VALUES (?, ?, CURDATE(), ?, '004', ?, NULL)");
+                    "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) "
+                    + "VALUES (?, ?, CURDATE(), ?, '004', ?, NULL)");
             ps.setString(1, cuenta);
             ps.setInt(2, moviNumero);
             ps.setString(3, codEmp);
@@ -163,8 +167,8 @@ public class EurekaService {
             // Registrar costo, si aplica
             if (costo > 0) {
                 ps = conn.prepareStatement(
-                    "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) " +
-                    "VALUES (?, ?, CURDATE(), ?, '010', ?, NULL)");
+                        "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) "
+                        + "VALUES (?, ?, CURDATE(), ?, '010', ?, NULL)");
                 ps.setString(1, cuenta);
                 ps.setInt(2, moviNumero + 1);
                 ps.setString(3, codEmp);
@@ -174,7 +178,7 @@ public class EurekaService {
 
             // Actualizar cuenta
             ps = conn.prepareStatement(
-                "UPDATE Cuenta SET dec_cuensaldo = dec_cuensaldo - ? - ?, int_cuencontmov = int_cuencontmov + ? WHERE chr_cuencodigo = ?");
+                    "UPDATE Cuenta SET dec_cuensaldo = dec_cuensaldo - ? - ?, int_cuencontmov = int_cuencontmov + ? WHERE chr_cuencodigo = ?");
             ps.setDouble(1, importe);
             ps.setDouble(2, costo);
             ps.setInt(3, costo > 0 ? 2 : 1);
@@ -183,10 +187,14 @@ public class EurekaService {
 
             conn.commit();
         } catch (Exception e) {
-            if (conn != null) conn.rollback();
+            if (conn != null) {
+                conn.rollback();
+            }
             throw e;
         } finally {
-            if (conn != null) conn.close();
+            if (conn != null) {
+                conn.close();
+            }
         }
     }
 
@@ -198,7 +206,7 @@ public class EurekaService {
 
             // Validar cuentas
             PreparedStatement ps = conn.prepareStatement(
-                "SELECT chr_cuencodigo, dec_cuensaldo, chr_monecodigo FROM Cuenta WHERE chr_cuencodigo IN (?, ?) AND vch_cuenestado = 'ACTIVO'");
+                    "SELECT chr_cuencodigo, dec_cuensaldo, chr_monecodigo FROM Cuenta WHERE chr_cuencodigo IN (?, ?) AND vch_cuenestado = 'ACTIVO'");
             ps.setString(1, cuentaOrigen);
             ps.setString(2, cuentaDestino);
             ResultSet rs = ps.executeQuery();
@@ -239,8 +247,8 @@ public class EurekaService {
 
             // Registrar movimiento salida
             ps = conn.prepareStatement(
-                "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) " +
-                "VALUES (?, ?, CURDATE(), ?, '009', ?, ?)");
+                    "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) "
+                    + "VALUES (?, ?, CURDATE(), ?, '009', ?, ?)");
             ps.setString(1, cuentaOrigen);
             ps.setInt(2, moviOrigen);
             ps.setString(3, codEmp);
@@ -250,8 +258,8 @@ public class EurekaService {
 
             // Registrar movimiento ingreso
             ps = conn.prepareStatement(
-                "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) " +
-                "VALUES (?, ?, CURDATE(), ?, '008', ?, ?)");
+                    "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) "
+                    + "VALUES (?, ?, CURDATE(), ?, '008', ?, ?)");
             ps.setString(1, cuentaDestino);
             ps.setInt(2, moviDestino);
             ps.setString(3, codEmp);
@@ -262,8 +270,8 @@ public class EurekaService {
             // Registrar costo, si aplica
             if (costo > 0) {
                 ps = conn.prepareStatement(
-                    "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) " +
-                    "VALUES (?, ?, CURDATE(), ?, '010', ?, NULL)");
+                        "INSERT INTO Movimiento (chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) "
+                        + "VALUES (?, ?, CURDATE(), ?, '010', ?, NULL)");
                 ps.setString(1, cuentaOrigen);
                 ps.setInt(2, moviOrigen + 1);
                 ps.setString(3, codEmp);
@@ -273,7 +281,7 @@ public class EurekaService {
 
             // Actualizar cuentas
             ps = conn.prepareStatement(
-                "UPDATE Cuenta SET dec_cuensaldo = dec_cuensaldo - ? - ?, int_cuencontmov = int_cuencontmov + ? WHERE chr_cuencodigo = ?");
+                    "UPDATE Cuenta SET dec_cuensaldo = dec_cuensaldo - ? - ?, int_cuencontmov = int_cuencontmov + ? WHERE chr_cuencodigo = ?");
             ps.setDouble(1, importe);
             ps.setDouble(2, costo);
             ps.setInt(3, costo > 0 ? 2 : 1);
@@ -281,24 +289,27 @@ public class EurekaService {
             ps.executeUpdate();
 
             ps = conn.prepareStatement(
-                "UPDATE Cuenta SET dec_cuensaldo = dec_cuensaldo + ?, int_cuencontmov = int_cuencontmov + 1 WHERE chr_cuencodigo = ?");
+                    "UPDATE Cuenta SET dec_cuensaldo = dec_cuensaldo + ?, int_cuencontmov = int_cuencontmov + 1 WHERE chr_cuencodigo = ?");
             ps.setDouble(1, importe);
             ps.setString(2, cuentaDestino);
             ps.executeUpdate();
 
             conn.commit();
         } catch (Exception e) {
-            if (conn != null) conn.rollback();
+            if (conn != null) {
+                conn.rollback();
+            }
             throw e;
         } finally {
-            if (conn != null) conn.close();
+            if (conn != null) {
+                conn.close();
+            }
         }
     }
 
     public double verificarSaldo(String cuenta) throws Exception {
-        try (Connection conn = getConnection();
-             PreparedStatement ps = conn.prepareStatement(
-                 "SELECT dec_cuensaldo FROM Cuenta WHERE chr_cuencodigo = ? AND vch_cuenestado = 'ACTIVO'")) {
+        try (Connection conn = getConnection(); PreparedStatement ps = conn.prepareStatement(
+                "SELECT dec_cuensaldo FROM Cuenta WHERE chr_cuencodigo = ? AND vch_cuenestado = 'ACTIVO'")) {
             ps.setString(1, cuenta);
             try (ResultSet rs = ps.executeQuery()) {
                 if (rs.next()) {
@@ -309,25 +320,24 @@ public class EurekaService {
             }
         }
     }
-    
+
     public double obtenerCostoMovimiento(String cuenta) throws Exception {
-    try (Connection conn = getConnection();
-         PreparedStatement ps = conn.prepareStatement(
-             "SELECT cm.dec_costimporte " +
-             "FROM Cuenta c JOIN CostoMovimiento cm ON c.chr_monecodigo = cm.chr_monecodigo " +
-             "WHERE c.chr_cuencodigo = ? AND c.vch_cuenestado = 'ACTIVO'")) {
-        ps.setString(1, cuenta);
-        try (ResultSet rs = ps.executeQuery()) {
-            if (rs.next()) {
-                return rs.getDouble("dec_costimporte");
-            } else {
-                throw new Exception("Cuenta no válida o inactiva.");
+        try (Connection conn = getConnection(); PreparedStatement ps = conn.prepareStatement(
+                "SELECT cm.dec_costimporte "
+                + "FROM Cuenta c JOIN CostoMovimiento cm ON c.chr_monecodigo = cm.chr_monecodigo "
+                + "WHERE c.chr_cuencodigo = ? AND c.vch_cuenestado = 'ACTIVO'")) {
+            ps.setString(1, cuenta);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getDouble("dec_costimporte");
+                } else {
+                    throw new Exception("Cuenta no válida o inactiva.");
+                }
             }
         }
     }
-}
-    
-    public Usuario iniciarSesion(String usuario, String clave) throws Exception {
+
+    public Usuario iniciarSesion(String username, String clave) throws Exception { // Cambiar 'usuario' a 'username'
         Connection conn = null;
         try {
             conn = getConnection();
@@ -335,9 +345,9 @@ public class EurekaService {
 
             // Validar credenciales
             PreparedStatement ps = conn.prepareStatement(
-                "SELECT chr_emplcodigo, vch_emplusuario, vch_emplclave, vch_emplestado " +
-                "FROM Usuario WHERE vch_emplusuario = ? AND vch_emplclave = ? AND vch_emplestado = 'ACTIVO'");
-            ps.setString(1, usuario);
+                    "SELECT chr_emplcodigo, vch_emplusuario, vch_emplclave, vch_emplestado "
+                    + "FROM Usuario WHERE vch_emplusuario = ? AND vch_emplclave = ? AND vch_emplestado = 'ACTIVO'");
+            ps.setString(1, username); // Actualizar el nombre del parámetro
             ps.setString(2, clave);
             ResultSet rs = ps.executeQuery();
             if (!rs.next()) {
@@ -363,8 +373,8 @@ public class EurekaService {
             }
 
             ps = conn.prepareStatement(
-                "INSERT INTO LOGSESSION (chr_emplcodigo, fec_ingreso, ip, hostname) " +
-                "VALUES (?, NOW(), ?, ?)");
+                    "INSERT INTO LOGSESSION (chr_emplcodigo, fec_ingreso, ip, hostname) "
+                    + "VALUES (?, NOW(), ?, ?)");
             ps.setString(1, user.getCodigo());
             ps.setString(2, ip);
             ps.setString(3, hostname);
@@ -373,10 +383,14 @@ public class EurekaService {
             conn.commit();
             return user;
         } catch (Exception e) {
-            if (conn != null) conn.rollback();
+            if (conn != null) {
+                conn.rollback();
+            }
             throw e;
         } finally {
-            if (conn != null) conn.close();
+            if (conn != null) {
+                conn.close();
+            }
         }
     }
 }
