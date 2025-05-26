@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.CONUNI_CLIMOV_GR10_EUREKA" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

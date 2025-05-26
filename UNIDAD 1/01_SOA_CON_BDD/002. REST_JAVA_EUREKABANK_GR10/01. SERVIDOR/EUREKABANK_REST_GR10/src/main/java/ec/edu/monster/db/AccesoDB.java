@@ -11,7 +11,8 @@ import java.sql.SQLException;
 public class AccesoDB {
 
     // Database connection parameters
-    private static final String URL = "jdbc:mysql://localhost:3306/eurekabank?useSSL=false&serverTimezone=UTC";
+    private static final String URL = "jdbc:mysql://localhost:3306/eurekabank?useSSL=false&allowPublicKeyRetrieval=true";
+    
     private static final String USER = "eureka";
     private static final String PASSWORD = "admin";
 
@@ -20,11 +21,17 @@ public class AccesoDB {
     }
 
     public static Connection getConnection() throws SQLException {
+        Connection conn = null;
         try {
+            // Load the MySQL JDBC driver
+            Class.forName("com.mysql.cj.jdbc.Driver");
             // Establish the connection
-            return DriverManager.getConnection(URL, USER, PASSWORD);
+            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+        } catch (ClassNotFoundException e) {
+            throw new SQLException("MySQL JDBC Driver not found: " + e.getMessage());
         } catch (SQLException e) {
             throw new SQLException("ERROR, no se tiene acceso al Servidor: " + e.getMessage());
         }
+        return conn;
     }
 }

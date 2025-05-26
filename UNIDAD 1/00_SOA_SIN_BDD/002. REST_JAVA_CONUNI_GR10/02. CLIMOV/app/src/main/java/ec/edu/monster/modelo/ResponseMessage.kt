@@ -1,4 +1,5 @@
 package ec.edu.monster.modelo
 
-class ResponseMessage {
-}
+data class ResponseMessage(
+    val message: String
+)

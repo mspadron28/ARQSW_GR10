@@ -1,4 +1,7 @@
 package ec.edu.monster.modelo
 
-class RetiroRequest {
-}
+data class RetiroRequest(
+    val cuenta: String,
+    val importe: Double,
+    val codEmp: String
+)

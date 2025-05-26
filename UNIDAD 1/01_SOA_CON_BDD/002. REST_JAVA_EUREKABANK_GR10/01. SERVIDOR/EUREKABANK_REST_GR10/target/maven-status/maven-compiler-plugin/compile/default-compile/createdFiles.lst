@@ -12,4 +12,5 @@ ec\edu\monster\controlador\EurekaRestResource$LoginRequest.class
 ec\edu\monster\controlador\EurekaRestResource$RetiroRequest.class
 ec\edu\monster\eurekabank_rest_gr10\resources\JakartaEE10Resource.class
 ec\edu\monster\modelo\Usuario.class
+ec\edu\monster\prueba\pruebaConectarDB.class
 ec\edu\monster\controlador\EurekaRestResource$CostoResponse.class

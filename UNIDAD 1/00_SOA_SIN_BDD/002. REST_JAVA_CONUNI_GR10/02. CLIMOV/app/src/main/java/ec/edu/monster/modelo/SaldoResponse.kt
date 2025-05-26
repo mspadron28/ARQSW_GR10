@@ -1,4 +1,5 @@
 package ec.edu.monster.modelo
 
-class SaldoResponse {
-}
+data class SaldoResponse(
+    val saldo: Double
+)

@@ -1,4 +1,7 @@
 package ec.edu.monster.modelo
 
-class DepositoRequest {
-}
+data class DepositoRequest(
+    val cuenta: String,
+    val importe: Double,
+    val codEmp: String
+)

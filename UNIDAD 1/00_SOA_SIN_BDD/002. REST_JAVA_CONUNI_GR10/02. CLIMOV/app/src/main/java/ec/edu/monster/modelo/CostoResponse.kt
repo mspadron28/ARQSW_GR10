@@ -1,4 +1,5 @@
 package ec.edu.monster.modelo
 
-class CostoResponse {
-}
+data class CostoResponse(
+    val costo: Double
+)

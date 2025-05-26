@@ -1,35 +1,37 @@
 package ec.edu.monster.controlador
 
-import ec.edu.monster.servicio.CONUNIService
+import ec.edu.monster.modelo.Movimiento
+import ec.edu.monster.modelo.Usuario
+import ec.edu.monster.servicio.EurekaService
 
 class AppControlador {
-    private val service = CONUNIService()
+    private val service = EurekaService()
 
-    suspend fun login(usuario: String, contraseña: String): Boolean {
-        return service.login(usuario, contraseña)
+    suspend fun login(usuario: String, clave: String): Usuario? {
+        return service.login(usuario, clave)
     }
 
-    suspend fun pulgadasACentimetros(pulgadas: Double): Double {
-        return service.pulgadasACentimetros(pulgadas)
+    suspend fun traerMovimientos(cuenta: String): List<Movimiento> {
+        return service.traerMovimientos(cuenta)
     }
 
-    suspend fun centimetrosAPulgadas(centimetros: Double): Double {
-        return service.centimetrosAPulgadas(centimetros)
+    suspend fun registrarDeposito(cuenta: String, importe: Double, codEmp: String) {
+        service.registrarDeposito(cuenta, importe, codEmp)
     }
 
-    suspend fun metrosAPies(metros: Double): Double {
-        return service.metrosAPies(metros)
+    suspend fun registrarRetiro(cuenta: String, importe: Double, codEmp: String) {
+        service.registrarRetiro(cuenta, importe, codEmp)
     }
 
-    suspend fun piesAMetros(pies: Double): Double {
-        return service.piesAMetros(pies)
+    suspend fun realizarTransferencia(cuentaOrigen: String, cuentaDestino: String, importe: Double, codEmp: String) {
+        service.realizarTransferencia(cuentaOrigen, cuentaDestino, importe, codEmp)
     }
 
-    suspend fun metrosAYardas(metros: Double): Double {
-        return service.metrosAYardas(metros)
+    suspend fun verificarSaldo(cuenta: String): Double {
+        return service.verificarSaldo(cuenta)
     }
 
-    suspend fun yardasAMetros(yardas: Double): Double {
-        return service.yardasAMetros(yardas)
+    suspend fun obtenerCostoMovimiento(cuenta: String): Double {
+        return service.obtenerCostoMovimiento(cuenta)
     }
 }

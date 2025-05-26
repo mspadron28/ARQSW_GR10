@@ -1,4 +1,8 @@
 package ec.edu.monster.modelo
 
-class TransferenciaRequest {
-}
+data class TransferenciaRequest(
+    val cuentaOrigen: String,
+    val cuentaDestino: String,
+    val importe: Double,
+    val codEmp: String
+)
