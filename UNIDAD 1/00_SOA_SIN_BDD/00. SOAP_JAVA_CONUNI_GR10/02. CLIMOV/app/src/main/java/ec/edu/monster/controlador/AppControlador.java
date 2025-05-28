@@ -1,40 +1,44 @@
 package ec.edu.monster.controlador;
 
-import ec.edu.monster.servicio.CONUNIService;
+import ec.edu.monster.modelo.Movimiento;
+import ec.edu.monster.modelo.Usuario;
+import ec.edu.monster.servicio.EurekaService;
+
+import java.util.List;
 
 public class AppControlador {
 
-    private final CONUNIService service;
+    private final EurekaService service;
 
     public AppControlador() {
-        this.service = new CONUNIService();
+        this.service = new EurekaService();
     }
 
-    public boolean login(String usuario, String contraseña) throws Exception {
+    public Usuario login(String usuario, String contraseña) throws Exception {
         return service.login(usuario, contraseña);
     }
 
-    public double pulgadasACentimetros(double pulgadas) throws Exception {
-        return service.pulgadasACentimetros(pulgadas);
+    public List<Movimiento> traerMovimientos(String cuenta) throws Exception {
+        return service.leerMovimientos(cuenta);
     }
 
-    public double centimetrosAPulgadas(double centimetros) throws Exception {
-        return service.centimetrosAPulgadas(centimetros);
+    public void registrarDeposito(String cuenta, double importe, String codEmp) throws Exception {
+        service.registrarDeposito(cuenta, importe, codEmp);
     }
 
-    public double metrosAPies(double metros) throws Exception {
-        return service.metrosAPies(metros);
+    public void registrarRetiro(String cuenta, double importe, String codEmp) throws Exception {
+        service.registrarRetiro(cuenta, importe, codEmp);
     }
 
-    public double piesAMetros(double pies) throws Exception {
-        return service.piesAMetros(pies);
+    public void realizarTransferencia(String cuentaOrigen, String cuentaDestino, double importe, String codEmp) throws Exception {
+        service.realizarTransferencia(cuentaOrigen, cuentaDestino, importe, codEmp);
     }
 
-    public double metrosAYardas(double metros) throws Exception {
-        return service.metrosAYardas(metros);
+    public double verificarSaldo(String cuenta) throws Exception {
+        return service.verificarSaldo(cuenta);
     }
 
-    public double yardasAMetros(double yardas) throws Exception {
-        return service.yardasAMetros(yardas);
+    public double obtenerCostoMovimiento(String cuenta) throws Exception {
+        return service.obtenerCostoMovimiento(cuenta);
     }
 }

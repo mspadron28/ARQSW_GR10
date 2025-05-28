@@ -1,4 +1,8 @@
 package ec.edu.monster.modelo
 
-class Usuario {
-}
+data class Usuario(
+    val codigo: String,
+    val usuario: String,
+    val clave: String,
+    val estado: String
+)

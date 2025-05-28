@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,7 +13,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CONUNI_CLIMOV_GR10"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".SaldoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_saldo"
+            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
+        <activity
+            android:name=".TransferenciaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_transferencia"
+            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
+        <activity
+            android:name=".RetiroActivity"
+            android:exported="false"
+            android:label="@string/title_activity_retiro"
+            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
+        <activity
+            android:name=".DepositoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_deposito"
+            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
+        <activity
+            android:name=".ConsultaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_consulta"
+            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
         <activity
             android:name=".ConversorActivity"
             android:exported="false"

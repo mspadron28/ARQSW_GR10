@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">CONUNI_CLIMOV_GR10</string>
     <string name="title_activity_conversor">ConversorActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_consulta">ConsultaActivity</string>
+    <string name="title_activity_deposito">DepositoActivity</string>
+    <string name="title_activity_retiro">RetiroActivity</string>
+    <string name="title_activity_transferencia">TransferenciaActivity</string>
+    <string name="title_activity_saldo">SaldoActivity</string>
 </resources>

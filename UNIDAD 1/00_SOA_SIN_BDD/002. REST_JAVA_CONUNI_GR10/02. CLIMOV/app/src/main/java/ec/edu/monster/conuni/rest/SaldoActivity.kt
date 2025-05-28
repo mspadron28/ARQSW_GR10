@@ -6,7 +6,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -39,7 +38,7 @@ class SaldoActivity : ComponentActivity() {
                         TopAppBar(
                             title = { Text("Verificar Saldo", color = Color.White, fontWeight = FontWeight.Bold) },
                             colors = TopAppBarDefaults.topAppBarColors(
-                                containerColor = Color(0xFF46535D)
+                                containerColor = Color(0xFF1E272E)
                             )
                         )
                     },
@@ -70,26 +69,34 @@ fun SaldoScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit) {
         modifier = modifier
             .fillMaxSize()
             .padding(16.dp)
-            .background(Color(0xFFB1C5C7), shape = RoundedCornerShape(8.dp))
-            .border(1.dp, Color.Black, shape = RoundedCornerShape(8.dp))
+            .background(Color(0xFF1E272E), shape = RoundedCornerShape(12.dp))
             .padding(16.dp),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = "Verificar Saldo",
-            fontSize = 24.sp,
+            fontSize = 28.sp,
             fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(bottom = 16.dp)
+            color = Color.White,
+            modifier = Modifier.padding(bottom = 24.dp)
         )
 
         TextField(
             value = cuenta,
             onValueChange = { cuenta = it },
-            label = { Text("Cuenta") },
+            label = { Text("Cuenta", color = Color(0xFFB0BEC5)) },
+            colors = TextFieldDefaults.colors(
+                focusedContainerColor = Color(0xFF2D3436),
+                unfocusedContainerColor = Color(0xFF2D3436),
+                focusedTextColor = Color.White,
+                unfocusedTextColor = Color.White,
+                focusedIndicatorColor = Color(0xFF81D4FA),
+                unfocusedIndicatorColor = Color(0xFF78909C)
+            ),
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 8.dp)
+                .padding(vertical = 12.dp)
         )
 
         Button(
@@ -113,10 +120,10 @@ fun SaldoScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit) {
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 16.dp),
-            shape = RoundedCornerShape(4.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF202224))
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34495E))
         ) {
-            Text("Verificar", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+            Text("Verificar", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
 
         Button(
@@ -124,16 +131,16 @@ fun SaldoScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit) {
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 8.dp),
-            shape = RoundedCornerShape(4.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF202224))
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34495E))
         ) {
-            Text("Volver al Menú", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+            Text("Volver al Menú", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
 
         errorMessage?.let {
             Text(
                 text = it,
-                color = Color.Red,
+                color = Color(0xFFEF5350),
                 modifier = Modifier.padding(top = 16.dp)
             )
         }
@@ -141,7 +148,7 @@ fun SaldoScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit) {
         saldo?.let {
             Text(
                 text = "Saldo: $it",
-                color = Color.Green,
+                color = Color(0xFF66BB6A),
                 modifier = Modifier.padding(top = 16.dp)
             )
         }

@@ -2,37 +2,18 @@ package ec.edu.monster.util;
 
 public class SoapConstants {
     public static final String NAMESPACE = "http://controlador.monster.edu.ec/";
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public static final String URL = "http://10.40.28.227:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
-=======
-    public static final String URL = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
->>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
-=======
-    public static final String URL = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
->>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
-=======
-    public static final String URL = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
->>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
-=======
-    public static final String URL = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
->>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
-=======
-    public static final String URL = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
->>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
-=======
-    public static final String URL = "http://10.40.27.8:8080/CONUNI_GR10/CONUNI"; // Usa 10.0.2.2 para emulador
->>>>>>> 822890f65bf73e8532339c88aa949a0c8de99c6b
-    public static final String SOAP_ACTION_PREFIX = "http://controlador.monster.edu.ec/CONUNI/";
-    public static final String LOGIN_METHOD = "login";
-    public static final String PULGADAS_A_CENTIMETROS_METHOD = "pulgadasACentimetros";
-    public static final String CENTIMETROS_A_PULGADAS_METHOD = "centimetrosAPulgadas";
-    public static final String METROS_A_PIES_METHOD = "metrosAPies";
-    public static final String PIES_A_METROS_METHOD = "piesAMetros";
-    public static final String METROS_A_YARDAS_METHOD = "metrosAYardas";
-    public static final String YARDAS_A_METROS_METHOD = "yardasAMetros";
+
+    // URL del servicio SOAP (usar 10.0.2.2 para emulador, ajustar según entorno)
+    public static final String URL = "http://192.168.1.10:8080/EUREKABANK_GR10/WSEureka";
+
+    public static final String SOAP_ACTION_PREFIX = "http://controlador.monster.edu.ec/";
+
+    // Nombres de los métodos según el WSDL
+    public static final String LOGIN_METHOD = "iniciarSesion";
+    public static final String LEER_MOVIMIENTOS_METHOD = "leerMovimientos";
+    public static final String REGISTRAR_DEPOSITO_METHOD = "registrarDeposito";
+    public static final String REGISTRAR_RETIRO_METHOD = "registrarRetiro";
+    public static final String REALIZAR_TRANSFERENCIA_METHOD = "realizarTransferencia";
+    public static final String VERIFICAR_SALDO_METHOD = "verificarSaldo";
+    public static final String OBTENER_COSTO_MOVIMIENTO_METHOD = "obtenerCostoMovimiento";
 }
