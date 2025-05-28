@@ -1,0 +1,59 @@
+ec.edu.monster.eurekabankmobile.app-lifecycle-process-2.9.0-0 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\res
+ec.edu.monster.eurekabankmobile.app-runtime-saveable-release-1 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\094c0668f7077d59495a57e82efca43d\transformed\runtime-saveable-release\res
+ec.edu.monster.eurekabankmobile.app-constraintlayout-2.0.1-2 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\0b898e8f9a74684d7b4a11efca6a471d\transformed\constraintlayout-2.0.1\res
+ec.edu.monster.eurekabankmobile.app-lifecycle-livedata-core-ktx-2.9.0-3 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\123078272f08f5be27c4029ea9b66b53\transformed\lifecycle-livedata-core-ktx-2.9.0\res
+ec.edu.monster.eurekabankmobile.app-cardview-1.0.0-4 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\13d8a90cd9d1bc1d052079d45dcfad9f\transformed\cardview-1.0.0\res
+ec.edu.monster.eurekabankmobile.app-appcompat-1.7.0-5 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\15f000efb367e6f89f4c5db0761b3e2f\transformed\appcompat-1.7.0\res
+ec.edu.monster.eurekabankmobile.app-material-1.12.0-6 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\1b1ba23d2a4a3d44e915cd09f2f21632\transformed\material-1.12.0\res
+ec.edu.monster.eurekabankmobile.app-foundation-layout-release-7 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\1d504f3850a3a1f39c23deb1cf2560be\transformed\foundation-layout-release\res
+ec.edu.monster.eurekabankmobile.app-profileinstaller-1.4.0-8 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\res
+ec.edu.monster.eurekabankmobile.app-core-viewtree-1.0.0-9 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a7b36684569d273c021268c2611f264\transformed\core-viewtree-1.0.0\res
+ec.edu.monster.eurekabankmobile.app-ui-geometry-release-10 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2e54055dbf4b365766e03c76182fc4f3\transformed\ui-geometry-release\res
+ec.edu.monster.eurekabankmobile.app-core-1.16.0-11 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\res
+ec.edu.monster.eurekabankmobile.app-activity-ktx-1.9.0-12 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\319b8f6d0d5ef37fc92c3180e3ff7bd2\transformed\activity-ktx-1.9.0\res
+ec.edu.monster.eurekabankmobile.app-material-icons-core-release-13 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\38002815ea0a65f168e0abc85a35fee8\transformed\material-icons-core-release\res
+ec.edu.monster.eurekabankmobile.app-savedstate-release-14 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3b027b8240351b3b9cf105762caf59c6\transformed\savedstate-release\res
+ec.edu.monster.eurekabankmobile.app-emoji2-1.3.0-15 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\res
+ec.edu.monster.eurekabankmobile.app-ui-graphics-release-16 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3d809edb3915aeb84747a3154aec9ad9\transformed\ui-graphics-release\res
+ec.edu.monster.eurekabankmobile.app-activity-1.9.0-17 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4df7fe131f70e366d016af8b7dd868a9\transformed\activity-1.9.0\res
+ec.edu.monster.eurekabankmobile.app-lifecycle-viewmodel-release-18 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4edc9e2f695e90cd042720687b57a7f7\transformed\lifecycle-viewmodel-release\res
+ec.edu.monster.eurekabankmobile.app-material3-release-19 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4f224f11ce71c6d268c8d30b237194dd\transformed\material3-release\res
+ec.edu.monster.eurekabankmobile.app-runtime-release-20 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5a34a390991ff292f2bcfb8b6393d5d0\transformed\runtime-release\res
+ec.edu.monster.eurekabankmobile.app-viewpager2-1.1.0-beta02-21 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5bc1cffc62d903bf618444d4e6d0fc4f\transformed\viewpager2-1.1.0-beta02\res
+ec.edu.monster.eurekabankmobile.app-tracing-1.2.0-22 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5fc818ea5a9c7839a9b82ba9b0361692\transformed\tracing-1.2.0\res
+ec.edu.monster.eurekabankmobile.app-core-runtime-2.2.0-23 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\60e2310c6cc27af5825239273248b1f0\transformed\core-runtime-2.2.0\res
+ec.edu.monster.eurekabankmobile.app-lifecycle-viewmodel-ktx-2.9.0-24 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\6414823623c88d96a7f1259c070fc0cc\transformed\lifecycle-viewmodel-ktx-2.9.0\res
+ec.edu.monster.eurekabankmobile.app-material-ripple-release-25 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\6d147b5a193e0960d9cf33ceedf1f9b6\transformed\material-ripple-release\res
+ec.edu.monster.eurekabankmobile.app-graphics-path-1.0.1-26 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\70cbd1086ff857fcb6876740c9764fc6\transformed\graphics-path-1.0.1\res
+ec.edu.monster.eurekabankmobile.app-emoji2-views-helper-1.3.0-27 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\7196cea218a40d74b7b4ccc1c24f11b5\transformed\emoji2-views-helper-1.3.0\res
+ec.edu.monster.eurekabankmobile.app-recyclerview-1.4.0-28 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\797f2957f42699a501ebf8fd26b12aac\transformed\recyclerview-1.4.0\res
+ec.edu.monster.eurekabankmobile.app-lifecycle-runtime-release-29 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\87658ef75151964d1594a9c0b3623811\transformed\lifecycle-runtime-release\res
+ec.edu.monster.eurekabankmobile.app-drawerlayout-1.1.1-30 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\8c24c0404e22e7fb1af604796c93c9e9\transformed\drawerlayout-1.1.1\res
+ec.edu.monster.eurekabankmobile.app-lifecycle-livedata-2.9.0-31 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\94d9325ee8fd3678cfcdaa0a6914f122\transformed\lifecycle-livedata-2.9.0\res
+ec.edu.monster.eurekabankmobile.app-activity-compose-1.9.0-32 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\96320f904ae9bb23fbbe354a7cf4b4a1\transformed\activity-compose-1.9.0\res
+ec.edu.monster.eurekabankmobile.app-startup-runtime-1.1.1-33 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a07d522a5afb31e981458fbeee20d022\transformed\startup-runtime-1.1.1\res
+ec.edu.monster.eurekabankmobile.app-annotation-experimental-1.4.1-34 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a2e850c2c3ba58d60c5a5bf40bd147e8\transformed\annotation-experimental-1.4.1\res
+ec.edu.monster.eurekabankmobile.app-lifecycle-runtime-compose-release-35 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\ae0b5e83bace4878b92a25bc6dd02434\transformed\lifecycle-runtime-compose-release\res
+ec.edu.monster.eurekabankmobile.app-foundation-release-36 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b0f9e6c065c49ebb7bd26aa7442e761d\transformed\foundation-release\res
+ec.edu.monster.eurekabankmobile.app-ui-unit-release-37 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b2d0173fcb150b2ac561343b0bf2f477\transformed\ui-unit-release\res
+ec.edu.monster.eurekabankmobile.app-animation-core-release-38 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b4efa2c620e2a754b45e5541d4748930\transformed\animation-core-release\res
+ec.edu.monster.eurekabankmobile.app-ui-text-release-39 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\bba539843e0ce5364b78687653d52874\transformed\ui-text-release\res
+ec.edu.monster.eurekabankmobile.app-customview-poolingcontainer-1.0.0-40 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\beb5c03735aea86df67f0e84493fb725\transformed\customview-poolingcontainer-1.0.0\res
+ec.edu.monster.eurekabankmobile.app-ui-util-release-41 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\c1b818cbac914403141e5a3a693150e1\transformed\ui-util-release\res
+ec.edu.monster.eurekabankmobile.app-fragment-1.5.4-42 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\c33706dc18bdd1d475482e1dfc776619\transformed\fragment-1.5.4\res
+ec.edu.monster.eurekabankmobile.app-lifecycle-viewmodel-savedstate-release-43 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\cba08d3a3105e72784f2fcb3444812d8\transformed\lifecycle-viewmodel-savedstate-release\res
+ec.edu.monster.eurekabankmobile.app-ui-release-44 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\ccd41ee9ef5e8748bb3e67ad92fa939f\transformed\ui-release\res
+ec.edu.monster.eurekabankmobile.app-lifecycle-livedata-core-2.9.0-45 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\d44193d912bede436545174277b00aad\transformed\lifecycle-livedata-core-2.9.0\res
+ec.edu.monster.eurekabankmobile.app-coordinatorlayout-1.1.0-46 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\d79fa199b62ead3bcf55ee5133cabde1\transformed\coordinatorlayout-1.1.0\res
+ec.edu.monster.eurekabankmobile.app-transition-1.5.0-47 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e01b4cf9f243d59e014e04b24dab7bc0\transformed\transition-1.5.0\res
+ec.edu.monster.eurekabankmobile.app-animation-release-48 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e27552a2a107d591608a3d44d0799910\transformed\animation-release\res
+ec.edu.monster.eurekabankmobile.app-appcompat-resources-1.7.0-49 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e7f6df86490c909ff1c14137dc7410b4\transformed\appcompat-resources-1.7.0\res
+ec.edu.monster.eurekabankmobile.app-savedstate-ktx-1.3.0-50 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\f3508b7bb667bb9e8b418971a436895e\transformed\savedstate-ktx-1.3.0\res
+ec.edu.monster.eurekabankmobile.app-core-ktx-1.16.0-51 C:\Users\Mateo\.gradle\caches\8.11.1\transforms\fa9cd28c143999247b8c25a9c4bdbc17\transformed\core-ktx-1.16.0\res
+ec.edu.monster.eurekabankmobile.app-pngs-52 D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\build\generated\res\pngs\debug
+ec.edu.monster.eurekabankmobile.app-resValues-53 D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\build\generated\res\resValues\debug
+ec.edu.monster.eurekabankmobile.app-packageDebugResources-54 D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+ec.edu.monster.eurekabankmobile.app-packageDebugResources-55 D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+ec.edu.monster.eurekabankmobile.app-debug-56 D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\build\intermediates\merged_res\debug\mergeDebugResources
+ec.edu.monster.eurekabankmobile.app-debug-57 D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\debug\res
+ec.edu.monster.eurekabankmobile.app-main-58 D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\res

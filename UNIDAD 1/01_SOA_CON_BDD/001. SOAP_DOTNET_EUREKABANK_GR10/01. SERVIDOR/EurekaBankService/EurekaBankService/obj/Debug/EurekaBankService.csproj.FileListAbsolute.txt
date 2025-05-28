@@ -1,0 +1,10 @@
+C:\Arquitectura\001. SOAP_DOTNET_EUREKABANK_GR10\01. SERVIDOR\EurekaBankService\EurekaBankService\bin\Debug\EurekaBankService.dll.config
+C:\Arquitectura\001. SOAP_DOTNET_EUREKABANK_GR10\01. SERVIDOR\EurekaBankService\EurekaBankService\bin\Debug\EurekaBankService.dll
+C:\Arquitectura\001. SOAP_DOTNET_EUREKABANK_GR10\01. SERVIDOR\EurekaBankService\EurekaBankService\bin\Debug\EurekaBankService.pdb
+C:\Arquitectura\001. SOAP_DOTNET_EUREKABANK_GR10\01. SERVIDOR\EurekaBankService\EurekaBankService\bin\Debug\System.Data.SqlClient.dll
+C:\Arquitectura\001. SOAP_DOTNET_EUREKABANK_GR10\01. SERVIDOR\EurekaBankService\EurekaBankService\bin\Debug\System.Data.SqlClient.xml
+C:\Arquitectura\001. SOAP_DOTNET_EUREKABANK_GR10\01. SERVIDOR\EurekaBankService\EurekaBankService\obj\Debug\EurekaBankService.csproj.AssemblyReference.cache
+C:\Arquitectura\001. SOAP_DOTNET_EUREKABANK_GR10\01. SERVIDOR\EurekaBankService\EurekaBankService\obj\Debug\EurekaBankService.csproj.CoreCompileInputs.cache
+C:\Arquitectura\001. SOAP_DOTNET_EUREKABANK_GR10\01. SERVIDOR\EurekaBankService\EurekaBankService\obj\Debug\EurekaBa.F7C8488B.Up2Date
+C:\Arquitectura\001. SOAP_DOTNET_EUREKABANK_GR10\01. SERVIDOR\EurekaBankService\EurekaBankService\obj\Debug\EurekaBankService.dll
+C:\Arquitectura\001. SOAP_DOTNET_EUREKABANK_GR10\01. SERVIDOR\EurekaBankService\EurekaBankService\obj\Debug\EurekaBankService.pdb

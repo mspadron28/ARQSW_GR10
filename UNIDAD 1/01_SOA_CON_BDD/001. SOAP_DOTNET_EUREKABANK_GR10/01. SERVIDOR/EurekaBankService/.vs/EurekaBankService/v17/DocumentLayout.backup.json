@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Arquitectura\\001. SOAP_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F1DC6F-A6BD-42C6-81B8-AB29A379FB3F}|EurekaBankService\\EurekaBankService.csproj|c:\\arquitectura\\001. soap_dotnet_eurekabank_gr10\\01. servidor\\eurekabankservice\\eurekabankservice\\eurekabankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F1DC6F-A6BD-42C6-81B8-AB29A379FB3F}|EurekaBankService\\EurekaBankService.csproj|solutionrelative:eurekabankservice\\eurekabankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F1DC6F-A6BD-42C6-81B8-AB29A379FB3F}|EurekaBankService\\EurekaBankService.csproj|c:\\arquitectura\\001. soap_dotnet_eurekabank_gr10\\01. servidor\\eurekabankservice\\eurekabankservice\\ieurekabankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F1DC6F-A6BD-42C6-81B8-AB29A379FB3F}|EurekaBankService\\EurekaBankService.csproj|solutionrelative:eurekabankservice\\ieurekabankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F1DC6F-A6BD-42C6-81B8-AB29A379FB3F}|EurekaBankService\\EurekaBankService.csproj|c:\\arquitectura\\001. soap_dotnet_eurekabank_gr10\\01. servidor\\eurekabankservice\\eurekabankservice\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A7F1DC6F-A6BD-42C6-81B8-AB29A379FB3F}|EurekaBankService\\EurekaBankService.csproj|solutionrelative:eurekabankservice\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F1DC6F-A6BD-42C6-81B8-AB29A379FB3F}|EurekaBankService\\EurekaBankService.csproj|C:\\Arquitectura\\001. SOAP_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankService\\eurekabankservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A7F1DC6F-A6BD-42C6-81B8-AB29A379FB3F}|EurekaBankService\\EurekaBankService.csproj|solutionrelative:eurekabankservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EurekaBankService.cs",
+              "DocumentMoniker": "C:\\Arquitectura\\001. SOAP_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankService\\EurekaBankService\\EurekaBankService.cs",
+              "RelativeDocumentMoniker": "EurekaBankService\\EurekaBankService.cs",
+              "ToolTip": "C:\\Arquitectura\\001. SOAP_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankService\\EurekaBankService\\EurekaBankService.cs",
+              "RelativeToolTip": "EurekaBankService\\EurekaBankService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T03:35:17.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IEurekaBankService.cs",
+              "DocumentMoniker": "C:\\Arquitectura\\001. SOAP_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankService\\EurekaBankService\\IEurekaBankService.cs",
+              "RelativeDocumentMoniker": "EurekaBankService\\IEurekaBankService.cs",
+              "ToolTip": "C:\\Arquitectura\\001. SOAP_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankService\\EurekaBankService\\IEurekaBankService.cs",
+              "RelativeToolTip": "EurekaBankService\\IEurekaBankService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T03:35:18.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Arquitectura\\001. SOAP_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankService\\EurekaBankService\\packages.config",
+              "RelativeDocumentMoniker": "EurekaBankService\\packages.config",
+              "ToolTip": "C:\\Arquitectura\\001. SOAP_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankService\\EurekaBankService\\packages.config",
+              "RelativeToolTip": "EurekaBankService\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-28T03:27:02.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Arquitectura\\001. SOAP_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankService\\EurekaBankService\\App.config",
+              "RelativeDocumentMoniker": "EurekaBankService\\App.config",
+              "ToolTip": "C:\\Arquitectura\\001. SOAP_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankService\\EurekaBankService\\App.config",
+              "RelativeToolTip": "EurekaBankService\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-28T03:25:42.553Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

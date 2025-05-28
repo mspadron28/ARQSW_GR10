@@ -1,0 +1,409 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:2:1-30:12
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\1b1ba23d2a4a3d44e915cd09f2f21632\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e7f6df86490c909ff1c14137dc7410b4\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\0b898e8f9a74684d7b4a11efca6a471d\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\15f000efb367e6f89f4c5db0761b3e2f\transformed\appcompat-1.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5bc1cffc62d903bf618444d4e6d0fc4f\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\797f2957f42699a501ebf8fd26b12aac\transformed\recyclerview-1.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.2.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4f224f11ce71c6d268c8d30b237194dd\transformed\material3-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\c33706dc18bdd1d475482e1dfc776619\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\319b8f6d0d5ef37fc92c3180e3ff7bd2\transformed\activity-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4df7fe131f70e366d016af8b7dd868a9\transformed\activity-1.9.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-compose:1.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\96320f904ae9bb23fbbe354a7cf4b4a1\transformed\activity-compose-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\38002815ea0a65f168e0abc85a35fee8\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.6.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\6d147b5a193e0960d9cf33ceedf1f9b6\transformed\material-ripple-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b4efa2c620e2a754b45e5541d4748930\transformed\animation-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e27552a2a107d591608a3d44d0799910\transformed\animation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\1d504f3850a3a1f39c23deb1cf2560be\transformed\foundation-layout-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b0f9e6c065c49ebb7bd26aa7442e761d\transformed\foundation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\c1b818cbac914403141e5a3a693150e1\transformed\ui-util-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b2d0173fcb150b2ac561343b0bf2f477\transformed\ui-unit-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\bba539843e0ce5364b78687653d52874\transformed\ui-text-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3d809edb3915aeb84747a3154aec9ad9\transformed\ui-graphics-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2e54055dbf4b365766e03c76182fc4f3\transformed\ui-geometry-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\ccd41ee9ef5e8748bb3e67ad92fa939f\transformed\ui-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\7196cea218a40d74b7b4ccc1c24f11b5\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\8c24c0404e22e7fb1af604796c93c9e9\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\d79fa199b62ead3bcf55ee5133cabde1\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e01b4cf9f243d59e014e04b24dab7bc0\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\f21050ead7eacac580028713e1160607\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\9223b6949268ed3bb7bdcd1e5ef83775\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4fd9abc1377155ec920bf56ddcbd22b0\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\70510f1645f570223d25ca38fe20e14f\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3bfcbe23d5d656dd1b592bc47b87098f\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\6021033ab0e826d9c2748586bee22fbf\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e7bdae0a0263654bf9b0225f93cfdac9\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\0e3c009843e98cfec71d5f62e5084eca\transformed\autofill-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\70cbd1086ff857fcb6876740c9764fc6\transformed\graphics-path-1.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\beb5c03735aea86df67f0e84493fb725\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\123078272f08f5be27c4029ea9b66b53\transformed\lifecycle-livedata-core-ktx-2.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\ae0b5e83bace4878b92a25bc6dd02434\transformed\lifecycle-runtime-compose-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\f3508b7bb667bb9e8b418971a436895e\transformed\savedstate-ktx-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-android:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3b027b8240351b3b9cf105762caf59c6\transformed\savedstate-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\94d9325ee8fd3678cfcdaa0a6914f122\transformed\lifecycle-livedata-2.9.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\da26258d671d968bb4c9d720cddeb1aa\transformed\lifecycle-viewmodel-2.9.0\AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4edc9e2f695e90cd042720687b57a7f7\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\87658ef75151964d1594a9c0b3623811\transformed\lifecycle-runtime-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\6414823623c88d96a7f1259c070fc0cc\transformed\lifecycle-viewmodel-ktx-2.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\d44193d912bede436545174277b00aad\transformed\lifecycle-livedata-core-2.9.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\983e02ab660c378fcbf468f314bed3c9\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\cba08d3a3105e72784f2fcb3444812d8\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\fa9cd28c143999247b8c25a9c4bdbc17\transformed\core-ktx-1.16.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\094c0668f7077d59495a57e82efca43d\transformed\runtime-saveable-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.7.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5a34a390991ff292f2bcfb8b6393d5d0\transformed\runtime-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a2e850c2c3ba58d60c5a5bf40bd147e8\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a7b36684569d273c021268c2611f264\transformed\core-viewtree-1.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\523c06add41de7222323a208ac96123d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\35a823ae957f5b93fb90f8375cc2d501\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\13d8a90cd9d1bc1d052079d45dcfad9f\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\87759566b12da558e2d3fc2cf234e0ab\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a07d522a5afb31e981458fbeee20d022\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5fc818ea5a9c7839a9b82ba9b0361692\transformed\tracing-1.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\60e2310c6cc27af5825239273248b1f0\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\30d044900025702ae4e4df133a17536e\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\db1a466d11c91911b495ed5313adae0d\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b7e9650513d234c2c52da3b670bd8b3b\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:6:5-28:19
+INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:6:5-28:19
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\1b1ba23d2a4a3d44e915cd09f2f21632\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\1b1ba23d2a4a3d44e915cd09f2f21632\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\0b898e8f9a74684d7b4a11efca6a471d\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\0b898e8f9a74684d7b4a11efca6a471d\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\523c06add41de7222323a208ac96123d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\523c06add41de7222323a208ac96123d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a07d522a5afb31e981458fbeee20d022\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a07d522a5afb31e981458fbeee20d022\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:7:9-35
+	android:theme
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:13:9-54
+	android:usesCleartextTraffic
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:8:9-44
+activity#ec.edu.monster.eurekabankmobile.LoginActivity
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:14:9-21:20
+	android:exported
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:15:13-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:17:13-20:29
+action#android.intent.action.MAIN
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:19:27-74
+activity#ec.edu.monster.eurekabankmobile.MainActivity
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:22:9-75
+	android:exported
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:22:48-72
+	android:name
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:22:19-47
+activity#ec.edu.monster.eurekabankmobile.ConsultaActivity
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:23:9-79
+	android:exported
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:23:52-76
+	android:name
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:23:19-51
+activity#ec.edu.monster.eurekabankmobile.DepositoActivity
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:24:9-79
+	android:exported
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:24:52-76
+	android:name
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:24:19-51
+activity#ec.edu.monster.eurekabankmobile.RetiroActivity
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:25:9-77
+	android:exported
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:25:50-74
+	android:name
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:25:19-49
+activity#ec.edu.monster.eurekabankmobile.TransferenciaActivity
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:26:9-84
+	android:exported
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:26:57-81
+	android:name
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:26:19-56
+activity#ec.edu.monster.eurekabankmobile.VerificarSaldoActivity
+ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:27:9-85
+	android:exported
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:27:58-82
+	android:name
+		ADDED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:27:19-57
+uses-sdk
+INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml
+INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\1b1ba23d2a4a3d44e915cd09f2f21632\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\1b1ba23d2a4a3d44e915cd09f2f21632\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e7f6df86490c909ff1c14137dc7410b4\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e7f6df86490c909ff1c14137dc7410b4\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\0b898e8f9a74684d7b4a11efca6a471d\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\0b898e8f9a74684d7b4a11efca6a471d\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\15f000efb367e6f89f4c5db0761b3e2f\transformed\appcompat-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\15f000efb367e6f89f4c5db0761b3e2f\transformed\appcompat-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5bc1cffc62d903bf618444d4e6d0fc4f\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5bc1cffc62d903bf618444d4e6d0fc4f\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\797f2957f42699a501ebf8fd26b12aac\transformed\recyclerview-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\797f2957f42699a501ebf8fd26b12aac\transformed\recyclerview-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4f224f11ce71c6d268c8d30b237194dd\transformed\material3-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4f224f11ce71c6d268c8d30b237194dd\transformed\material3-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\c33706dc18bdd1d475482e1dfc776619\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\c33706dc18bdd1d475482e1dfc776619\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\319b8f6d0d5ef37fc92c3180e3ff7bd2\transformed\activity-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\319b8f6d0d5ef37fc92c3180e3ff7bd2\transformed\activity-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4df7fe131f70e366d016af8b7dd868a9\transformed\activity-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4df7fe131f70e366d016af8b7dd868a9\transformed\activity-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\96320f904ae9bb23fbbe354a7cf4b4a1\transformed\activity-compose-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\96320f904ae9bb23fbbe354a7cf4b4a1\transformed\activity-compose-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\38002815ea0a65f168e0abc85a35fee8\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\38002815ea0a65f168e0abc85a35fee8\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\6d147b5a193e0960d9cf33ceedf1f9b6\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\6d147b5a193e0960d9cf33ceedf1f9b6\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b4efa2c620e2a754b45e5541d4748930\transformed\animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b4efa2c620e2a754b45e5541d4748930\transformed\animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e27552a2a107d591608a3d44d0799910\transformed\animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e27552a2a107d591608a3d44d0799910\transformed\animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\1d504f3850a3a1f39c23deb1cf2560be\transformed\foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\1d504f3850a3a1f39c23deb1cf2560be\transformed\foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b0f9e6c065c49ebb7bd26aa7442e761d\transformed\foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b0f9e6c065c49ebb7bd26aa7442e761d\transformed\foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\c1b818cbac914403141e5a3a693150e1\transformed\ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\c1b818cbac914403141e5a3a693150e1\transformed\ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b2d0173fcb150b2ac561343b0bf2f477\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b2d0173fcb150b2ac561343b0bf2f477\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\bba539843e0ce5364b78687653d52874\transformed\ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\bba539843e0ce5364b78687653d52874\transformed\ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3d809edb3915aeb84747a3154aec9ad9\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3d809edb3915aeb84747a3154aec9ad9\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2e54055dbf4b365766e03c76182fc4f3\transformed\ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2e54055dbf4b365766e03c76182fc4f3\transformed\ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\ccd41ee9ef5e8748bb3e67ad92fa939f\transformed\ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\ccd41ee9ef5e8748bb3e67ad92fa939f\transformed\ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\7196cea218a40d74b7b4ccc1c24f11b5\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\7196cea218a40d74b7b4ccc1c24f11b5\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\8c24c0404e22e7fb1af604796c93c9e9\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\8c24c0404e22e7fb1af604796c93c9e9\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\d79fa199b62ead3bcf55ee5133cabde1\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\d79fa199b62ead3bcf55ee5133cabde1\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e01b4cf9f243d59e014e04b24dab7bc0\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e01b4cf9f243d59e014e04b24dab7bc0\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\f21050ead7eacac580028713e1160607\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\f21050ead7eacac580028713e1160607\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\9223b6949268ed3bb7bdcd1e5ef83775\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\9223b6949268ed3bb7bdcd1e5ef83775\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4fd9abc1377155ec920bf56ddcbd22b0\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4fd9abc1377155ec920bf56ddcbd22b0\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\70510f1645f570223d25ca38fe20e14f\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\70510f1645f570223d25ca38fe20e14f\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3bfcbe23d5d656dd1b592bc47b87098f\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3bfcbe23d5d656dd1b592bc47b87098f\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\6021033ab0e826d9c2748586bee22fbf\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\6021033ab0e826d9c2748586bee22fbf\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e7bdae0a0263654bf9b0225f93cfdac9\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\e7bdae0a0263654bf9b0225f93cfdac9\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\0e3c009843e98cfec71d5f62e5084eca\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\0e3c009843e98cfec71d5f62e5084eca\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\70cbd1086ff857fcb6876740c9764fc6\transformed\graphics-path-1.0.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\70cbd1086ff857fcb6876740c9764fc6\transformed\graphics-path-1.0.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\beb5c03735aea86df67f0e84493fb725\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\beb5c03735aea86df67f0e84493fb725\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\123078272f08f5be27c4029ea9b66b53\transformed\lifecycle-livedata-core-ktx-2.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\123078272f08f5be27c4029ea9b66b53\transformed\lifecycle-livedata-core-ktx-2.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\ae0b5e83bace4878b92a25bc6dd02434\transformed\lifecycle-runtime-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\ae0b5e83bace4878b92a25bc6dd02434\transformed\lifecycle-runtime-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\f3508b7bb667bb9e8b418971a436895e\transformed\savedstate-ktx-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\f3508b7bb667bb9e8b418971a436895e\transformed\savedstate-ktx-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3b027b8240351b3b9cf105762caf59c6\transformed\savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3b027b8240351b3b9cf105762caf59c6\transformed\savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\94d9325ee8fd3678cfcdaa0a6914f122\transformed\lifecycle-livedata-2.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\94d9325ee8fd3678cfcdaa0a6914f122\transformed\lifecycle-livedata-2.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\da26258d671d968bb4c9d720cddeb1aa\transformed\lifecycle-viewmodel-2.9.0\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\da26258d671d968bb4c9d720cddeb1aa\transformed\lifecycle-viewmodel-2.9.0\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4edc9e2f695e90cd042720687b57a7f7\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\4edc9e2f695e90cd042720687b57a7f7\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\87658ef75151964d1594a9c0b3623811\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\87658ef75151964d1594a9c0b3623811\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\6414823623c88d96a7f1259c070fc0cc\transformed\lifecycle-viewmodel-ktx-2.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\6414823623c88d96a7f1259c070fc0cc\transformed\lifecycle-viewmodel-ktx-2.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\d44193d912bede436545174277b00aad\transformed\lifecycle-livedata-core-2.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\d44193d912bede436545174277b00aad\transformed\lifecycle-livedata-core-2.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\983e02ab660c378fcbf468f314bed3c9\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\983e02ab660c378fcbf468f314bed3c9\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\cba08d3a3105e72784f2fcb3444812d8\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\cba08d3a3105e72784f2fcb3444812d8\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\fa9cd28c143999247b8c25a9c4bdbc17\transformed\core-ktx-1.16.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\fa9cd28c143999247b8c25a9c4bdbc17\transformed\core-ktx-1.16.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\094c0668f7077d59495a57e82efca43d\transformed\runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\094c0668f7077d59495a57e82efca43d\transformed\runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5a34a390991ff292f2bcfb8b6393d5d0\transformed\runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5a34a390991ff292f2bcfb8b6393d5d0\transformed\runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a2e850c2c3ba58d60c5a5bf40bd147e8\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a2e850c2c3ba58d60c5a5bf40bd147e8\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a7b36684569d273c021268c2611f264\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a7b36684569d273c021268c2611f264\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\523c06add41de7222323a208ac96123d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\523c06add41de7222323a208ac96123d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\35a823ae957f5b93fb90f8375cc2d501\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\35a823ae957f5b93fb90f8375cc2d501\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\13d8a90cd9d1bc1d052079d45dcfad9f\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\13d8a90cd9d1bc1d052079d45dcfad9f\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\87759566b12da558e2d3fc2cf234e0ab\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\87759566b12da558e2d3fc2cf234e0ab\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a07d522a5afb31e981458fbeee20d022\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a07d522a5afb31e981458fbeee20d022\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5fc818ea5a9c7839a9b82ba9b0361692\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\5fc818ea5a9c7839a9b82ba9b0361692\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\60e2310c6cc27af5825239273248b1f0\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\60e2310c6cc27af5825239273248b1f0\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\30d044900025702ae4e4df133a17536e\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\30d044900025702ae4e4df133a17536e\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\db1a466d11c91911b495ed5313adae0d\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\db1a466d11c91911b495ed5313adae0d\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b7e9650513d234c2c52da3b670bd8b3b\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\b7e9650513d234c2c52da3b670bd8b3b\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a07d522a5afb31e981458fbeee20d022\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\a07d522a5afb31e981458fbeee20d022\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+permission#ec.edu.monster.eurekabankmobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+uses-permission#ec.edu.monster.eurekabankmobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92

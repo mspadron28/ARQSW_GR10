@@ -1,0 +1,42 @@
+{
+  "ExtendedData": {
+    "inputs": [
+      "http://localhost:8733/EurekaService/?wsdl"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "enableDataBinding": true,
+    "namespaceMappings": [
+      "*, EurekaServiceReference"
+    ],
+    "references": [
+      "IKVM.ByteCode, {IKVM.ByteCode, 9.3.0}",
+      "IKVM.CoreLib, {IKVM, 8.11.2}",
+      "IKVM.Java, {IKVM, 8.11.2}",
+      "IKVM.Reflection, {IKVM, 8.11.2}",
+      "IKVM.Runtime, {IKVM, 8.11.2}",
+      "Microsoft.Extensions.DependencyModel, {Microsoft.Extensions.DependencyModel, 8.0.0}",
+      "Microsoft.Extensions.ObjectPool, {Microsoft.Extensions.ObjectPool, 8.0.10}",
+      "System.Collections.Immutable, {System.Collections.Immutable, 8.0.0}",
+      "System.Data.Odbc, {System.Data.Odbc, 8.0.0}",
+      "System.Reflection.Metadata, {System.Reflection.Metadata, 8.0.1}",
+      "System.Security.Cryptography.Pkcs, {System.Security.Cryptography.Pkcs, 8.0.1}",
+      "System.Security.Cryptography.Xml, {System.Security.Cryptography.Xml, 8.0.2}",
+      "System.ServiceModel, {System.ServiceModel.Primitives, 8.1.2}",
+      "System.ServiceModel.Duplex, {System.ServiceModel.Primitives, 8.1.2}",
+      "System.ServiceModel.Http, {System.ServiceModel.Http, 8.1.2}",
+      "System.ServiceModel.NetFramingBase, {System.ServiceModel.NetFramingBase, 8.1.2}",
+      "System.ServiceModel.NetTcp, {System.ServiceModel.NetTcp, 8.1.2}",
+      "System.ServiceModel.Primitives, {System.ServiceModel.Primitives, 8.1.2}",
+      "System.ServiceModel.Security, {System.ServiceModel.Primitives, 8.1.2}",
+      "System.Text.Encoding.CodePages, {System.Text.Encoding.CodePages, 8.0.0}",
+      "System.Text.Encodings.Web, {System.Text.Encodings.Web, 8.0.0}",
+      "System.Text.Json, {System.Text.Json, 8.0.5}"
+    ],
+    "sync": true,
+    "targetFramework": "net8.0",
+    "typeReuseMode": "All"
+  }
+}
