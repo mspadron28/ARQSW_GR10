@@ -1,0 +1,168 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ec.edu.monster.eurekabankmobile"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+14        android:name="ec.edu.monster.eurekabankmobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="ec.edu.monster.eurekabankmobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:6:5-28:19
+20        android:allowBackup="true"
+20-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:7:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.16.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2ea1c74d2d79804f8a03964902d56422\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+22        android:debuggable="true"
+23        android:extractNativeLibs="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:10:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:11:9-54
+27        android:supportsRtl="true"
+27-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:12:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.EurekaBankMobile"
+29-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:13:9-54
+30        android:usesCleartextTraffic="true" >
+30-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:8:9-44
+31        <activity
+31-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:14:9-21:20
+32            android:name="ec.edu.monster.eurekabankmobile.LoginActivity"
+32-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:15:13-42
+33            android:exported="true" >
+33-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:16:13-36
+34            <intent-filter>
+34-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:17:13-20:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:18:17-69
+35-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:18:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:19:17-77
+37-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:19:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:22:9-75
+41            android:name="ec.edu.monster.eurekabankmobile.MainActivity"
+41-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:22:19-47
+42            android:exported="false" />
+42-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:22:48-72
+43        <activity
+43-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:23:9-79
+44            android:name="ec.edu.monster.eurekabankmobile.ConsultaActivity"
+44-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:23:19-51
+45            android:exported="false" />
+45-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:23:52-76
+46        <activity
+46-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:24:9-79
+47            android:name="ec.edu.monster.eurekabankmobile.DepositoActivity"
+47-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:24:19-51
+48            android:exported="false" />
+48-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:24:52-76
+49        <activity
+49-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:25:9-77
+50            android:name="ec.edu.monster.eurekabankmobile.RetiroActivity"
+50-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:25:19-49
+51            android:exported="false" />
+51-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:25:50-74
+52        <activity
+52-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:26:9-84
+53            android:name="ec.edu.monster.eurekabankmobile.TransferenciaActivity"
+53-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:26:19-56
+54            android:exported="false" />
+54-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:26:57-81
+55        <activity
+55-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:27:9-85
+56            android:name="ec.edu.monster.eurekabankmobile.VerificarSaldoActivity"
+56-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:27:19-57
+57            android:exported="false" />
+57-->D:\Arquitectura\ARQSW_GR10\UNIDAD 1\01_SOA_CON_BDD\00. SOAP_JAVA_EUREKABANK_GR10\02. CLIMOV\app\src\main\AndroidManifest.xml:27:58-82
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+61            android:authorities="ec.edu.monster.eurekabankmobile.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\3c1f49d51f6c3c60a6c7403bfd3db3ef\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:30:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\003f9f0bd18cd6b3a22801e4affb9c13\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+70-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+71                android:value="androidx.startup" />
+71-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+72        </provider>
+73
+74        <receiver
+74-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+75            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+75-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+76            android:directBootAware="false"
+76-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+77            android:enabled="true"
+77-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+78            android:exported="true"
+78-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+79            android:permission="android.permission.DUMP" >
+79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+80            <intent-filter>
+80-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+81                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+82            </intent-filter>
+83            <intent-filter>
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+84                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+85            </intent-filter>
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+87                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+88            </intent-filter>
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+90                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Mateo\.gradle\caches\8.11.1\transforms\2a3ed35aa9d375fc71848ccde685d152\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+91            </intent-filter>
+92        </receiver>
+93    </application>
+94
+95</manifest>

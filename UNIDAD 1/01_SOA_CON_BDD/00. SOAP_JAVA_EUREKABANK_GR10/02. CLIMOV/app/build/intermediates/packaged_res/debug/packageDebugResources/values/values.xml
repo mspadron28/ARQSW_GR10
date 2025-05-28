@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="border_color">#b1c5c7</color>
+    <color name="button_background">#202224</color>
+    <color name="header_background">#46535d</color>
+    <color name="main_background">#f6f7f6</color>
+    <color name="text_gray">#666666</color>
+    <color name="text_white">#FFFFFF</color>
+    <string name="app_name">EurekaBankMobile</string>
+    <style name="Theme.EurekaBankMobile" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/header_background</item>
+        <item name="colorPrimaryVariant">@color/header_background</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+        <item name="android:statusBarColor">@color/header_background</item>
+        <item name="android:windowBackground">@color/main_background</item>
+    </style>
+</resources>

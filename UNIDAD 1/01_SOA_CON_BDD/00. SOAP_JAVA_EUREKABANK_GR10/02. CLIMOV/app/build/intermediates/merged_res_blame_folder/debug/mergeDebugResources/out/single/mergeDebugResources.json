@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/layout_item_movimiento.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/layout/item_movimiento.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/drawable_edit_text_border.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/drawable/edit_text_border.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/xml_backup_rules.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/layout_activity_retiro.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/layout/activity_retiro.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/layout_activity_verificar_saldo.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/layout/activity_verificar_saldo.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/layout_activity_consulta.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/layout/activity_consulta.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/layout_activity_deposito.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/layout/activity_deposito.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/layout_activity_login.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/layout/activity_login.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/drawable_ic_launcher_background.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/xml_data_extraction_rules.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/layout_activity_main.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/layout/activity_main.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/xml_network_security_config.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/layout_activity_transferencia.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/layout/activity_transferencia.xml"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "ec.edu.monster.eurekabankmobile.app-debug-56:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "ec.edu.monster.eurekabankmobile.app-pngs-52:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    }
+]
