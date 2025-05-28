@@ -1,21 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\",
+  "WorkspaceRootPath": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\01_soa_con_bdd\\001. soap_dotnet_eurekabank_gr10\\02. clicon\\eurekabankconsoleclient\\eurekabankconsoleclient\\vista\\mainconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\001. soap_dotnet_eurekabank_gr10\\02. clicon\\eurekabankconsoleclient\\eurekabankconsoleclient\\vista\\mainconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|solutionrelative:eurekabankconsoleclient\\vista\\mainconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\01_soa_con_bdd\\001. soap_dotnet_eurekabank_gr10\\02. clicon\\eurekabankconsoleclient\\eurekabankconsoleclient\\servicio\\eurekaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\001. soap_dotnet_eurekabank_gr10\\02. clicon\\eurekabankconsoleclient\\eurekabankconsoleclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|solutionrelative:eurekabankconsoleclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\001. soap_dotnet_eurekabank_gr10\\02. clicon\\eurekabankconsoleclient\\eurekabankconsoleclient\\servicio\\eurekaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|solutionrelative:eurekabankconsoleclient\\servicio\\eurekaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\01_soa_con_bdd\\001. soap_dotnet_eurekabank_gr10\\02. clicon\\eurekabankconsoleclient\\eurekabankconsoleclient\\controlador\\eurekacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\001. soap_dotnet_eurekabank_gr10\\02. clicon\\eurekabankconsoleclient\\eurekabankconsoleclient\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|solutionrelative:eurekabankconsoleclient\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\001. soap_dotnet_eurekabank_gr10\\02. clicon\\eurekabankconsoleclient\\eurekabankconsoleclient\\controlador\\eurekacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|solutionrelative:eurekabankconsoleclient\\controlador\\eurekacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\01_soa_con_bdd\\001. soap_dotnet_eurekabank_gr10\\02. clicon\\eurekabankconsoleclient\\eurekabankconsoleclient\\eurekabankconsoleclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\001. soap_dotnet_eurekabank_gr10\\02. clicon\\eurekabankconsoleclient\\eurekabankconsoleclient\\eurekabankconsoleclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{DE6D5C23-E9F7-4B34-8F14-4747E697A46F}|EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj|solutionrelative:eurekabankconsoleclient\\eurekabankconsoleclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -26,60 +34,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EurekaService.cs",
-              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Servicio\\EurekaService.cs",
-              "RelativeDocumentMoniker": "EurekaBankConsoleClient\\Servicio\\EurekaService.cs",
-              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Servicio\\EurekaService.cs",
-              "RelativeToolTip": "EurekaBankConsoleClient\\Servicio\\EurekaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Program.cs",
+              "RelativeDocumentMoniker": "EurekaBankConsoleClient\\Program.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Program.cs",
+              "RelativeToolTip": "EurekaBankConsoleClient\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T04:53:49.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EurekaController.cs",
-              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Controlador\\EurekaController.cs",
-              "RelativeDocumentMoniker": "EurekaBankConsoleClient\\Controlador\\EurekaController.cs",
-              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Controlador\\EurekaController.cs",
-              "RelativeToolTip": "EurekaBankConsoleClient\\Controlador\\EurekaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T04:53:14.976Z",
+              "WhenOpened": "2025-05-28T05:46:22.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EurekaBankConsoleClient",
-              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj",
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Modelo\\Usuario.cs",
+              "RelativeDocumentMoniker": "EurekaBankConsoleClient\\Modelo\\Usuario.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Modelo\\Usuario.cs",
+              "RelativeToolTip": "EurekaBankConsoleClient\\Modelo\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:45:47.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EurekaService.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Servicio\\EurekaService.cs",
+              "RelativeDocumentMoniker": "EurekaBankConsoleClient\\Servicio\\EurekaService.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Servicio\\EurekaService.cs",
+              "RelativeToolTip": "EurekaBankConsoleClient\\Servicio\\EurekaService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T04:53:49.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EurekaController.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Controlador\\EurekaController.cs",
+              "RelativeDocumentMoniker": "EurekaBankConsoleClient\\Controlador\\EurekaController.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Controlador\\EurekaController.cs",
+              "RelativeToolTip": "EurekaBankConsoleClient\\Controlador\\EurekaController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAcwIEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T04:53:14.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EurekaBankConsoleClient.csproj",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj",
               "RelativeDocumentMoniker": "EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj",
-              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj",
               "RelativeToolTip": "EurekaBankConsoleClient\\EurekaBankConsoleClient.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-28T04:50:30.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T04:50:30.793Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainConsole.cs",
-              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Vista\\MainConsole.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Vista\\MainConsole.cs",
               "RelativeDocumentMoniker": "EurekaBankConsoleClient\\Vista\\MainConsole.cs",
-              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Vista\\MainConsole.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\001. SOAP_DOTNET_EUREKABANK_GR10\\02. CLICON\\EurekaBankConsoleClient\\EurekaBankConsoleClient\\Vista\\MainConsole.cs",
               "RelativeToolTip": "EurekaBankConsoleClient\\Vista\\MainConsole.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwEsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAqwCMAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T04:22:52.223Z",
               "EditorCaption": ""

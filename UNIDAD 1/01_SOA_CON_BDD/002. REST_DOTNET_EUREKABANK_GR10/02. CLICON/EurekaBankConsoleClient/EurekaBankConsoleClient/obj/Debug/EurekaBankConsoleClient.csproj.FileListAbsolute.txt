@@ -1,0 +1,60 @@
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\EurekaBankConsoleClient.exe.config
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\EurekaBankConsoleClient.exe
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\EurekaBankConsoleClient.pdb
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Buffers.dll
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.IO.Pipelines.dll
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Memory.dll
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Net.Http.Json.dll
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Text.Json.dll
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.ValueTuple.dll
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Buffers.xml
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.IO.Pipelines.xml
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Memory.xml
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Net.Http.Json.xml
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Text.Json.xml
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.ValueTuple.xml
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\obj\Debug\EurekaBankConsoleClient.csproj.AssemblyReference.cache
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\obj\Debug\EurekaBankConsoleClient.csproj.CoreCompileInputs.cache
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\obj\Debug\EurekaBa.77466A7C.Up2Date
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\obj\Debug\EurekaBankConsoleClient.exe
+C:\Users\MATIAS\Downloads\EurekaBankConsoleClient\EurekaBankConsoleClient\obj\Debug\EurekaBankConsoleClient.pdb
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\EurekaBankConsoleClient.exe.config
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\EurekaBankConsoleClient.exe
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\EurekaBankConsoleClient.pdb
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Buffers.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.IO.Pipelines.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Memory.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Net.Http.Json.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Text.Json.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.ValueTuple.dll
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Buffers.xml
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.IO.Pipelines.xml
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Memory.xml
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Net.Http.Json.xml
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Text.Json.xml
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\bin\Debug\System.ValueTuple.xml
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\obj\Debug\EurekaBankConsoleClient.csproj.AssemblyReference.cache
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\obj\Debug\EurekaBankConsoleClient.csproj.CoreCompileInputs.cache
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\obj\Debug\EurekaBa.77466A7C.Up2Date
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\obj\Debug\EurekaBankConsoleClient.exe
+C:\Users\MATIAS\Desktop\ESPE\Octavo Semestre\Arquitectura de Software\UNIDAD 1\01_SOA_CON_BDD\002. REST_DOTNET_EUREKABANK_GR10\02. CLICON\EurekaBankConsoleClient\EurekaBankConsoleClient\obj\Debug\EurekaBankConsoleClient.pdb

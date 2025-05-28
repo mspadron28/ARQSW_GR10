@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\002. rest_dotnet_eurekabank_gr10\\01. servidor\\eurekabankapi\\eurekabankapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|solutionrelative:eurekabankapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\002. rest_dotnet_eurekabank_gr10\\01. servidor\\eurekabankapi\\eurekabankapi\\controllers\\eurekabankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|solutionrelative:eurekabankapi\\controllers\\eurekabankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\002. rest_dotnet_eurekabank_gr10\\01. servidor\\eurekabankapi\\eurekabankapi\\services\\eurekabankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|solutionrelative:eurekabankapi\\services\\eurekabankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\002. rest_dotnet_eurekabank_gr10\\01. servidor\\eurekabankapi\\eurekabankapi\\services\\ieurekabankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|solutionrelative:eurekabankapi\\services\\ieurekabankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\002. rest_dotnet_eurekabank_gr10\\01. servidor\\eurekabankapi\\eurekabankapi\\db\\databaseaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|solutionrelative:eurekabankapi\\db\\databaseaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\002. rest_dotnet_eurekabank_gr10\\01. servidor\\eurekabankapi\\eurekabankapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|solutionrelative:eurekabankapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\01_soa_con_bdd\\002. rest_dotnet_eurekabank_gr10\\01. servidor\\eurekabankapi\\eurekabankapi\\models\\movimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A326DA8-B1E2-4741-934B-44D19AFCFF27}|EurekaBankApi\\EurekaBankApi.csproj|solutionrelative:eurekabankapi\\models\\movimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EurekaBankController.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Controllers\\EurekaBankController.cs",
+              "RelativeDocumentMoniker": "EurekaBankApi\\Controllers\\EurekaBankController.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Controllers\\EurekaBankController.cs",
+              "RelativeToolTip": "EurekaBankApi\\Controllers\\EurekaBankController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwJEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:40:19.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Program.cs",
+              "RelativeDocumentMoniker": "EurekaBankApi\\Program.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Program.cs",
+              "RelativeToolTip": "EurekaBankApi\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:39:25.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EurekaBankService.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Services\\EurekaBankService.cs",
+              "RelativeDocumentMoniker": "EurekaBankApi\\Services\\EurekaBankService.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Services\\EurekaBankService.cs",
+              "RelativeToolTip": "EurekaBankApi\\Services\\EurekaBankService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:37:33.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEurekaBankService.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Services\\IEurekaBankService.cs",
+              "RelativeDocumentMoniker": "EurekaBankApi\\Services\\IEurekaBankService.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Services\\IEurekaBankService.cs",
+              "RelativeToolTip": "EurekaBankApi\\Services\\IEurekaBankService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:37:02.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseAccess.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\DB\\DatabaseAccess.cs",
+              "RelativeDocumentMoniker": "EurekaBankApi\\DB\\DatabaseAccess.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\DB\\DatabaseAccess.cs",
+              "RelativeToolTip": "EurekaBankApi\\DB\\DatabaseAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:35:05.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "EurekaBankApi\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Models\\Usuario.cs",
+              "RelativeToolTip": "EurekaBankApi\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:34:40.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Movimiento.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Models\\Movimiento.cs",
+              "RelativeDocumentMoniker": "EurekaBankApi\\Models\\Movimiento.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\01_SOA_CON_BDD\\002. REST_DOTNET_EUREKABANK_GR10\\01. SERVIDOR\\EurekaBankApi\\EurekaBankApi\\Models\\Movimiento.cs",
+              "RelativeToolTip": "EurekaBankApi\\Models\\Movimiento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:34:13.283Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

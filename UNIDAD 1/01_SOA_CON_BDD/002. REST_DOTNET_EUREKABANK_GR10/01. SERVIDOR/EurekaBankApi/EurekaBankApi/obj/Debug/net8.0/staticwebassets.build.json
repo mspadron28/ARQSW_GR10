@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PKWkzHBNiyJ8u7h/sa5lE1I8MiqeT82jhL1HjexzfaQ=",
+  "Source": "EurekaBankApi",
+  "BasePath": "_content/EurekaBankApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
