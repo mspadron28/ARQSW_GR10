@@ -6,7 +6,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -32,7 +31,7 @@ class MenuActivity : ComponentActivity() {
                         TopAppBar(
                             title = { Text("EurekaBank - Menú", color = Color.White, fontWeight = FontWeight.Bold) },
                             colors = TopAppBarDefaults.topAppBarColors(
-                                containerColor = Color(0xFF46535D)
+                                containerColor = Color(0xFF1E272E)
                             )
                         )
                     },
@@ -56,72 +55,72 @@ fun MenuScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit) {
         modifier = modifier
             .fillMaxSize()
             .padding(16.dp)
-            .background(Color(0xFFB1C5C7), shape = RoundedCornerShape(8.dp))
-            .border(1.dp, Color.Black, shape = RoundedCornerShape(8.dp))
+            .background(Color(0xFF1E272E), shape = RoundedCornerShape(12.dp))
             .padding(16.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = "Menú Principal",
-            fontSize = 24.sp,
+            fontSize = 28.sp,
             fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(bottom = 16.dp)
+            color = Color.White,
+            modifier = Modifier.padding(bottom = 24.dp)
         )
 
         Button(
             onClick = { onNavigate(ConsultaActivity::class.java) },
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 8.dp),
-            shape = RoundedCornerShape(4.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF202224))
+                .padding(vertical = 12.dp),
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34495E))
         ) {
-            Text("Consulta de Movimientos", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+            Text("Consulta de Movimientos", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
 
         Button(
             onClick = { onNavigate(DepositoActivity::class.java) },
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 8.dp),
-            shape = RoundedCornerShape(4.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF202224))
+                .padding(vertical = 12.dp),
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34495E))
         ) {
-            Text("Registrar Depósito", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+            Text("Registrar Depósito", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
 
         Button(
             onClick = { onNavigate(RetiroActivity::class.java) },
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 8.dp),
-            shape = RoundedCornerShape(4.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF202224))
+                .padding(vertical = 12.dp),
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34495E))
         ) {
-            Text("Registrar Retiro", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+            Text("Registrar Retiro", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
 
         Button(
             onClick = { onNavigate(TransferenciaActivity::class.java) },
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 8.dp),
-            shape = RoundedCornerShape(4.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF202224))
+                .padding(vertical = 12.dp),
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34495E))
         ) {
-            Text("Realizar Transferencia", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+            Text("Realizar Transferencia", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
 
         Button(
             onClick = { onNavigate(SaldoActivity::class.java) },
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 8.dp),
-            shape = RoundedCornerShape(4.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF202224))
+                .padding(vertical = 12.dp),
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34495E))
         ) {
-            Text("Verificar Saldo", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+            Text("Verificar Saldo", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
     }
 }

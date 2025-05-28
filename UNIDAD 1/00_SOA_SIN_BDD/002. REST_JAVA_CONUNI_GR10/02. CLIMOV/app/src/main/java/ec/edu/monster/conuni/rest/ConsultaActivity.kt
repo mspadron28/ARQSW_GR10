@@ -28,6 +28,7 @@ import kotlinx.coroutines.withContext
 import android.widget.Toast
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import java.util.*
 
 class ConsultaActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
@@ -41,7 +42,7 @@ class ConsultaActivity : ComponentActivity() {
                         TopAppBar(
                             title = { Text("Consulta de Movimientos", color = Color.White, fontWeight = FontWeight.Bold) },
                             colors = TopAppBarDefaults.topAppBarColors(
-                                containerColor = Color(0xFF46535D)
+                                containerColor = Color(0xFF1E272E)
                             )
                         )
                     },
@@ -73,26 +74,35 @@ fun ConsultaScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit
         modifier = modifier
             .fillMaxSize()
             .padding(16.dp)
-            .background(Color(0xFFB1C5C7), shape = RoundedCornerShape(8.dp))
-            .border(1.dp, Color.Black, shape = RoundedCornerShape(8.dp))
+            .background(Color(0xFF1E272E), shape = RoundedCornerShape(12.dp))
             .padding(16.dp),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = "Consulta de Movimientos",
-            fontSize = 24.sp,
+            fontSize = 28.sp,
             fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(bottom = 16.dp)
+            color = Color.White,
+            modifier = Modifier.padding(bottom = 24.dp)
         )
 
         TextField(
             value = cuenta,
             onValueChange = { cuenta = it },
-            label = { Text("Cuenta") },
+            label = { Text("Cuenta", color = Color(0xFFB0BEC5)) },
+            colors = TextFieldDefaults.colors(
+                focusedContainerColor = Color(0xFF2D3436),
+                unfocusedContainerColor = Color(0xFF2D3436),
+                focusedTextColor = Color.White,
+                unfocusedTextColor = Color.White,
+                focusedIndicatorColor = Color(0xFF81D4FA),
+                unfocusedIndicatorColor = Color(0xFF78909C)
+            ),
+
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 8.dp)
+                .padding(vertical = 12.dp)
         )
 
         Button(
@@ -101,7 +111,7 @@ fun ConsultaScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit
                     try {
                         val controlador = AppControlador()
                         movimientos = withContext(Dispatchers.IO) {
-                            controlador.traerMovimientos(cuenta)
+                            controlador.traerMovimientos(cuenta).sortedByDescending { it.fecha }
                         }
                         if (movimientos.isEmpty()) {
                             mensaje = "No se encontraron movimientos para la cuenta."
@@ -119,10 +129,10 @@ fun ConsultaScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 16.dp),
-            shape = RoundedCornerShape(4.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF202224))
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34495E))
         ) {
-            Text("Consultar", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+            Text("Consultar", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
 
         Button(
@@ -130,16 +140,16 @@ fun ConsultaScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 8.dp),
-            shape = RoundedCornerShape(4.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF202224))
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34495E))
         ) {
-            Text("Volver al Menú", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+            Text("Volver al Menú", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
 
         errorMessage?.let {
             Text(
                 text = it,
-                color = Color.Red,
+                color = Color(0xFFEF5350),
                 modifier = Modifier.padding(top = 16.dp)
             )
         }
@@ -147,7 +157,7 @@ fun ConsultaScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit
         mensaje?.let {
             Text(
                 text = it,
-                color = Color.Green,
+                color = Color(0xFF66BB6A),
                 modifier = Modifier.padding(top = 16.dp)
             )
         }
@@ -156,14 +166,15 @@ fun ConsultaScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit
             LazyColumn(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(top = 16.dp)
+                    .padding(top = 24.dp)
             ) {
                 item {
                     Text(
                         text = "Movimientos",
-                        fontSize = 18.sp,
+                        fontSize = 20.sp,
                         fontWeight = FontWeight.Bold,
-                        modifier = Modifier.padding(bottom = 8.dp)
+                        color = Color.White,
+                        modifier = Modifier.padding(bottom = 12.dp)
                     )
                 }
                 items(movimientos.size) { index ->
@@ -176,19 +187,49 @@ fun ConsultaScreen(modifier: Modifier = Modifier, onNavigate: (Class<*>) -> Unit
 
 @Composable
 fun MovimientoItem(movimiento: Movimiento) {
-    Column(
+    Card(
         modifier = Modifier
             .fillMaxWidth()
-            .background(Color.White, shape = RoundedCornerShape(4.dp))
-            .border(1.dp, Color.Black, shape = RoundedCornerShape(4.dp))
-            .padding(8.dp)
+            .padding(vertical = 4.dp),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFF2D3436)),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
     ) {
-        Text("Cuenta: ${movimiento.cuenta}")
-        Text("NroMov: ${movimiento.nroMov}")
-        Text("Fecha: ${movimiento.fecha}")
-        Text("Tipo: ${movimiento.tipo}")
-        Text("Acción: ${movimiento.accion}")
-        Text("Importe: ${String.format("%.2f", movimiento.importe)}")
+        Column(modifier = Modifier.padding(12.dp)) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Text(
+                    text = "Fecha: ${movimiento.fecha}",
+                    color = Color(0xFFB0BEC5),
+                    fontWeight = FontWeight.Medium
+                )
+                Text(
+                    text = "NroMov: ${movimiento.nroMov}",
+                    color = Color(0xFFB0BEC5),
+                    fontWeight = FontWeight.Medium
+                )
+            }
+            Spacer(modifier = Modifier.height(4.dp))
+            Text(
+                text = "Cuenta: ${movimiento.cuenta}",
+                color = Color.White,
+                fontWeight = FontWeight.Normal
+            )
+            Text(
+                text = "Tipo: ${movimiento.tipo}",
+                color = Color(0xFFB0BEC5)
+            )
+            Text(
+                text = "Acción: ${movimiento.accion}",
+                color = Color(0xFFB0BEC5)
+            )
+            Text(
+                text = "Importe: ${String.format("%.2f", movimiento.importe)}",
+                color = Color(0xFF81D4FA),
+                fontWeight = FontWeight.Bold
+            )
+        }
     }
 }
 
