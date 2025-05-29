@@ -3,6 +3,7 @@ package ec.edu.monster.controlador;
 import ec.edu.monster.modelo.Cliente;
 import ec.edu.monster.modelo.Usuario;
 import ec.edu.monster.modelo.Vuelo;
+import ec.edu.monster.modelo.Compra;
 import ec.edu.monster.servicio.ViajecitosService;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
@@ -14,6 +15,7 @@ import java.util.List;
 
 /**
  * SOAP Web Service for Aerolíneas Cóndor operations.
+ *
  * @author MATIAS
  */
 @WebService(serviceName = "WSAerolineasCondor")
@@ -27,6 +29,7 @@ public class WSAerolineasCondor {
 
     /**
      * Retrieves a list of flights based on origin, destination, and date.
+     *
      * @param ciudadOrigen Origin city
      * @param ciudadDestino Destination city
      * @param fecha Travel date
@@ -48,7 +51,9 @@ public class WSAerolineasCondor {
     }
 
     /**
-     * Retrieves the most expensive flight based on origin, destination, and date.
+     * Retrieves the most expensive flight based on origin, destination, and
+     * date.
+     *
      * @param ciudadOrigen Origin city
      * @param ciudadDestino Destination city
      * @param fecha Travel date
@@ -69,6 +74,7 @@ public class WSAerolineasCondor {
 
     /**
      * Registers a ticket purchase.
+     *
      * @param idVuelo Flight ID
      * @param idCliente Client ID
      * @return Status (1 for success, -1 for failure)
@@ -88,6 +94,7 @@ public class WSAerolineasCondor {
 
     /**
      * Registers a new client.
+     *
      * @param nombre Client name
      * @param email Client email
      * @param documentoIdentidad Client ID document
@@ -108,6 +115,7 @@ public class WSAerolineasCondor {
 
     /**
      * Registers a new user.
+     *
      * @param idCliente Client ID
      * @param nombreUsuario Username
      * @param claveUsuario Password
@@ -128,6 +136,7 @@ public class WSAerolineasCondor {
 
     /**
      * Logs in a user.
+     *
      * @param nombreUsuario Username
      * @param claveUsuario Password
      * @return Authenticated user or null if failure
@@ -141,6 +150,23 @@ public class WSAerolineasCondor {
             return viajecitosService.iniciarSesion(nombreUsuario, claveUsuario);
         } catch (Exception e) {
             return null;
+        }
+    }
+
+    /**
+     * Retrieves all purchases made by a client.
+     *
+     * @param idCliente Client ID
+     * @return List of purchases or empty list if failure
+     */
+    @WebMethod(operationName = "obtenerComprasCliente")
+    @WebResult(name = "Compra")
+    public List<Compra> obtenerComprasCliente(
+            @WebParam(name = "idCliente") int idCliente) {
+        try {
+            return viajecitosService.obtenerComprasCliente(idCliente);
+        } catch (Exception e) {
+            return new ArrayList<>();
         }
     }
 }

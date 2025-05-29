@@ -251,4 +251,35 @@ public class ViajecitosService {
             }
         }
     }
+    
+    public List<Compra> obtenerComprasCliente(int idCliente) throws SQLException {
+    List<Compra> lista = new ArrayList<>();
+    String sql = "SELECT c.id_compra, c.id_vuelo, c.id_cliente, c.fecha_compra, " +
+                "v.ciudad_origen, v.ciudad_destino, v.valor, v.hora_salida " +
+                "FROM Compra c JOIN Vuelo v ON c.id_vuelo = v.id_vuelo " +
+                "WHERE c.id_cliente = ?";
+    try (Connection conn = getConnection(); PreparedStatement ps = conn.prepareStatement(sql)) {
+        ps.setInt(1, idCliente);
+        try (ResultSet rs = ps.executeQuery()) {
+            while (rs.next()) {
+                Compra compra = new Compra();
+                compra.setIdCompra(rs.getInt("id_compra"));
+                compra.setIdVuelo(rs.getInt("id_vuelo"));
+                compra.setIdCliente(rs.getInt("id_cliente"));
+                compra.setFechaCompra(rs.getTimestamp("fecha_compra"));
+
+                Vuelo vuelo = new Vuelo();
+                vuelo.setIdVuelo(rs.getInt("id_vuelo"));
+                vuelo.setCiudadOrigen(rs.getString("ciudad_origen"));
+                vuelo.setCiudadDestino(rs.getString("ciudad_destino"));
+                vuelo.setValor(rs.getDouble("valor"));
+                vuelo.setHoraSalida(rs.getTimestamp("hora_salida"));
+                compra.setVuelo(vuelo);
+
+                lista.add(compra);
+            }
+        }
+    }
+    return lista;
+}
 }
