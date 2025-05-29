@@ -1,7 +1,7 @@
 package ec.edu.monster.controlador;
 
-import ec.edu.monster.modelo.Compra;
-import ec.edu.monster.modelo.Usuario;
+import ec.edu.monster.ws.Compra;
+import ec.edu.monster.ws.Usuario;
 import ec.edu.monster.servicio.ViajecitosService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
