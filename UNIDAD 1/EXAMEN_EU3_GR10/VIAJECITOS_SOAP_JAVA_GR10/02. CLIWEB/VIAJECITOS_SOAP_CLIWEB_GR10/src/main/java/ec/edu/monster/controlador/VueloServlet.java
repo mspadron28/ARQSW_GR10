@@ -1,0 +1,41 @@
+package ec.edu.monster.controlador;
+
+import ec.edu.monster.modelo.Vuelo;
+import ec.edu.monster.servicio.ViajecitosService;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ * Servlet for handling flight search requests.
+ * @author MATIAS
+ */
+@WebServlet(name = "VueloServlet", urlPatterns = {"/VueloServlet"})
+public class VueloServlet extends HttpServlet {
+
+    private final ViajecitosService viajecitosService = new ViajecitosService();
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        try {
+            String ciudadOrigen = request.getParameter("ciudadOrigen");
+            String ciudadDestino = request.getParameter("ciudadDestino");
+            String fechaStr = request.getParameter("fecha");
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            Date fecha = sdf.parse(fechaStr);
+
+            Vuelo vuelo = viajecitosService.obtenerVueloMasCaro(ciudadOrigen, ciudadDestino, fecha);
+            request.setAttribute("vuelo", vuelo);
+            request.getRequestDispatcher("result.jsp").forward(request, response);
+        } catch (Exception e) {
+            request.setAttribute("vuelo", null);
+            request.getRequestDispatcher("result.jsp").forward(request, response);
+        }
+    }
+}
