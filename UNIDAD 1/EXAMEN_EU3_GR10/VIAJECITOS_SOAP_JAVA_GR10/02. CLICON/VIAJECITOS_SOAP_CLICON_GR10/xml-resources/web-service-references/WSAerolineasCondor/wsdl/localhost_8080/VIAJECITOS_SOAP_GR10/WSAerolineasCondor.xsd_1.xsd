@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by XML-WS Runtime (https://github.com/eclipse-ee4j/metro-jax-ws). Runtime's version is Eclipse Metro/4.0.3.payara-p1 (metro-4.0.3.payara-maintenance-004e4e3; 2023-11-08T12:59:53+0000) XMLWS-Impl/4.0.2 XMLWS-API/4.0.1 XMLB-Impl/4.0.4 XMLB-API/4.0.1 git-revision#004e4e3. --><xs:schema xmlns:tns="http://controlador.monster.edu.ec/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://controlador.monster.edu.ec/">
+
+<xs:element name="buscarVuelos" type="tns:buscarVuelos"/>
+
+<xs:element name="buscarVuelosResponse" type="tns:buscarVuelosResponse"/>
+
+<xs:element name="cliente" type="tns:cliente"/>
+
+<xs:element name="compra" type="tns:compra"/>
+
+<xs:element name="iniciarSesion" type="tns:iniciarSesion"/>
+
+<xs:element name="iniciarSesionResponse" type="tns:iniciarSesionResponse"/>
+
+<xs:element name="obtenerComprasCliente" type="tns:obtenerComprasCliente"/>
+
+<xs:element name="obtenerComprasClienteResponse" type="tns:obtenerComprasClienteResponse"/>
+
+<xs:element name="obtenerVueloMasCaro" type="tns:obtenerVueloMasCaro"/>
+
+<xs:element name="obtenerVueloMasCaroResponse" type="tns:obtenerVueloMasCaroResponse"/>
+
+<xs:element name="registrarCliente" type="tns:registrarCliente"/>
+
+<xs:element name="registrarClienteResponse" type="tns:registrarClienteResponse"/>
+
+<xs:element name="registrarCompra" type="tns:registrarCompra"/>
+
+<xs:element name="registrarCompraResponse" type="tns:registrarCompraResponse"/>
+
+<xs:element name="registrarUsuario" type="tns:registrarUsuario"/>
+
+<xs:element name="registrarUsuarioResponse" type="tns:registrarUsuarioResponse"/>
+
+<xs:element name="usuario" type="tns:usuario"/>
+
+<xs:element name="vuelo" type="tns:vuelo"/>
+
+<xs:complexType name="registrarCliente">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="documentoIdentidad" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarClienteResponse">
+<xs:sequence>
+<xs:element name="Cliente" type="tns:cliente" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cliente">
+<xs:sequence>
+<xs:element name="documentoIdentidad" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="idCliente" type="xs:int"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarUsuario">
+<xs:sequence>
+<xs:element name="idCliente" type="xs:int"/>
+<xs:element name="nombreUsuario" type="xs:string" minOccurs="0"/>
+<xs:element name="claveUsuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarUsuarioResponse">
+<xs:sequence>
+<xs:element name="Usuario" type="tns:usuario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usuario">
+<xs:sequence>
+<xs:element name="claveUsuario" type="xs:string" minOccurs="0"/>
+<xs:element name="estadoUsuario" type="xs:string" minOccurs="0"/>
+<xs:element name="idCliente" type="xs:int"/>
+<xs:element name="idUsuario" type="xs:int"/>
+<xs:element name="nombreUsuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerVueloMasCaro">
+<xs:sequence>
+<xs:element name="ciudadOrigen" type="xs:string" minOccurs="0"/>
+<xs:element name="ciudadDestino" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha" type="xs:dateTime" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerVueloMasCaroResponse">
+<xs:sequence>
+<xs:element name="Vuelo" type="tns:vuelo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="vuelo">
+<xs:sequence>
+<xs:element name="ciudadDestino" type="xs:string" minOccurs="0"/>
+<xs:element name="ciudadOrigen" type="xs:string" minOccurs="0"/>
+<xs:element name="horaSalida" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="idVuelo" type="xs:int"/>
+<xs:element name="valor" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerComprasCliente">
+<xs:sequence>
+<xs:element name="idCliente" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerComprasClienteResponse">
+<xs:sequence>
+<xs:element name="Compra" type="tns:compra" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="compra">
+<xs:sequence>
+<xs:element name="fechaCompra" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="idCliente" type="xs:int"/>
+<xs:element name="idCompra" type="xs:int"/>
+<xs:element name="idVuelo" type="xs:int"/>
+<xs:element name="vuelo" type="tns:vuelo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarVuelos">
+<xs:sequence>
+<xs:element name="ciudadOrigen" type="xs:string" minOccurs="0"/>
+<xs:element name="ciudadDestino" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha" type="xs:dateTime" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarVuelosResponse">
+<xs:sequence>
+<xs:element name="Vuelo" type="tns:vuelo" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="iniciarSesion">
+<xs:sequence>
+<xs:element name="nombreUsuario" type="xs:string" minOccurs="0"/>
+<xs:element name="claveUsuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="iniciarSesionResponse">
+<xs:sequence>
+<xs:element name="Usuario" type="tns:usuario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarCompra">
+<xs:sequence>
+<xs:element name="idVuelo" type="xs:int"/>
+<xs:element name="idCliente" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarCompraResponse">
+<xs:sequence>
+<xs:element name="estado" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
