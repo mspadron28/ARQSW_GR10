@@ -1,44 +1,46 @@
 package ec.edu.monster.controlador;
 
-import ec.edu.monster.modelo.Movimiento;
+import ec.edu.monster.modelo.Cliente;
+import ec.edu.monster.modelo.Compra;
 import ec.edu.monster.modelo.Usuario;
-import ec.edu.monster.servicio.EurekaService;
-
+import ec.edu.monster.modelo.Vuelo;
+import ec.edu.monster.servicio.ViajecitosService;
+import java.util.Date;
 import java.util.List;
 
 public class AppControlador {
 
-    private final EurekaService service;
+    private final ViajecitosService service;
 
     public AppControlador() {
-        this.service = new EurekaService();
+        this.service = new ViajecitosService();
     }
 
-    public Usuario login(String usuario, String contraseña) throws Exception {
-        return service.login(usuario, contraseña);
+    public Usuario login(String nombreUsuario, String claveUsuario) throws Exception {
+        return service.iniciarSesion(nombreUsuario, claveUsuario);
     }
 
-    public List<Movimiento> traerMovimientos(String cuenta) throws Exception {
-        return service.leerMovimientos(cuenta);
+    public Vuelo obtenerVueloMasCaro(String ciudadOrigen, String ciudadDestino, Date fecha) throws Exception {
+        return service.obtenerVueloMasCaro(ciudadOrigen, ciudadDestino, fecha);
     }
 
-    public void registrarDeposito(String cuenta, double importe, String codEmp) throws Exception {
-        service.registrarDeposito(cuenta, importe, codEmp);
+    public List<Vuelo> buscarVuelos(String ciudadOrigen, String ciudadDestino, Date fecha) throws Exception {
+        return service.buscarVuelos(ciudadOrigen, ciudadDestino, fecha);
     }
 
-    public void registrarRetiro(String cuenta, double importe, String codEmp) throws Exception {
-        service.registrarRetiro(cuenta, importe, codEmp);
+    public Cliente registrarCliente(String nombre, String email, String documentoIdentidad) throws Exception {
+        return service.registrarCliente(nombre, email, documentoIdentidad);
     }
 
-    public void realizarTransferencia(String cuentaOrigen, String cuentaDestino, double importe, String codEmp) throws Exception {
-        service.realizarTransferencia(cuentaOrigen, cuentaDestino, importe, codEmp);
+    public Usuario registrarUsuario(int idCliente, String nombreUsuario, String claveUsuario) throws Exception {
+        return service.registrarUsuario(idCliente, nombreUsuario, claveUsuario);
     }
 
-    public double verificarSaldo(String cuenta) throws Exception {
-        return service.verificarSaldo(cuenta);
+    public List<Compra> obtenerComprasCliente(int idCliente) throws Exception {
+        return service.obtenerComprasCliente(idCliente);
     }
 
-    public double obtenerCostoMovimiento(String cuenta) throws Exception {
-        return service.obtenerCostoMovimiento(cuenta);
+    public int registrarCompra(int idVuelo, int idCliente) throws Exception {
+        return service.registrarCompra(idVuelo, idCliente);
     }
 }

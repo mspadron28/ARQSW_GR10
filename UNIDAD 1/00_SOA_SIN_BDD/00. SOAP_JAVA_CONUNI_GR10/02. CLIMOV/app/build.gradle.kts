@@ -60,6 +60,15 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation("com.google.code.ksoap2-android:ksoap2-android:3.6.4")
+    implementation("org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.22")
+    // Material 3 para Jetpack Compose (incluye BorderStroke)
+    implementation("androidx.compose.material3:material3:1.3.0")
+
+    // Material Icons Core (íconos básicos)
+    implementation("androidx.compose.material:material-icons-core:1.7.4")
+
+    // Material Icons Extended (incluye Schedule y AirplaneTicket)
+    implementation("androidx.compose.material:material-icons-extended:1.7.4")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

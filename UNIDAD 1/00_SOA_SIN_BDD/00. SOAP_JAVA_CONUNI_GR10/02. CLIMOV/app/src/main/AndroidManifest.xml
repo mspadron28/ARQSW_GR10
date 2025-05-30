@@ -16,39 +16,24 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".SaldoActivity"
+            android:name=".PurchasesActivity"
             android:exported="false"
-            android:label="@string/title_activity_saldo"
+            android:label="@string/title_activity_purchases"
             android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
         <activity
-            android:name=".TransferenciaActivity"
+            android:name=".ResultActivity"
             android:exported="false"
-            android:label="@string/title_activity_transferencia"
+            android:label="@string/title_activity_result"
             android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
         <activity
-            android:name=".RetiroActivity"
+            android:name=".RegisterActivity"
             android:exported="false"
-            android:label="@string/title_activity_retiro"
+            android:label="@string/title_activity_register"
             android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
         <activity
-            android:name=".DepositoActivity"
+            android:name=".LoginActivity"
             android:exported="false"
-            android:label="@string/title_activity_deposito"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
-        <activity
-            android:name=".ConsultaActivity"
-            android:exported="false"
-            android:label="@string/title_activity_consulta"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
-        <activity
-            android:name=".MenuActivity"
-            android:exported="false"
-            android:label="@string/title_activity_menu"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
-        <activity
-            android:name=".ConversorActivity"
-            android:exported="false"
-            android:label="@string/title_activity_conversor"
+            android:label="@string/title_activity_login"
             android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
         <activity
             android:name=".MainActivity"
