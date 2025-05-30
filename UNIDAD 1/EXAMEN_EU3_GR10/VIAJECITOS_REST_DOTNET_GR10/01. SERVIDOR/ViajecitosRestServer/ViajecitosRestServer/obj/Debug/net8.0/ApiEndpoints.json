@@ -1,0 +1,219 @@
+[
+  {
+    "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
+    "Method": "RegistrarCliente",
+    "RelativePath": "api/cliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "documentoIdentidad",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ViajecitosRestServer.Models.Cliente",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
+    "Method": "RegistrarCompra",
+    "RelativePath": "api/compra",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ViajecitosRestServer.Controllers.ApiController\u002BCompraRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
+    "Method": "ObtenerComprasCliente",
+    "RelativePath": "api/compras/{idCliente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ViajecitosRestServer.Models.Compra, ViajecitosRestServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
+    "Method": "IniciarSesion",
+    "RelativePath": "api/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreUsuario",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "claveUsuario",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ViajecitosRestServer.Models.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
+    "Method": "RegistrarUsuario",
+    "RelativePath": "api/usuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "nombreUsuario",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "claveUsuario",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ViajecitosRestServer.Models.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
+    "Method": "ObtenerVueloMasCaro",
+    "RelativePath": "api/vuelo-mas-caro",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ciudadOrigen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ciudadDestino",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fecha",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ViajecitosRestServer.Models.Vuelo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
+    "Method": "BuscarVuelos",
+    "RelativePath": "api/vuelos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ciudadOrigen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ciudadDestino",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fecha",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ViajecitosRestServer.Models.Vuelo, ViajecitosRestServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
