@@ -4,10 +4,12 @@ import ec.edu.monster.controlador.ViajecitosController;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.text.SimpleDateFormat;
 import javax.swing.*;
+import javax.swing.border.Border;
+import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
+import java.text.SimpleDateFormat;
 
 public class SearchFlightsFrame extends JFrame {
 
@@ -16,6 +18,16 @@ public class SearchFlightsFrame extends JFrame {
     private JSpinner dateSpinner;
     private JButton btnViewPurchases;
     private JLabel lblError;
+    // Paleta de colores profesional con tonos pastel
+    private final Color HEADER_START = new Color(163, 191, 250); // Azul pastel #A3BFFA
+    private final Color HEADER_END = new Color(191, 219, 254); // Celeste pastel #BFDBFE
+    private final Color BACKGROUND = new Color(241, 245, 249); // Gris claro #F1F5F9
+    private final Color BUTTON_BG = new Color(191, 219, 254); // Celeste pastel para botones
+    private final Color BUTTON_HOVER = new Color(147, 197, 253); // Azul pastel claro para hover
+    private final Color TEXT_DARK = new Color(31, 41, 55); // Gris oscuro para texto
+    private final Color WHITE = Color.WHITE;
+    private final Color SHADOW = new Color(0, 0, 0, 50); // Sombra suave
+    private final Color ERROR_RED = new Color(220, 38, 38); // Rojo suave para errores
 
     public SearchFlightsFrame(ViajecitosController controlador) {
         this.controlador = controlador;
@@ -25,118 +37,176 @@ public class SearchFlightsFrame extends JFrame {
     private void initComponents() {
         setTitle("Viajecitos SA - Buscar Vuelos");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setExtendedState(JFrame.MAXIMIZED_BOTH);
-        setLayout(new BorderLayout());
+        setExtendedState(JFrame.MAXIMIZED_BOTH); // Maximizar para escalabilidad
+        setLayout(new BorderLayout(20, 20)); // Espaciado consistente
+        getContentPane().setBackground(BACKGROUND);
 
-        // Background
-        JPanel backgroundPanel = new JPanel() {
+        // Encabezado con gradiente pastel
+        JPanel headerPanel = new JPanel(new BorderLayout(15, 15)) {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                ImageIcon bg = new ImageIcon("images/background.jpg");
-                g.drawImage(bg.getImage(), 0, 0, getWidth(), getHeight(), this);
+                Graphics2D g2d = (Graphics2D) g;
+                g2d.setPaint(new GradientPaint(0, 0, HEADER_START, getWidth(), 0, HEADER_END));
+                g2d.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        backgroundPanel.setLayout(new BorderLayout());
-        add(backgroundPanel, BorderLayout.CENTER);
+        headerPanel.setBorder(new EmptyBorder(20, 30, 20, 30)); // Padding refinado
+        JLabel lblHeaderImage = new JLabel(new ImageIcon("images/travel-agency.jpg"));
+        lblHeaderImage.setPreferredSize(new Dimension(300, 100)); // Tamaño consistente
+        headerPanel.add(lblHeaderImage, BorderLayout.WEST);
 
-        // Navigation Bar
-        JPanel navPanel = createNavPanel();
-        backgroundPanel.add(navPanel, BorderLayout.NORTH);
+        JPanel headerTextPanel = new JPanel();
+        headerTextPanel.setLayout(new BoxLayout(headerTextPanel, BoxLayout.Y_AXIS));
+        headerTextPanel.setOpaque(false);
+        JLabel lblTitle = new JLabel("Viajecitos SA");
+        lblTitle.setFont(new Font("Roboto", Font.BOLD, 36)); // Más grande para impacto
+        lblTitle.setForeground(WHITE);
+        lblTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
+        JLabel lblSubtitle = new JLabel("Encuentra y compra tus boletos de avión de forma fácil y segura");
+        lblSubtitle.setFont(new Font("Roboto", Font.PLAIN, 20)); // Legible y claro
+        lblSubtitle.setForeground(WHITE);
+        lblSubtitle.setAlignmentX(Component.CENTER_ALIGNMENT);
+        headerTextPanel.add(lblTitle);
+        headerTextPanel.add(lblSubtitle);
+        headerPanel.add(headerTextPanel, BorderLayout.CENTER);
 
-        // Main Content
+        JPanel userPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
+        userPanel.setOpaque(false);
+        JLabel lblUser = new JLabel("Invitado");
+        lblUser.setForeground(WHITE);
+        lblUser.setFont(new Font("Roboto", Font.BOLD, 16));
+        userPanel.add(lblUser);
+        try {
+            lblUser.setText("Usuario: " + controlador.getIdClienteAutenticado());
+        } catch (Exception ignored) {}
+        headerPanel.add(userPanel, BorderLayout.EAST);
+        add(headerPanel, BorderLayout.NORTH);
+
+        // Contenido principal
         JPanel contentPanel = new JPanel(new GridBagLayout());
-        contentPanel.setOpaque(false);
+        contentPanel.setBackground(BACKGROUND);
+        contentPanel.setBorder(new EmptyBorder(40, 40, 40, 40)); // Padding amplio
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(20, 20, 20, 20);
         gbc.fill = GridBagConstraints.BOTH;
 
-        // Form Card
+        // Contenedor de formulario
         JPanel formPanel = new JPanel(new GridBagLayout());
-        formPanel.setBackground(new Color(255, 255, 255, 230));
-        formPanel.setBorder(new LineBorder(new Color(226, 232, 240), 2, true));
-        formPanel.setPreferredSize(new Dimension(600, 400));
+        formPanel.setBackground(WHITE);
+        Border outerBorder = new LineBorder(new Color(209, 213, 219), 1, true); // Borde gris suave
+        Border innerBorder = new EmptyBorder(30, 30, 30, 30); // Padding interno
+        Border shadowBorder = new CompoundBorder(
+            new LineBorder(SHADOW, 4, true), // Sombra suave
+            new CompoundBorder(outerBorder, innerBorder)
+        );
+        formPanel.setBorder(shadowBorder); // Borde con sombra
+        formPanel.setMaximumSize(new Dimension(600, Integer.MAX_VALUE)); // Ancho limitado como formulario
         GridBagConstraints formGbc = new GridBagConstraints();
-        formGbc.insets = new Insets(15, 15, 15, 15);
+        formGbc.insets = new Insets(12, 12, 12, 12);
         formGbc.fill = GridBagConstraints.HORIZONTAL;
 
         JLabel lblFormTitle = new JLabel("Buscar Vuelos", SwingConstants.CENTER);
-        lblFormTitle.setFont(new Font("SansSerif", Font.BOLD, 28));
-        lblFormTitle.setForeground(new Color(30, 58, 138));
+        lblFormTitle.setFont(new Font("Roboto", Font.BOLD, 28));
+        lblFormTitle.setForeground(TEXT_DARK);
         formGbc.gridx = 0;
         formGbc.gridy = 0;
         formGbc.gridwidth = 3;
         formPanel.add(lblFormTitle, formGbc);
 
-        btnViewPurchases = createStyledButton("Ver Mis Compras", new Color(255, 182, 193), "icons/ticket.png");
+        btnViewPurchases = createStyledButton("Ver Mis Compras");
         btnViewPurchases.addActionListener(e -> openPurchasesFrame());
         btnViewPurchases.setVisible(false);
         try {
             controlador.getIdClienteAutenticado();
             btnViewPurchases.setVisible(true);
         } catch (Exception ignored) {}
-        formGbc.gridx = 2;
-        formGbc.gridy = 0;
-        formGbc.gridwidth = 1;
+        formGbc.gridx = 0;
+        formGbc.gridy = 1;
+        formGbc.gridwidth = 3;
+        formGbc.anchor = GridBagConstraints.EAST;
         formPanel.add(btnViewPurchases, formGbc);
 
         JLabel lblOrigen = new JLabel("Ciudad Origen:");
-        lblOrigen.setFont(new Font("SansSerif", Font.PLAIN, 16));
+        lblOrigen.setFont(new Font("Roboto", Font.PLAIN, 16));
+        lblOrigen.setForeground(TEXT_DARK);
         formGbc.gridx = 0;
-        formGbc.gridy = 1;
+        formGbc.gridy = 2;
         formGbc.gridwidth = 1;
+        formGbc.anchor = GridBagConstraints.WEST;
         formPanel.add(lblOrigen, formGbc);
 
         String[] ciudades = {"Selecciona una ciudad", "Bogotá", "Medellín", "Buenos Aires", "Córdoba", "Quito", "Guayaquil", "Cali", "Cartagena", "Mendoza"};
         cbOrigen = new JComboBox<>(ciudades);
-        cbOrigen.setFont(new Font("SansSerif", Font.PLAIN, 16));
+        cbOrigen.setFont(new Font("Roboto", Font.PLAIN, 16));
+        cbOrigen.setBackground(new Color(243, 244, 246)); // Fondo gris claro
+        cbOrigen.setForeground(TEXT_DARK);
+        cbOrigen.setBorder(new CompoundBorder(
+            new LineBorder(new Color(147, 197, 253), 1, true), // Borde azul pastel
+            new EmptyBorder(8, 8, 8, 8) // Padding interno
+        ));
         formGbc.gridx = 1;
-        formGbc.gridy = 1;
+        formGbc.gridy = 2;
         formGbc.gridwidth = 2;
         formPanel.add(cbOrigen, formGbc);
 
         JLabel lblDestino = new JLabel("Ciudad Destino:");
-        lblDestino.setFont(new Font("SansSerif", Font.PLAIN, 16));
+        lblDestino.setFont(new Font("Roboto", Font.PLAIN, 16));
+        lblDestino.setForeground(TEXT_DARK);
         formGbc.gridx = 0;
-        formGbc.gridy = 2;
+        formGbc.gridy = 3;
         formGbc.gridwidth = 1;
         formPanel.add(lblDestino, formGbc);
 
         cbDestino = new JComboBox<>(ciudades);
-        cbDestino.setFont(new Font("SansSerif", Font.PLAIN, 16));
+        cbDestino.setFont(new Font("Roboto", Font.PLAIN, 16));
+        cbDestino.setBackground(new Color(243, 244, 246)); // Fondo gris claro
+        cbDestino.setForeground(TEXT_DARK);
+        cbDestino.setBorder(new CompoundBorder(
+            new LineBorder(new Color(147, 197, 253), 1, true), // Borde azul pastel
+            new EmptyBorder(8, 8, 8, 8) // Padding interno
+        ));
         formGbc.gridx = 1;
-        formGbc.gridy = 2;
+        formGbc.gridy = 3;
         formGbc.gridwidth = 2;
         formPanel.add(cbDestino, formGbc);
 
         JLabel lblFecha = new JLabel("Fecha de Viaje:");
-        lblFecha.setFont(new Font("SansSerif", Font.PLAIN, 16));
+        lblFecha.setFont(new Font("Roboto", Font.PLAIN, 16));
+        lblFecha.setForeground(TEXT_DARK);
         formGbc.gridx = 0;
-        formGbc.gridy = 3;
+        formGbc.gridy = 4;
         formGbc.gridwidth = 1;
         formPanel.add(lblFecha, formGbc);
 
         dateSpinner = new JSpinner(new SpinnerDateModel());
-        dateSpinner.setFont(new Font("SansSerif", Font.PLAIN, 16));
+        dateSpinner.setFont(new Font("Roboto", Font.PLAIN, 16));
+        dateSpinner.setBackground(new Color(243, 244, 246)); // Fondo gris claro
         JSpinner.DateEditor dateEditor = new JSpinner.DateEditor(dateSpinner, "yyyy-MM-dd");
         dateSpinner.setEditor(dateEditor);
+        dateEditor.getTextField().setBackground(new Color(243, 244, 246)); // Fondo gris claro
+        dateEditor.getTextField().setForeground(TEXT_DARK);
+        dateEditor.getTextField().setBorder(new CompoundBorder(
+            new LineBorder(new Color(147, 197, 253), 1, true), // Borde azul pastel
+            new EmptyBorder(8, 8, 8, 8) // Padding interno
+        ));
         formGbc.gridx = 1;
-        formGbc.gridy = 3;
+        formGbc.gridy = 4;
         formGbc.gridwidth = 2;
         formPanel.add(dateSpinner, formGbc);
 
-        JButton btnSearch = createStyledButton("Buscar", new Color(249, 115, 22), "icons/search.png");
+        JButton btnSearch = createStyledButton("Buscar");
         btnSearch.addActionListener(e -> searchFlights());
         formGbc.gridx = 0;
-        formGbc.gridy = 4;
+        formGbc.gridy = 5;
         formGbc.gridwidth = 3;
         formPanel.add(btnSearch, formGbc);
 
         lblError = new JLabel("", SwingConstants.CENTER);
-        lblError.setForeground(new Color(220, 38, 38));
-        lblError.setFont(new Font("SansSerif", Font.PLAIN, 14));
+        lblError.setForeground(ERROR_RED);
+        lblError.setFont(new Font("Roboto", Font.PLAIN, 14));
         formGbc.gridx = 0;
-        formGbc.gridy = 5;
+        formGbc.gridy = 6;
         formGbc.gridwidth = 3;
         formPanel.add(lblError, formGbc);
 
@@ -147,7 +217,7 @@ public class SearchFlightsFrame extends JFrame {
         linkPanel.add(btnLogin);
         linkPanel.add(btnRegister);
         formGbc.gridx = 0;
-        formGbc.gridy = 6;
+        formGbc.gridy = 7;
         formGbc.gridwidth = 3;
         formPanel.add(linkPanel, formGbc);
 
@@ -157,66 +227,44 @@ public class SearchFlightsFrame extends JFrame {
         gbc.weighty = 1.0;
         contentPanel.add(formPanel, gbc);
 
-        backgroundPanel.add(contentPanel, BorderLayout.CENTER);
+        add(contentPanel, BorderLayout.CENTER);
 
-        // Footer
-        JPanel footerPanel = createFooterPanel();
-        backgroundPanel.add(footerPanel, BorderLayout.SOUTH);
-    }
-
-    private JPanel createNavPanel() {
-        JPanel navPanel = new JPanel(new BorderLayout());
-        navPanel.setBackground(new Color(30, 58, 138));
-        navPanel.setBorder(new EmptyBorder(10, 20, 10, 20));
-
-        JLabel lblLogo = new JLabel(new ImageIcon("images/logo.png"));
-        navPanel.add(lblLogo, BorderLayout.WEST);
-
-        JPanel userPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
-        userPanel.setOpaque(false);
-        JLabel lblUser = new JLabel("Invitado");
-        lblUser.setForeground(Color.WHITE);
-        lblUser.setFont(new Font("SansSerif", Font.BOLD, 16));
-        userPanel.add(lblUser);
-        try {
-            lblUser.setText("Usuario: " + controlador.getIdClienteAutenticado());
-        } catch (Exception ignored) {}
-        navPanel.add(userPanel, BorderLayout.EAST);
-
-        return navPanel;
-    }
-
-    private JPanel createFooterPanel() {
-        JPanel footerPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        footerPanel.setBackground(new Color(15, 23, 42));
+        // Pie de página
+        JPanel footerPanel = new JPanel(new FlowLayout(FlowLayout.CENTER)) {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                Graphics2D g2d = (Graphics2D) g;
+                g2d.setPaint(new GradientPaint(0, 0, HEADER_END, getWidth(), 0, HEADER_START));
+                g2d.fillRect(0, 0, getWidth(), getHeight());
+            }
+        };
         footerPanel.setBorder(new EmptyBorder(10, 0, 10, 0));
         JLabel lblFooter = new JLabel("© 2025 Viajecitos SA | Contacto: info@viajecitossa.com | Síguenos en redes sociales");
-        lblFooter.setForeground(Color.WHITE);
-        lblFooter.setFont(new Font("SansSerif", Font.PLAIN, 12));
+        lblFooter.setForeground(WHITE);
+        lblFooter.setFont(new Font("Roboto", Font.PLAIN, 12));
         footerPanel.add(lblFooter);
-        return footerPanel;
+        add(footerPanel, BorderLayout.SOUTH);
     }
 
-    private JButton createStyledButton(String text, Color bgColor, String iconPath) {
+    private JButton createStyledButton(String text) {
         JButton button = new JButton(text);
-        button.setBackground(bgColor);
-        button.setForeground(Color.WHITE);
-        button.setFont(new Font("SansSerif", Font.BOLD, 16));
-        button.setBorder(new LineBorder(bgColor, 2, true));
-        button.setPreferredSize(new Dimension(200, 50));
-        if (iconPath != null) {
-            button.setIcon(new ImageIcon(iconPath));
-        }
+        button.setBackground(BUTTON_BG); // Celeste pastel
+        button.setForeground(Color.BLACK); // Texto negro
+        button.setFont(new Font("Roboto", Font.BOLD, 16));
+        Border outer = new LineBorder(new Color(147, 197, 253), 1, true); // Borde azul pastel claro
+        Border inner = new EmptyBorder(10, 20, 10, 20); // Padding más compacto para Ver Mis Compras
+        button.setBorder(new CompoundBorder(outer, inner));
         button.setFocusPainted(false);
+        button.setCursor(new Cursor(Cursor.HAND_CURSOR)); // Cursor de mano
         button.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                button.setBackground(bgColor.brighter());
+                button.setBackground(BUTTON_HOVER); // Hover más oscuro
             }
-
             @Override
             public void mouseExited(MouseEvent e) {
-                button.setBackground(bgColor);
+                button.setBackground(BUTTON_BG);
             }
         });
         return button;
@@ -224,8 +272,8 @@ public class SearchFlightsFrame extends JFrame {
 
     private JButton createLinkButton(String text, java.awt.event.ActionListener action) {
         JButton button = new JButton(text);
-        button.setFont(new Font("SansSerif", Font.PLAIN, 14));
-        button.setForeground(new Color(45, 212, 191));
+        button.setFont(new Font("Roboto", Font.PLAIN, 14));
+        button.setForeground(new Color(59, 130, 246)); // Azul moderno para enlaces
         button.setContentAreaFilled(false);
         button.setBorderPainted(false);
         button.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -233,12 +281,11 @@ public class SearchFlightsFrame extends JFrame {
         button.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                button.setForeground(new Color(94, 234, 212));
+                button.setForeground(new Color(29, 78, 216)); // Azul más oscuro para hover
             }
-
             @Override
             public void mouseExited(MouseEvent e) {
-                button.setForeground(new Color(45, 212, 191));
+                button.setForeground(new Color(59, 130, 246));
             }
         });
         return button;
