@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-31T02:59:13.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAmwL0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T23:38:43.774Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

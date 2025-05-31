@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ViajecitosRestServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9b6fb14902cd1d969cc125b4ff47d36e7c37896")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+daf637ec86ea5b9169841d79862d2d03ae4f3a5f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ViajecitosRestServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ViajecitosRestServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

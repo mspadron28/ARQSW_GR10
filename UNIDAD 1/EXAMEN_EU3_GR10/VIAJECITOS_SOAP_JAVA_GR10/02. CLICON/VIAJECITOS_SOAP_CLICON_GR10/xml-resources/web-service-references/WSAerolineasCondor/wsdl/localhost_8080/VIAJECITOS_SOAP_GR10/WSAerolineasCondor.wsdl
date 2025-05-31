@@ -4,35 +4,23 @@
 <xsd:import namespace="http://controlador.monster.edu.ec/" schemaLocation="http://localhost:8080/VIAJECITOS_SOAP_GR10/WSAerolineasCondor?xsd=1"/>
 </xsd:schema>
 </types>
-<message name="obtenerVueloMasCaro">
-<part name="parameters" element="tns:obtenerVueloMasCaro"/>
-</message>
-<message name="obtenerVueloMasCaroResponse">
-<part name="parameters" element="tns:obtenerVueloMasCaroResponse"/>
-</message>
-<message name="iniciarSesion">
-<part name="parameters" element="tns:iniciarSesion"/>
-</message>
-<message name="iniciarSesionResponse">
-<part name="parameters" element="tns:iniciarSesionResponse"/>
-</message>
 <message name="obtenerComprasCliente">
 <part name="parameters" element="tns:obtenerComprasCliente"/>
 </message>
 <message name="obtenerComprasClienteResponse">
 <part name="parameters" element="tns:obtenerComprasClienteResponse"/>
 </message>
+<message name="obtenerVueloMasCaro">
+<part name="parameters" element="tns:obtenerVueloMasCaro"/>
+</message>
+<message name="obtenerVueloMasCaroResponse">
+<part name="parameters" element="tns:obtenerVueloMasCaroResponse"/>
+</message>
 <message name="buscarVuelos">
 <part name="parameters" element="tns:buscarVuelos"/>
 </message>
 <message name="buscarVuelosResponse">
 <part name="parameters" element="tns:buscarVuelosResponse"/>
-</message>
-<message name="registrarUsuario">
-<part name="parameters" element="tns:registrarUsuario"/>
-</message>
-<message name="registrarUsuarioResponse">
-<part name="parameters" element="tns:registrarUsuarioResponse"/>
 </message>
 <message name="registrarCompra">
 <part name="parameters" element="tns:registrarCompra"/>
@@ -46,26 +34,30 @@
 <message name="registrarClienteResponse">
 <part name="parameters" element="tns:registrarClienteResponse"/>
 </message>
+<message name="registrarUsuario">
+<part name="parameters" element="tns:registrarUsuario"/>
+</message>
+<message name="registrarUsuarioResponse">
+<part name="parameters" element="tns:registrarUsuarioResponse"/>
+</message>
+<message name="iniciarSesion">
+<part name="parameters" element="tns:iniciarSesion"/>
+</message>
+<message name="iniciarSesionResponse">
+<part name="parameters" element="tns:iniciarSesionResponse"/>
+</message>
 <portType name="WSAerolineasCondor">
-<operation name="obtenerVueloMasCaro">
-<input wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/obtenerVueloMasCaroRequest" message="tns:obtenerVueloMasCaro"/>
-<output wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/obtenerVueloMasCaroResponse" message="tns:obtenerVueloMasCaroResponse"/>
-</operation>
-<operation name="iniciarSesion">
-<input wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/iniciarSesionRequest" message="tns:iniciarSesion"/>
-<output wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/iniciarSesionResponse" message="tns:iniciarSesionResponse"/>
-</operation>
 <operation name="obtenerComprasCliente">
 <input wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/obtenerComprasClienteRequest" message="tns:obtenerComprasCliente"/>
 <output wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/obtenerComprasClienteResponse" message="tns:obtenerComprasClienteResponse"/>
 </operation>
+<operation name="obtenerVueloMasCaro">
+<input wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/obtenerVueloMasCaroRequest" message="tns:obtenerVueloMasCaro"/>
+<output wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/obtenerVueloMasCaroResponse" message="tns:obtenerVueloMasCaroResponse"/>
+</operation>
 <operation name="buscarVuelos">
 <input wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/buscarVuelosRequest" message="tns:buscarVuelos"/>
 <output wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/buscarVuelosResponse" message="tns:buscarVuelosResponse"/>
-</operation>
-<operation name="registrarUsuario">
-<input wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/registrarUsuarioRequest" message="tns:registrarUsuario"/>
-<output wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/registrarUsuarioResponse" message="tns:registrarUsuarioResponse"/>
 </operation>
 <operation name="registrarCompra">
 <input wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/registrarCompraRequest" message="tns:registrarCompra"/>
@@ -75,27 +67,17 @@
 <input wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/registrarClienteRequest" message="tns:registrarCliente"/>
 <output wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/registrarClienteResponse" message="tns:registrarClienteResponse"/>
 </operation>
+<operation name="registrarUsuario">
+<input wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/registrarUsuarioRequest" message="tns:registrarUsuario"/>
+<output wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/registrarUsuarioResponse" message="tns:registrarUsuarioResponse"/>
+</operation>
+<operation name="iniciarSesion">
+<input wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/iniciarSesionRequest" message="tns:iniciarSesion"/>
+<output wsam:Action="http://controlador.monster.edu.ec/WSAerolineasCondor/iniciarSesionResponse" message="tns:iniciarSesionResponse"/>
+</operation>
 </portType>
 <binding name="WSAerolineasCondorPortBinding" type="tns:WSAerolineasCondor">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
-<operation name="obtenerVueloMasCaro">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
-<operation name="iniciarSesion">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
 <operation name="obtenerComprasCliente">
 <soap:operation soapAction=""/>
 <input>
@@ -105,7 +87,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="buscarVuelos">
+<operation name="obtenerVueloMasCaro">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -114,7 +96,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="registrarUsuario">
+<operation name="buscarVuelos">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -133,6 +115,24 @@
 </output>
 </operation>
 <operation name="registrarCliente">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="registrarUsuario">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="iniciarSesion">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

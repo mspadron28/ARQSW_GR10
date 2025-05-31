@@ -1,0 +1,41 @@
+﻿@model VIAJECITOS_REST_CLIWEB_GR10.Models.Vuelo
+@{
+    ViewData["Title"] = "Resultado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="result-container">
+    <h2>Resultado de la Búsqueda</h2>
+    @if (Model != null && Model.IdVuelo > 0)
+    {
+        <div class="flight-info">
+            <p><strong>Vuelo ID:</strong> @Model.IdVuelo</p>
+            <p><strong>Origen:</strong> @Model.CiudadOrigen</p>
+            <p><strong>Destino:</strong> @Model.CiudadDestino</p>
+            <p><strong>Valor:</strong> $@Model.Valor.ToString("F2")</p>
+            <p><strong>Hora de Salida:</strong> @Model.HoraSalida.ToString("HH:mm")</p>
+            @if (!string.IsNullOrEmpty(@Context.Session.GetString("Usuario")))
+            {
+                <form asp-action="Comprar" method="post">
+                    <input type="hidden" name="idVuelo" value="@Model.IdVuelo" />
+                    <input type="hidden" name="vuelo" value="@System.Net.WebUtility.UrlEncode(System.Text.Json.JsonSerializer.Serialize(Model))" />
+                    <button type="submit">Comprar Boleto</button>
+                </form>
+            }
+            else
+            {
+                <p class="error"><a href="@Url.Action("Login", "Home")">Inicie sesión para comprar</a></p>
+            }
+        </div>
+    }
+    else
+    {
+        <p class="error">Vuelo no Disponible</p>
+    }
+    @if (!string.IsNullOrEmpty(ViewBag.Error))
+    {
+        <p class="error">@ViewBag.Error</p>
+    }
+    <div class="nav-links">
+        <a href="@Url.Action("Index", "Home")">Volver a Buscar</a>
+    </div>
+</div>

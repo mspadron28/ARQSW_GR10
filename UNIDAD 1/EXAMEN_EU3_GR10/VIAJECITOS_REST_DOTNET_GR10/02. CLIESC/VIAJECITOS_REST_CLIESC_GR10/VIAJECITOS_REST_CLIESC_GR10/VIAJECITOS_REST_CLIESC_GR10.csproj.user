@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Vista\FlightResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vista\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vista\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vista\PurchasesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vista\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vista\SearchFlightsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

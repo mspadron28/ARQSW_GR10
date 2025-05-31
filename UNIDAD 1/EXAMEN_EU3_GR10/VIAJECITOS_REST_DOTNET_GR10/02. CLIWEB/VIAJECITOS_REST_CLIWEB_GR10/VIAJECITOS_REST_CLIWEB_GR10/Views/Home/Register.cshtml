@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Registrarse";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="form-container">
+    <h2>Registrarse</h2>
+    <form asp-action="Register" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="documentoIdentidad">Documento de Identidad:</label>
+            <input type="text" id="documentoIdentidad" name="documentoIdentidad" required>
+        </div>
+        <div class="form-group">
+            <label for="nombreUsuario">Usuario:</label>
+            <input type="text" id="nombreUsuario" name="nombreUsuario" required>
+        </div>
+        <div class="form-group">
+            <label for="claveUsuario">Contraseña:</label>
+            <input type="password" id="claveUsuario" name="claveUsuario" required>
+        </div>
+        <button type="submit">Registrarse</button>
+    </form>
+    @if (!string.IsNullOrEmpty(ViewBag.Error))
+    {
+        <p class="error">@ViewBag.Error</p>
+    }
+    <div class="nav-links">
+        <a href="@Url.Action("Login", "Home")">Iniciar Sesión</a>
+        <a href="@Url.Action("Index", "Home")">Volver</a>
+    </div>
+</div>
