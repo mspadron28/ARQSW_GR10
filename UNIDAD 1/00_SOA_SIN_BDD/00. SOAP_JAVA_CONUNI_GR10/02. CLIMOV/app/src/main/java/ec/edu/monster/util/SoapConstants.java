@@ -2,7 +2,7 @@ package ec.edu.monster.util;
 
 public class SoapConstants {
     public static final String NAMESPACE = "http://controlador.monster.edu.ec/";
-    public static final String URL = "http://192.168.1.10:8080/VIAJECITOS_SOAP_GR10/WSAerolineasCondor?wsdl";
+    public static final String URL = "http://192:8080/VIAJECITOS_SOAP_GR10/WSAerolineasCondor?wsdl";
     public static final String SOAP_ACTION_PREFIX = "http://controlador.monster.edu.ec/";
 
     // Method names from WSDL
