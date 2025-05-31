@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIESC\\VIAJECITOS_REST_CLIESC_GR10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01E947B0-B434-4558-B9D4-E57FBB3BAD2A}|VIAJECITOS_REST_CLIESC_GR10\\VIAJECITOS_REST_CLIESC_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliesc\\viajecitos_rest_cliesc_gr10\\viajecitos_rest_cliesc_gr10\\servicio\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E947B0-B434-4558-B9D4-E57FBB3BAD2A}|VIAJECITOS_REST_CLIESC_GR10\\VIAJECITOS_REST_CLIESC_GR10.csproj|solutionrelative:viajecitos_rest_cliesc_gr10\\servicio\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E947B0-B434-4558-B9D4-E57FBB3BAD2A}|VIAJECITOS_REST_CLIESC_GR10\\VIAJECITOS_REST_CLIESC_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliesc\\viajecitos_rest_cliesc_gr10\\viajecitos_rest_cliesc_gr10\\controlador\\viajecitoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E947B0-B434-4558-B9D4-E57FBB3BAD2A}|VIAJECITOS_REST_CLIESC_GR10\\VIAJECITOS_REST_CLIESC_GR10.csproj|solutionrelative:viajecitos_rest_cliesc_gr10\\controlador\\viajecitoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViajecitosController.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIESC\\VIAJECITOS_REST_CLIESC_GR10\\VIAJECITOS_REST_CLIESC_GR10\\Controlador\\ViajecitosController.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIESC_GR10\\Controlador\\ViajecitosController.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIESC\\VIAJECITOS_REST_CLIESC_GR10\\VIAJECITOS_REST_CLIESC_GR10\\Controlador\\ViajecitosController.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIESC_GR10\\Controlador\\ViajecitosController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAcwIkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T03:04:58.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViajecitosService.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIESC\\VIAJECITOS_REST_CLIESC_GR10\\VIAJECITOS_REST_CLIESC_GR10\\Servicio\\ViajecitosService.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIESC_GR10\\Servicio\\ViajecitosService.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIESC\\VIAJECITOS_REST_CLIESC_GR10\\VIAJECITOS_REST_CLIESC_GR10\\Servicio\\ViajecitosService.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIESC_GR10\\Servicio\\ViajecitosService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAUwFQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T23:01:26.694Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
