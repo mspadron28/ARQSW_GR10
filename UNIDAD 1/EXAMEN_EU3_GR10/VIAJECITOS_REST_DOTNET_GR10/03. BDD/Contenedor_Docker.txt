@@ -1,0 +1,1 @@
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Admin123!" -e "MSSQL_PID=Express" -p 1433:1433 --name viajecitos_sqlserver -d mcr.microsoft.com/mssql/server:2022-latest
