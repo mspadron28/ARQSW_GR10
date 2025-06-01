@@ -4,7 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:11149",
+      "applicationUrl": "http://192.168.100.11:11149",
       "sslPort": 44330
     }
   },
@@ -13,8 +13,8 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "", // Cambiar a raíz (/) para que coincida con RoutePrefix
-      "applicationUrl": "http://localhost:5158",
+      "launchUrl": "",
+      "applicationUrl": "http://192.168.100.11:5158", // Cambia localhost por tu IP
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -23,8 +23,8 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "", // Cambiar a raíz (/) para que coincida con RoutePrefix
-      "applicationUrl": "https://localhost:7013;http://localhost:5158",
+      "launchUrl": "",
+      "applicationUrl": "https://192.168.100.11:7013;http://192.168.100.11:5158", // Cambia localhost por tu IP
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -32,7 +32,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "", // Cambiar a raíz (/) para que coincida con RoutePrefix
+      "launchUrl": "",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
