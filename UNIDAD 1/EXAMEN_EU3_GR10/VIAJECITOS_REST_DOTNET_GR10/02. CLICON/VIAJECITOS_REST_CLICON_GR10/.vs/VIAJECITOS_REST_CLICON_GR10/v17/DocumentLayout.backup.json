@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. clicon\\viajecitos_rest_clicon_gr10\\viajecitos_rest_clicon_gr10\\servicio\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\servicio\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. clicon\\viajecitos_rest_clicon_gr10\\viajecitos_rest_clicon_gr10\\controlador\\viajecitoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\controlador\\viajecitoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,12 +27,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ViajecitosService.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Servicio\\ViajecitosService.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Servicio\\ViajecitosService.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Servicio\\ViajecitosService.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Servicio\\ViajecitosService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T19:56:52.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ViajecitosController.cs",
               "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Controlador\\ViajecitosController.cs",
               "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Controlador\\ViajecitosController.cs",
               "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Controlador\\ViajecitosController.cs",
               "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Controlador\\ViajecitosController.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAwwIQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAYwHQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T05:15:13.165Z",
               "EditorCaption": ""

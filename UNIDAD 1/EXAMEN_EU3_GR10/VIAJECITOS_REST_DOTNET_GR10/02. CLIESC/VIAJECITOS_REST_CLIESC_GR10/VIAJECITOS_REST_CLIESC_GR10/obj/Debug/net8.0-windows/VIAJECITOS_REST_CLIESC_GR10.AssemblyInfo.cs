@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VIAJECITOS_REST_CLIESC_GR10")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+daf637ec86ea5b9169841d79862d2d03ae4f3a5f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d99a0bbd04dce5752732df7e0a9d1357a4f30e3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("VIAJECITOS_REST_CLIESC_GR10")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VIAJECITOS_REST_CLIESC_GR10")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

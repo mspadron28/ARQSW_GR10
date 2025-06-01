@@ -11,7 +11,7 @@ namespace VIAJECITOS_REST_CLICON_GR10.Servicio
     public class ViajecitosService
     {
         private static readonly HttpClient client = new HttpClient();
-        private const string BaseUrl = "https://localhost:7013/api/";
+        private const string BaseUrl = "http://192.168.100.11:5158/api/";
 
         static ViajecitosService()
         {
