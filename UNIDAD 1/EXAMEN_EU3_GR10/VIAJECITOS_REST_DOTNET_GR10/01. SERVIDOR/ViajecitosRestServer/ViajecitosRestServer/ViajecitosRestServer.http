@@ -1,4 +1,4 @@
-@ViajecitosRestServer_HostAddress = https://localhost:7013
+@ViajecitosRestServer_HostAddress = https://192.168.1.10:7013
 
 # Buscar vuelos
 GET {{ViajecitosRestServer_HostAddress}}/api/vuelos?ciudadOrigen=Bogota&ciudadDestino=Medellin&fecha=2025-06-01T00:00:00

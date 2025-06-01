@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\VIAJECITOS_REST_CLIWEB_GR10.props" />
+</Project>

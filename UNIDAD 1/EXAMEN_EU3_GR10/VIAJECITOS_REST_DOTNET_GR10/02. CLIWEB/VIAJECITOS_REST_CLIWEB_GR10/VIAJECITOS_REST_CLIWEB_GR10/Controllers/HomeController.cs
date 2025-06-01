@@ -11,7 +11,7 @@ namespace VIAJECITOS_REST_CLIWEB_GR10.Controllers
     public class HomeController : Controller
     {
         private readonly HttpClient _httpClient;
-        private readonly string _apiBaseUrl = "http://192.168.100.11:5158/api"; // URL base actualizada al puerto 7013
+        private readonly string _apiBaseUrl = "http://192.168.1.10:5158/api"; // URL base actualizada al puerto 7013
 
         public HomeController(IHttpClientFactory httpClientFactory)
         {

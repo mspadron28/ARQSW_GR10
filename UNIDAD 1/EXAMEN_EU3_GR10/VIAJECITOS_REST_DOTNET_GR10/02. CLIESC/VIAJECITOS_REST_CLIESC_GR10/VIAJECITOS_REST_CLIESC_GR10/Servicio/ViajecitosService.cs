@@ -11,7 +11,7 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Servicio
     public class ViajecitosService
     {
         private readonly HttpClient _httpClient;
-        private readonly string _baseUrl = "http://192.168.100.11:5158/api"; // Ajusta según la URL de tu servicio REST
+        private readonly string _baseUrl = "http://192.168.1.10:5158/api"; // Ajusta según la URL de tu servicio REST
 
         public ViajecitosService()
         {

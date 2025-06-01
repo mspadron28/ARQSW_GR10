@@ -4,7 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://192.168.100.11:11149",
+      "applicationUrl": "http://192.168.1.10:11149",
       "sslPort": 44330
     }
   },
@@ -14,7 +14,7 @@
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "",
-      "applicationUrl": "http://192.168.100.11:5158", // Cambia localhost por tu IP
+      "applicationUrl": "http://192.168.1.10:5158", // Cambia localhost por tu IP
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -24,7 +24,7 @@
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "",
-      "applicationUrl": "https://192.168.100.11:7013;http://192.168.100.11:5158", // Cambia localhost por tu IP
+      "applicationUrl": "https://192.168.1.10:7013;http://192.168.1.10:5158", // Cambia localhost por tu IP
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
