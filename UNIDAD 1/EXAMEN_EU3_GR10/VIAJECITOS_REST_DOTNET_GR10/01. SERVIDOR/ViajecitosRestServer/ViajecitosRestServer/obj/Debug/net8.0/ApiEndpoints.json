@@ -37,24 +37,60 @@
   },
   {
     "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
-    "Method": "RegistrarCompra",
-    "RelativePath": "api/compra",
+    "Method": "AgregarDetalleFactura",
+    "RelativePath": "api/detalle-factura",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "ViajecitosRestServer.Controllers.ApiController\u002BCompraRequest",
+        "Type": "ViajecitosRestServer.Controllers.ApiController\u002BDetalleFacturaRequest",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "ViajecitosRestServer.Models.DetalleFactura",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
-    "Method": "ObtenerComprasCliente",
-    "RelativePath": "api/compras/{idCliente}",
+    "Method": "CrearFactura",
+    "RelativePath": "api/factura",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ViajecitosRestServer.Controllers.ApiController\u002BFacturaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ViajecitosRestServer.Models.Factura",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
+    "Method": "ObtenerFacturasCliente",
+    "RelativePath": "api/facturas/{idCliente}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -67,7 +103,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[ViajecitosRestServer.Models.Compra, ViajecitosRestServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[ViajecitosRestServer.Models.Factura, ViajecitosRestServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -110,79 +146,7 @@
   },
   {
     "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
-    "Method": "RegistrarUsuario",
-    "RelativePath": "api/usuario",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "idCliente",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "nombreUsuario",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "claveUsuario",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ViajecitosRestServer.Models.Usuario",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
-    "Method": "ObtenerVueloMasCaro",
-    "RelativePath": "api/vuelo-mas-caro",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ciudadOrigen",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ciudadDestino",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "fecha",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ViajecitosRestServer.Models.Vuelo",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
-    "Method": "BuscarVuelos",
+    "Method": "BuscarVuelosOrdenados",
     "RelativePath": "api/vuelos",
     "HttpMethod": "GET",
     "IsController": true,

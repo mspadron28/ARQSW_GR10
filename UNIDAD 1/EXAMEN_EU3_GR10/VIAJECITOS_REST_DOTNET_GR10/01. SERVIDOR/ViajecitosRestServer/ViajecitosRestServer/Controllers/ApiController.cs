@@ -20,72 +20,16 @@ namespace ViajecitosRestServer.Controllers
         }
 
         [HttpGet("vuelos")]
-        public async Task<ActionResult<List<Vuelo>>> BuscarVuelos(string ciudadOrigen, string ciudadDestino, DateTime fecha)
+        public async Task<ActionResult<List<Vuelo>>> BuscarVuelosOrdenados(string ciudadOrigen, string ciudadDestino, DateTime fecha)
         {
             try
             {
-                var vuelos = await _service.BuscarVuelos(ciudadOrigen, ciudadDestino, fecha);
+                var vuelos = await _service.BuscarVuelosOrdenados(ciudadOrigen, ciudadDestino, fecha);
                 return Ok(vuelos);
             }
             catch (Exception ex)
             {
                 return BadRequest(new { error = ex.Message });
-            }
-        }
-
-        [HttpGet("vuelo-mas-caro")]
-        public async Task<ActionResult<Vuelo>> ObtenerVueloMasCaro(string ciudadOrigen, string ciudadDestino, DateTime fecha)
-        {
-            try
-            {
-                var vuelo = await _service.ObtenerVueloMasCaro(ciudadOrigen, ciudadDestino, fecha);
-                if (vuelo == null)
-                    return NotFound(new { error = "Vuelo no encontrado." });
-                return Ok(vuelo);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
-        }
-
-        // Nuevo modelo para el cuerpo de la solicitud
-        public class CompraRequest
-        {
-            public int IdVuelo { get; set; }
-            public int IdCliente { get; set; }
-        }
-
-        [HttpPost("compra")]
-        public async Task<ActionResult> RegistrarCompra([FromBody] CompraRequest request)
-        {
-            try
-            {
-                // Validar que el vuelo exista
-                var vuelo = await _context.Vuelos.FindAsync(request.IdVuelo);
-                if (vuelo == null)
-                {
-                    return NotFound(new { error = $"El vuelo con ID {request.IdVuelo} no existe." });
-                }
-
-                // Validar que el cliente exista
-                var cliente = await _context.Clientes.FindAsync(request.IdCliente);
-                if (cliente == null)
-                {
-                    return NotFound(new { error = $"El cliente con ID {request.IdCliente} no existe." });
-                }
-
-                // Registrar la compra
-                await _service.RegistrarCompra(request.IdVuelo, request.IdCliente);
-                return Ok(new { message = "Compra registrada exitosamente." });
-            }
-            catch (DbUpdateException ex)
-            {
-                return StatusCode(500, new { error = "Error al registrar la compra.", detail = ex.InnerException?.Message });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { error = "Error inesperado.", detail = ex.Message });
             }
         }
 
@@ -96,20 +40,6 @@ namespace ViajecitosRestServer.Controllers
             {
                 var cliente = await _service.RegistrarCliente(nombre, email, documentoIdentidad);
                 return Ok(cliente);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
-        }
-
-        [HttpPost("usuario")]
-        public async Task<ActionResult<Usuario>> RegistrarUsuario(int idCliente, string nombreUsuario, string claveUsuario)
-        {
-            try
-            {
-                var usuario = await _service.RegistrarUsuario(idCliente, nombreUsuario, claveUsuario);
-                return Ok(usuario);
             }
             catch (Exception ex)
             {
@@ -133,13 +63,69 @@ namespace ViajecitosRestServer.Controllers
             }
         }
 
-        [HttpGet("compras/{idCliente}")]
-        public async Task<ActionResult<List<Compra>>> ObtenerComprasCliente(int idCliente)
+        public class DetalleFacturaRequest
+        {
+            public int IdFactura { get; set; }
+            public int IdVuelo { get; set; }
+            public int Cantidad { get; set; }
+        }
+
+        [HttpPost("detalle-factura")]
+        public async Task<ActionResult<DetalleFactura>> AgregarDetalleFactura([FromBody] DetalleFacturaRequest request)
         {
             try
             {
-                var compras = await _service.ObtenerComprasCliente(idCliente);
-                return Ok(compras);
+                var detalle = await _service.AgregarDetalleFactura(request.IdFactura, request.IdVuelo, request.Cantidad);
+                return Ok(detalle);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+
+        public class FacturaRequest
+        {
+            public string NumeroFactura { get; set; } = string.Empty;
+            public int IdEmpleado { get; set; }
+            public int IdCliente { get; set; }
+            public int IdMetodoPago { get; set; }
+            public decimal Descuento { get; set; }
+            public List<(int IdVuelo, int Cantidad)> Detalles { get; set; } = new List<(int, int)>();
+        }
+
+        [HttpPost("factura")]
+        public async Task<ActionResult<Factura>> CrearFactura([FromBody] FacturaRequest request)
+        {
+            try
+            {
+                var factura = await _service.CrearFactura(
+                    request.NumeroFactura,
+                    request.IdEmpleado,
+                    request.IdCliente,
+                    request.IdMetodoPago,
+                    request.Descuento,
+                    request.Detalles
+                );
+                return Ok(factura);
+            }
+            catch (DbUpdateException ex)
+            {
+                return StatusCode(500, new { error = "Error al crear la factura.", detail = ex.InnerException?.Message });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+
+        [HttpGet("facturas/{idCliente}")]
+        public async Task<ActionResult<List<Factura>>> ObtenerFacturasCliente(int idCliente)
+        {
+            try
+            {
+                var facturas = await _service.ObtenerFacturasCliente(idCliente);
+                return Ok(facturas);
             }
             catch (Exception ex)
             {

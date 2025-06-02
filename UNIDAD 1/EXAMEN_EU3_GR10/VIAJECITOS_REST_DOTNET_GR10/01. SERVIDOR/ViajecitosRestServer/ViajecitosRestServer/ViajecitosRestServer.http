@@ -1,45 +1,42 @@
 @ViajecitosRestServer_HostAddress = https://192.168.1.10:7013
 
-# Buscar vuelos
-GET {{ViajecitosRestServer_HostAddress}}/api/vuelos?ciudadOrigen=Bogota&ciudadDestino=Medellin&fecha=2025-06-01T00:00:00
-Accept: application/json
-
-###
-
-# Obtener el vuelo más caro
-GET {{ViajecitosRestServer_HostAddress}}/api/vuelo-mas-caro?ciudadOrigen=Bogota&ciudadDestino=Medellin&fecha=2025-06-01T00:00:00
+# Buscar vuelos ordenados por precio (de mayor a menor)
+GET {{ViajecitosRestServer_HostAddress}}/api/vuelos
 Accept: application/json
 
 ###
 
 # Iniciar sesión
-POST {{ViajecitosRestServer_HostAddress}}/api/login?nombreUsuario=juanperez&claveUsuario=MONSTER9
-Content-Type: application/json
-Accept: application/json
-
-###
-
-# Registrar una compra
-POST {{ViajecitosRestServer_HostAddress}}/api/compra?idVuelo=1&idCliente=1
+POST {{ViajecitosRestServer_HostAddress}}/api/login?nombreUsuario=MONSTER&claveUsuario=MONSTER9
 Content-Type: application/json
 Accept: application/json
 
 ###
 
 # Registrar un cliente
-POST {{ViajecitosRestServer_HostAddress}}/api/cliente?nombre=Juan%20Perez&email=juan.perez@example.com&documentoIdentidad=123456789
+POST {{ViajecitosRestServer_HostAddress}}/api/cliente?nombre=Ana%20Torres&email=ana.torres@email.com&documentoIdentidad=1710474758
 Content-Type: application/json
 Accept: application/json
 
 ###
 
-# Registrar un usuario
-POST {{ViajecitosRestServer_HostAddress}}/api/usuario?idCliente=1&nombreUsuario=juanperez&claveUsuario=MONSTER9
+# Agregar detalle de factura
+POST {{ViajecitosRestServer_HostAddress}}/api/detalle-factura
 Content-Type: application/json
 Accept: application/json
 
+
 ###
 
-# Obtener compras de un cliente
-GET {{ViajecitosRestServer_HostAddress}}/api/compras/1
+# Crear factura
+POST {{ViajecitosRestServer_HostAddress}}/api/factura
+Content-Type: application/json
+Accept: application/json
+
+
+
+###
+
+# Obtener facturas de un cliente
+GET {{ViajecitosRestServer_HostAddress}}/api/facturas/1
 Accept: application/json

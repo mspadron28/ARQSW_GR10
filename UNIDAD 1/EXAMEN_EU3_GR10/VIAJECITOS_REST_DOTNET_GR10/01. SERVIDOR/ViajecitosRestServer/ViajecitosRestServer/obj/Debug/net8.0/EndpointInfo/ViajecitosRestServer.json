@@ -67,90 +67,6 @@
         }
       }
     },
-    "/api/vuelo-mas-caro": {
-      "get": {
-        "tags": [
-          "Api"
-        ],
-        "parameters": [
-          {
-            "name": "ciudadOrigen",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "ciudadDestino",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "fecha",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "date-time"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Vuelo"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Vuelo"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Vuelo"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/compra": {
-      "post": {
-        "tags": [
-          "Api"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CompraRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CompraRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CompraRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/cliente": {
       "post": {
         "tags": [
@@ -203,59 +119,6 @@
         }
       }
     },
-    "/api/usuario": {
-      "post": {
-        "tags": [
-          "Api"
-        ],
-        "parameters": [
-          {
-            "name": "idCliente",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "nombreUsuario",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "claveUsuario",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Usuario"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Usuario"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Usuario"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/login": {
       "post": {
         "tags": [
@@ -301,7 +164,103 @@
         }
       }
     },
-    "/api/compras/{idCliente}": {
+    "/api/detalle-factura": {
+      "post": {
+        "tags": [
+          "Api"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DetalleFacturaRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DetalleFacturaRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DetalleFacturaRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DetalleFactura"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DetalleFactura"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DetalleFactura"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/factura": {
+      "post": {
+        "tags": [
+          "Api"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FacturaRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FacturaRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FacturaRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Factura"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Factura"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Factura"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/facturas/{idCliente}": {
       "get": {
         "tags": [
           "Api"
@@ -325,7 +284,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Compra"
+                    "$ref": "#/components/schemas/Factura"
                   }
                 }
               },
@@ -333,7 +292,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Compra"
+                    "$ref": "#/components/schemas/Factura"
                   }
                 }
               },
@@ -341,7 +300,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Compra"
+                    "$ref": "#/components/schemas/Factura"
                   }
                 }
               }
@@ -375,10 +334,14 @@
         },
         "additionalProperties": false
       },
-      "Compra": {
+      "DetalleFactura": {
         "type": "object",
         "properties": {
-          "idCompra": {
+          "idDetalleFactura": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idFactura": {
             "type": "integer",
             "format": "int32"
           },
@@ -386,33 +349,191 @@
             "type": "integer",
             "format": "int32"
           },
-          "idCliente": {
+          "cantidad": {
             "type": "integer",
             "format": "int32"
           },
-          "fechaCompra": {
-            "type": "string",
-            "format": "date-time"
+          "valorUnitario": {
+            "type": "number",
+            "format": "double"
+          },
+          "total": {
+            "type": "number",
+            "format": "double"
           },
           "vuelo": {
             "$ref": "#/components/schemas/Vuelo"
           },
-          "cliente": {
-            "$ref": "#/components/schemas/Cliente"
+          "factura": {
+            "$ref": "#/components/schemas/Factura"
           }
         },
         "additionalProperties": false
       },
-      "CompraRequest": {
+      "DetalleFacturaRequest": {
         "type": "object",
         "properties": {
+          "idFactura": {
+            "type": "integer",
+            "format": "int32"
+          },
           "idVuelo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cantidad": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Empleado": {
+        "type": "object",
+        "properties": {
+          "idEmpleado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idUsuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "documentoIdentidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Factura": {
+        "type": "object",
+        "properties": {
+          "idFactura": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numeroFactura": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaEmision": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idEmpleado": {
             "type": "integer",
             "format": "int32"
           },
           "idCliente": {
             "type": "integer",
             "format": "int32"
+          },
+          "idMetodoPago": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subtotal": {
+            "type": "number",
+            "format": "double"
+          },
+          "descuento": {
+            "type": "number",
+            "format": "double"
+          },
+          "iva": {
+            "type": "number",
+            "format": "double"
+          },
+          "total": {
+            "type": "number",
+            "format": "double"
+          },
+          "empleado": {
+            "$ref": "#/components/schemas/Empleado"
+          },
+          "cliente": {
+            "$ref": "#/components/schemas/Cliente"
+          },
+          "metodoPago": {
+            "$ref": "#/components/schemas/MetodoPago"
+          },
+          "detallesFactura": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetalleFactura"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FacturaRequest": {
+        "type": "object",
+        "properties": {
+          "numeroFactura": {
+            "type": "string",
+            "nullable": true
+          },
+          "idEmpleado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCliente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idMetodoPago": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descuento": {
+            "type": "number",
+            "format": "double"
+          },
+          "detalles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Int32Int32ValueTuple"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Int32Int32ValueTuple": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "MetodoPago": {
+        "type": "object",
+        "properties": {
+          "idMetodoPago": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreMetodo": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -421,10 +542,6 @@
         "type": "object",
         "properties": {
           "idUsuario": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "idCliente": {
             "type": "integer",
             "format": "int32"
           },
@@ -439,9 +556,6 @@
           "estadoUsuario": {
             "type": "string",
             "nullable": true
-          },
-          "cliente": {
-            "$ref": "#/components/schemas/Cliente"
           }
         },
         "additionalProperties": false
