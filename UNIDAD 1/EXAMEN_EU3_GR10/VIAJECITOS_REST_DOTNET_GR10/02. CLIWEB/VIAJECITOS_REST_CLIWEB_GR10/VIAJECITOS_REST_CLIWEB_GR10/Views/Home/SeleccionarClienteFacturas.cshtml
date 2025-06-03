@@ -1,0 +1,45 @@
+﻿@model VIAJECITOS_REST_CLIWEB_GR10.Controllers.SeleccionarClienteModel
+@{
+    ViewData["Title"] = "Seleccionar Cliente para Facturas";
+}
+
+<div class="form-container">
+    <h2>Seleccionar Cliente para Facturas</h2>
+    @if (ViewBag.Error != null)
+    {
+        <div class="error">@ViewBag.Error</div>
+    }
+    <form asp-action="SeleccionarClienteFacturas" method="post" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label asp-for="IdCliente">Cliente</label>
+            <select asp-for="IdCliente" class="form-control" required>
+                <option value="" disabled selected>Selecciona un cliente</option>
+                @foreach (var cliente in Model.Clientes)
+                {
+                    <option value="@cliente.IdCliente">@cliente.Nombre (ID: @cliente.IdCliente)</option>
+                }
+            </select>
+            <div class="invalid-feedback">Debes seleccionar un cliente.</div>
+        </div>
+        <button type="submit">Ver Facturas</button>
+    </form>
+    <div class="nav-links">
+        <a href="@Url.Action("Index", "Home")">Volver</a>
+    </div>
+</div>
+
+<script>
+    (function () {
+        'use strict';
+        var forms = document.querySelectorAll('.needs-validation');
+        Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    })();
+</script>

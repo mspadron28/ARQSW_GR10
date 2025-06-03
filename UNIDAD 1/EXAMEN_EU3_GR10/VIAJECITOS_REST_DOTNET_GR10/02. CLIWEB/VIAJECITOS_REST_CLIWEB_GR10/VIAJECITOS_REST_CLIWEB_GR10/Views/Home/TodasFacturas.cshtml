@@ -1,0 +1,64 @@
+﻿@model List<VIAJECITOS_REST_CLIWEB_GR10.Models.ClienteFacturas>
+@{
+    ViewData["Title"] = "Todas las Facturas";
+}
+
+<div class="table-container">
+    <h2>Todas las Facturas</h2>
+    @if (ViewBag.Error != null)
+    {
+        <div class="error">@ViewBag.Error</div>
+    }
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var cliente in Model.OrderBy(c => c.Nombre))
+        {
+            <h3>Cliente: @cliente.Nombre (ID: @cliente.ClienteId)</h3>
+            <p>Email: @cliente.Email</p>
+            <p>Documento: @cliente.DocumentoIdentidad</p>
+            @if (cliente.Facturas != null && cliente.Facturas.Any())
+            {
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Número Factura</th>
+                            <th>Fecha</th>
+                            <th>Subtotal</th>
+                            <th>Descuento</th>
+                            <th>IVA</th>
+                            <th>Total</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var factura in cliente.Facturas.OrderBy(f => f.FechaEmision))
+                        {
+                            <tr>
+                                <td>@factura.NumeroFactura</td>
+                                <td>@factura.FechaEmision.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                                <td>@factura.Subtotal.ToString("C")</td>
+                                <td>@factura.Descuento.ToString("C")</td>
+                                <td>@factura.Iva.ToString("C")</td>
+                                <td>@factura.Total.ToString("C")</td>
+                                <td>
+                                    <a href="@Url.Action("DetallesFactura", "Home", new { idCliente = factura.IdCliente, numeroFactura = factura.NumeroFactura })">Detalles</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p>No hay facturas para este cliente.</p>
+            }
+        }
+    }
+    else
+    {
+        <p>No hay facturas disponibles.</p>
+    }
+    <div class="nav-links">
+        <a href="@Url.Action("Index", "Home")">Volver</a>
+    </div>
+</div>

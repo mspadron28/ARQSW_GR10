@@ -1,58 +1,29 @@
-﻿@model VIAJECITOS_REST_CLIWEB_GR10.Models.Vuelo
+﻿@model string
 @{
-    ViewData["Title"] = "Buscar Vuelos";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Inicio";
 }
-<div class="form-container">
-    <div class="form-header">
-        <h2>Buscar Vuelos</h2>
-        @if (!string.IsNullOrEmpty(@Context.Session.GetString("Usuario")))
-        {
-            <a href="@Url.Action("Compras", "Home")" class="view-purchases-btn">Ver Mis Compras</a>
-        }
-    </div>
-    <form asp-action="BuscarVuelos" method="post">
-        <div class="form-group form-group-inline">
-            <div class="select-group">
-                <label for="ciudadOrigen">Ciudad Origen:</label>
-                <select id="ciudadOrigen" name="ciudadOrigen" required>
-                    <option value="" disabled selected>Selecciona una ciudad</option>
-                    <option value="Bogotá">BOG - Bogotá</option>
-                    <option value="Medellín">MDE - Medellín</option>
-                    <option value="Buenos Aires">BUE - Buenos Aires</option>
-                    <option value="Córdoba">COR - Córdoba</option>
-                    <option value="Quito">UIO - Quito</option>
-                    <option value="Guayaquil">GYE - Guayaquil</option>
-                    <option value="Cali">CLO - Cali</option>
-                    <option value="Cartagena">CTG - Cartagena</option>
-                    <option value="Mendoza">MDZ - Mendoza</option>
-                </select>
-            </div>
-            <span class="dash">-</span>
-            <div class="select-group">
-                <label for="ciudadDestino">Ciudad Destino:</label>
-                <select id="ciudadDestino" name="ciudadDestino" required>
-                    <option value="" disabled selected>Selecciona una ciudad</option>
-                    <option value="Bogotá">BOG - Bogotá</option>
-                    <option value="Medellín">MDE - Medellín</option>
-                    <option value="Buenos Aires">BUE - Buenos Aires</option>
-                    <option value="Córdoba">COR - Córdoba</option>
-                    <option value="Quito">UIO - Quito</option>
-                    <option value="Guayaquil">GYE - Guayaquil</option>
-                    <option value="Cali">CLO - Cali</option>
-                    <option value="Cartagena">CTG - Cartagena</option>
-                    <option value="Mendoza">MDZ - Mendoza</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="fecha">Fecha de Viaje:</label>
-            <input type="date" id="fecha" name="fecha" required>
-        </div>
-        <button type="submit">Buscar</button>
-    </form>
-    @if (!string.IsNullOrEmpty(ViewBag.Error))
+
+<div class="result-container">
+    <h2>Bienvenido a Viajecitos SA</h2>
+    <p>Encuentra y compra tus boletos de avión de forma fácil y segura.</p>
+    @if (ViewBag.Error != null)
     {
-        <p class="error">@ViewBag.Error</p>
+        <div class="error">@ViewBag.Error</div>
+    }
+    @if (!string.IsNullOrEmpty(@Context.Session.GetString("NombreUsuario")))
+    {
+        <p>Hola, @Context.Session.GetString("NombreUsuario")!</p>
+        <div class="nav-links">
+            <a href="@Url.Action("BuscarVuelos", "Home")">Buscar Vuelos</a>
+            <a href="@Url.Action("SeleccionarClienteFacturas", "Home")">Facturas de un Cliente</a>
+            <a href="@Url.Action("TodasFacturas", "Home")">Todas las Facturas</a>
+            <a href="@Url.Action("Logout", "Home")">Cerrar Sesión</a>
+        </div>
+    }
+    else
+    {
+        <div class="nav-links">
+            <a href="@Url.Action("Login", "Home")">Iniciar Sesión</a>
+        </div>
     }
 </div>

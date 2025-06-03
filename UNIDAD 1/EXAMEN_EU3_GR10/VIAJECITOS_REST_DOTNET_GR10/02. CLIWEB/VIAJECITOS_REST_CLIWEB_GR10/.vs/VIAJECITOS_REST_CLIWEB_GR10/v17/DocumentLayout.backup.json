@@ -7,32 +7,60 @@
       "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\comprar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\comprar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\servicio\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\servicio\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\resultado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\resultado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\facturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\facturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\todasfacturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\todasfacturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\models\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\models\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\detallesfactura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\detallesfactura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\seleccionarclientefacturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\seleccionarclientefacturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\compras.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\compras.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. cliweb\\viajecitos_rest_cliweb_gr10\\viajecitos_rest_cliweb_gr10\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE83C382-90E9-4EBA-A6C1-F28C82726271}|VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10.csproj|solutionrelative:viajecitos_rest_cliweb_gr10\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,100 +82,198 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs*",
-              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T22:51:21.031Z",
+              "DocumentIndex": 1,
+              "Title": "Comprar.cshtml",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Comprar.cshtml",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Comprar.cshtml",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Comprar.cshtml",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Comprar.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAIwJgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T07:35:06.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Program.cs",
-              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Program.cs",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Program.cs",
-              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAASAAAAAAAAAA==",
+              "Title": "ViajecitosService.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Servicio\\ViajecitosService.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Servicio\\ViajecitosService.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Servicio\\ViajecitosService.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Servicio\\ViajecitosService.cs",
+              "ViewState": "AgIAAAMBAAAAAAAAAAAUwCYBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T19:42:33.603Z"
+              "WhenOpened": "2025-06-03T06:30:47.737Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\appsettings.json",
-              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\appsettings.json",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\appsettings.json",
-              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-01T19:42:31.853Z"
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAMIAAAAAAAAAAADwvwIBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:14:58.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SeleccionarClienteFacturas.cshtml",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\SeleccionarClienteFacturas.cshtml",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\SeleccionarClienteFacturas.cshtml",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\SeleccionarClienteFacturas.cshtml",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\SeleccionarClienteFacturas.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T06:14:02.082Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Resultado.cshtml",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Resultado.cshtml",
-              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Resultado.cshtml",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Resultado.cshtml",
-              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Resultado.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABqAAAAAAAAAA==",
+              "Title": "Facturas.cshtml",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Facturas.cshtml",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Facturas.cshtml",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Facturas.cshtml",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Facturas.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-01T19:41:21.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Register.cshtml",
-              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Register.cshtml",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Register.cshtml",
-              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-01T19:40:12.613Z"
+              "WhenOpened": "2025-06-03T05:58:48.253Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
-              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
-              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Title": "DetalleFactura.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Models\\DetalleFactura.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Models\\DetalleFactura.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Models\\DetalleFactura.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Models\\DetalleFactura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:47:33.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TodasFacturas.cshtml",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\TodasFacturas.cshtml",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\TodasFacturas.cshtml",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\TodasFacturas.cshtml",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\TodasFacturas.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-01T19:38:59.108Z"
+              "WhenOpened": "2025-06-03T06:43:53.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DetallesFactura.cshtml",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\DetallesFactura.cshtml",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\DetallesFactura.cshtml",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\DetallesFactura.cshtml",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\DetallesFactura.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwEkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T06:23:36.834Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Models\\Factura.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Models\\Factura.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Models\\Factura.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Models\\Factura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:53:23.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-01T19:36:57.943Z"
+              "WhenOpened": "2025-06-03T05:54:04.74Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Compras.cshtml",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Compras.cshtml",
-              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Compras.cshtml",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Compras.cshtml",
-              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Compras.cshtml",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T05:44:53.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Program.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Program.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Program.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwCwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T05:35:38.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAIwAwBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T05:34:35.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-01T19:36:07.837Z"
+              "WhenOpened": "2025-06-03T05:34:32.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLIWEB\\VIAJECITOS_REST_CLIWEB_GR10\\VIAJECITOS_REST_CLIWEB_GR10\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "VIAJECITOS_REST_CLIWEB_GR10\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T05:34:27.876Z",
+              "EditorCaption": ""
             }
           ]
         }

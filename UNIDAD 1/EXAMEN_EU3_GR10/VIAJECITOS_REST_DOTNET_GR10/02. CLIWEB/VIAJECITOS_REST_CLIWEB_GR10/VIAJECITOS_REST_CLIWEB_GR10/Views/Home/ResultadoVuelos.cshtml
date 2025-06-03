@@ -1,0 +1,51 @@
+﻿@model List<VIAJECITOS_REST_CLIWEB_GR10.Models.Vuelo>
+@{
+    ViewData["Title"] = "Vuelos Disponibles";
+}
+
+<div class="table-container">
+    <h2>Vuelos Disponibles</h2>
+    @if (ViewBag.Error != null)
+    {
+        <div class="error">@ViewBag.Error</div>
+    }
+    @if (Model != null && Model.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID Vuelo</th>
+                    <th>Origen</th>
+                    <th>Destino</th>
+                    <th>Valor</th>
+                    <th>Hora Salida</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var vuelo in Model.OrderByDescending(v => v.Valor))
+                {
+                    <tr>
+                        <td>@vuelo.IdVuelo</td>
+                        <td>@vuelo.CiudadOrigen</td>
+                        <td>@vuelo.CiudadDestino</td>
+                        <td>@vuelo.Valor.ToString("C")</td>
+                        <td>@vuelo.HoraSalida.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="nav-links">
+            <a href="@Url.Action("Comprar", "Home")">Comprar</a>
+            <a href="@Url.Action("BuscarVuelos", "Home")">Nueva Búsqueda</a>
+            <a href="@Url.Action("Index", "Home")">Volver</a>
+        </div>
+    }
+    else
+    {
+        <p>No se encontraron vuelos.</p>
+        <div class="nav-links">
+            <a href="@Url.Action("BuscarVuelos", "Home")">Nueva Búsqueda</a>
+            <a href="@Url.Action("Index", "Home")">Volver</a>
+        </div>
+    }
+</div>

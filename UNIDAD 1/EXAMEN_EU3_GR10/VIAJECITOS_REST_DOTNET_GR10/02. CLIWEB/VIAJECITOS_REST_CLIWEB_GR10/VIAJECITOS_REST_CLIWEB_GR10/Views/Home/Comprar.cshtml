@@ -1,0 +1,153 @@
+﻿@model VIAJECITOS_REST_CLIWEB_GR10.Controllers.ComprarModel
+@{
+    ViewData["Title"] = "Crear Factura";
+}
+
+<div class="form-container">
+    <h2>Crear Factura</h2>
+    @if (ViewBag.Error != null)
+    {
+        <div class="error">@ViewBag.Error</div>
+    }
+    <form asp-action="Comprar" method="post" class="needs-validation" novalidate id="comprarForm">
+        <div class="form-group">
+            <label asp-for="NumeroFactura">Número de Factura</label>
+            <input asp-for="NumeroFactura" class="form-control" value="@($"FAC{DateTime.Now:yyyyMMddHHmmss}")" required readonly />
+            <div class="invalid-feedback">El número de factura es requerido.</div>
+        </div>
+        <div class="form-group">
+            <label asp-for="IdCliente">Cliente</label>
+            <select asp-for="IdCliente" class="form-control" required>
+                <option value="">Seleccione un cliente</option>
+                @foreach (var cliente in Model.Clientes)
+                {
+                    <option value="@cliente.IdCliente">@cliente.Nombre (@cliente.DocumentoIdentidad)</option>
+                }
+            </select>
+            <div class="invalid-feedback">El cliente es requerido.</div>
+        </div>
+        <div class="form-group">
+            <label asp-for="IdMetodoPago">Método de Pago</label>
+            <select asp-for="IdMetodoPago" class="form-control" required>
+                <option value="">Seleccione un método</option>
+                @foreach (var metodo in Model.MetodosPago)
+                {
+                    <option value="@metodo.Id">@metodo.Nombre</option>
+                }
+            </select>
+            <div class="invalid-feedback">El método de pago es requerido.</div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Descuento">Descuento</label>
+            <input type="number" asp-for="Descuento" class="form-control" step="0.01" value="0" min="0" />
+        </div>
+        <h3>Detalles de la Factura</h3>
+        <div id="detallesContainer">
+            @if (Model.Detalles != null && Model.Detalles.Any())
+            {
+                @for (int i = 0; i < Model.Detalles.Count; i++)
+                {
+                    <div class="form-group detalle-row">
+                        <div class="form-group-inline">
+                            <div class="select-group">
+                                <label>ID Vuelo</label>
+                                <input type="number" asp-for="Detalles[i].IdVuelo" class="form-control" required min="1" />
+                                <div class="invalid-feedback">El ID del vuelo es requerido.</div>
+                            </div>
+                            <div class="select-group">
+                                <label>Cantidad</label>
+                                <input type="number" asp-for="Detalles[i].Cantidad" class="form-control" required min="1" />
+                                <div class="invalid-feedback">La cantidad es requerida.</div>
+                            </div>
+                            <button type="button" class="btn-remove">Eliminar</button>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <button type="button" id="addDetalle">Agregar Detalle</button>
+        <button type="submit">Confirmar Factura</button>
+    </form>
+    <div class="nav-links">
+        <a href="@Url.Action("BuscarVuelos", "Home")">Volver</a>
+    </div>
+</div>
+
+<script>
+    (function () {
+        'use strict';
+        var forms = document.querySelectorAll('.needs-validation');
+        Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+
+        // Agregar detalle dinámico
+        document.getElementById('addDetalle').addEventListener('click', function () {
+            var container = document.getElementById('detallesContainer');
+            var index = container.querySelectorAll('.detalle-row').length;
+            var newRow = document.createElement('div');
+            newRow.classList.add('form-group', 'detalle-row');
+            newRow.innerHTML = `
+                <div class="form-group-inline">
+                    <div class="select-group">
+                        <label>ID Vuelo</label>
+                        <input type="number" name="Detalles[${index}].IdVuelo" class="form-control" required min="1" />
+                        <div class="invalid-feedback">El ID del vuelo es requerido.</div>
+                    </div>
+                    <div class="select-group">
+                        <label>Cantidad</label>
+                        <input type="number" name="Detalles[${index}].Cantidad" class="form-control" required min="1" />
+                        <div class="invalid-feedback">La cantidad es requerida.</div>
+                    </div>
+                    <button type="button" class="btn-remove">Eliminar</button>
+                </div>
+            `;
+            container.appendChild(newRow);
+            addRemoveEventListeners();
+        });
+
+        // Eliminar detalle
+        function addRemoveEventListeners() {
+            document.querySelectorAll('.btn-remove').forEach(function (button) {
+                button.addEventListener('click', function () {
+                    button.closest('.detalle-row').remove();
+                    // Reindexar inputs
+                    var rows = document.querySelectorAll('.detalle-row');
+                    rows.forEach(function (row, index) {
+                        row.querySelector('input[name$="IdVuelo"]').name = `Detalles[${index}].IdVuelo`;
+                        row.querySelector('input[name$="Cantidad"]').name = `Detalles[${index}].Cantidad`;
+                    });
+                });
+            });
+        }
+        addRemoveEventListeners();
+    })();
+</script>
+
+<style>
+    .btn-remove {
+        padding: 10px;
+        background-color: var(--error-red);
+        color: var(--white);
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 24px;
+    }
+
+        .btn-remove:hover {
+            background-color: #B91C1C;
+        }
+
+    #addDetalle {
+        margin-bottom: 20px;
+        width: auto;
+        padding: 10px 20px;
+    }
+</style>

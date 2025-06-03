@@ -1,0 +1,74 @@
+﻿@model VIAJECITOS_REST_CLIWEB_GR10.Models.Factura
+@{
+    ViewData["Title"] = "Detalles de Factura";
+    var metodoPago = Model.IdMetodoPago switch
+    {
+        1 => "Tarjeta de Crédito",
+        2 => "Efectivo",
+        3 => "Tarjeta de Débito",
+        _ => "Desconocido"
+    };
+}
+
+<div class="result-container">
+    <h2>Detalles de Factura</h2>
+    @if (ViewBag.Error != null)
+    {
+        <div class="error">@ViewBag.Error</div>
+    }
+    @if (Model != null && !string.IsNullOrEmpty(Model.NumeroFactura))
+    {
+        <p><strong>Número de Factura:</strong> @Model.NumeroFactura</p>
+        <p><strong>Fecha de Emisión:</strong> @Model.FechaEmision.ToString("yyyy-MM-dd HH:mm:ss")</p>
+        <p><strong>Cliente:</strong> @(Model.Cliente?.Nombre ?? "N/A") (ID: @Model.IdCliente)</p>
+        <p><strong>Email:</strong> @(Model.Cliente?.Email ?? "N/A")</p>
+        <p><strong>Documento:</strong> @(Model.Cliente?.DocumentoIdentidad ?? "N/A")</p>
+        <p><strong>Método de Pago:</strong> @metodoPago</p>
+        <h3>Detalles</h3>
+        @if (Model.DetallesFactura != null && Model.DetallesFactura.Any())
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID Vuelo</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Cantidad</th>
+                        <th>Valor Unitario</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var detalle in Model.DetallesFactura)
+                    {
+                        <tr>
+                            <td>@detalle.IdVuelo</td>
+                            <td>@(detalle.Vuelo?.CiudadOrigen ?? "N/A")</td>
+                            <td>@(detalle.Vuelo?.CiudadDestino ?? "N/A")</td>
+                            <td>@detalle.Cantidad</td>
+                            <td>@detalle.ValorUnitario.ToString("C")</td>
+                            <td>@detalle.Total.ToString("C")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No hay detalles para esta factura.</p>
+        }
+        <p><strong>Subtotal:</strong> @Model.Subtotal.ToString("C")</p>
+        <p><strong>Descuento:</strong> @Model.Descuento.ToString("C")</p>
+        <p><strong>IVA (15%):</strong> @Model.Iva.ToString("C")</p>
+        <p><strong>Total:</strong> @Model.Total.ToString("C")</p>
+    }
+    else
+    {
+        <p>No se encontraron detalles de la factura.</p>
+    }
+    <div class="nav-links">
+        <a href="@Url.Action("SeleccionarClienteFacturas", "Home")">Seleccionar Cliente</a>
+        <a href="@Url.Action("TodasFacturas", "Home")">Todas las Facturas</a>
+        <a href="@Url.Action("Index", "Home")">Inicio</a>
+    </div>
+</div>

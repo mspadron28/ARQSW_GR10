@@ -1,0 +1,49 @@
+﻿@model VIAJECITOS_REST_CLIWEB_GR10.Controllers.BuscarVuelosModel
+@{
+    ViewData["Title"] = "Buscar Vuelos";
+}
+
+<div class="form-container">
+    <h2>Buscar Vuelos</h2>
+    @if (ViewBag.Error != null)
+    {
+        <div class="error">@ViewBag.Error</div>
+    }
+    <form asp-action="BuscarVuelos" method="post" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label asp-for="CiudadOrigen">Ciudad Origen</label>
+            <input asp-for="CiudadOrigen" class="form-control" required />
+            <div class="invalid-feedback">La ciudad de origen es requerida.</div>
+        </div>
+        <div class="form-group">
+            <label asp-for="CiudadDestino">Ciudad Destino</label>
+            <input asp-for="CiudadDestino" class="form-control" required />
+            <div class="invalid-feedback">La ciudad de destino es requerida.</div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Fecha">Fecha (yyyy-mm-dd)</label>
+            <input type="date" asp-for="Fecha" class="form-control" required />
+            <div class="invalid-feedback">La fecha es requerida y debe ser válida.</div>
+        </div>
+        <button type="submit">Buscar</button>
+    </form>
+    <div class="nav-links">
+        <a href="@Url.Action("Index", "Home")">Volver</a>
+    </div>
+</div>
+
+<script>
+    (function () {
+        'use strict';
+        var forms = document.querySelectorAll('.needs-validation');
+        Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    })();
+</script>

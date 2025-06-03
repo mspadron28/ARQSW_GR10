@@ -49,7 +49,6 @@
     <Compile Include="Controlador\ViajecitosController.cs" />
     <Compile Include="Modelos\Cliente.cs" />
     <Compile Include="Modelos\ClienteFacturas.cs" />
-    <Compile Include="Modelos\Compra.cs" />
     <Compile Include="Modelos\DetalleFactura.cs" />
     <Compile Include="Modelos\Empleado.cs" />
     <Compile Include="Modelos\Factura.cs" />

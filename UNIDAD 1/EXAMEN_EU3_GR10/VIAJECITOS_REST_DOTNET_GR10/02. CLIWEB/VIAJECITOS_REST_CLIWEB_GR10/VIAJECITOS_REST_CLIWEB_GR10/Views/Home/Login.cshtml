@@ -1,26 +1,44 @@
-﻿@{
+﻿@model VIAJECITOS_REST_CLIWEB_GR10.Controllers.LoginModel
+@{
     ViewData["Title"] = "Iniciar Sesión";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <div class="form-container">
     <h2>Iniciar Sesión</h2>
-    <form asp-action="Login" method="post">
+    @if (ViewBag.Error != null)
+    {
+        <div class="error">@ViewBag.Error</div>
+    }
+    <form asp-action="Login" method="post" class="needs-validation" novalidate>
         <div class="form-group">
-            <label for="nombreUsuario">Usuario:</label>
-            <input type="text" id="nombreUsuario" name="nombreUsuario" required>
+            <label asp-for="NombreUsuario">Usuario</label>
+            <input asp-for="NombreUsuario" class="form-control" required />
+            <div class="invalid-feedback">El usuario es requerido.</div>
         </div>
         <div class="form-group">
-            <label for="claveUsuario">Contraseña:</label>
-            <input type="password" id="claveUsuario" name="claveUsuario" required>
+            <label asp-for="ClaveUsuario">Contraseña</label>
+            <input type="password" asp-for="ClaveUsuario" class="form-control" required />
+            <div class="invalid-feedback">La contraseña es requerida.</div>
         </div>
         <button type="submit">Iniciar Sesión</button>
     </form>
-    @if (!string.IsNullOrEmpty(ViewBag.Error))
-    {
-        <p class="error">@ViewBag.Error</p>
-    }
     <div class="nav-links">
-        <a href="@Url.Action("Register", "Home")">Registrarse</a>
         <a href="@Url.Action("Index", "Home")">Volver</a>
     </div>
 </div>
+
+<script>
+    (function () {
+        'use strict';
+        var forms = document.querySelectorAll('.needs-validation');
+        Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    })();
+</script>

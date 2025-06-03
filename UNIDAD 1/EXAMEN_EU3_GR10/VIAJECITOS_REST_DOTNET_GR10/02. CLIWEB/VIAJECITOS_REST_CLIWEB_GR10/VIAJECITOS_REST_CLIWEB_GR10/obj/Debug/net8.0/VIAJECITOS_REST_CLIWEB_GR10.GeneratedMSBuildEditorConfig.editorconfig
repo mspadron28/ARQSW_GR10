@@ -20,8 +20,20 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/MATIAS/Desktop/ESPE/Octavo Semestre/Arquitectura de Software/UNIDAD 1/EXAMEN_EU3_GR10/VIAJECITOS_REST_DOTNET_GR10/02. CLIWEB/VIAJECITOS_REST_CLIWEB_GR10/VIAJECITOS_REST_CLIWEB_GR10/Views/Home/Compras.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wcmFzLmNzaHRtbA==
+[C:/Users/MATIAS/Desktop/ESPE/Octavo Semestre/Arquitectura de Software/UNIDAD 1/EXAMEN_EU3_GR10/VIAJECITOS_REST_DOTNET_GR10/02. CLIWEB/VIAJECITOS_REST_CLIWEB_GR10/VIAJECITOS_REST_CLIWEB_GR10/Views/Home/BuscarVuelos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXNjYXJWdWVsb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MATIAS/Desktop/ESPE/Octavo Semestre/Arquitectura de Software/UNIDAD 1/EXAMEN_EU3_GR10/VIAJECITOS_REST_DOTNET_GR10/02. CLIWEB/VIAJECITOS_REST_CLIWEB_GR10/VIAJECITOS_REST_CLIWEB_GR10/Views/Home/Comprar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wcmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MATIAS/Desktop/ESPE/Octavo Semestre/Arquitectura de Software/UNIDAD 1/EXAMEN_EU3_GR10/VIAJECITOS_REST_DOTNET_GR10/02. CLIWEB/VIAJECITOS_REST_CLIWEB_GR10/VIAJECITOS_REST_CLIWEB_GR10/Views/Home/DetallesFactura.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGxlc0ZhY3R1cmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MATIAS/Desktop/ESPE/Octavo Semestre/Arquitectura de Software/UNIDAD 1/EXAMEN_EU3_GR10/VIAJECITOS_REST_DOTNET_GR10/02. CLIWEB/VIAJECITOS_REST_CLIWEB_GR10/VIAJECITOS_REST_CLIWEB_GR10/Views/Home/Facturas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYWN0dXJhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MATIAS/Desktop/ESPE/Octavo Semestre/Arquitectura de Software/UNIDAD 1/EXAMEN_EU3_GR10/VIAJECITOS_REST_DOTNET_GR10/02. CLIWEB/VIAJECITOS_REST_CLIWEB_GR10/VIAJECITOS_REST_CLIWEB_GR10/Views/Home/Index.cshtml]
@@ -36,8 +48,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MATIAS/Desktop/ESPE/Octavo Semestre/Arquitectura de Software/UNIDAD 1/EXAMEN_EU3_GR10/VIAJECITOS_REST_DOTNET_GR10/02. CLIWEB/VIAJECITOS_REST_CLIWEB_GR10/VIAJECITOS_REST_CLIWEB_GR10/Views/Home/Resultado.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXN1bHRhZG8uY3NodG1s
+[C:/Users/MATIAS/Desktop/ESPE/Octavo Semestre/Arquitectura de Software/UNIDAD 1/EXAMEN_EU3_GR10/VIAJECITOS_REST_DOTNET_GR10/02. CLIWEB/VIAJECITOS_REST_CLIWEB_GR10/VIAJECITOS_REST_CLIWEB_GR10/Views/Home/ResultadoVuelos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXN1bHRhZG9WdWVsb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MATIAS/Desktop/ESPE/Octavo Semestre/Arquitectura de Software/UNIDAD 1/EXAMEN_EU3_GR10/VIAJECITOS_REST_DOTNET_GR10/02. CLIWEB/VIAJECITOS_REST_CLIWEB_GR10/VIAJECITOS_REST_CLIWEB_GR10/Views/Home/SeleccionarClienteFacturas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWxlY2Npb25hckNsaWVudGVGYWN0dXJhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MATIAS/Desktop/ESPE/Octavo Semestre/Arquitectura de Software/UNIDAD 1/EXAMEN_EU3_GR10/VIAJECITOS_REST_DOTNET_GR10/02. CLIWEB/VIAJECITOS_REST_CLIWEB_GR10/VIAJECITOS_REST_CLIWEB_GR10/Views/Home/TodasFacturas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUb2Rhc0ZhY3R1cmFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MATIAS/Desktop/ESPE/Octavo Semestre/Arquitectura de Software/UNIDAD 1/EXAMEN_EU3_GR10/VIAJECITOS_REST_DOTNET_GR10/02. CLIWEB/VIAJECITOS_REST_CLIWEB_GR10/VIAJECITOS_REST_CLIWEB_GR10/Views/Shared/_Layout.cshtml]
