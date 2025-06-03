@@ -54,85 +54,99 @@
     }
     <div class="form-grid">
         <div class="form-left">
-            <h3>Información del Cliente</h3>
-            <form id="client-form" class="needs-validation" novalidate>
-                <div class="form-group">
-                    <label asp-for="IdCliente">Seleccionar Cliente</label>
-                    <select asp-for="IdCliente" id="client-select" class="form-control" required>
-                        <option value="">Seleccione un cliente</option>
-                        @foreach (var cliente in Model.Clientes)
-                        {
-                            <option value="@cliente.IdCliente">@cliente.Nombre (@cliente.DocumentoIdentidad)</option>
-                        }
-                    </select>
-                    <div class="invalid-feedback">El cliente es requerido.</div>
-                </div>
-                <button type="button" id="toggle-new-client" class="toggle-button">Crear Nuevo Cliente</button>
-                <div id="new-client-form" style="display: none;">
+            <div class="form-group client-form-container">
+                <h3>Información del Cliente</h3>
+                <form id="client-form" class="needs-validation" novalidate>
                     <div class="form-group">
-                        <label for="new-client-name">Nombre</label>
-                        <input type="text" id="new-client-name" class="form-control" required />
-                        <div class="invalid-feedback">El nombre es requerido.</div>
+                        <label asp-for="IdCliente" class="form-label">Seleccionar Cliente</label>
+                        <div class="select-wrapper">
+                            <select asp-for="IdCliente" id="client-select" class="form-control select-styled" required>
+                                <option value="">Seleccione un cliente</option>
+                                @foreach (var cliente in Model.Clientes)
+                                {
+                                    <option value="@cliente.IdCliente" selected="@(cliente.IdCliente == Model.IdCliente ? "selected" : null)">@cliente.Nombre (@cliente.DocumentoIdentidad)</option>
+                                }
+                            </select>
+                            <div class="invalid-feedback">El cliente es requerido.</div>
+                        </div>
+                    </div>
+                    <button type="button" id="toggle-new-client" class="toggle-button">Crear Nuevo Cliente</button>
+                    <div id="new-client-form" style="display: none;" class="new-client-form">
+                        <div class="form-group">
+                            <label for="new-client-name" class="form-label">Nombre</label>
+                            <input type="text" id="new-client-name" class="form-control" required />
+                            <div class="invalid-feedback">El nombre es requerido.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-client-email" class="form-label">Email</label>
+                            <input type="email" id="new-client-email" class="form-control" required />
+                            <div class="invalid-feedback">El email es requerido y debe ser válido.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-client-document" class="form-label">Documento de Identidad</label>
+                            <input type="text" id="new-client-document" class="form-control" required />
+                            <div class="invalid-feedback">El documento es requerido.</div>
+                        </div>
+                        <button type="button" id="register-client" class="action-button">Registrar Cliente</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-group payment-form-container">
+                <h3>Método de Pago</h3>
+                <form asp-action="Comprar" method="post" id="purchase-form" class="needs-validation" novalidate>
+                    <input type="hidden" asp-for="NumeroFactura" value="@($"FAC{DateTime.Now:yyyyMMddHHmmss}")" />
+                    <input type="hidden" asp-for="IdCliente" id="hidden-client-id" value="@Model.IdCliente" />
+                    <div class="form-group">
+                        <label asp-for="IdMetodoPago" class="form-label">Método de Pago</label>
+                        <div class="select-wrapper">
+                            <select asp-for="IdMetodoPago" id="payment-method-select" class="form-control select-styled" required>
+                                <option value="">Seleccione un método</option>
+                                @foreach (var metodo in Model.MetodosPago)
+                                {
+                                    <option value="@metodo.Id" selected="@(metodo.Id == Model.IdMetodoPago ? "selected" : null)">@metodo.Nombre</option>
+                                }
+                            </select>
+                            <div class="invalid-feedback">El método de pago es requerido.</div>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="new-client-email">Email</label>
-                        <input type="email" id="new-client-email" class="form-control" required />
-                        <div class="invalid-feedback">El email es requerido y debe ser válido.</div>
+                        <label asp-for="Descuento" class="form-label">Descuento (%)</label>
+                        <input type="number" asp-for="Descuento" class="form-control" step="0.01" value="@(Model.Descuento > 0 ? Model.Descuento : 0)" min="0" max="100" />
+                        <div class="invalid-feedback">El descuento debe ser un valor entre 0 y 100.</div>
                     </div>
-                    <div class="form-group">
-                        <label for="new-client-document">Documento de Identidad</label>
-                        <input type="text" id="new-client-document" class="form-control" required />
-                        <div class="invalid-feedback">El documento es requerido.</div>
+                    <div class="form-right">
+                        <h3>Detalles de la Compra</h3>
+                        <div id="detalles-container">
+                            @if (Model.Detalles != null && Model.Detalles.Any())
+                            {
+                                @for (int i = 0; i < Model.Detalles.Count; i++)
+                                {
+                                    <div class="detalle-row" data-index="@i" data-id-vuelo="@Model.Detalles[i].IdVuelo">
+                                        <div class="detalle-item">
+                                            <span class="detalle-label">ID Vuelo:</span>
+                                            <input type="hidden" name="Detalles[@i].IdVuelo" value="@Model.Detalles[i].IdVuelo" />
+                                            <span class="detalle-value">@Model.Detalles[i].IdVuelo</span>
+                                        </div>
+                                        <div class="detalle-item">
+                                            <span class="detalle-label">Cantidad:</span>
+                                            <input type="hidden" name="Detalles[@i].Cantidad" value="@Model.Detalles[i].Cantidad" />
+                                            <span class="detalle-value">@Model.Detalles[i].Cantidad</span>
+                                        </div>
+                                        <button type="button" class="remove-detail-button">Eliminar</button>
+                                    </div>
+                                }
+                            }
+                        </div>
+                        <button type="submit" id="submit-purchase" class="submit-button">Confirmar Compra</button>
                     </div>
-                    <button type="button" id="register-client" class="action-button">Registrar Cliente</button>
-                </div>
-            </form>
-            <form asp-action="Comprar" method="post" id="purchase-form" class="needs-validation" novalidate>
-                <input type="hidden" asp-for="NumeroFactura" value="@($"FAC{DateTime.Now:yyyyMMddHHmmss}")" />
-                <input type="hidden" asp-for="IdCliente" id="hidden-client-id" value="" />
-                <div class="form-group">
-                    <label asp-for="IdMetodoPago">Método de Pago</label>
-                    <select asp-for="IdMetodoPago" class="form-control" required>
-                        <option value="">Seleccione un método</option>
-                        @foreach (var metodo in Model.MetodosPago)
-                        {
-                            <option value="@metodo.Id">@metodo.Nombre</option>
-                        }
-                    </select>
-                    <div class="invalid-feedback">El método de pago es requerido.</div>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Descuento">Descuento</label>
-                    <input type="number" asp-for="Descuento" class="form-control" step="0.01" value="0" min="0" />
-                </div>
-                <div id="detalles-container">
-                    @if (Model.Detalles != null && Model.Detalles.Any())
-                    {
-                        @for (int i = 0; i < Model.Detalles.Count; i++)
-                        {
-                            <div class="detalle-row" data-index="@i">
-                                <div class="detalle-item">
-                                    <span class="detalle-label">ID Vuelo:</span>
-                                    <input type="hidden" name="Detalles[@i].IdVuelo" value="@Model.Detalles[i].IdVuelo" />
-                                    <span class="detalle-value">@Model.Detalles[i].IdVuelo</span>
-                                </div>
-                                <div class="detalle-item">
-                                    <span class="detalle-label">Cantidad:</span>
-                                    <input type="hidden" name="Detalles[@i].Cantidad" value="@Model.Detalles[i].Cantidad" />
-                                    <span class="detalle-value">@Model.Detalles[i].Cantidad</span>
-                                </div>
-                                <button type="button" class="remove-detail-button">Eliminar</button>
-                            </div>
-                        }
-                    }
-                </div>
-                <button type="submit" id="submit-purchase" class="submit-button">Confirmar Compra</button>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
     <div class="nav-links">
         <a href="@Url.Action("BuscarVuelos", "Home")">Volver</a>
     </div>
+    <div id="toast-container"></div>
 </div>
 
 <script>
@@ -155,6 +169,13 @@
                     var formDataObj = {};
                     formData.forEach((value, key) => formDataObj[key] = value);
                     console.log('[DEBUG] Formulario enviado:', formDataObj);
+                    // Validar que haya detalles antes de enviar
+                    var detalles = document.querySelectorAll('#detalles-container .detalle-row');
+                    if (detalles.length === 0) {
+                        event.preventDefault();
+                        showToast('Debe añadir al menos un vuelo para confirmar la compra.', 'error');
+                        console.log('[ERROR] Validación fallida: No hay detalles de factura');
+                    }
                 }
             }, false);
         });
@@ -198,12 +219,15 @@
                     select.value = result.idCliente;
                     document.getElementById('hidden-client-id').value = result.idCliente;
                     document.getElementById('new-client-form').style.display = 'none';
-                    alert('Cliente registrado exitosamente.');
+                    showToast('Cliente registrado exitosamente.');
+                    console.log(`[DEBUG] Cliente registrado y seleccionado: IdCliente=${result.idCliente}`);
                 } else {
-                    alert(`Error: ${result.message || 'No se pudo registrar el cliente.'}`);
+                    showToast(`Error: ${result.message || 'No se pudo registrar el cliente.'}`, 'error');
+                    console.error('[ERROR] Registro de cliente fallido:', result.message);
                 }
             } catch (error) {
-                alert(`Error: ${error.message}`);
+                showToast(`Error: ${error.message}`, 'error');
+                console.error('[ERROR] Excepción en registro de cliente:', error.message);
             }
         });
 
@@ -214,32 +238,54 @@
                 var quantityInput = button.closest('tr').querySelector('.quantity-input');
                 var cantidad = parseInt(quantityInput.value, 10);
 
-                if (cantidad < 1) {
-                    alert('La cantidad debe ser al menos 1.');
+                if (isNaN(cantidad) || cantidad < 1) {
+                    showToast('La cantidad debe ser al menos 1.', 'error');
                     return;
                 }
 
                 var container = document.getElementById('detalles-container');
-                var index = container.querySelectorAll('.detalle-row').length;
-                var newRow = document.createElement('div');
-                newRow.classList.add('detalle-row');
-                newRow.setAttribute('data-index', index);
-                newRow.innerHTML = `
-                    <div class="detalle-item">
-                        <span class="detalle-label">ID Vuelo:</span>
-                        <input type="hidden" name="Detalles[${index}].IdVuelo" value="${idVuelo}" />
-                        <span class="detalle-value">${idVuelo}</span>
-                    </div>
-                    <div class="detalle-item">
-                        <span class="detalle-label">Cantidad:</span>
-                        <input type="hidden" name="Detalles[${index}].Cantidad" value="${cantidad}" />
-                        <span class="detalle-value">${cantidad}</span>
-                    </div>
-                    <button type="button" class="remove-detail-button">Eliminar</button>
-                `;
-                container.appendChild(newRow);
+                var existingRow = Array.from(container.querySelectorAll('.detalle-row')).find(row => row.dataset.idVuelo === idVuelo);
+
+                if (existingRow) {
+                    // Actualizar solo la cantidad
+                    var cantidadInput = existingRow.querySelector('input[name$=".Cantidad"]');
+                    var cantidadSpan = existingRow.querySelector('.detalle-item:last-of-type .detalle-value');
+                    var currentCantidad = parseInt(cantidadInput.value, 10) || 0;
+                    var newCantidad = currentCantidad + cantidad;
+                    cantidadInput.value = newCantidad;
+                    cantidadSpan.textContent = newCantidad;
+                    existingRow.classList.add('highlight');
+                    setTimeout(() => existingRow.classList.remove('highlight'), 1000);
+                    showToast(`Se añadieron ${cantidad} boletos al vuelo ${idVuelo}. Total: ${newCantidad}.`);
+                    console.log(`[DEBUG] Cantidad actualizada: IdVuelo=${idVuelo}, NuevaCantidad=${newCantidad}`);
+                } else {
+                    // Añadir nueva fila
+                    var index = container.querySelectorAll('.detalle-row').length;
+                    var newRow = document.createElement('div');
+                    newRow.classList.add('detalle-row');
+                    newRow.setAttribute('data-index', index);
+                    newRow.setAttribute('data-id-vuelo', idVuelo);
+                    newRow.innerHTML = `
+                        <div class="detalle-item">
+                            <span class="detalle-label">ID Vuelo:</span>
+                            <input type="hidden" name="Detalles[${index}].IdVuelo" value="${idVuelo}" />
+                            <span class="detalle-value">${idVuelo}</span>
+                        </div>
+                        <div class="detalle-item">
+                            <span class="detalle-label">Cantidad:</span>
+                            <input type="hidden" name="Detalles[${index}].Cantidad" value="${cantidad}" />
+                            <span class="detalle-value">${cantidad}</span>
+                        </div>
+                        <button type="button" class="remove-detail-button">Eliminar</button>
+                    `;
+                    container.appendChild(newRow);
+                    newRow.classList.add('highlight');
+                    setTimeout(() => newRow.classList.remove('highlight'), 1000);
+                    showToast(`Añadido vuelo ${idVuelo} con ${cantidad} boletos.`);
+                    console.log(`[DEBUG] Nuevo detalle añadido: IdVuelo=${idVuelo}, Cantidad=${cantidad}, Index=${index}`);
+                }
+
                 addRemoveEventListeners();
-                console.log(`[DEBUG] Añadido detalle: IdVuelo=${idVuelo}, Cantidad=${cantidad}, Index=${index}`);
             });
         });
 
@@ -247,16 +293,19 @@
         function addRemoveEventListeners() {
             document.querySelectorAll('.remove-detail-button').forEach(function (button) {
                 button.addEventListener('click', function () {
-                    button.closest('.detalle-row').remove();
+                    var row = button.closest('.detalle-row');
+                    var idVuelo = row.dataset.idVuelo;
+                    row.remove();
                     var rows = document.querySelectorAll('.detalle-row');
-                    rows.forEach(function (row, index) {
-                        var idVueloInput = row.querySelector('input[name$="IdVuelo"]');
-                        var cantidadInput = row.querySelector('input[name$="Cantidad"]');
+                    rows.forEach(function (rowEl, index) {
+                        var idVueloInput = rowEl.querySelector('input[name$="IdVuelo"]');
+                        var cantidadInput = rowEl.querySelector('input[name$="Cantidad"]');
                         if (idVueloInput) idVueloInput.name = `Detalles[${index}].IdVuelo`;
                         if (cantidadInput) cantidadInput.name = `Detalles[${index}].Cantidad`;
-                        row.setAttribute('data-index', index);
+                        rowEl.setAttribute('data-index', index);
                     });
-                    console.log(`[DEBUG] Detalle eliminado. Nuevos índices asignados: ${rows.length} filas restantes`);
+                    showToast(`Eliminado detalle del vuelo ${idVuelo}.`);
+                    console.log(`[DEBUG] Detalle eliminado: IdVuelo=${idVuelo}. Nuevos índices asignados: ${rows.length} filas restantes`);
                 });
             });
         }
@@ -265,7 +314,14 @@
         // Sync client selection
         document.getElementById('client-select').addEventListener('change', function () {
             document.getElementById('hidden-client-id').value = this.value;
+            this.classList.add('selected');
             console.log(`[DEBUG] Cliente seleccionado: IdCliente=${this.value}`);
+        });
+
+        // Sync payment method selection
+        document.getElementById('payment-method-select').addEventListener('change', function () {
+            this.classList.add('selected');
+            console.log(`[DEBUG] Método de pago seleccionado: IdMetodoPago=${this.value}`);
         });
 
         // Ensure purchase form submission validates client selection
@@ -275,10 +331,32 @@
                 event.preventDefault();
                 event.stopPropagation();
                 document.getElementById('client-select').classList.add('is-invalid');
-                alert('Por favor, seleccione un cliente.');
+                showToast('Por favor, seleccione un cliente.', 'error');
                 console.log('[ERROR] Validación fallida: Cliente no seleccionado');
             }
         });
+
+        // Initialize select states
+        function initializeSelects() {
+            var clientSelect = document.getElementById('client-select');
+            var paymentSelect = document.getElementById('payment-method-select');
+            if (clientSelect.value) clientSelect.classList.add('selected');
+            if (paymentSelect.value) paymentSelect.classList.add('selected');
+        }
+        initializeSelects();
+
+        // Toast notification
+        function showToast(message, type = 'success') {
+            var toastContainer = document.getElementById('toast-container');
+            var toast = document.createElement('div');
+            toast.classList.add('toast', `toast-${type}`);
+            toast.textContent = message;
+            toastContainer.appendChild(toast);
+            setTimeout(() => {
+                toast.classList.add('fade-out');
+                setTimeout(() => toast.remove(), 500);
+            }, 3000);
+        }
     })();
 </script>
 
@@ -289,57 +367,60 @@
         --border-color: #e5e7eb;
         --background-color: #fafafa;
         --error-color: #ef4444;
+        --success-color: #10b981;
         --white: #ffffff;
         --highlight-bg: #eff6ff;
+        --toast-bg-success: rgba(16, 185, 129, 0.9);
+        --toast-bg-error: rgba(239, 68, 68, 0.9);
     }
 
     .purchase-container {
         max-width: 1200px;
         margin: 1.5rem auto;
-        padding: 1.25rem;
+        padding: 1.5rem;
         background: var(--white);
-        border-radius: 10px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     h2 {
-        font-size: 1.25rem;
-        font-weight: 600;
+        font-size: 1.5rem;
+        font-weight: 700;
         color: var(--text-color);
-        margin-bottom: 1rem;
+        margin-bottom: 1.25rem;
         text-align: center;
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: 1.125rem;
         font-weight: 600;
         color: var(--text-color);
-        margin-bottom: 0.75rem;
+        margin-bottom: 1rem;
     }
 
     .error-message {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
         color: var(--error-color);
         background: #fef2f2;
-        padding: 0.4rem 0.8rem;
-        border-radius: 5px;
-        margin-bottom: 0.75rem;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        margin-bottom: 1rem;
         text-align: center;
     }
 
     .debug-info {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
         color: #6b7280;
         background: #f9fafb;
-        padding: 0.4rem 0.8rem;
-        border-radius: 5px;
-        margin-bottom: 0.75rem;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        margin-bottom: 1rem;
         text-align: center;
     }
 
     .flights-table-container {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     .flights-table {
@@ -351,7 +432,7 @@
 
         .flights-table th,
         .flights-table td {
-            padding: 0.5rem 0.75rem;
+            padding: 0.75rem;
             text-align: left;
             border-bottom: 1px solid var(--border-color);
         }
@@ -368,20 +449,26 @@
         }
 
     .quantity-input {
-        width: 60px;
+        width: 70px;
         font-size: 0.875rem;
-        padding: 0.3rem;
+        padding: 0.4rem;
         border: 1px solid var(--border-color);
-        border-radius: 5px;
+        border-radius: 6px;
+        transition: border-color 0.2s;
     }
 
+        .quantity-input:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+
     .add-flight-button {
-        font-size: 0.75rem;
-        padding: 0.3rem 0.8rem;
+        font-size: 0.875rem;
+        padding: 0.4rem 1rem;
         background: var(--primary-color);
         color: var(--white);
         border: none;
-        border-radius: 5px;
+        border-radius: 6px;
         cursor: pointer;
         transition: background 0.2s, transform 0.1s;
     }
@@ -394,14 +481,15 @@
     .form-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
+        align-items: stretch;
     }
 
-    .form-left,
-    .form-right {
+    .form-left {
         display: flex;
         flex-direction: column;
-        gap: 0.75rem;
+        gap: 1rem;
+        min-height: 100%;
     }
 
     .form-group {
@@ -410,26 +498,28 @@
     }
 
     label {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
         font-weight: 500;
         color: var(--text-color);
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.25rem;
     }
 
     .form-control {
         font-size: 0.875rem;
-        padding: 0.4rem 0.6rem;
+        padding: 0.5rem 0.75rem;
         border: 1px solid var(--border-color);
-        border-radius: 5px;
+        border-radius: 6px;
         background: var(--white);
         transition: border-color 0.2s, box-shadow 0.2s;
-        height: 34px;
+        height: 38px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
         .form-control:focus {
             outline: none;
             border-color: var(--primary-color);
-            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         }
 
         .form-control::placeholder {
@@ -437,14 +527,50 @@
             font-style: italic;
         }
 
+    .select-wrapper {
+        position: relative;
+    }
+
+    .select-styled {
+        appearance: none;
+        width: 100%;
+        padding-right: 2rem;
+        background: var(--white);
+    }
+
+        .select-styled:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .select-styled.selected {
+            background-color: var(--highlight-bg);
+            border-color: var(--primary-color);
+        }
+
+    .select-wrapper::after {
+        content: '';
+        position: absolute;
+        right: 0.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #6b7280;
+        pointer-events: none;
+    }
+
     .is-invalid {
         border-color: var(--error-color) !important;
     }
 
     .invalid-feedback {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         color: var(--error-color);
-        margin-top: 0.2rem;
+        margin-top: 0.25rem;
         display: none;
     }
 
@@ -459,16 +585,16 @@
     }
 
     .toggle-button {
-        font-size: 0.75rem;
-        padding: 0.3rem 0.8rem;
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
         background: #6b7280;
         color: var(--white);
         border: none;
-        border-radius: 5px;
+        border-radius: 6px;
         cursor: pointer;
         transition: background 0.2s;
         align-self: flex-start;
-        margin-top: 0.5rem;
+        margin-top: 0.75rem;
     }
 
         .toggle-button:hover {
@@ -477,11 +603,11 @@
 
     .action-button {
         font-size: 0.875rem;
-        padding: 0.4rem 1.2rem;
+        padding: 0.5rem 1.25rem;
         background: var(--primary-color);
         color: var(--white);
         border: none;
-        border-radius: 5px;
+        border-radius: 6px;
         cursor: pointer;
         transition: background 0.2s, transform 0.1s;
     }
@@ -494,25 +620,32 @@
     #detalles-container {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
-        margin-bottom: 1rem;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+        flex-grow: 1;
     }
 
     .detalle-row {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
-        padding: 0.5rem;
+        gap: 0.75rem;
+        padding: 0.75rem;
         background: #f9fafb;
-        border-radius: 5px;
+        border-radius: 8px;
+        transition: background 0.3s;
     }
+
+        .detalle-row.highlight {
+            background: var(--highlight-bg);
+            border: 1px solid var(--primary-color);
+        }
 
     .detalle-item {
         flex: 1;
     }
 
     .detalle-label {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
         font-weight: 500;
         color: #6b7280;
         margin-right: 0.5rem;
@@ -520,21 +653,22 @@
 
     .detalle-value {
         font-size: 0.875rem;
-        padding: 0.3rem 0.5rem;
+        padding: 0.4rem 0.75rem;
         border: 1px solid var(--border-color);
-        border-radius: 5px;
+        border-radius: 6px;
         background: var(--white);
         display: inline-block;
-        width: 100px;
+        width: 120px;
+        text-align: center;
     }
 
     .remove-detail-button {
-        font-size: 0.75rem;
-        padding: 0.3rem 0.8rem;
+        font-size: 0.875rem;
+        padding: 0.4rem 1rem;
         background: var(--error-color);
         color: var(--white);
         border: none;
-        border-radius: 5px;
+        border-radius: 6px;
         cursor: pointer;
         transition: background 0.2s;
     }
@@ -545,11 +679,11 @@
 
     .submit-button {
         font-size: 0.875rem;
-        padding: 0.4rem 1.2rem;
+        padding: 0.5rem 1.5rem;
         background: var(--primary-color);
         color: var(--white);
         border: none;
-        border-radius: 5px;
+        border-radius: 6px;
         cursor: pointer;
         transition: background 0.2s, transform 0.1s;
         align-self: flex-start;
@@ -561,12 +695,12 @@
         }
 
     .nav-links {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         text-align: center;
     }
 
         .nav-links a {
-            font-size: 0.75rem;
+            font-size: 0.875rem;
             color: var(--primary-color);
             text-decoration: none;
             transition: color 0.2s;
@@ -575,4 +709,54 @@
             .nav-links a:hover {
                 color: #2563eb;
             }
+
+    #toast-container {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1000;
+    }
+
+    .toast {
+        font-size: 0.875rem;
+        padding: 0.75rem 1.25rem;
+        border-radius: 6px;
+        color: var(--white);
+        margin-top: 0.5rem;
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+
+    .toast-success {
+        background: var(--toast-bg-success);
+    }
+
+    .toast-error {
+        background: var(--toast-bg-error);
+    }
+
+    .toast.fade-out {
+        opacity: 0;
+    }
+
+    .client-form-container, .payment-form-container {
+        background: var(--white);
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.5rem;
+    }
+
+    .new-client-form {
+        margin-top: 1rem;
+        padding: 1rem;
+        background: #f9fafb;
+        border-radius: 6px;
+        border: 1px solid var(--border-color);
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: var(--text-color);
+    }
 </style>
