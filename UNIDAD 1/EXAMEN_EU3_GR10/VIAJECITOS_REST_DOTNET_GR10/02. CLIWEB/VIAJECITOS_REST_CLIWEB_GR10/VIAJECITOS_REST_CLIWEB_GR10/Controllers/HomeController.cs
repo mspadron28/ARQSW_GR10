@@ -131,11 +131,16 @@ namespace VIAJECITOS_REST_CLIWEB_GR10.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Register(RegisterModel model)
+        public async Task<IActionResult> Register(RegisterModel model, string ReturnUrl, ComprarModel Compra = null)
         {
             if (string.IsNullOrWhiteSpace(model.Nombre) || string.IsNullOrWhiteSpace(model.Email) || string.IsNullOrWhiteSpace(model.DocumentoIdentidad))
             {
                 Console.WriteLine("[ERROR] Validación fallida: Campos de cliente vacíos");
+                if (!string.IsNullOrEmpty(ReturnUrl) && ReturnUrl.Contains("Comprar"))
+                {
+                    ViewBag.Error = "Todos los campos son requeridos.";
+                    return await ReloadComprarView(Compra ?? new ComprarModel());
+                }
                 return Json(new { success = false, message = "Todos los campos son requeridos." });
             }
 
@@ -146,9 +151,41 @@ namespace VIAJECITOS_REST_CLIWEB_GR10.Controllers
                 if (cliente == null)
                 {
                     Console.WriteLine("[ERROR] Respuesta nula del servicio en RegistrarCliente");
+                    if (!string.IsNullOrEmpty(ReturnUrl) && ReturnUrl.Contains("Comprar"))
+                    {
+                        ViewBag.Error = "Error al registrar el cliente.";
+                        return await ReloadComprarView(Compra ?? new ComprarModel());
+                    }
                     return Json(new { success = false, message = "Error al registrar el cliente." });
                 }
+
                 Console.WriteLine($"[DEBUG] Cliente registrado: Id={cliente.IdCliente}, Nombre={cliente.Nombre}");
+
+                if (!string.IsNullOrEmpty(ReturnUrl) && ReturnUrl.Contains("Comprar"))
+                {
+                    // Actualizar el modelo de compra con el nuevo cliente
+                    Compra = Compra ?? new ComprarModel();
+                    Compra.IdCliente = cliente.IdCliente;
+                    Compra.Clientes = await _service.ObtenerTodosClientes();
+                    if (Compra.Clientes == null) Compra.Clientes = new List<Cliente>();
+                    if (!Compra.Clientes.Any(c => c.IdCliente == cliente.IdCliente))
+                    {
+                        Compra.Clientes.Add(cliente);
+                    }
+                    // Preservar otros datos del modelo
+                    Compra.MetodosPago = new List<MetodoPagoModel>
+            {
+                new MetodoPagoModel { Id = 1, Nombre = "Tarjeta de Crédito" },
+                new MetodoPagoModel { Id = 2, Nombre = "Efectivo" },
+                new MetodoPagoModel { Id = 3, Nombre = "Tarjeta de Débito" }
+            };
+                    Compra.Vuelos = HttpContext.Session.GetObject<List<Vuelo>>("SearchResults") ?? new List<Vuelo>();
+                    Compra.Detalles = Compra.Detalles ?? new List<DetalleVueloModel>();
+
+                    Console.WriteLine($"[DEBUG] Redirigiendo a Comprar con nuevo cliente: IdCliente={cliente.IdCliente}");
+                    return View("Comprar", Compra);
+                }
+
                 return Json(new
                 {
                     success = true,
@@ -160,6 +197,11 @@ namespace VIAJECITOS_REST_CLIWEB_GR10.Controllers
             catch (Exception ex)
             {
                 Console.WriteLine($"[ERROR] Excepción en Register: {ex.Message}, InnerException: {ex.InnerException?.Message}");
+                if (!string.IsNullOrEmpty(ReturnUrl) && ReturnUrl.Contains("Comprar"))
+                {
+                    ViewBag.Error = $"Error al registrar el cliente: {ex.Message}";
+                    return await ReloadComprarView(Compra ?? new ComprarModel());
+                }
                 return Json(new { success = false, message = $"Error al registrar el cliente: {ex.Message}" });
             }
         }

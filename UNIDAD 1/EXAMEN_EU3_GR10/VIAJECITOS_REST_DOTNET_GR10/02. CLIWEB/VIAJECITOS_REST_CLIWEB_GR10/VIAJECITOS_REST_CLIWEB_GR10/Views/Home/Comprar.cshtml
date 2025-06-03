@@ -13,136 +13,147 @@
             <div class="debug-info">@ViewBag.DebugInfo</div>
         }
     }
-    @if (Model.Vuelos != null && Model.Vuelos.Any())
-    {
-        <div class="flights-table-container">
-            <h3>Vuelos Disponibles</h3>
-            <table class="flights-table">
-                <thead>
-                    <tr>
-                        <th>ID Vuelo</th>
-                        <th>Origen</th>
-                        <th>Destino</th>
-                        <th>Valor</th>
-                        <th>Fecha de Salida</th>
-                        <th>Hora de Salida</th>
-                        <th>Cantidad</th>
-                        <th>Acción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var vuelo in Model.Vuelos.OrderByDescending(v => v.Valor))
-                    {
+    <div class="section flights-section">
+        <h3>Vuelos Disponibles</h3>
+        @if (Model.Vuelos != null && Model.Vuelos.Any())
+        {
+            <div class="flights-table-container">
+                <table class="flights-table">
+                    <thead>
                         <tr>
-                            <td>@vuelo.IdVuelo</td>
-                            <td>@vuelo.CiudadOrigen</td>
-                            <td>@vuelo.CiudadDestino</td>
-                            <td>@vuelo.Valor.ToString("C")</td>
-                            <td>@vuelo.HoraSalida.ToString("yyyy-MM-dd")</td>
-                            <td>@vuelo.HoraSalida.ToString("HH:mm")</td>
-                            <td>
-                                <input type="number" class="quantity-input" min="1" value="1" data-id="@vuelo.IdVuelo" />
-                            </td>
-                            <td>
-                                <button type="button" class="add-flight-button" data-id="@vuelo.IdVuelo">Añadir</button>
-                            </td>
+                            <th>ID</th>
+                            <th>Origen</th>
+                            <th>Destino</th>
+                            <th>Valor</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Cant.</th>
+                            <th>Acción</th>
                         </tr>
-                    }
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @foreach (var vuelo in Model.Vuelos.OrderByDescending(v => v.Valor))
+                        {
+                            <tr>
+                                <td>@vuelo.IdVuelo</td>
+                                <td>@vuelo.CiudadOrigen</td>
+                                <td>@vuelo.CiudadDestino</td>
+                                <td>@vuelo.Valor.ToString("C")</td>
+                                <td>@vuelo.HoraSalida.ToString("yyyy-MM-dd")</td>
+                                <td>@vuelo.HoraSalida.ToString("HH:mm")</td>
+                                <td>
+                                    <input type="number" class="quantity-input" min="1" value="1" data-id="@vuelo.IdVuelo" />
+                                </td>
+                                <td>
+                                    <button type="button" class="add-flight-button" data-id="@vuelo.IdVuelo">Añadir</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+    <div class="section client-section">
+        <h3>Información del Cliente</h3>
+        <div class="form-group">
+            <label asp-for="IdCliente" class="form-label">Seleccionar Cliente</label>
+            <select id="client-select" asp-for="IdCliente" class="minimal-select" required>
+                <option value="">Seleccione un cliente</option>
+                @foreach (var cliente in Model.Clientes)
+                {
+                    <option value="@cliente.IdCliente" selected="@(cliente.IdCliente == Model.IdCliente ? "selected" : null)">@cliente.Nombre (@cliente.DocumentoIdentidad)</option>
+                }
+            </select>
+            <div class="invalid-feedback">El cliente es requerido.</div>
         </div>
-    }
-    <div class="form-grid">
-        <div class="form-left">
-            <div class="form-group client-form-container">
-                <h3>Información del Cliente</h3>
-                <form id="client-form" class="needs-validation" novalidate>
-                    <div class="form-group">
-                        <label asp-for="IdCliente" class="form-label">Seleccionar Cliente</label>
-                        <div class="select-wrapper">
-                            <select asp-for="IdCliente" id="client-select" class="form-control select-styled" required>
-                                <option value="">Seleccione un cliente</option>
-                                @foreach (var cliente in Model.Clientes)
-                                {
-                                    <option value="@cliente.IdCliente" selected="@(cliente.IdCliente == Model.IdCliente ? "selected" : null)">@cliente.Nombre (@cliente.DocumentoIdentidad)</option>
-                                }
-                            </select>
-                            <div class="invalid-feedback">El cliente es requerido.</div>
-                        </div>
-                    </div>
-                    <button type="button" id="toggle-new-client" class="toggle-button">Crear Nuevo Cliente</button>
-                    <div id="new-client-form" style="display: none;" class="new-client-form">
-                        <div class="form-group">
-                            <label for="new-client-name" class="form-label">Nombre</label>
-                            <input type="text" id="new-client-name" class="form-control" required />
-                            <div class="invalid-feedback">El nombre es requerido.</div>
-                        </div>
-                        <div class="form-group">
-                            <label for="new-client-email" class="form-label">Email</label>
-                            <input type="email" id="new-client-email" class="form-control" required />
-                            <div class="invalid-feedback">El email es requerido y debe ser válido.</div>
-                        </div>
-                        <div class="form-group">
-                            <label for="new-client-document" class="form-label">Documento de Identidad</label>
-                            <input type="text" id="new-client-document" class="form-control" required />
-                            <div class="invalid-feedback">El documento es requerido.</div>
-                        </div>
-                        <button type="button" id="register-client" class="action-button">Registrar Cliente</button>
-                    </div>
-                </form>
-            </div>
-            <div class="form-group payment-form-container">
-                <h3>Método de Pago</h3>
-                <form asp-action="Comprar" method="post" id="purchase-form" class="needs-validation" novalidate>
-                    <input type="hidden" asp-for="NumeroFactura" value="@($"FAC{DateTime.Now:yyyyMMddHHmmss}")" />
-                    <input type="hidden" asp-for="IdCliente" id="hidden-client-id" value="@Model.IdCliente" />
-                    <div class="form-group">
-                        <label asp-for="IdMetodoPago" class="form-label">Método de Pago</label>
-                        <div class="select-wrapper">
-                            <select asp-for="IdMetodoPago" id="payment-method-select" class="form-control select-styled" required>
-                                <option value="">Seleccione un método</option>
-                                @foreach (var metodo in Model.MetodosPago)
-                                {
-                                    <option value="@metodo.Id" selected="@(metodo.Id == Model.IdMetodoPago ? "selected" : null)">@metodo.Nombre</option>
-                                }
-                            </select>
-                            <div class="invalid-feedback">El método de pago es requerido.</div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Descuento" class="form-label">Descuento (%)</label>
-                        <input type="number" asp-for="Descuento" class="form-control" step="0.01" value="@(Model.Descuento > 0 ? Model.Descuento : 0)" min="0" max="100" />
-                        <div class="invalid-feedback">El descuento debe ser un valor entre 0 y 100.</div>
-                    </div>
-                    <div class="form-right">
-                        <h3>Detalles de la Compra</h3>
-                        <div id="detalles-container">
-                            @if (Model.Detalles != null && Model.Detalles.Any())
-                            {
-                                @for (int i = 0; i < Model.Detalles.Count; i++)
-                                {
-                                    <div class="detalle-row" data-index="@i" data-id-vuelo="@Model.Detalles[i].IdVuelo">
-                                        <div class="detalle-item">
-                                            <span class="detalle-label">ID Vuelo:</span>
-                                            <input type="hidden" name="Detalles[@i].IdVuelo" value="@Model.Detalles[i].IdVuelo" />
-                                            <span class="detalle-value">@Model.Detalles[i].IdVuelo</span>
-                                        </div>
-                                        <div class="detalle-item">
-                                            <span class="detalle-label">Cantidad:</span>
-                                            <input type="hidden" name="Detalles[@i].Cantidad" value="@Model.Detalles[i].Cantidad" />
-                                            <span class="detalle-value">@Model.Detalles[i].Cantidad</span>
-                                        </div>
-                                        <button type="button" class="remove-detail-button">Eliminar</button>
-                                    </div>
-                                }
-                            }
-                        </div>
-                        <button type="submit" id="submit-purchase" class="submit-button">Confirmar Compra</button>
-                    </div>
-                </form>
-            </div>
+        <button type="button" id="toggle-new-client" class="toggle-button">Crear Nuevo Cliente</button>
+        <div id="new-client-form" style="display: none;" class="new-client-form">
+            <form asp-action="Register" asp-controller="Home" method="post" class="needs-validation" novalidate>
+                <input type="hidden" name="ReturnUrl" value="@Url.Action("Comprar", "Home")" />
+                @* Campos ocultos para preservar el estado del formulario de compra *@
+                <input type="hidden" name="Compra.NumeroFactura" value="@Model.NumeroFactura" />
+                <input type="hidden" name="Compra.IdMetodoPago" value="@Model.IdMetodoPago" />
+                <input type="hidden" name="Compra.Descuento" value="@Model.Descuento" />
+                @if (Model.Detalles != null)
+                {
+                    @for (int i = 0; i < Model.Detalles.Count; i++)
+                    {
+                        <input type="hidden" name="Compra.Detalles[@i].IdVuelo" value="@Model.Detalles[i].IdVuelo" />
+                        <input type="hidden" name="Compra.Detalles[@i].Cantidad" value="@Model.Detalles[i].Cantidad" />
+                    }
+                }
+                <div class="form-group">
+                    <label for="new-client-name" class="form-label">Nombre</label>
+                    <input type="text" id="new-client-name" name="Nombre" class="form-control" required />
+                    <div class="invalid-feedback">El nombre es requerido.</div>
+                </div>
+                <div class="form-group">
+                    <label for="new-client-email" class="form-label">Email</label>
+                    <input type="email" id="new-client-email" name="Email" class="form-control" required />
+                    <div class="invalid-feedback">El email es requerido y debe ser válido.</div>
+                </div>
+                <div class="form-group">
+                    <label for="new-client-document" class="form-label">Documento de Identidad</label>
+                    <input type="text" id="new-client-document" name="DocumentoIdentidad" class="form-control" required />
+                    <div class="invalid-feedback">El documento es requerido.</div>
+                </div>
+                <button type="submit" class="action-button">Registrar Cliente</button>
+            </form>
         </div>
     </div>
+    <form asp-action="Comprar" method="post" id="purchase-form" class="needs-validation" novalidate>
+        <input type="hidden" asp-for="NumeroFactura" value="@($"FAC{DateTime.Now:yyyyMMddHHmmss}")" />
+        <input type="hidden" asp-for="IdCliente" id="hidden-client-id" value="@Model.IdCliente" />
+        <div class="sections-container">
+            <div class="section payment-section">
+                <h3>Método de Pago</h3>
+                <div class="form-group">
+                    <label asp-for="IdMetodoPago" class="form-label">Método de Pago</label>
+                    <select asp-for="IdMetodoPago" id="payment-method-select" class="minimal-select" required>
+                        <option value="">Seleccione un método</option>
+                        @foreach (var metodo in Model.MetodosPago)
+                        {
+                            <option value="@metodo.Id" selected="@(metodo.Id == Model.IdMetodoPago ? "selected" : null)">@metodo.Nombre</option>
+                        }
+                    </select>
+                    <div class="invalid-feedback">El método de pago es requerido.</div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Descuento" class="form-label">Descuento (%)</label>
+                    <input type="number" asp-for="Descuento" class="form-control" step="0.01" value="@(Model.Descuento > 0 ? Model.Descuento : 0)" min="0" max="100" />
+                    <div class="invalid-feedback">El descuento debe ser un valor entre 0 y 100.</div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-footer">
+            <div class="details-section">
+                <h3>Detalles de la Compra <span id="details-count" class="details-badge">0</span></h3>
+                <div id="detalles-container">
+                    @if (Model.Detalles != null && Model.Detalles.Any())
+                    {
+                        @for (int i = 0; i < Model.Detalles.Count; i++)
+                        {
+                            <div class="detalle-row" data-index="@i" data-id-vuelo="@Model.Detalles[i].IdVuelo">
+                                <div class="detalle-item">
+                                    <span class="detalle-label">ID Vuelo:</span>
+                                    <input type="hidden" name="Detalles[@i].IdVuelo" value="@Model.Detalles[i].IdVuelo" />
+                                    <span class="detalle-value">@Model.Detalles[i].IdVuelo</span>
+                                </div>
+                                <div class="detalle-item">
+                                    <span class="detalle-label">Cant.:</span>
+                                    <input type="hidden" name="Detalles[@i].Cantidad" value="@Model.Detalles[i].Cantidad" />
+                                    <span class="detalle-value">@Model.Detalles[i].Cantidad</span>
+                                </div>
+                                <button type="button" class="remove-detail-button">Eliminar</button>
+                            </div>
+                        }
+                    }
+                </div>
+                <button type="submit" id="submit-purchase" class="submit-button">Confirmar Compra</button>
+            </div>
+        </div>
+    </form>
     <div class="nav-links">
         <a href="@Url.Action("BuscarVuelos", "Home")">Volver</a>
     </div>
@@ -153,85 +164,45 @@
     (function () {
         'use strict';
 
-        // Form validation
-        var forms = document.querySelectorAll('.needs-validation');
-        Array.prototype.slice.call(forms).forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
+    // Form validation for all forms with needs-validation
+       var forms = document.querySelectorAll('.needs-validation');
+       Array.prototype.slice.call(forms).forEach(function (form) {
+           form.addEventListener('submit', function (event) {
+               if (!form.checkValidity()) {
+                   event.preventDefault();
+                   event.stopPropagation();
+               }
+               form.classList.add('was-validated');
 
-                // Depuración: Capturar datos del formulario antes de enviar
-                if (form.id === 'purchase-form') {
-                    var formData = new FormData(form);
-                    var formDataObj = {};
-                    formData.forEach((value, key) => formDataObj[key] = value);
-                    console.log('[DEBUG] Formulario enviado:', formDataObj);
-                    // Validar que haya detalles antes de enviar
-                    var detalles = document.querySelectorAll('#detalles-container .detalle-row');
-                    if (detalles.length === 0) {
-                        event.preventDefault();
-                        showToast('Debe añadir al menos un vuelo para confirmar la compra.', 'error');
-                        console.log('[ERROR] Validación fallida: No hay detalles de factura');
-                    }
-                }
-            }, false);
-        });
+               // Depuración para el formulario de compra
+               if (form.id === 'purchase-form') {
+                   var formData = new FormData(form);
+                   var formDataObj = {};
+                   formData.forEach((value, key) => formDataObj[key] = value);
+                   console.log('[DEBUG] Formulario de compra enviado:', formDataObj);
+                   var detalles = document.querySelectorAll('#detalles-container .detalle-row');
+                   if (detalles.length === 0) {
+                       event.preventDefault();
+                       showToast('Debe añadir al menos un vuelo para confirmar la compra.', 'error');
+                       console.log('[ERROR] Validación fallida: No hay detalles de factura');
+                   }
+               }
+           }, false);
+       });
 
-        // Toggle new client form
-        document.getElementById('toggle-new-client').addEventListener('click', function () {
-            var form = document.getElementById('new-client-form');
-            form.style.display = form.style.display === 'none' ? 'block' : 'none';
-        });
+     // Toggle new client form
+    document.getElementById('toggle-new-client').addEventListener('click', function () {
+        var form = document.getElementById('new-client-form');
+        form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    });
 
-        // Register new client via AJAX
-        document.getElementById('register-client').addEventListener('click', async function () {
-            var newClientForm = document.getElementById('new-client-form');
-            var clientForm = document.getElementById('client-form');
-            if (!newClientForm.checkValidity()) {
-                clientForm.classList.add('was-validated');
-                return;
-            }
+     
+        // Add flight to details and update details count
+        function updateDetailsCount() {
+            var count = document.querySelectorAll('#detalles-container .detalle-row').length;
+            document.getElementById('details-count').textContent = count;
+        }
 
-            var name = document.getElementById('new-client-name').value;
-            var email = document.getElementById('new-client-email').value;
-            var document = document.getElementById('new-client-document').value;
-
-            try {
-                var response = await fetch('/Home/Register', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify({ Nombre: name, Email: email, DocumentoIdentidad: document })
-                });
-
-                var result = await response.json();
-                if (response.ok) {
-                    var select = document.getElementById('client-select');
-                    var option = document.createElement('option');
-                    option.value = result.idCliente;
-                    option.text = `${result.nombre} (${result.documentoIdentidad})`;
-                    select.appendChild(option);
-                    select.value = result.idCliente;
-                    document.getElementById('hidden-client-id').value = result.idCliente;
-                    document.getElementById('new-client-form').style.display = 'none';
-                    showToast('Cliente registrado exitosamente.');
-                    console.log(`[DEBUG] Cliente registrado y seleccionado: IdCliente=${result.idCliente}`);
-                } else {
-                    showToast(`Error: ${result.message || 'No se pudo registrar el cliente.'}`, 'error');
-                    console.error('[ERROR] Registro de cliente fallido:', result.message);
-                }
-            } catch (error) {
-                showToast(`Error: ${error.message}`, 'error');
-                console.error('[ERROR] Excepción en registro de cliente:', error.message);
-            }
-        });
-
-        // Add flight to details
         document.querySelectorAll('.add-flight-button').forEach(function (button) {
             button.addEventListener('click', function () {
                 var idVuelo = button.dataset.id;
@@ -272,7 +243,7 @@
                             <span class="detalle-value">${idVuelo}</span>
                         </div>
                         <div class="detalle-item">
-                            <span class="detalle-label">Cantidad:</span>
+                            <span class="detalle-label">Cant.:</span>
                             <input type="hidden" name="Detalles[${index}].Cantidad" value="${cantidad}" />
                             <span class="detalle-value">${cantidad}</span>
                         </div>
@@ -286,10 +257,11 @@
                 }
 
                 addRemoveEventListeners();
+                updateDetailsCount();
             });
         });
 
-        // Remove detail
+        // Remove detail and update details count
         function addRemoveEventListeners() {
             document.querySelectorAll('.remove-detail-button').forEach(function (button) {
                 button.addEventListener('click', function () {
@@ -306,24 +278,24 @@
                     });
                     showToast(`Eliminado detalle del vuelo ${idVuelo}.`);
                     console.log(`[DEBUG] Detalle eliminado: IdVuelo=${idVuelo}. Nuevos índices asignados: ${rows.length} filas restantes`);
+                    updateDetailsCount();
                 });
             });
         }
         addRemoveEventListeners();
+        updateDetailsCount();
+    // Sync client selection
+    document.getElementById('client-select').addEventListener('change', function () {
+        document.getElementById('hidden-client-id').value = this.value;
+        this.classList.add('selected');
+        console.log(`[DEBUG] Cliente seleccionado: IdCliente=${this.value}`);
+    });
 
-        // Sync client selection
-        document.getElementById('client-select').addEventListener('change', function () {
-            document.getElementById('hidden-client-id').value = this.value;
-            this.classList.add('selected');
-            console.log(`[DEBUG] Cliente seleccionado: IdCliente=${this.value}`);
-        });
-
-        // Sync payment method selection
-        document.getElementById('payment-method-select').addEventListener('change', function () {
-            this.classList.add('selected');
-            console.log(`[DEBUG] Método de pago seleccionado: IdMetodoPago=${this.value}`);
-        });
-
+    // Sync payment method selection
+    document.getElementById('payment-method-select').addEventListener('change', function () {
+        this.classList.add('selected');
+        console.log(`[DEBUG] Método de pago seleccionado: IdMetodoPago=${this.value}`);
+    });
         // Ensure purchase form submission validates client selection
         document.getElementById('purchase-form').addEventListener('submit', function (event) {
             var clientId = document.getElementById('hidden-client-id').value;
@@ -337,12 +309,13 @@
         });
 
         // Initialize select states
-        function initializeSelects() {
-            var clientSelect = document.getElementById('client-select');
-            var paymentSelect = document.getElementById('payment-method-select');
-            if (clientSelect.value) clientSelect.classList.add('selected');
-            if (paymentSelect.value) paymentSelect.classList.add('selected');
-        }
+         // Initialize select states
+    function initializeSelects() {
+        var clientSelect = document.getElementById('client-select');
+        var paymentSelect = document.getElementById('payment-method-select');
+        if (clientSelect.value) clientSelect.classList.add('selected');
+        if (paymentSelect.value) paymentSelect.classList.add('selected');
+    }
         initializeSelects();
 
         // Toast notification
@@ -362,77 +335,103 @@
 
 <style>
     :root {
-        --primary-color: #3b82f6;
-        --text-color: #111827;
-        --border-color: #e5e7eb;
-        --background-color: #fafafa;
-        --error-color: #ef4444;
-        --success-color: #10b981;
+        --primary-color: #2563eb;
+        --text-color: #1f2937;
+        --border-color: #d1d5db;
+        --background-color: #f9fafb;
+        --error-color: #dc2626;
+        --success-color: #059669;
         --white: #ffffff;
         --highlight-bg: #eff6ff;
-        --toast-bg-success: rgba(16, 185, 129, 0.9);
-        --toast-bg-error: rgba(239, 68, 68, 0.9);
+        --toast-bg-success: rgba(5, 150, 105, 0.95);
+        --toast-bg-error: rgba(220, 38, 38, 0.95);
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--background-color);
+    }
+
+    .minimal-select.selected {
+        border-bottom: 2px solid var(--primary-color);
+        background: var(--highlight-bg);
     }
 
     .purchase-container {
-        max-width: 1200px;
-        margin: 1.5rem auto;
-        padding: 1.5rem;
+        max-width: 800px;
+        margin: 1rem auto;
+        padding: 1rem;
         background: var(--white);
-        border-radius: 12px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
-        font-size: 1.5rem;
-        font-weight: 700;
+        font-size: 1.25rem;
+        font-weight: 600;
         color: var(--text-color);
-        margin-bottom: 1.25rem;
+        margin-bottom: 1rem;
         text-align: center;
     }
 
     h3 {
-        font-size: 1.125rem;
-        font-weight: 600;
+        font-size: 1rem;
+        font-weight: 500;
         color: var(--text-color);
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
     }
 
     .error-message {
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         color: var(--error-color);
         background: #fef2f2;
-        padding: 0.5rem 1rem;
-        border-radius: 6px;
-        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border-radius: 4px;
+        margin-bottom: 0.75rem;
         text-align: center;
     }
 
     .debug-info {
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         color: #6b7280;
-        background: #f9fafb;
-        padding: 0.5rem 1rem;
-        border-radius: 6px;
-        margin-bottom: 1rem;
+        background: var(--background-color);
+        padding: 0.5rem;
+        border-radius: 4px;
+        margin-bottom: 0.75rem;
         text-align: center;
     }
 
+    .section {
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+        background: var(--white);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+    }
+
     .flights-table-container {
-        margin-bottom: 2rem;
+        overflow-x: auto;
     }
 
     .flights-table {
         width: 100%;
         border-collapse: collapse;
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         color: var(--text-color);
     }
 
         .flights-table th,
         .flights-table td {
-            padding: 0.75rem;
+            padding: 0.5rem;
             text-align: left;
             border-bottom: 1px solid var(--border-color);
         }
@@ -440,20 +439,19 @@
         .flights-table th {
             font-weight: 500;
             color: #6b7280;
-            font-size: 0.75rem;
             text-transform: uppercase;
         }
 
         .flights-table tr:hover {
-            background: #f9fafb;
+            background: var(--background-color);
         }
 
     .quantity-input {
-        width: 70px;
-        font-size: 0.875rem;
-        padding: 0.4rem;
+        width: 50px;
+        font-size: 0.75rem;
+        padding: 0.25rem;
         border: 1px solid var(--border-color);
-        border-radius: 6px;
+        border-radius: 4px;
         transition: border-color 0.2s;
     }
 
@@ -463,42 +461,26 @@
         }
 
     .add-flight-button {
-        font-size: 0.875rem;
-        padding: 0.4rem 1rem;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
         background: var(--primary-color);
         color: var(--white);
         border: none;
-        border-radius: 6px;
+        border-radius: 4px;
         cursor: pointer;
-        transition: background 0.2s, transform 0.1s;
+        transition: background 0.2s;
     }
 
         .add-flight-button:hover {
-            background: #2563eb;
-            transform: translateY(-1px);
+            background: #1d4ed8;
         }
 
-    .form-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        align-items: stretch;
-    }
-
-    .form-left {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        min-height: 100%;
-    }
-
     .form-group {
-        display: flex;
-        flex-direction: column;
+        margin-bottom: 0.75rem;
     }
 
-    label {
-        font-size: 0.875rem;
+    .form-label {
+        font-size: 0.75rem;
         font-weight: 500;
         color: var(--text-color);
         margin-bottom: 0.25rem;
@@ -506,95 +488,67 @@
 
     .form-control {
         font-size: 0.875rem;
-        padding: 0.5rem 0.75rem;
+        padding: 0.5rem;
         border: 1px solid var(--border-color);
-        border-radius: 6px;
+        border-radius: 4px;
         background: var(--white);
-        transition: border-color 0.2s, box-shadow 0.2s;
-        height: 38px;
+        transition: border-color 0.2s;
         width: 100%;
-        box-sizing: border-box;
     }
 
         .form-control:focus {
             outline: none;
             border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         }
 
-        .form-control::placeholder {
-            color: #9ca3af;
-            font-style: italic;
-        }
-
-    .select-wrapper {
-        position: relative;
-    }
-
-    .select-styled {
+    .minimal-select {
+        font-size: 0.875rem;
+        padding: 0.5rem 0;
+        border: none;
+        border-bottom: 1px solid var(--border-color);
+        background: transparent;
         appearance: none;
         width: 100%;
-        padding-right: 2rem;
-        background: var(--white);
+        color: var(--text-color);
+        transition: border-color 0.2s;
     }
 
-        .select-styled:focus {
+        .minimal-select:focus {
             outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            border-bottom: 2px solid var(--primary-color);
         }
 
-        .select-styled.selected {
-            background-color: var(--highlight-bg);
-            border-color: var(--primary-color);
+        .minimal-select option {
+            background: var(--white);
+            color: var(--text-color);
         }
-
-    .select-wrapper::after {
-        content: '';
-        position: absolute;
-        right: 0.75rem;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 0;
-        height: 0;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-top: 6px solid #6b7280;
-        pointer-events: none;
-    }
 
     .is-invalid {
-        border-color: var(--error-color) !important;
+        border-bottom: 2px solid var(--error-color) !important;
     }
 
     .invalid-feedback {
-        font-size: 0.75rem;
+        font-size: 0.625rem;
         color: var(--error-color);
         margin-top: 0.25rem;
         display: none;
     }
 
-    .was-validated .form-control:invalid ~ .invalid-feedback,
+    .was-validated .minimal-select:invalid ~ .invalid-feedback,
     .is-invalid ~ .invalid-feedback {
         display: block;
     }
 
-    .was-validated .form-control:invalid,
-    .is-invalid {
-        border-color: var(--error-color);
-    }
-
     .toggle-button {
-        font-size: 0.875rem;
-        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.75rem;
         background: #6b7280;
         color: var(--white);
         border: none;
-        border-radius: 6px;
+        border-radius: 4px;
         cursor: pointer;
         transition: background 0.2s;
-        align-self: flex-start;
-        margin-top: 0.75rem;
+        margin-top: 0.5rem;
     }
 
         .toggle-button:hover {
@@ -602,37 +556,44 @@
         }
 
     .action-button {
-        font-size: 0.875rem;
-        padding: 0.5rem 1.25rem;
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
         background: var(--primary-color);
         color: var(--white);
         border: none;
-        border-radius: 6px;
+        border-radius: 4px;
         cursor: pointer;
-        transition: background 0.2s, transform 0.1s;
+        transition: background 0.2s;
     }
 
         .action-button:hover {
-            background: #2563eb;
-            transform: translateY(-1px);
+            background: #1d4ed8;
         }
+
+    .new-client-form {
+        margin-top: 0.75rem;
+        padding: 0.75rem;
+        background: var(--background-color);
+        border-radius: 4px;
+        border: 1px solid var(--border-color);
+    }
 
     #detalles-container {
         display: flex;
         flex-direction: column;
-        gap: 0.75rem;
-        margin-bottom: 1.5rem;
-        flex-grow: 1;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        max-height: 150px;
+        overflow-y: auto;
     }
 
     .detalle-row {
         display: flex;
         align-items: center;
-        gap: 0.75rem;
-        padding: 0.75rem;
-        background: #f9fafb;
-        border-radius: 8px;
-        transition: background 0.3s;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        background: var(--background-color);
+        border-radius: 4px;
     }
 
         .detalle-row.highlight {
@@ -642,72 +603,92 @@
 
     .detalle-item {
         flex: 1;
+        font-size: 0.75rem;
     }
 
     .detalle-label {
-        font-size: 0.875rem;
         font-weight: 500;
         color: #6b7280;
-        margin-right: 0.5rem;
+        margin-right: 0.25rem;
     }
 
     .detalle-value {
-        font-size: 0.875rem;
-        padding: 0.4rem 0.75rem;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
         border: 1px solid var(--border-color);
-        border-radius: 6px;
+        border-radius: 4px;
         background: var(--white);
         display: inline-block;
-        width: 120px;
+        width: 80px;
         text-align: center;
     }
 
     .remove-detail-button {
-        font-size: 0.875rem;
-        padding: 0.4rem 1rem;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
         background: var(--error-color);
         color: var(--white);
         border: none;
-        border-radius: 6px;
+        border-radius: 4px;
         cursor: pointer;
         transition: background 0.2s;
     }
 
         .remove-detail-button:hover {
-            background: #dc2626;
+            background: #b91c1c;
         }
 
     .submit-button {
         font-size: 0.875rem;
-        padding: 0.5rem 1.5rem;
+        padding: 0.5rem 1rem;
         background: var(--primary-color);
         color: var(--white);
         border: none;
-        border-radius: 6px;
+        border-radius: 4px;
         cursor: pointer;
-        transition: background 0.2s, transform 0.1s;
-        align-self: flex-start;
+        transition: background 0.2s;
     }
 
         .submit-button:hover {
-            background: #2563eb;
-            transform: translateY(-1px);
+            background: #1d4ed8;
         }
 
+    .sticky-footer {
+        position: sticky;
+        bottom: 0;
+        background: var(--white);
+        padding: 0.75rem;
+        border-top: 1px solid var(--border-color);
+        z-index: 10;
+    }
+
+    .details-badge {
+        display: inline-block;
+        font-size: 0.625rem;
+        font-weight: 600;
+        color: var(--white);
+        background: var(--primary-color);
+        border-radius: 50%;
+        width: 1.25rem;
+        height: 1.25rem;
+        line-height: 1.25rem;
+        text-align: center;
+    }
+
     .nav-links {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         text-align: center;
     }
 
         .nav-links a {
-            font-size: 0.875rem;
+            font-size: 0.75rem;
             color: var(--primary-color);
             text-decoration: none;
             transition: color 0.2s;
         }
 
             .nav-links a:hover {
-                color: #2563eb;
+                color: #1d4ed8;
             }
 
     #toast-container {
@@ -718,9 +699,9 @@
     }
 
     .toast {
-        font-size: 0.875rem;
-        padding: 0.75rem 1.25rem;
-        border-radius: 6px;
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
         color: var(--white);
         margin-top: 0.5rem;
         opacity: 1;
@@ -739,24 +720,5 @@
         opacity: 0;
     }
 
-    .client-form-container, .payment-form-container {
-        background: var(--white);
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        margin-bottom: 1.5rem;
-    }
-
-    .new-client-form {
-        margin-top: 1rem;
-        padding: 1rem;
-        background: #f9fafb;
-        border-radius: 6px;
-        border: 1px solid var(--border-color);
-    }
-
-    .form-label {
-        font-weight: 600;
-        color: var(--text-color);
-    }
+   
 </style>
