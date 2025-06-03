@@ -2,11 +2,17 @@ using Microsoft.EntityFrameworkCore;
 using ViajecitosRestServer.Data;
 using ViajecitosRestServer.Services;
 using Microsoft.OpenApi.Models;
+using System.Text.Json.Serialization; // Necesario para ReferenceHandler
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve; // Maneja ciclos de referencia
+        options.JsonSerializerOptions.WriteIndented = true; // Opcional, para JSON legible
+    });
 
 // Configure logging
 builder.Services.AddLogging(logging =>

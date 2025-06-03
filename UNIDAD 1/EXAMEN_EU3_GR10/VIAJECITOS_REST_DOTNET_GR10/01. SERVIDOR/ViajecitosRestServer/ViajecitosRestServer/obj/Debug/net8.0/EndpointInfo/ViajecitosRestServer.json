@@ -164,54 +164,6 @@
         }
       }
     },
-    "/api/detalle-factura": {
-      "post": {
-        "tags": [
-          "Api"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DetalleFacturaRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DetalleFacturaRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/DetalleFacturaRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/DetalleFactura"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/DetalleFactura"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/DetalleFactura"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/factura": {
       "post": {
         "tags": [
@@ -308,6 +260,76 @@
           }
         }
       }
+    },
+    "/api/facturas": {
+      "get": {
+        "tags": [
+          "Api"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/clientes": {
+      "get": {
+        "tags": [
+          "Api"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -370,13 +392,9 @@
         },
         "additionalProperties": false
       },
-      "DetalleFacturaRequest": {
+      "DetalleRequest": {
         "type": "object",
         "properties": {
-          "idFactura": {
-            "type": "integer",
-            "format": "int32"
-          },
           "idVuelo": {
             "type": "integer",
             "format": "int32"
@@ -509,15 +527,11 @@
           "detalles": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Int32Int32ValueTuple"
+              "$ref": "#/components/schemas/DetalleRequest"
             },
             "nullable": true
           }
         },
-        "additionalProperties": false
-      },
-      "Int32Int32ValueTuple": {
-        "type": "object",
         "additionalProperties": false
       },
       "MetodoPago": {

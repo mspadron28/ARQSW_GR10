@@ -43,6 +43,10 @@ namespace ViajecitosRestServer.Controllers
             }
             catch (Exception ex)
             {
+                if (ex.Message == "El documento de identidad ya está registrado.")
+                {
+                    return Conflict(new { error = ex.Message });
+                }
                 return BadRequest(new { error = ex.Message });
             }
         }
@@ -63,25 +67,11 @@ namespace ViajecitosRestServer.Controllers
             }
         }
 
-        public class DetalleFacturaRequest
+
+        public class DetalleRequest
         {
-            public int IdFactura { get; set; }
             public int IdVuelo { get; set; }
             public int Cantidad { get; set; }
-        }
-
-        [HttpPost("detalle-factura")]
-        public async Task<ActionResult<DetalleFactura>> AgregarDetalleFactura([FromBody] DetalleFacturaRequest request)
-        {
-            try
-            {
-                var detalle = await _service.AgregarDetalleFactura(request.IdFactura, request.IdVuelo, request.Cantidad);
-                return Ok(detalle);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
         }
 
         public class FacturaRequest
@@ -91,7 +81,7 @@ namespace ViajecitosRestServer.Controllers
             public int IdCliente { get; set; }
             public int IdMetodoPago { get; set; }
             public decimal Descuento { get; set; }
-            public List<(int IdVuelo, int Cantidad)> Detalles { get; set; } = new List<(int, int)>();
+            public List<DetalleRequest> Detalles { get; set; } = new List<DetalleRequest>();
         }
 
         [HttpPost("factura")]
@@ -99,13 +89,16 @@ namespace ViajecitosRestServer.Controllers
         {
             try
             {
+                // Convertir DetalleRequest a List<(int IdVuelo, int Cantidad)>
+                var detalles = request.Detalles.Select(d => (d.IdVuelo, d.Cantidad)).ToList();
+
                 var factura = await _service.CrearFactura(
                     request.NumeroFactura,
                     request.IdEmpleado,
                     request.IdCliente,
                     request.IdMetodoPago,
                     request.Descuento,
-                    request.Detalles
+                    detalles
                 );
                 return Ok(factura);
             }
@@ -126,6 +119,34 @@ namespace ViajecitosRestServer.Controllers
             {
                 var facturas = await _service.ObtenerFacturasCliente(idCliente);
                 return Ok(facturas);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+
+        [HttpGet("facturas")]
+        public async Task<ActionResult<List<object>>> ObtenerTodasFacturasPorCliente()
+        {
+            try
+            {
+                var facturasPorCliente = await _service.ObtenerTodasFacturasPorCliente();
+                return Ok(facturasPorCliente);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+
+        [HttpGet("clientes")]
+        public async Task<ActionResult<List<Cliente>>> ObtenerTodosClientes()
+        {
+            try
+            {
+                var clientes = await _service.ObtenerTodosClientes();
+                return Ok(clientes);
             }
             catch (Exception ex)
             {

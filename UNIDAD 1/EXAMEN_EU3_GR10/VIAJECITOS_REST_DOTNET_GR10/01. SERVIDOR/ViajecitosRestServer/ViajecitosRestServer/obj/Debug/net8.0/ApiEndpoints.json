@@ -37,21 +37,15 @@
   },
   {
     "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
-    "Method": "AgregarDetalleFactura",
-    "RelativePath": "api/detalle-factura",
-    "HttpMethod": "POST",
+    "Method": "ObtenerTodosClientes",
+    "RelativePath": "api/clientes",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "ViajecitosRestServer.Controllers.ApiController\u002BDetalleFacturaRequest",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "ViajecitosRestServer.Models.DetalleFactura",
+        "Type": "System.Collections.Generic.List\u00601[[ViajecitosRestServer.Models.Cliente, ViajecitosRestServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -78,6 +72,26 @@
     "ReturnTypes": [
       {
         "Type": "ViajecitosRestServer.Models.Factura",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ViajecitosRestServer.Controllers.ApiController",
+    "Method": "ObtenerTodasFacturasPorCliente",
+    "RelativePath": "api/facturas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -20,19 +20,14 @@ Accept: application/json
 
 ###
 
-# Agregar detalle de factura
-POST {{ViajecitosRestServer_HostAddress}}/api/detalle-factura
-Content-Type: application/json
-Accept: application/json
 
 
 ###
 
-# Crear factura
+# Crear factura con detalles
 POST {{ViajecitosRestServer_HostAddress}}/api/factura
 Content-Type: application/json
 Accept: application/json
-
 
 
 ###
@@ -40,3 +35,19 @@ Accept: application/json
 # Obtener facturas de un cliente
 GET {{ViajecitosRestServer_HostAddress}}/api/facturas/1
 Accept: application/json
+
+
+###
+
+# Obtener todas las facturas organizadas por cliente
+GET {{ViajecitosRestServer_HostAddress}}/api/facturas
+Accept: application/json
+
+
+###
+
+# Obtener todos los clientes
+GET {{ViajecitosRestServer_HostAddress}}/api/clientes
+Accept: application/json
+
+

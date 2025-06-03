@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m5fqnMbG+2Q=",
+  "dgSpecHash": "tqaNJ9jvXsQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.csproj",
+  "projectFilePath": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MATIAS\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\MATIAS\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

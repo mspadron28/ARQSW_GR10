@@ -47,7 +47,10 @@ GO
 -- Inserción de métodos de pago
 INSERT INTO Metodo_Pago (nombre_metodo, descripcion) VALUES
 ('Tarjeta Crédito', 'Pago con tarjeta de crédito'),
-('Efectivo', 'Pago en efectivo');
+('Efectivo', 'Pago en efectivo'),
+('Tarjeta Debito', 'Pago con tarjeta de débito'),
+;
+
 GO
 
 -- Inserción de facturas

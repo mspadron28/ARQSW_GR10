@@ -1,42 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\",
+  "WorkspaceRootPath": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\services\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\services\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\services\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\viajecitosrestserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\viajecitosrestserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\models\\vuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\models\\vuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\data\\vuelosdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\data\\vuelosdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\data\\vuelosdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\models\\vuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\models\\vuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\models\\metodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\models\\metodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\models\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\models\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\01. server rest\\viajecitosrestserver\\viajecitosrestserver\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\viajecitosrestserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\viajecitosrestserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,102 +82,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ViajecitosRestServer.http",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.http",
-              "RelativeDocumentMoniker": "ViajecitosRestServer\\ViajecitosRestServer.http",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.http",
-              "RelativeToolTip": "ViajecitosRestServer\\ViajecitosRestServer.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-06-02T23:28:33.417Z",
+              "DocumentIndex": 5,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Cliente.cs",
+              "RelativeToolTip": "ViajecitosRestServer\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T00:01:22.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "ViajecitosRestServer\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\appsettings.Development.json",
-              "RelativeToolTip": "ViajecitosRestServer\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-02T23:28:31.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ViajecitosRestServer\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Properties\\launchSettings.json",
               "RelativeToolTip": "ViajecitosRestServer\\Properties\\launchSettings.json",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-02T23:28:23.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T23:28:23.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Program.cs",
               "RelativeDocumentMoniker": "ViajecitosRestServer\\Program.cs",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Program.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Program.cs",
               "RelativeToolTip": "ViajecitosRestServer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T23:28:17.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApiController.cs",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Controllers\\ApiController.cs",
-              "RelativeDocumentMoniker": "ViajecitosRestServer\\Controllers\\ApiController.cs",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Controllers\\ApiController.cs",
-              "RelativeToolTip": "ViajecitosRestServer\\Controllers\\ApiController.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAuwIcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T23:28:09.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViajecitosService.cs",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Services\\ViajecitosService.cs",
-              "RelativeDocumentMoniker": "ViajecitosRestServer\\Services\\ViajecitosService.cs",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Services\\ViajecitosService.cs",
-              "RelativeToolTip": "ViajecitosRestServer\\Services\\ViajecitosService.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAuwIYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T23:27:50.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\appsettings.json",
-              "RelativeDocumentMoniker": "ViajecitosRestServer\\appsettings.json",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\appsettings.json",
-              "RelativeToolTip": "ViajecitosRestServer\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-02T23:32:57.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Vuelo.cs",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Vuelo.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Vuelo.cs",
               "RelativeDocumentMoniker": "ViajecitosRestServer\\Models\\Vuelo.cs",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Vuelo.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Vuelo.cs",
               "RelativeToolTip": "ViajecitosRestServer\\Models\\Vuelo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -162,16 +133,144 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "ViajecitosRestServer.http",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.http",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\ViajecitosRestServer.http",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.http",
+              "RelativeToolTip": "ViajecitosRestServer\\ViajecitosRestServer.http",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-02T23:28:33.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Usuario.cs",
+              "RelativeToolTip": "ViajecitosRestServer\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T00:01:43.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViajecitosService.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Services\\ViajecitosService.cs",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\Services\\ViajecitosService.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Services\\ViajecitosService.cs",
+              "RelativeToolTip": "ViajecitosRestServer\\Services\\ViajecitosService.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAcwJoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T23:27:50.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiController.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Controllers\\ApiController.cs",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\Controllers\\ApiController.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Controllers\\ApiController.cs",
+              "RelativeToolTip": "ViajecitosRestServer\\Controllers\\ApiController.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAcwIAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T23:28:09.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "VuelosDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Data\\VuelosDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Data\\VuelosDbContext.cs",
               "RelativeDocumentMoniker": "ViajecitosRestServer\\Data\\VuelosDbContext.cs",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Data\\VuelosDbContext.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Data\\VuelosDbContext.cs",
               "RelativeToolTip": "ViajecitosRestServer\\Data\\VuelosDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAB0BAAAAAAAAAAAuwD0BAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T23:27:06.029Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DetalleFactura.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\DetalleFactura.cs",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\Models\\DetalleFactura.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\DetalleFactura.cs",
+              "RelativeToolTip": "ViajecitosRestServer\\Models\\DetalleFactura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T00:01:25.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Empleado.cs",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\Models\\Empleado.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Empleado.cs",
+              "RelativeToolTip": "ViajecitosRestServer\\Models\\Empleado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T00:01:31.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Factura.cs",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\Models\\Factura.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\Factura.cs",
+              "RelativeToolTip": "ViajecitosRestServer\\Models\\Factura.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T00:01:36.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MetodoPago.cs",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\MetodoPago.cs",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\Models\\MetodoPago.cs",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\Models\\MetodoPago.cs",
+              "RelativeToolTip": "ViajecitosRestServer\\Models\\MetodoPago.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T00:01:39.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\appsettings.Development.json",
+              "RelativeToolTip": "ViajecitosRestServer\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-02T23:28:31.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\appsettings.json",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\appsettings.json",
+              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\appsettings.json",
+              "RelativeToolTip": "ViajecitosRestServer\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-02T23:32:57.521Z"
             }
           ]
         }

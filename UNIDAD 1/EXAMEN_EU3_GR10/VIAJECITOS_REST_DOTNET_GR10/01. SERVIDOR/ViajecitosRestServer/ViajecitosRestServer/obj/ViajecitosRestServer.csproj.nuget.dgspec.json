@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.csproj": {}
+    "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.csproj": {
+    "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.csproj",
+        "projectUniqueName": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.csproj",
         "projectName": "ViajecitosRestServer",
-        "projectPath": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.csproj",
+        "projectPath": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.csproj",
         "packagesPath": "C:\\Users\\MATIAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\obj\\",
+        "outputPath": "C:\\Users\\MATIAS\\Desktop\\01. Server rest\\ViajecitosRestServer\\ViajecitosRestServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
