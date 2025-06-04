@@ -27,6 +27,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Color.Companion.Gray
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -35,6 +36,7 @@ import androidx.compose.ui.unit.sp
 import ec.edu.monster.conuni.ui.theme.CONUNI_CLIMOV_GR10Theme
 import ec.edu.monster.modelo.DetalleFactura
 import ec.edu.monster.modelo.Vuelo
+import ec.edu.monster.controlador.AppControlador
 import ec.edu.monster.servicio.ViajecitosService
 import java.math.BigDecimal
 import java.text.SimpleDateFormat
@@ -86,6 +88,8 @@ fun SearchFlightsScreen(modifier: Modifier = Modifier) {
     val sharedPref = context.getSharedPreferences("viajecitos", Context.MODE_PRIVATE)
     val idCliente = sharedPref.getInt("idCliente", 0)
     val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US).apply { timeZone = TimeZone.getTimeZone("GMT-05:00") }
+    val isoDateFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.US).apply { timeZone = TimeZone.getTimeZone("GMT-05:00") }
+    val timeFormat = SimpleDateFormat("HH:mm", Locale.US)
 
     Column(
         modifier = modifier
@@ -121,7 +125,17 @@ fun SearchFlightsScreen(modifier: Modifier = Modifier) {
                                 errorMessage = null
                                 expandedVueloId = null
                                 object : AsyncTask<Void, Void, Pair<List<Vuelo>, String?>>() {
-                                    override fun doInBackground(vararg params: Void?) = try { Pair(ViajecitosService().obtenerVuelosOrdenados(ciudadOrigen, ciudadDestino, parsedDate), null) } catch (e: Exception) { Pair(emptyList(), e.message) }
+                                    override fun doInBackground(vararg params: Void?) = try {
+                                        val controlador = AppControlador()
+                                        val trimmedOrigen = ciudadOrigen.trim()
+                                        val trimmedDestino = ciudadDestino.trim()
+                                        val rawData = controlador.buscarVuelos(trimmedOrigen, trimmedDestino, parsedDate)
+                                        println("Parsed Vuelos: $rawData") // Debug log
+                                        Pair(rawData, null)
+                                    } catch (e: Exception) {
+                                        println("Error in AsyncTask: ${e.message}") // Error log
+                                        Pair(emptyList(), e.message)
+                                    }
                                     override fun onPostExecute(result: Pair<List<Vuelo>, String?>) {
                                         isLoading = false
                                         vuelos = result.first
@@ -146,25 +160,51 @@ fun SearchFlightsScreen(modifier: Modifier = Modifier) {
                     Spacer(modifier = Modifier.height(16.dp))
                     Text("Vuelos Disponibles", fontSize = 18.sp, fontWeight = FontWeight.Bold, color = Color(0xFF0288D1), modifier = Modifier.align(Alignment.Start))
                     Spacer(modifier = Modifier.height(8.dp))
-                    Card(modifier = Modifier.fillMaxWidth().border(1.dp, Color(0xFF0288D1), RoundedCornerShape(8.dp)), shape = RoundedCornerShape(8.dp), colors = CardDefaults.cardColors(containerColor = Color(0xFF0288D1), contentColor = Color.White)) {
-                        Row(modifier = Modifier.fillMaxWidth().padding(8.dp), horizontalArrangement = Arrangement.SpaceBetween) {
-                            Text("Origen", fontSize = 14.sp, fontWeight = FontWeight.Bold, modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                            Text("Destino", fontSize = 14.sp, fontWeight = FontWeight.Bold, modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                            Text("Valor", fontSize = 14.sp, fontWeight = FontWeight.Bold, modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                            Text("Hora Salida", fontSize = 14.sp, fontWeight = FontWeight.Bold, modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                        }
-                    }
                     LazyColumn(modifier = Modifier.fillMaxWidth().heightIn(max = 300.dp)) {
                         items(vuelos) { vuelo ->
                             val isExpanded = expandedVueloId == vuelo.idVuelo
-                            Card(modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp).clickable { expandedVueloId = if (isExpanded) null else vuelo.idVuelo }, shape = RoundedCornerShape(8.dp), colors = CardDefaults.cardColors(containerColor = Color(0xFFF5F6F5), contentColor = Color(0xFF212121))) {
-                                Column(modifier = Modifier.fillMaxWidth()) {
-                                    Row(modifier = Modifier.fillMaxWidth().padding(8.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
-                                        Text(vuelo.ciudadOrigen, fontSize = 14.sp, modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                                        Text(vuelo.ciudadDestino, fontSize = 14.sp, modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                                        Text("$${vuelo.valor}", fontSize = 14.sp, modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                                        Text(vuelo.horaSalida.substring(11, 16), fontSize = 14.sp, modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                                        Icon(if (isExpanded) Icons.Default.ArrowDropUp else Icons.Default.ArrowDropDown, contentDescription = if (isExpanded) "Contraer" else "Expandir", tint = Color(0xFF0288D1))
+                            val horaSalidaTime = try {
+                                val parsedDate = isoDateFormat.parse(vuelo.horaSalida)
+                                timeFormat.format(parsedDate ?: Date())
+                            } catch (e: Exception) {
+                                "N/A"
+                            }
+                            Card(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(vertical = 4.dp)
+                                    .clickable { expandedVueloId = if (isExpanded) null else vuelo.idVuelo },
+                                shape = RoundedCornerShape(8.dp),
+                                colors = CardDefaults.cardColors(containerColor = Color.White, contentColor = Color(0xFF212121))
+                            ) {
+                                Column(modifier = Modifier.fillMaxWidth().padding(12.dp)) {
+                                    Row(
+                                        modifier = Modifier.fillMaxWidth(),
+                                        horizontalArrangement = Arrangement.SpaceBetween,
+                                        verticalAlignment = Alignment.CenterVertically
+                                    ) {
+                                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.weight(1f)) {
+                                            Text("Origen", fontSize = 12.sp, color = Color.Gray)
+                                            Text(vuelo.ciudadOrigen, fontSize = 16.sp, fontWeight = FontWeight.Bold)
+                                        }
+                                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.weight(1f)) {
+                                            Text("Destino", fontSize = 12.sp, color = Color.Gray)
+                                            Text(vuelo.ciudadDestino, fontSize = 16.sp, fontWeight = FontWeight.Bold)
+                                        }
+                                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.weight(1f)) {
+                                            Text("Valor", fontSize = 12.sp, color = Color.Gray)
+                                            Text("$${vuelo.valor}", fontSize = 16.sp, fontWeight = FontWeight.Bold)
+                                        }
+                                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.weight(1f)) {
+                                            Text("Hora Salida", fontSize = 12.sp, color = Color.Gray)
+                                            Text(horaSalidaTime, fontSize = 16.sp, fontWeight = FontWeight.Bold)
+                                        }
+                                        Icon(
+                                            if (isExpanded) Icons.Default.ArrowDropUp else Icons.Default.ArrowDropDown,
+                                            contentDescription = if (isExpanded) "Contraer" else "Expandir",
+                                            tint = Color(0xFF0288D1),
+                                            modifier = Modifier.size(24.dp)
+                                        )
                                     }
                                     if (isExpanded) PurchaseSection(vuelo, idCliente, { context.startActivity(Intent(context, InvoicesActivity::class.java).apply { putExtra("idCliente", idCliente) }); (context as? ComponentActivity)?.finish() })
                                 }
@@ -180,7 +220,6 @@ fun SearchFlightsScreen(modifier: Modifier = Modifier) {
         }
     }
 }
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PurchaseSection(vuelo: Vuelo, idClient: Int, onPurchaseSuccess: () -> Unit) {

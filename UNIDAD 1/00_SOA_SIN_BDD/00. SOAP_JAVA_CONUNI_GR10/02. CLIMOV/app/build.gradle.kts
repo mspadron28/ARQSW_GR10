@@ -61,6 +61,9 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation("com.google.code.ksoap2-android:ksoap2-android:3.6.4")
     implementation("org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.22")
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
     // Material 3 para Jetpack Compose (incluye BorderStroke)
     implementation("androidx.compose.material3:material3:1.3.0")
 

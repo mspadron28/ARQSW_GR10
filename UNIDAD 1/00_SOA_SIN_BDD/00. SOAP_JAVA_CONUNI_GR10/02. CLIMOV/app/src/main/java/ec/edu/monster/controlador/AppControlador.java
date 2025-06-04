@@ -12,6 +12,7 @@ import java.util.List;
 
 public class AppControlador {
     private final ViajecitosService service;
+
     private Usuario usuarioAutenticado;
 
     public AppControlador() {
@@ -72,5 +73,12 @@ public class AppControlador {
             throw new Exception("No se encontraron clientes con facturas.");
         }
         return clientesFacturas;
+    }
+
+    public List<Vuelo> buscarVuelos(String ciudadOrigen, String ciudadDestino, java.util.Date fecha) throws Exception {
+        if (ciudadOrigen == null || ciudadOrigen.trim().isEmpty() || ciudadDestino == null || ciudadDestino.trim().isEmpty()) {
+            throw new Exception("Ciudad origen y destino son requeridos.");
+        }
+        return service.obtenerVuelosOrdenados(ciudadOrigen, ciudadDestino, fecha);
     }
 }

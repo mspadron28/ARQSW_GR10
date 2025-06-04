@@ -72,8 +72,12 @@ fun InvoicesScreen(modifier: Modifier = Modifier, activity: ComponentActivity) {
         object : AsyncTask<Void, Void, Pair<Pair<List<Cliente>, List<ClienteFacturas>>?, String?>>() {
             override fun doInBackground(vararg params: Void?) = try {
                 val service = ViajecitosService()
-                Pair(Pair(service.obtenerTodosClientes(), service.obtenerTodasFacturasPorCliente()), null)
-            } catch (e: Exception) { Pair(null, e.message) }
+                val rawClientes = service.obtenerTodosClientes() // Already a List<Cliente>
+                val rawFacturas = service.obtenerTodasFacturasPorCliente() // Already a List<ClienteFacturas>
+                Pair(Pair(rawClientes, rawFacturas), null)
+            } catch (e: Exception) {
+                Pair(null, e.message)
+            }
             override fun onPostExecute(result: Pair<Pair<List<Cliente>, List<ClienteFacturas>>?, String?>) {
                 isLoading = false
                 if (result?.first != null) {

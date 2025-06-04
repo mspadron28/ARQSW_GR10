@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\viajecitosrestserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\viajecitosrestserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\services\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\services\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\01. servidor\\viajecitosrestserver\\viajecitosrestserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{08D2B6AA-99C9-4554-B07F-848BD6363CC8}|ViajecitosRestServer\\ViajecitosRestServer.csproj|solutionrelative:viajecitosrestserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,19 +43,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ViajecitosRestServer.http",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.http",
+              "RelativeDocumentMoniker": "ViajecitosRestServer\\ViajecitosRestServer.http",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\ViajecitosRestServer.http",
+              "RelativeToolTip": "ViajecitosRestServer\\ViajecitosRestServer.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-04T13:16:38.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ViajecitosService.cs",
               "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Services\\ViajecitosService.cs",
               "RelativeDocumentMoniker": "ViajecitosRestServer\\Services\\ViajecitosService.cs",
               "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Services\\ViajecitosService.cs",
               "RelativeToolTip": "ViajecitosRestServer\\Services\\ViajecitosService.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwJoAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T03:24:49.798Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Program.cs",
               "RelativeDocumentMoniker": "ViajecitosRestServer\\Program.cs",
@@ -59,12 +76,11 @@
               "RelativeToolTip": "ViajecitosRestServer\\Program.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAEMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T01:52:42.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T01:52:42.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\appsettings.json",
               "RelativeDocumentMoniker": "ViajecitosRestServer\\appsettings.json",
@@ -72,25 +88,24 @@
               "RelativeToolTip": "ViajecitosRestServer\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-04T01:48:17.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T01:48:17.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ViajecitosRestServer\\Properties\\launchSettings.json",
               "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\Properties\\launchSettings.json",
               "RelativeToolTip": "ViajecitosRestServer\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-04T01:45:06.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\01. SERVIDOR\\ViajecitosRestServer\\ViajecitosRestServer\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ViajecitosRestServer\\appsettings.Development.json",
@@ -98,8 +113,7 @@
               "RelativeToolTip": "ViajecitosRestServer\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-04T01:38:06.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T01:38:06.257Z"
             }
           ]
         }

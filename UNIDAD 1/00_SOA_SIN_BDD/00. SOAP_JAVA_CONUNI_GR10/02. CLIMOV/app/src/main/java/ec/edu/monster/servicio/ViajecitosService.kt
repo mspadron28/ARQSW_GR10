@@ -22,7 +22,7 @@ class ViajecitosService {
         .writeTimeout(10, TimeUnit.SECONDS)
         .build()
 
-    private val baseUrl = "http://192.168.100.11:5158/api"
+    private val baseUrl = "http://10.40.3.24:5158/api"
 
     @Throws(Exception::class)
     fun iniciarSesion(nombreUsuario: String, claveUsuario: String): Usuario? {
