@@ -1,4 +1,7 @@
 package ec.edu.monster.modelo
 
-class Empleado {
-}
+data class Empleado(
+    val idEmpleado: Int,
+    val nombre: String,
+    val email: String
+)

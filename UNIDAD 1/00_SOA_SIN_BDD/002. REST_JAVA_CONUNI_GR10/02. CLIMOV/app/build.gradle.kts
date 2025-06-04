@@ -55,6 +55,14 @@ dependencies {
     // OKHttp para logging (opcional, para depuración)
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+    // Material 3 para Jetpack Compose (incluye BorderStroke)
+    implementation("androidx.compose.material3:material3:1.3.0")
+
+    // Material Icons Core (íconos básicos)
+    implementation("androidx.compose.material:material-icons-core:1.7.4")
+
+    // Material Icons Extended (incluye Schedule y AirplaneTicket)
+    implementation("androidx.compose.material:material-icons-extended:1.7.4")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

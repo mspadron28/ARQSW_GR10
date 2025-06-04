@@ -1,4 +1,7 @@
 package ec.edu.monster.modelo
 
-class MetodoPago {
-}
+data class MetodoPago(
+    val idMetodoPago: Int,
+    val nombreMetodo: String,
+    val descripcion: String
+)

@@ -12,7 +12,7 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Servicio
     public class ViajecitosService
     {
         private readonly HttpClient _httpClient;
-        private readonly string _baseUrl = "http://localhost:5158/api/";
+        private readonly string _baseUrl = "http://192.168.1.10:5158/api/";
 
         public ViajecitosService()
         {

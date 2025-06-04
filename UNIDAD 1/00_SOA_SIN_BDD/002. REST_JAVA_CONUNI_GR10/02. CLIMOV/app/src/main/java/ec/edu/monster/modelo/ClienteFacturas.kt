@@ -1,4 +1,9 @@
 package ec.edu.monster.modelo
 
-class ClienteFacturas {
-}
+data class ClienteFacturas(
+    val clienteId: Int,
+    val nombre: String,
+    val email: String,
+    val documentoIdentidad: String,
+    val facturas: List<Factura>
+)

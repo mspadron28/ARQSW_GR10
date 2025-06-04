@@ -1,12 +1,12 @@
-package ec.edu.monster.conuni.rest
+package ec.edu.monster.conuni
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -14,45 +14,174 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import ec.edu.monster.controlador.ViajecitosController
+import ec.edu.monster.servicio.ViajecitosService
 import ec.edu.monster.conuni.rest.ui.theme.CONUNI_CLIMOV_GR10_RESTTheme
-import ec.edu.monster.controlador.AppControlador
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-import android.widget.Toast
-import androidx.compose.ui.tooling.preview.Preview
 
 class MainActivity : ComponentActivity() {
+
+    private lateinit var controller: ViajecitosController
+
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Inicializamos el controlador con el servicio
+        val service = ViajecitosService()
+        controller = ViajecitosController(service)
+
         enableEdgeToEdge()
         setContent {
-            CONUNI_CLIMOV_GR10_RESTTheme { // Usamos el tema original del proyecto
+            CONUNI_CLIMOV_GR10_RESTTheme {
                 Scaffold(
                     topBar = {
                         TopAppBar(
-                            title = { Text("Inicio de Sesión", color = Color.White, fontWeight = FontWeight.Bold) },
+                            title = {
+                                Text(
+                                    "Viajecitos SA",
+                                    color = Color.White,
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 20.sp
+                                )
+                            },
                             colors = TopAppBarDefaults.topAppBarColors(
-                                containerColor = Color(0xFF46535D)
+                                containerColor = Color(0xFF46535D) // color de fondo del encabezado
                             )
                         )
                     },
                     modifier = Modifier.fillMaxSize()
-                ) { innerPadding ->
-                    LoginScreen(
-                        modifier = Modifier.padding(innerPadding),
-                        onLoginSuccess = {
-                            startActivity(Intent(this@MainActivity, MenuActivity::class.java)) // Navegamos a MenuActivity
-                            finish()
-                        }
+                ) { innerPadding -> // Aquí es donde se pasa innerPadding
+                    // Pantalla principal con opciones
+                    MainScreen(controller = controller, onNavigate = { route ->
+                        navigateTo(route) // Navegar al destino correspondiente
+                    }, innerPadding = innerPadding) // Pasamos innerPadding al componente MainScreen
+                }
+            }
+        }
+    }
+
+    // Función para navegar entre pantallas
+    private fun navigateTo(route: String) {
+        when(route) {
+            "login" -> startActivity(Intent(this, LoginActivity::class.java))
+            "searchFlights" -> startActivity(Intent(this, SearchFlightsActivity::class.java))
+            //"selectClient" -> startActivity(Intent(this, SelectClientActivity::class.java))
+            //"allInvoices" -> startActivity(Intent(this, AllInvoicesActivity::class.java))
+            else -> Toast.makeText(this, "Pantalla no disponible", Toast.LENGTH_SHORT).show()
+        }
+    }
+}
+
+@Composable
+@OptIn(ExperimentalMaterial3Api::class)
+fun MainScreen(controller: ViajecitosController, onNavigate: (String) -> Unit, innerPadding: PaddingValues) {
+    val context = LocalContext.current
+    var errorMessage by remember { mutableStateOf<String?>(null) }
+
+    // Verificar si el usuario está autenticado
+    val isAuthenticated = controller.usuarioAutenticado != null
+
+    // Estructura de la pantalla principal
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(
+                        text = "Viajecitos SA",
+                        color = Color.White,
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 20.sp
+                    )
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = Color(0xFFA3BFFA)
+                ),
+                modifier = Modifier.height(150.dp).shadow(4.dp)
+            )
+        },
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(0xFFF9FAFB)) // Color de fondo
+    ) { innerPadding ->
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(innerPadding)
+                .background(Color.White)
+                .shadow(2.dp, shape = RoundedCornerShape(8.dp))
+                .padding(horizontal = 16.dp, vertical = 16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "Bienvenido a Viajecitos SA",
+                fontSize = 32.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF1E3A8A), // Color de texto
+                modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
+            )
+
+            if (isAuthenticated) {
+                // Si el usuario está autenticado, mostramos el mensaje y las opciones
+                Text(
+                    text = "Hola, ${controller.usuarioAutenticado?.nombreUsuario}!",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color(0xFF1E3A8A),
+                    modifier = Modifier.padding(bottom = 16.dp)
+                )
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 8.dp),
+                    horizontalArrangement = Arrangement.spacedBy(16.dp)
+                ) {
+                    // Botón para buscar vuelos
+                    NavButton(
+                        text = "Buscar Vuelos",
+                        onClick = { onNavigate("searchFlights") },
+                        modifier = Modifier.weight(1f)
+                    )
+                }
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 8.dp, vertical = 16.dp),
+                    horizontalArrangement = Arrangement.spacedBy(16.dp)
+                ) {
+                    // Botón para cerrar sesión
+                    NavButton(
+                        text = "Cerrar Sesión",
+                        onClick = {
+                            // Limpiar el usuario autenticado y refrescar la pantalla
+                            controller.usuarioAutenticado = null
+                            onNavigate("login")
+                        },
+                        backColor = Color(0xFFDC2626),
+                        textColor = Color(0xFFDC2626),
+                        primary = false,
+                        modifier = Modifier.weight(1f)
+                    )
+                }
+            } else {
+                // Si no hay usuario autenticado, mostrar botón para iniciar sesión
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 8.dp),
+                    horizontalArrangement = Arrangement.spacedBy(16.dp)
+                ) {
+                    NavButton(
+                        text = "Iniciar Sesión",
+                        onClick = { onNavigate("login") },
+                        primary = true,
+                        modifier = Modifier.weight(1f)
                     )
                 }
             }
@@ -60,95 +189,35 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun LoginScreen(modifier: Modifier = Modifier, onLoginSuccess: () -> Unit) {
-    var usuario by remember { mutableStateOf("") }
-    var clave by remember { mutableStateOf("") }
-    val context = LocalContext.current
-    val scope = CoroutineScope(Dispatchers.Main)
+fun NavButton(
+    text: String,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    backColor: Color = Color.White,
+    textColor: Color = Color(0xFF3B82F6),
+    primary: Boolean = false
+) {
+    val buttonColor = if (primary) Color(0xFF3B82F6) else backColor
+    val contentColor = if (primary) Color.White else textColor
+    val borderColor = if (primary) Color(0xFF3B82F6) else textColor
 
-    Column(
+    Button(
+        onClick = onClick,
         modifier = modifier
-            .fillMaxSize()
-            .padding(16.dp)
-            .background(Color(0xFFB1C5C7), shape = RoundedCornerShape(8.dp))
-            .border(1.dp, Color.Black, shape = RoundedCornerShape(8.dp))
-            .padding(16.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+            .height(56.dp)
+            .border(1.dp, borderColor, RoundedCornerShape(12.dp))
+            .shadow(2.dp, RoundedCornerShape(12.dp)),
+        shape = RoundedCornerShape(12.dp),
+        colors = ButtonDefaults.buttonColors(
+            containerColor = buttonColor,
+            contentColor = contentColor
+        )
     ) {
         Text(
-            text = "Bienvenido a EurekaBank",
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(bottom = 16.dp)
+            text = text,
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Medium
         )
-        Image(
-            painter = painterResource(id = R.drawable.sulley),
-            contentDescription = "Sulley Avatar",
-            modifier = Modifier
-                .padding(bottom = 16.dp)
-                .size(150.dp)
-        )
-        Text(
-            text = "Por favor, ingresa tus credenciales",
-            fontSize = 14.sp,
-            color = Color(0xFF666666),
-            modifier = Modifier.padding(bottom = 16.dp)
-        )
-
-        TextField(
-            value = usuario,
-            onValueChange = { usuario = it },
-            label = { Text("Usuario") },
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 8.dp)
-        )
-
-        TextField(
-            value = clave,
-            onValueChange = { clave = it },
-            label = { Text("Contraseña") },
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 8.dp)
-        )
-
-        Button(
-            onClick = {
-                scope.launch {
-                    try {
-                        val controlador = AppControlador()
-                        val user = withContext(Dispatchers.IO) {
-                            controlador.login(usuario, clave)
-                        }
-                        if (user != null && user.estado == "ACTIVO") {
-                            onLoginSuccess()
-                        } else {
-                            Toast.makeText(context, "Usuario o contraseña incorrectos o estado no activo", Toast.LENGTH_SHORT).show()
-                        }
-                    } catch (e: Exception) {
-                        Toast.makeText(context, "Error: ${e.message}", Toast.LENGTH_LONG).show()
-                    }
-                }
-            },
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(top = 16.dp),
-            shape = RoundedCornerShape(4.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF202224))
-        ) {
-            Text("Iniciar Sesión", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
-        }
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun LoginScreenPreview() {
-    CONUNI_CLIMOV_GR10_RESTTheme { // Usamos el tema original para el preview
-        LoginScreen {}
     }
 }

@@ -16,37 +16,17 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".SaldoActivity"
+            android:name="ec.edu.monster.conuni.SearchFlightsActivity"
             android:exported="false"
-            android:label="@string/title_activity_saldo"
+            android:label="@string/title_activity_search_flights"
             android:theme="@style/Theme.CONUNI_CLIMOV_GR10_REST" />
         <activity
-            android:name=".TransferenciaActivity"
+            android:name="ec.edu.monster.conuni.LoginActivity"
             android:exported="false"
-            android:label="@string/title_activity_transferencia"
+            android:label="@string/title_activity_login"
             android:theme="@style/Theme.CONUNI_CLIMOV_GR10_REST" />
         <activity
-            android:name=".RetiroActivity"
-            android:exported="false"
-            android:label="@string/title_activity_retiro"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10_REST" />
-        <activity
-            android:name=".DepositoActivity"
-            android:exported="false"
-            android:label="@string/title_activity_deposito"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10_REST" />
-        <activity
-            android:name=".ConsultaActivity"
-            android:exported="false"
-            android:label="@string/title_activity_consulta"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10_REST" />
-        <activity
-            android:name=".MenuActivity"
-            android:exported="false"
-            android:label="@string/title_activity_menu"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10_REST" />
-        <activity
-            android:name=".MainActivity"
+            android:name="ec.edu.monster.conuni.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.CONUNI_CLIMOV_GR10_REST">

@@ -7,4 +7,6 @@
     <string name="title_activity_retiro">RetiroActivity</string>
     <string name="title_activity_transferencia">TransferenciaActivity</string>
     <string name="title_activity_saldo">SaldoActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_search_flights">SearchFlightsActivity</string>
 </resources>
