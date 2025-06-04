@@ -11,4 +11,9 @@
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_result">ResultActivity</string>
     <string name="title_activity_purchases">PurchasesActivity</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_activity_purchase_management">PurchaseManagementActivity</string>
+    <string name="title_activity_invoices">InvoicesActivity</string>
+    <string name="title_activity_invoice_details">InvoiceDetailsActivity</string>
+    <string name="title_activity_all_invoices">ALLInvoicesActivity</string>
 </resources>

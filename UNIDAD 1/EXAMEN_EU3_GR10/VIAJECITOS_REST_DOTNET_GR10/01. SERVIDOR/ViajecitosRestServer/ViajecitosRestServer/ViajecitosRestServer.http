@@ -1,4 +1,4 @@
-@ViajecitosRestServer_HostAddress = https://192.168.1.10:7013
+@ViajecitosRestServer_HostAddress = http://192.168.100.11:5158
 
 # Buscar vuelos ordenados por precio (de mayor a menor)
 GET {{ViajecitosRestServer_HostAddress}}/api/vuelos

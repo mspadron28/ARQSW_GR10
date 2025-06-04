@@ -1,351 +1,476 @@
 package ec.edu.monster.servicio
 
 import android.os.Build
-import android.util.Log
+import android.util.Patterns
 import androidx.annotation.RequiresApi
-import ec.edu.monster.modelo.Cliente
-import ec.edu.monster.modelo.Compra
-import ec.edu.monster.modelo.Usuario
-import ec.edu.monster.modelo.Vuelo
-import ec.edu.monster.util.SoapConstants
-import org.ksoap2.SoapEnvelope
-import org.ksoap2.SoapFault
-import org.ksoap2.serialization.SoapObject
-import org.ksoap2.serialization.SoapPrimitive
-import org.ksoap2.serialization.SoapSerializationEnvelope
-import org.ksoap2.transport.HttpTransportSE
+import ec.edu.monster.modelo.*
+import okhttp3.*
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import org.json.JSONArray
+import org.json.JSONObject
+import java.net.URLEncoder
 import java.text.SimpleDateFormat
-import java.util.Date
-import java.util.Locale
+import java.util.*
+import java.util.concurrent.TimeUnit
+import java.math.BigDecimal
 
 class ViajecitosService {
 
+    private val client: OkHttpClient = OkHttpClient.Builder()
+        .connectTimeout(10, TimeUnit.SECONDS)
+        .readTimeout(10, TimeUnit.SECONDS)
+        .writeTimeout(10, TimeUnit.SECONDS)
+        .build()
+
+    private val baseUrl = "http://192.168.100.11:5158/api"
+
     @Throws(Exception::class)
-    fun iniciarSesion(nombreUsuario: String?, claveUsuario: String?): Usuario? {
-        val request = SoapObject(SoapConstants.NAMESPACE, SoapConstants.LOGIN_METHOD)
-        request.addProperty("nombreUsuario", nombreUsuario)
-        request.addProperty("claveUsuario", claveUsuario)
-
-        val envelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
-        envelope.setOutputSoapObject(request)
-        envelope.dotNet = false
-
-        val transport = HttpTransportSE(SoapConstants.URL, 10000)
-        try {
-            transport.debug = true
-            Log.d("ViajecitosService", "Iniciando llamada SOAP a: ${SoapConstants.URL}")
-            transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.LOGIN_METHOD, envelope)
-            Log.d("ViajecitosService", "Request XML: ${transport.requestDump}")
-            Log.d("ViajecitosService", "Response XML: ${transport.responseDump}")
-
-            val response = envelope.response as? SoapObject
-            if (response != null) {
-                return Usuario(
-                    idCliente = response.getPropertySafelyAsString("idCliente", "0").toInt(),
-                    nombreUsuario = response.getPropertySafelyAsString("nombreUsuario", ""),
-                    claveUsuario = response.getPropertySafelyAsString("claveUsuario", "")
-                )
-            }
-            Log.e("ViajecitosService", "Respuesta nula o inválida")
-            return null
-        } catch (e: Exception) {
-            Log.e("ViajecitosService", "Error en iniciarSesion: ${e.message}", e)
-            throw Exception("Error en inicio de sesión: ${e.message}")
+    fun iniciarSesion(nombreUsuario: String, claveUsuario: String): Usuario? {
+        if (nombreUsuario.isEmpty() || claveUsuario.isEmpty()) {
+            throw IllegalArgumentException("Nombre de usuario y contraseña son requeridos")
         }
+
+        val url = "$baseUrl/login?nombreUsuario=${URLEncoder.encode(nombreUsuario, "UTF-8")}&claveUsuario=${URLEncoder.encode(claveUsuario, "UTF-8")}"
+        val request = Request.Builder()
+            .url(url)
+            .post(RequestBody.create(null, ""))
+            .build()
+
+        val response = client.newCall(request).execute()
+        if (!response.isSuccessful) {
+            val errorBody = response.body?.string() ?: "Error desconocido"
+            println("Error al iniciar sesión: ${response.code} - $errorBody - ${response.message}")
+            throw Exception("Error al iniciar sesión: ${response.code} - $errorBody")
+        }
+
+        val responseBody = response.body?.string() ?: throw Exception("Respuesta vacía del servidor")
+        val json = JSONObject(responseBody)
+        return Usuario(
+            idUsuario = json.getInt("idUsuario"),
+            nombreUsuario = json.getString("nombreUsuario"),
+            claveUsuario = json.getString("claveUsuario"),
+            estadoUsuario = json.getString("estadoUsuario"),
+            idCliente = json.optInt("idCliente", 0)
+        )
+    }
+
+    @Throws(Exception::class)
+    fun obtenerVuelosOrdenados(ciudadOrigen: String, ciudadDestino: String, fecha: Date): List<Vuelo> {
+        if (ciudadOrigen.isEmpty() || ciudadDestino.isEmpty()) {
+            throw IllegalArgumentException("Ciudad origen y destino no pueden estar vacíos")
+        }
+        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US) // Solo enviamos la fecha sin hora ni zona horaria
+        val fechaStr = dateFormat.format(fecha)
+        val url = "$baseUrl/vuelos?ciudadOrigen=${URLEncoder.encode(ciudadOrigen, "UTF-8")}&ciudadDestino=${URLEncoder.encode(ciudadDestino, "UTF-8")}&fecha=$fechaStr"
+        val request = Request.Builder()
+            .url(url)
+            .get()
+            .build()
+
+        val response = client.newCall(request).execute()
+        if (!response.isSuccessful) {
+            val errorBody = response.body?.string() ?: "Error desconocido"
+            throw Exception("Error al obtener vuelos: ${response.code} - $errorBody")
+        }
+
+        val responseBody = response.body?.string() ?: throw Exception("Respuesta vacía del servidor")
+        val jsonArray = JSONArray(responseBody)
+        val vuelos = mutableListOf<Vuelo>()
+        for (i in 0 until jsonArray.length()) {
+            val json = jsonArray.getJSONObject(i)
+            vuelos.add(
+                Vuelo(
+                    idVuelo = json.getInt("idVuelo"),
+                    ciudadOrigen = json.getString("ciudadOrigen"),
+                    ciudadDestino = json.getString("ciudadDestino"),
+                    valor = json.getDouble("valor").toBigDecimal(),
+                    horaSalida = json.getString("horaSalida")
+                )
+            )
+        }
+        return vuelos
+    }
+
+    @Throws(Exception::class)
+    fun registrarCliente(nombre: String, email: String, documentoIdentidad: String): Cliente? {
+        if (nombre.isEmpty() || email.isEmpty() || documentoIdentidad.isEmpty()) {
+            throw IllegalArgumentException("Nombre, email y documento de identidad son requeridos")
+        }
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            throw IllegalArgumentException("Formato de email inválido")
+        }
+
+        val url = "$baseUrl/cliente?nombre=${URLEncoder.encode(nombre, "UTF-8")}&email=${URLEncoder.encode(email, "UTF-8")}&documentoIdentidad=${URLEncoder.encode(documentoIdentidad, "UTF-8")}"
+        val request = Request.Builder()
+            .url(url)
+            .post(RequestBody.create(null, ""))
+            .build()
+
+        val response = client.newCall(request).execute()
+        if (!response.isSuccessful) {
+            val errorBody = response.body?.string() ?: "Error desconocido"
+            throw Exception("Error al registrar cliente: ${response.code} - $errorBody")
+        }
+
+        val responseBody = response.body?.string() ?: throw Exception("Respuesta vacía del servidor")
+        val json = JSONObject(responseBody)
+        return Cliente(
+            idCliente = json.getInt("idCliente"),
+            nombre = json.getString("nombre"),
+            email = json.getString("email"),
+            documentoIdentidad = json.getString("documentoIdentidad")
+        )
+    }
+
+    @Throws(Exception::class)
+    fun registrarClienteYUsuario(nombre: String, email: String, documentoIdentidad: String, nombreUsuario: String, claveUsuario: String): Usuario? {
+        val cliente = registrarCliente(nombre, email, documentoIdentidad) ?: throw Exception("Error al registrar cliente")
+        val url = "$baseUrl/usuario?idCliente=${cliente.idCliente}&nombreUsuario=${URLEncoder.encode(nombreUsuario, "UTF-8")}&claveUsuario=${URLEncoder.encode(claveUsuario, "UTF-8")}"
+        val request = Request.Builder()
+            .url(url)
+            .post(RequestBody.create(null, ""))
+            .build()
+
+        val response = client.newCall(request).execute()
+        if (!response.isSuccessful) {
+            val errorBody = response.body?.string() ?: "Error desconocido"
+            throw Exception("Error al registrar usuario: ${response.code} - $errorBody")
+        }
+
+        val responseBody = response.body?.string() ?: throw Exception("Respuesta vacía del servidor")
+        val json = JSONObject(responseBody)
+        return Usuario(
+            idUsuario = json.getInt("idUsuario"),
+            nombreUsuario = json.getString("nombreUsuario"),
+            claveUsuario = json.getString("claveUsuario"),
+            estadoUsuario = json.getString("estadoUsuario"),
+            idCliente = json.optInt("idCliente", 0)
+        )
     }
 
     @RequiresApi(Build.VERSION_CODES.N)
     @Throws(Exception::class)
-    fun obtenerVueloMasCaro(ciudadOrigen: String?, ciudadDestino: String?, fecha: Date?): Vuelo? {
-        // Validate inputs
-        if (ciudadOrigen.isNullOrEmpty() || ciudadDestino.isNullOrEmpty() || fecha == null) {
-            throw IllegalArgumentException("Ciudad origen, destino y fecha no pueden estar vacíos")
+    fun crearFactura(numeroFactura: String, idEmpleado: Int, idCliente: Int, idMetodoPago: Int, descuento: BigDecimal, detalles: List<ec.edu.monster.modelo.DetalleFactura>): Factura? {
+        if (numeroFactura.isEmpty() || idEmpleado <= 0 || idMetodoPago <= 0) {
+            throw IllegalArgumentException("Parámetros de factura inválidos")
+        }
+        if (detalles.isEmpty()) {
+            throw IllegalArgumentException("Debe incluir al menos un detalle de factura")
         }
 
-        val request = SoapObject(SoapConstants.NAMESPACE, SoapConstants.OBTENER_VUELO_MAS_CARO_METHOD)
-        request.addProperty("ciudadOrigen", ciudadOrigen)
-        request.addProperty("ciudadDestino", ciudadDestino)
-        val dateFormatRequest = SimpleDateFormat("yyyy-MM-dd", Locale.US)
-        request.addProperty("fecha", dateFormatRequest.format(fecha))
-
-        val envelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
-        envelope.setOutputSoapObject(request)
-        envelope.dotNet = false
-
-        val transport = HttpTransportSE(SoapConstants.URL, 10000)
-        try {
-            transport.debug = true
-            Log.d("ViajecitosService", "Iniciando llamada SOAP a: ${SoapConstants.URL}")
-            Log.d("ViajecitosService", "Enviando parámetros: ciudadOrigen=$ciudadOrigen, ciudadDestino=$ciudadDestino, fecha=${dateFormatRequest.format(fecha)}")
-            transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.OBTENER_VUELO_MAS_CARO_METHOD, envelope)
-            Log.d("ViajecitosService", "Request XML: ${transport.requestDump}")
-            Log.d("ViajecitosService", "Response XML: ${transport.responseDump}")
-
-            val response = envelope.response as? SoapObject
-            if (response != null) {
-                val dateFormatResponse = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.US)
-                val fechaString = response.getPropertySafelyAsString("fecha", "")
-                val parsedFecha = if (fechaString.isNotEmpty()) {
-                    try {
-                        dateFormatResponse.parse(fechaString)
-                    } catch (e: Exception) {
-                        Log.e("ViajecitosService", "Error al parsear fecha: $fechaString", e)
-                        Date() // Fallback to current date
-                    }
-                } else {
-                    Log.w("ViajecitosService", "Fecha vacía o no presente en la respuesta")
-                    Date() // Fallback to current date
+        val jsonBody = JSONObject().apply {
+            put("numeroFactura", numeroFactura)
+            put("idEmpleado", idEmpleado)
+            put("idCliente", idCliente)
+            put("idMetodoPago", idMetodoPago)
+            put("descuento", descuento.toDouble())
+            put("detalles", JSONArray().apply {
+                detalles.forEach { detalle ->
+                    put(JSONObject().apply {
+                        put("idVuelo", detalle.idVuelo)
+                        put("cantidad", detalle.cantidad)
+                    })
                 }
+            })
+        }.toString()
 
-                return Vuelo(
-                    idVuelo = response.getPropertySafelyAsString("idVuelo", "0").toInt(),
-                    ciudadOrigen = response.getPropertySafelyAsString("ciudadOrigen", ""),
-                    ciudadDestino = response.getPropertySafelyAsString("ciudadDestino", ""),
-                    valor = response.getPropertySafelyAsString("valor", "0.0").toDouble(),
-                    horaSalida = response.getPropertySafelyAsString("horaSalida", ""),
-                    fecha = parsedFecha
+        val request = Request.Builder()
+            .url("$baseUrl/factura")
+            .post(RequestBody.create("application/json; charset=utf-8".toMediaTypeOrNull(), jsonBody))
+            .build()
+
+        val response = client.newCall(request).execute()
+        if (!response.isSuccessful) {
+            val errorBody = response.body?.string() ?: "Error desconocido"
+            throw Exception("Error al crear factura: ${response.code} - $errorBody")
+        }
+
+        val responseBody = response.body?.string() ?: throw Exception("Respuesta vacía del servidor")
+        val json = JSONObject(responseBody)
+
+        val empleado = if (json.has("empleado")) {
+            val empJson = json.getJSONObject("empleado")
+            Empleado(
+                idEmpleado = empJson.optInt("idEmpleado", 0),
+                nombre = empJson.optString("nombre", ""),
+                email = empJson.optString("email", "")
+            )
+        } else null
+
+        val cliente = if (json.has("cliente")) {
+            val cliJson = json.getJSONObject("cliente")
+            Cliente(
+                idCliente = cliJson.optInt("idCliente", 0),
+                nombre = cliJson.optString("nombre", ""),
+                email = cliJson.optString("email", ""),
+                documentoIdentidad = cliJson.optString("documentoIdentidad", "")
+            )
+        } else null
+
+        val metodoPago = if (json.has("metodoPago")) {
+            val mpJson = json.getJSONObject("metodoPago")
+            MetodoPago(
+                idMetodoPago = mpJson.optInt("idMetodoPago", 0),
+                nombreMetodo = mpJson.optString("nombreMetodo", ""),
+                descripcion = mpJson.optString("descripcion", "")
+            )
+        } else null
+
+        val detallesFactura = if (json.has("detallesFactura")) {
+            val detallesArray = json.getJSONArray("detallesFactura")
+            val detallesList = mutableListOf<DetalleFactura>()
+            for (i in 0 until detallesArray.length()) {
+                val detalleJson = detallesArray.getJSONObject(i)
+                detallesList.add(
+                    DetalleFactura(
+                        idDetalleFactura = detalleJson.optInt("idDetalleFactura", 0),
+                        idFactura = detalleJson.optInt("idFactura", 0),
+                        idVuelo = detalleJson.optInt("idVuelo", 0),
+                        cantidad = detalleJson.optInt("cantidad", 0),
+                        valorUnitario = detalleJson.optDouble("valorUnitario", 0.0).toBigDecimal(),
+                        total = detalleJson.optDouble("total", 0.0).toBigDecimal()
+                    )
                 )
             }
-            Log.w("ViajecitosService", "No se encontró vuelo para los parámetros proporcionados")
-            return null
-        } catch (e: SoapFault) {
-            Log.e("ViajecitosService", "SoapFault en obtenerVueloMasCaro: ${e.faultstring}", e)
-            throw Exception("Error del servidor: ${e.faultstring}")
-        } catch (e: Exception) {
-            Log.e("ViajecitosService", "Error en obtenerVueloMasCaro: ${e.message}", e)
-            throw Exception("Error al buscar vuelo: ${e.message}")
-        }
+            detallesList
+        } else emptyList()
+
+        return Factura(
+            idFactura = json.getInt("idFactura"),
+            numeroFactura = json.getString("numeroFactura"),
+            fechaEmision = json.getString("fechaEmision"),
+            idEmpleado = json.getInt("idEmpleado"),
+            idCliente = json.getInt("idCliente"),
+            idMetodoPago = json.getInt("idMetodoPago"),
+            subtotal = json.getDouble("subtotal").toBigDecimal(),
+            descuento = json.getDouble("descuento").toBigDecimal(),
+            iva = json.getDouble("iva").toBigDecimal(),
+            total = json.getDouble("total").toBigDecimal(),
+            empleado = empleado,
+            cliente = cliente,
+            metodoPago = metodoPago,
+            detallesFactura = detallesFactura
+        )
     }
 
     @Throws(Exception::class)
-    fun buscarVuelos(ciudadOrigen: String?, ciudadDestino: String?, fecha: Date?): List<Vuelo> {
-        val request = SoapObject(SoapConstants.NAMESPACE, SoapConstants.BUSCAR_VUELOS_METHOD)
-        request.addProperty("ciudadOrigen", ciudadOrigen)
-        request.addProperty("ciudadDestino", ciudadDestino)
-        if (fecha != null) {
-            val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US)
-            request.addProperty("fecha", dateFormat.format(fecha))
+    fun obtenerFacturasCliente(idCliente: Int): List<Factura> {
+        val url = "$baseUrl/facturas/$idCliente"
+        val request = Request.Builder()
+            .url(url)
+            .get()
+            .build()
+
+        val response = client.newCall(request).execute()
+        if (!response.isSuccessful) {
+            val errorBody = response.body?.string() ?: "Error desconocido"
+            throw Exception("Error al obtener facturas: ${response.code} - $errorBody")
         }
 
-        val envelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
-        envelope.setOutputSoapObject(request)
-        envelope.dotNet = false
+        val responseBody = response.body?.string() ?: throw Exception("Respuesta vacía del servidor")
+        val jsonArray = JSONArray(responseBody)
+        val facturas = mutableListOf<Factura>()
+        for (i in 0 until jsonArray.length()) {
+            val json = jsonArray.getJSONObject(i)
 
-        val transport = HttpTransportSE(SoapConstants.URL, 10000)
-        val vuelos = mutableListOf<Vuelo>()
-        try {
-            transport.debug = true
-            Log.d("ViajecitosService", "Iniciando llamada SOAP a: ${SoapConstants.URL}")
-            transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.BUSCAR_VUELOS_METHOD, envelope)
-            Log.d("ViajecitosService", "Request XML: ${transport.requestDump}")
-            Log.d("ViajecitosService", "Response XML: ${transport.responseDump}")
+            val empleado = if (json.has("empleado")) {
+                val empJson = json.getJSONObject("empleado")
+                Empleado(
+                    idEmpleado = empJson.optInt("idEmpleado", 0),
+                    nombre = empJson.optString("nombre", ""),
+                    email = empJson.optString("email", "")
+                )
+            } else null
 
-            val response = envelope.bodyIn as? SoapObject
-            if (response != null) {
-                val dateFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.US)
-                for (i in 0 until response.propertyCount) {
-                    val prop = response.getProperty(i) as? SoapObject
-                    if (prop != null) {
-                        vuelos.add(
-                            Vuelo(
-                                idVuelo = prop.getPropertySafelyAsString("idVuelo", "0").toInt(),
-                                ciudadOrigen = prop.getPropertySafelyAsString("ciudadOrigen", ""),
-                                ciudadDestino = prop.getPropertySafelyAsString("ciudadDestino", ""),
-                                valor = prop.getPropertySafelyAsString("valor", "0.0").toDouble(),
-                                horaSalida = prop.getPropertySafelyAsString("horaSalida", ""),
-                                fecha = dateFormat.parse(prop.getPropertySafelyAsString("fecha", "")) ?: Date()
+            val cliente = if (json.has("cliente")) {
+                val cliJson = json.getJSONObject("cliente")
+                Cliente(
+                    idCliente = cliJson.optInt("idCliente", 0),
+                    nombre = cliJson.optString("nombre", ""),
+                    email = cliJson.optString("email", ""),
+                    documentoIdentidad = cliJson.optString("documentoIdentidad", "")
+                )
+            } else null
+
+            val metodoPago = if (json.has("metodoPago")) {
+                val mpJson = json.getJSONObject("metodoPago")
+                MetodoPago(
+                    idMetodoPago = mpJson.optInt("idMetodoPago", 0),
+                    nombreMetodo = mpJson.optString("nombreMetodo", ""),
+                    descripcion = mpJson.optString("descripcion", "")
+                )
+            } else null
+
+            val detallesFactura = if (json.has("detallesFactura")) {
+                val detallesArray = json.getJSONArray("detallesFactura")
+                val detallesList = mutableListOf<DetalleFactura>()
+                for (j in 0 until detallesArray.length()) {
+                    val detalleJson = detallesArray.getJSONObject(j)
+                    detallesList.add(
+                        DetalleFactura(
+                            idDetalleFactura = detalleJson.optInt("idDetalleFactura", 0),
+                            idFactura = detalleJson.optInt("idFactura", 0),
+                            idVuelo = detalleJson.optInt("idVuelo", 0),
+                            cantidad = detalleJson.optInt("cantidad", 0),
+                            valorUnitario = detalleJson.optDouble("valorUnitario", 0.0).toBigDecimal(),
+                            total = detalleJson.optDouble("total", 0.0).toBigDecimal()
+                        )
+                    )
+                }
+                detallesList
+            } else emptyList()
+
+            facturas.add(
+                Factura(
+                    idFactura = json.optInt("idFactura", 0),
+                    numeroFactura = json.optString("numeroFactura", ""),
+                    fechaEmision = json.optString("fechaEmision", ""),
+                    idEmpleado = json.optInt("idEmpleado", 0),
+                    idCliente = json.optInt("idCliente", 0),
+                    idMetodoPago = json.optInt("idMetodoPago", 0),
+                    subtotal = json.optDouble("subtotal", 0.0).toBigDecimal(),
+                    descuento = json.optDouble("descuento", 0.0).toBigDecimal(),
+                    iva = json.optDouble("iva", 0.0).toBigDecimal(),
+                    total = json.optDouble("total", 0.0).toBigDecimal(),
+                    empleado = empleado,
+                    cliente = cliente,
+                    metodoPago = metodoPago,
+                    detallesFactura = detallesFactura
+                )
+            )
+        }
+        return facturas
+    }
+
+    @Throws(Exception::class)
+    fun obtenerTodasFacturasPorCliente(): List<ClienteFacturas> {
+        val url = "$baseUrl/facturas"
+        val request = Request.Builder()
+            .url(url)
+            .get()
+            .build()
+
+        val response = client.newCall(request).execute()
+        if (!response.isSuccessful) {
+            val errorBody = response.body?.string() ?: "Error desconocido"
+            throw Exception("Error al obtener facturas: ${response.code} - $errorBody")
+        }
+
+        val responseBody = response.body?.string() ?: throw Exception("Respuesta vacía del servidor")
+        val jsonArray = JSONArray(responseBody)
+        val result = mutableListOf<ClienteFacturas>()
+        for (i in 0 until jsonArray.length()) {
+            val json = jsonArray.getJSONObject(i)
+            val facturasCliente = mutableListOf<Factura>()
+            val facturasArray = json.getJSONArray("facturas")
+            for (j in 0 until facturasArray.length()) {
+                val facturaJson = facturasArray.getJSONObject(j)
+
+                val empleado = if (facturaJson.has("empleado")) {
+                    val empJson = facturaJson.getJSONObject("empleado")
+                    Empleado(
+                        idEmpleado = empJson.optInt("idEmpleado", 0),
+                        nombre = empJson.optString("nombre", ""),
+                        email = empJson.optString("email", "")
+                    )
+                } else null
+
+                val cliente = if (facturaJson.has("cliente")) {
+                    val cliJson = facturaJson.getJSONObject("cliente")
+                    Cliente(
+                        idCliente = cliJson.optInt("idCliente", 0),
+                        nombre = cliJson.optString("nombre", ""),
+                        email = cliJson.optString("email", ""),
+                        documentoIdentidad = cliJson.optString("documentoIdentidad", "")
+                    )
+                } else null
+
+                val metodoPago = if (facturaJson.has("metodoPago")) {
+                    val mpJson = facturaJson.getJSONObject("metodoPago")
+                    MetodoPago(
+                        idMetodoPago = mpJson.optInt("idMetodoPago", 0),
+                        nombreMetodo = mpJson.optString("nombreMetodo", ""),
+                        descripcion = mpJson.optString("descripcion", "")
+                    )
+                } else null
+
+                val detallesFactura = if (facturaJson.has("detallesFactura")) {
+                    val detallesArray = facturaJson.getJSONArray("detallesFactura")
+                    val detallesList = mutableListOf<DetalleFactura>()
+                    for (k in 0 until detallesArray.length()) {
+                        val detalleJson = detallesArray.getJSONObject(k)
+                        detallesList.add(
+                            DetalleFactura(
+                                idDetalleFactura = detalleJson.optInt("idDetalleFactura", 0),
+                                idFactura = detalleJson.optInt("idFactura", 0),
+                                idVuelo = detalleJson.optInt("idVuelo", 0),
+                                cantidad = detalleJson.optInt("cantidad", 0),
+                                valorUnitario = detalleJson.optDouble("valorUnitario", 0.0).toBigDecimal(),
+                                total = detalleJson.optDouble("total", 0.0).toBigDecimal()
                             )
                         )
                     }
-                }
-            }
-            return vuelos
-        } catch (e: Exception) {
-            Log.e("ViajecitosService", "Error en buscarVuelos: ${e.message}", e)
-            throw Exception("Error al buscar vuelos: ${e.message}")
-        }
-    }
+                    detallesList
+                } else emptyList()
 
-    @Throws(Exception::class)
-    fun registrarCliente(nombre: String?, email: String?, documentoIdentidad: String?): Cliente? {
-        val request = SoapObject(SoapConstants.NAMESPACE, SoapConstants.REGISTRAR_CLIENTE_METHOD)
-        request.addProperty("nombre", nombre)
-        request.addProperty("email", email)
-        request.addProperty("documentoIdentidad", documentoIdentidad)
-
-        val envelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
-        envelope.setOutputSoapObject(request)
-        envelope.dotNet = false
-
-        val transport = HttpTransportSE(SoapConstants.URL, 10000)
-        try {
-            transport.debug = true
-            Log.d("ViajecitosService", "Iniciando llamada SOAP a: ${SoapConstants.URL}")
-            transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.REGISTRAR_CLIENTE_METHOD, envelope)
-            Log.d("ViajecitosService", "Request XML: ${transport.requestDump}")
-            Log.d("ViajecitosService", "Response XML: ${transport.responseDump}")
-
-            val response = envelope.response as? SoapObject
-            if (response != null) {
-                return Cliente(
-                    idCliente = response.getPropertySafelyAsString("idCliente", "0").toInt(),
-                    nombre = response.getPropertySafelyAsString("nombre", ""),
-                    email = response.getPropertySafelyAsString("email", ""),
-                    documentoIdentidad = response.getPropertySafelyAsString("documentoIdentidad", "")
+                facturasCliente.add(
+                    Factura(
+                        idFactura = facturaJson.optInt("idFactura", 0),
+                        numeroFactura = facturaJson.optString("numeroFactura", ""),
+                        fechaEmision = facturaJson.optString("fechaEmision", ""),
+                        idEmpleado = facturaJson.optInt("idEmpleado", 0),
+                        idCliente = facturaJson.optInt("idCliente", 0),
+                        idMetodoPago = facturaJson.optInt("idMetodoPago", 0),
+                        subtotal = facturaJson.optDouble("subtotal", 0.0).toBigDecimal(),
+                        descuento = facturaJson.optDouble("descuento", 0.0).toBigDecimal(),
+                        iva = facturaJson.optDouble("iva", 0.0).toBigDecimal(),
+                        total = facturaJson.optDouble("total", 0.0).toBigDecimal(),
+                        empleado = empleado,
+                        cliente = cliente,
+                        metodoPago = metodoPago,
+                        detallesFactura = detallesFactura
+                    )
                 )
             }
-            return null
-        } catch (e: Exception) {
-            Log.e("ViajecitosService", "Error en registrarCliente: ${e.message}", e)
-            throw Exception("Error al registrar cliente: ${e.message}")
+            val clienteFacturas = ClienteFacturas()
+            clienteFacturas.clienteId = json.optInt("clienteId", 0)
+            clienteFacturas.nombre = json.optString("nombre", "")
+            clienteFacturas.email = json.optString("email", "")
+            clienteFacturas.documentoIdentidad = json.optString("documentoIdentidad", "")
+            clienteFacturas.facturas = facturasCliente
+            result.add(clienteFacturas)
         }
+        return result
     }
 
     @Throws(Exception::class)
-    fun registrarUsuario(idCliente: Int, nombreUsuario: String?, claveUsuario: String?): Usuario? {
-        val request = SoapObject(SoapConstants.NAMESPACE, SoapConstants.REGISTRAR_USUARIO_METHOD)
-        request.addProperty("idCliente", idCliente.toString())
-        request.addProperty("nombreUsuario", nombreUsuario)
-        request.addProperty("claveUsuario", claveUsuario)
+    fun obtenerTodosClientes(): List<Cliente> {
+        val url = "$baseUrl/clientes"
+        val request = Request.Builder()
+            .url(url)
+            .get()
+            .build()
 
-        val envelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
-        envelope.setOutputSoapObject(request)
-        envelope.dotNet = false
+        val response = client.newCall(request).execute()
+        if (!response.isSuccessful) {
+            val errorBody = response.body?.string() ?: "Error desconocido"
+            throw Exception("Error al obtener clientes: ${response.code} - $errorBody")
+        }
 
-        val transport = HttpTransportSE(SoapConstants.URL, 10000)
-        try {
-            transport.debug = true
-            Log.d("ViajecitosService", "Iniciando llamada SOAP a: ${SoapConstants.URL}")
-            transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.REGISTRAR_USUARIO_METHOD, envelope)
-            Log.d("ViajecitosService", "Request XML: ${transport.requestDump}")
-            Log.d("ViajecitosService", "Response XML: ${transport.responseDump}")
-
-            val response = envelope.response as? SoapObject
-            if (response != null) {
-                return Usuario(
-                    idCliente = response.getPropertySafelyAsString("idCliente", "0").toInt(),
-                    nombreUsuario = response.getPropertySafelyAsString("nombreUsuario", ""),
-                    claveUsuario = response.getPropertySafelyAsString("claveUsuario", "")
+        val responseBody = response.body?.string() ?: throw Exception("Respuesta vacía del servidor")
+        val jsonArray = JSONArray(responseBody)
+        val clientes = mutableListOf<Cliente>()
+        for (i in 0 until jsonArray.length()) {
+            val json = jsonArray.getJSONObject(i)
+            clientes.add(
+                Cliente(
+                    idCliente = json.optInt("idCliente", 0),
+                    nombre = json.optString("nombre", ""),
+                    email = json.optString("email", ""),
+                    documentoIdentidad = json.optString("documentoIdentidad", "")
                 )
-            }
-            return null
-        } catch (e: Exception) {
-            Log.e("ViajecitosService", "Error en registrarUsuario: ${e.message}", e)
-            throw Exception("Error al registrar usuario: ${e.message}")
+            )
         }
-    }
-
-    @Throws(Exception::class)
-    fun obtenerComprasCliente(idCliente: Int): List<Compra> {
-        // Validación de entrada
-        if (idCliente < 1) {
-            throw IllegalArgumentException("Id de cliente inválido")
-        }
-
-        val request = SoapObject(SoapConstants.NAMESPACE, SoapConstants.OBTENER_COMPRAS_CLIENTE_METHOD)
-        request.addProperty("idCliente", idCliente.toString())
-
-        val envelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
-        envelope.setOutputSoapObject(request)
-        envelope.dotNet = false
-
-        val transport = HttpTransportSE(SoapConstants.URL, 10000)
-        val compras = mutableListOf<Compra>()
-        try {
-            transport.debug = true
-            Log.d("ViajecitosService", "Iniciando llamada SOAP a: ${SoapConstants.URL}")
-            Log.d("ViajecitosService", "Enviando parámetro: idCliente=$idCliente")
-            transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.OBTENER_COMPRAS_CLIENTE_METHOD, envelope)
-            Log.d("ViajecitosService", "Request XML: ${transport.requestDump}")
-            Log.d("ViajecitosService", "Response XML: ${transport.responseDump}")
-
-            val response = envelope.bodyIn as? SoapObject
-            if (response != null) {
-                val dateFormatResponse = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.US)
-                for (i in 0 until response.propertyCount) {
-                    val prop = response.getProperty(i) as? SoapObject
-                    if (prop != null) {
-                        val vueloObj = prop.getProperty("vuelo") as? SoapObject
-                        if (vueloObj != null) {
-                            val fechaVueloString = vueloObj.getPropertySafelyAsString("fecha", "")
-                            val parsedFechaVuelo = if (fechaVueloString.isNotEmpty()) {
-                                try {
-                                    dateFormatResponse.parse(fechaVueloString)
-                                } catch (e: Exception) {
-                                    Log.e("ViajecitosService", "Error al parsear fecha de vuelo: $fechaVueloString", e)
-                                    Date() // Fallback a la fecha actual
-                                }
-                            } else {
-                                Log.w("ViajecitosService", "Fecha de vuelo vacía o no presente en la respuesta")
-                                Date() // Fallback a la fecha actual
-                            }
-
-                            val vuelo = Vuelo(
-                                idVuelo = vueloObj.getPropertySafelyAsString("idVuelo", "0").toInt(),
-                                ciudadOrigen = vueloObj.getPropertySafelyAsString("ciudadOrigen", ""),
-                                ciudadDestino = vueloObj.getPropertySafelyAsString("ciudadDestino", ""),
-                                valor = vueloObj.getPropertySafelyAsString("valor", "0.0").toDouble(),
-                                horaSalida = vueloObj.getPropertySafelyAsString("horaSalida", ""),
-                                fecha = parsedFechaVuelo
-                            )
-
-                            val fechaCompraString = prop.getPropertySafelyAsString("fechaCompra", "")
-                            val parsedFechaCompra = if (fechaCompraString.isNotEmpty()) {
-                                try {
-                                    dateFormatResponse.parse(fechaCompraString)
-                                } catch (e: Exception) {
-                                    Log.e("ViajecitosService", "Error al parsear fechaCompra: $fechaCompraString", e)
-                                    Date() // Fallback a la fecha actual
-                                }
-                            } else {
-                                Log.w("ViajecitosService", "Fecha de compra vacía o no presente en la respuesta")
-                                Date() // Fallback a la fecha actual
-                            }
-
-                            compras.add(
-                                Compra(
-                                    idCompra = prop.getPropertySafelyAsString("idCompra", "0").toInt(),
-                                    vuelo = vuelo,
-                                    fechaCompra = parsedFechaCompra
-                                )
-                            )
-                        }
-                    }
-                }
-            }
-            return compras
-        } catch (e: SoapFault) {
-            Log.e("ViajecitosService", "SoapFault en obtenerComprasCliente: ${e.faultstring}", e)
-            throw Exception("Error del servidor: ${e.faultstring}")
-        } catch (e: Exception) {
-            Log.e("ViajecitosService", "Error en obtenerComprasCliente: ${e.message}", e)
-            throw Exception("Error al obtener compras: ${e.message}")
-        }
-    }
-
-    @Throws(Exception::class)
-    fun registrarCompra(idVuelo: Int, idCliente: Int): Int {
-        val request = SoapObject(SoapConstants.NAMESPACE, SoapConstants.REGISTRAR_COMPRA_METHOD)
-        request.addProperty("idVuelo", idVuelo.toString())
-        request.addProperty("idCliente", idCliente.toString())
-
-        val envelope = SoapSerializationEnvelope(SoapEnvelope.VER11)
-        envelope.setOutputSoapObject(request)
-        envelope.dotNet = false
-
-        val transport = HttpTransportSE(SoapConstants.URL, 10000)
-        try {
-            transport.debug = true
-            Log.d("ViajecitosService", "Iniciando llamada SOAP a: ${SoapConstants.URL}")
-            transport.call(SoapConstants.SOAP_ACTION_PREFIX + SoapConstants.REGISTRAR_COMPRA_METHOD, envelope)
-            Log.d("ViajecitosService", "Request XML: ${transport.requestDump}")
-            Log.d("ViajecitosService", "Response XML: ${transport.responseDump}")
-
-            val response = envelope.response as? SoapPrimitive
-            return response?.toString()?.toInt() ?: throw Exception("Respuesta nula o inválida")
-        } catch (e: Exception) {
-            Log.e("ViajecitosService", "Error en registrarCompra: ${e.message}", e)
-            throw Exception("Error al registrar compra: ${e.message}")
-        }
+        return clientes
     }
 }

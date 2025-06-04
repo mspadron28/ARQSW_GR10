@@ -14,6 +14,15 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.WriteIndented = true; // Opcional, para JSON legible
     });
 
+// Configure CORS to allow requests from any origin
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
+
 // Configure logging
 builder.Services.AddLogging(logging =>
 {
@@ -37,6 +46,12 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Viajecitos REST API", Version = "v1" });
 });
 
+// Configure Kestrel to listen on all network interfaces
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(5158); // Escucha en todas las interfaces en el puerto 5158
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -50,10 +65,9 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-app.UseHttpsRedirection();
-
-// app.UseAuthorization(); // Comentado porque no parece necesario en este momento
-
+//app.UseHttpsRedirection();
+app.UseCors("AllowAll"); // Añade CORS antes de routing
+app.UseRouting();
 app.MapControllers();
 
 app.Run();

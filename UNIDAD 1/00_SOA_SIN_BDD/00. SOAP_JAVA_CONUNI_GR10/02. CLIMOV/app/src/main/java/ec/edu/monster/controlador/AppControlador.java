@@ -1,46 +1,76 @@
 package ec.edu.monster.controlador;
 
 import ec.edu.monster.modelo.Cliente;
-import ec.edu.monster.modelo.Compra;
+import ec.edu.monster.modelo.ClienteFacturas;
+import ec.edu.monster.modelo.Factura;
 import ec.edu.monster.modelo.Usuario;
 import ec.edu.monster.modelo.Vuelo;
 import ec.edu.monster.servicio.ViajecitosService;
-import java.util.Date;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class AppControlador {
-
     private final ViajecitosService service;
+    private Usuario usuarioAutenticado;
 
     public AppControlador() {
-        this.service = new ViajecitosService();
+        service = new ViajecitosService();
     }
 
     public Usuario login(String nombreUsuario, String claveUsuario) throws Exception {
-        return service.iniciarSesion(nombreUsuario, claveUsuario);
+        if (nombreUsuario == null || nombreUsuario.trim().isEmpty() || claveUsuario == null || claveUsuario.trim().isEmpty()) {
+            throw new Exception("Usuario y contraseña son requeridos.");
+        }
+        usuarioAutenticado = service.iniciarSesion(nombreUsuario, claveUsuario);
+        if (usuarioAutenticado == null) {
+            throw new Exception("Credenciales inválidas o usuario inactivo.");
+        }
+        return usuarioAutenticado;
     }
 
-    public Vuelo obtenerVueloMasCaro(String ciudadOrigen, String ciudadDestino, Date fecha) throws Exception {
-        return service.obtenerVueloMasCaro(ciudadOrigen, ciudadDestino, fecha);
-    }
-
-    public List<Vuelo> buscarVuelos(String ciudadOrigen, String ciudadDestino, Date fecha) throws Exception {
-        return service.buscarVuelos(ciudadOrigen, ciudadDestino, fecha);
+    public int getIdClienteAutenticado() throws Exception {
+        if (usuarioAutenticado == null) {
+            throw new Exception("No hay usuario autenticado.");
+        }
+        return usuarioAutenticado.getIdCliente();
     }
 
     public Cliente registrarCliente(String nombre, String email, String documentoIdentidad) throws Exception {
-        return service.registrarCliente(nombre, email, documentoIdentidad);
+        if (nombre == null || nombre.trim().isEmpty() || email == null || email.trim().isEmpty() || documentoIdentidad == null || documentoIdentidad.trim().isEmpty()) {
+            throw new Exception("Todos los campos son requeridos.");
+        }
+        Cliente cliente = service.registrarCliente(nombre, email, documentoIdentidad);
+        if (cliente == null) {
+            throw new Exception("Error al registrar el cliente.");
+        }
+        return cliente;
     }
 
-    public Usuario registrarUsuario(int idCliente, String nombreUsuario, String claveUsuario) throws Exception {
-        return service.registrarUsuario(idCliente, nombreUsuario, claveUsuario);
+    public List<Cliente> obtenerTodosClientes() throws Exception {
+        List<Cliente> clientes = service.obtenerTodosClientes();
+        if (clientes == null || clientes.isEmpty()) {
+            throw new Exception("No se encontraron clientes.");
+        }
+        return clientes;
     }
 
-    public List<Compra> obtenerComprasCliente(int idCliente) throws Exception {
-        return service.obtenerComprasCliente(idCliente);
+    public List<Factura> obtenerFacturasCliente(int idCliente) throws Exception {
+        if (idCliente <= 0) {
+            throw new Exception("ID de cliente inválido.");
+        }
+        List<Factura> facturas = service.obtenerFacturasCliente(idCliente);
+        if (facturas == null || facturas.isEmpty()) {
+            throw new Exception("No se encontraron facturas para el cliente.");
+        }
+        return facturas;
     }
 
-    public int registrarCompra(int idVuelo, int idCliente) throws Exception {
-        return service.registrarCompra(idVuelo, idCliente);
+    public List<ClienteFacturas> obtenerTodasFacturasPorCliente() throws Exception {
+        List<ClienteFacturas> clientesFacturas = service.obtenerTodasFacturasPorCliente();
+        if (clientesFacturas == null || clientesFacturas.isEmpty()) {
+            throw new Exception("No se encontraron clientes con facturas.");
+        }
+        return clientesFacturas;
     }
 }

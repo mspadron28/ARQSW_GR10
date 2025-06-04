@@ -1,51 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    package="ec.edu.monster.conuni">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CONUNI_CLIMOV_GR10"
-        android:usesCleartextTraffic="true"
-        tools:targetApi="31">
-        <activity
-            android:name=".PurchasesActivity"
-            android:exported="false"
-            android:label="@string/title_activity_purchases"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
-        <activity
-            android:name=".ResultActivity"
-            android:exported="false"
-            android:label="@string/title_activity_result"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false"
-            android:label="@string/title_activity_register"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".LoginActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.CONUNI_CLIMOV_GR10">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false"
+            android:label="Menú Principal"
+            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
+        <activity
+            android:name=".SearchFlightsActivity"
+            android:exported="false"
+            android:label="Buscar Vuelos y Comprar"
+            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
+        <activity
+            android:name=".InvoicesActivity"
+            android:exported="false"
+            android:label="Facturas"
+            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
+        <activity
+            android:name=".InvoiceDetailsActivity"
+            android:exported="false"
+            android:label="Detalles de Factura"
+            android:theme="@style/Theme.CONUNI_CLIMOV_GR10" />
     </application>
 
 </manifest>
