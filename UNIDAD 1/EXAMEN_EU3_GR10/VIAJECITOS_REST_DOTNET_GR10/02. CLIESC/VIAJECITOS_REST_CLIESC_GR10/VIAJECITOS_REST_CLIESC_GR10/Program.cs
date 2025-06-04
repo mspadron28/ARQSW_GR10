@@ -12,7 +12,9 @@ namespace VIAJECITOS_REST_CLIESC_GR10
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm(new ViajecitosController()));
+
+            var controlador = new ViajecitosController();
+            Application.Run(new LoginForm(controlador));
         }
     }
 }
