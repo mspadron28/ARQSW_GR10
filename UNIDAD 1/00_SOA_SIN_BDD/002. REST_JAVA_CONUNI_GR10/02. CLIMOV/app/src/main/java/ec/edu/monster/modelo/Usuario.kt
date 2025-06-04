@@ -1,8 +1,10 @@
 package ec.edu.monster.modelo
 
 data class Usuario(
-    val codigo: String,
-    val usuario: String,
-    val clave: String,
-    val estado: String
+    val idUsuario: Int,
+    val idCliente: Int,
+    val nombreUsuario: String,
+    val claveUsuario: String,
+    val estadoUsuario: String,
+    val cliente: Cliente
 )

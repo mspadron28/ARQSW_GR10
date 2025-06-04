@@ -27,18 +27,33 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Vista
             this.Size = new Size(900, 600);
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            // DataGridView para mostrar todas las facturas
+            // Label for the title
+            Label lblTitle = new Label
+            {
+                Text = "Todas las Facturas",
+                Font = new Font("Segoe UI", 14, FontStyle.Bold),
+                AutoSize = true,
+                Location = new Point(0, 20) // Initial position, will be centered below
+            };
+            this.Controls.Add(lblTitle);
+
+            // DataGridView for displaying all invoices
             dgvFacturas = new DataGridView
             {
-                Dock = DockStyle.Fill,
                 AllowUserToAddRows = false,
                 SelectionMode = DataGridViewSelectionMode.FullRowSelect,
                 MultiSelect = false,
                 RowHeadersVisible = false,
-                Font = new Font("Segoe UI", 10)
+                Font = new Font("Segoe UI", 10),
+                Size = new Size(850, 500) // Fixed size to allow centering
             };
             this.Controls.Add(dgvFacturas);
 
+            // Center the title and DataGridView
+            lblTitle.Location = new Point((this.ClientSize.Width - lblTitle.Width) / 2, 20);
+            dgvFacturas.Location = new Point((this.ClientSize.Width - dgvFacturas.Width) / 2, 60);
+
+            // Add columns to DataGridView
             dgvFacturas.Columns.Add(new DataGridViewTextBoxColumn { Name = "Cliente", HeaderText = "Cliente", ReadOnly = true });
             dgvFacturas.Columns.Add(new DataGridViewTextBoxColumn { Name = "NumeroFactura", HeaderText = "Número de Factura", ReadOnly = true });
             dgvFacturas.Columns.Add(new DataGridViewTextBoxColumn { Name = "Fecha", HeaderText = "Fecha", ReadOnly = true });
@@ -46,8 +61,14 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Vista
             dgvFacturas.Columns.Add(new DataGridViewButtonColumn { Name = "Accion", HeaderText = "Acción", Text = "Ver Detalles", UseColumnTextForButtonValue = true });
 
             dgvFacturas.CellClick += DgvFacturas_CellClick;
-        }
 
+            // Adjust positions when the form is resized
+            this.Resize += (s, e) =>
+            {
+                lblTitle.Location = new Point((this.ClientSize.Width - lblTitle.Width) / 2, 20);
+                dgvFacturas.Location = new Point((this.ClientSize.Width - dgvFacturas.Width) / 2, 60);
+            };
+        }
         private async Task CargarFacturasAsync()
         {
             try

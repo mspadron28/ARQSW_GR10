@@ -15,10 +15,14 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fa81aa234af99f76e1257dff918fcfa181d47e5")]
+=======
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7755bb1bf826d7cf6843c437a3b060988ca6ad12")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c7b03e1059656484790beb5e21c0893fb2a79b6")]
 >>>>>>> 2fa81aa234af99f76e1257dff918fcfa181d47e5
+>>>>>>> 4c34cd23881aea7ceed115690c1619e3ccf9443e
 [assembly: System.Reflection.AssemblyProductAttribute("VIAJECITOS_REST_CLIESC_GR10")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VIAJECITOS_REST_CLIESC_GR10")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -10,11 +10,6 @@
 
   <ItemGroup>
     <None Remove="Vista\FlightResultForm.resx~RFe35a59c.TMP" />
-    <None Remove="images\travel-agency.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="images\travel-agency.jpg" />
   </ItemGroup>
 
   <ItemGroup>
