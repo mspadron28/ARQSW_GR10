@@ -29,17 +29,50 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Vista
         {
             // Form properties
             this.Text = "Iniciar Sesión - Viajecitos SA";
-            this.Size = new Size(450, 320);
+            this.Size = new Size(600, 600); // Initial size, but will be maximized
+            this.WindowState = FormWindowState.Maximized; // Maximize on startup
             this.StartPosition = FormStartPosition.CenterScreen;
             this.BackColor = Color.White;
 
-            // Title Label
+            // Header (con un color y texto simulado similar a lo solicitado)
+            var headerPanel = new Panel
+            {
+                Dock = DockStyle.Top,
+                Height = 150,
+                BackColor = Color.FromArgb(163, 191, 250) // Azul pastel claro (header)
+            };
+            this.Controls.Add(headerPanel);
+
+            var headerText = new Label
+            {
+                Text = "Viajecitos SA",
+                Font = new Font("Segoe UI", 26, FontStyle.Bold),
+                ForeColor = Color.White,
+                AutoSize = true
+            };
+            headerPanel.Controls.Add(headerText);
+
+            var subHeaderText = new Label
+            {
+                Text = "Encuentra y compra tus boletos de avión de forma fácil y segura",
+                Font = new Font("Segoe UI", 12, FontStyle.Regular),
+                ForeColor = Color.White,
+                AutoSize = true
+            };
+            headerPanel.Controls.Add(subHeaderText);
+
+            // Center the form controls
+            int formWidth = this.ClientSize.Width;
+            int controlWidth = 500;
+            int leftMargin = (formWidth - controlWidth) / 2; // Calculate left margin to center controls
+
+            // Title Label (el texto "Iniciar Sesión")
             lblTitle = new Label
             {
                 Text = "Iniciar Sesión",
                 Font = new Font("Segoe UI", 20, FontStyle.Bold),
                 ForeColor = Color.FromArgb(30, 58, 138),
-                Location = new Point(130, 20),
+                Location = new Point(leftMargin, 220),
                 AutoSize = true
             };
             this.Controls.Add(lblTitle);
@@ -48,9 +81,9 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Vista
             lblError = new Label
             {
                 ForeColor = Color.FromArgb(220, 38, 38),
-                Location = new Point(40, 60),
+                Location = new Point(leftMargin, 260),
                 AutoSize = true,
-                MaximumSize = new Size(370, 0),
+                MaximumSize = new Size(controlWidth, 0),
                 Visible = false
             };
             this.Controls.Add(lblError);
@@ -59,7 +92,7 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Vista
             lblUsuario = new Label
             {
                 Text = "Usuario",
-                Location = new Point(40, 90),
+                Location = new Point(leftMargin, 290),
                 AutoSize = true,
                 Font = new Font("Segoe UI", 10),
                 ForeColor = Color.FromArgb(31, 41, 55)
@@ -69,8 +102,8 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Vista
             // Usuario TextBox
             txtUsuario = new TextBox
             {
-                Location = new Point(40, 110),
-                Width = 370,
+                Location = new Point(leftMargin, 310),
+                Width = controlWidth,
                 Font = new Font("Segoe UI", 10)
             };
             this.Controls.Add(txtUsuario);
@@ -79,7 +112,7 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Vista
             lblClave = new Label
             {
                 Text = "Contraseña",
-                Location = new Point(40, 150),
+                Location = new Point(leftMargin, 350),
                 AutoSize = true,
                 Font = new Font("Segoe UI", 10),
                 ForeColor = Color.FromArgb(31, 41, 55)
@@ -89,8 +122,8 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Vista
             // Clave TextBox
             txtClave = new TextBox
             {
-                Location = new Point(40, 170),
-                Width = 370,
+                Location = new Point(leftMargin, 370),
+                Width = controlWidth,
                 Font = new Font("Segoe UI", 10),
                 UseSystemPasswordChar = true
             };
@@ -100,8 +133,8 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Vista
             btnLogin = new Button
             {
                 Text = "Iniciar Sesión",
-                Location = new Point(40, 210),
-                Width = 370,
+                Location = new Point(leftMargin, 410),
+                Width = controlWidth,
                 Height = 40,
                 BackColor = Color.FromArgb(59, 130, 246),
                 ForeColor = Color.White,
@@ -119,7 +152,7 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Vista
             linkVolver = new LinkLabel
             {
                 Text = "Volver",
-                Location = new Point(40, 260),
+                Location = new Point(leftMargin, 460),
                 AutoSize = true,
                 Font = new Font("Segoe UI", 10),
                 LinkColor = Color.FromArgb(59, 130, 246),
@@ -127,6 +160,31 @@ namespace VIAJECITOS_REST_CLIESC_GR10.Vista
             };
             linkVolver.Click += (s, e) => OpenMainForm();
             this.Controls.Add(linkVolver);
+
+            // Handle form resize to keep header text aligned to the right
+            this.Resize += (s, e) =>
+            {
+                formWidth = this.ClientSize.Width;
+                leftMargin = (formWidth - controlWidth) / 2;
+
+                // Update positions of form controls
+                lblTitle.Location = new Point(leftMargin, lblTitle.Location.Y);
+                lblError.Location = new Point(leftMargin, lblError.Location.Y);
+                lblUsuario.Location = new Point(leftMargin, lblUsuario.Location.Y);
+                txtUsuario.Location = new Point(leftMargin, txtUsuario.Location.Y);
+                lblClave.Location = new Point(leftMargin, lblClave.Location.Y);
+                txtClave.Location = new Point(leftMargin, txtClave.Location.Y);
+                btnLogin.Location = new Point(leftMargin, btnLogin.Location.Y);
+                linkVolver.Location = new Point(leftMargin, linkVolver.Location.Y);
+
+                // Align header text to the right
+                headerText.Location = new Point(headerPanel.Width - headerText.Width - 20, 30);
+                subHeaderText.Location = new Point(headerPanel.Width - subHeaderText.Width - 20, 80);
+            };
+
+            // Initial alignment of header text
+            headerText.Location = new Point(headerPanel.Width - headerText.Width - 20, 30);
+            subHeaderText.Location = new Point(headerPanel.Width - subHeaderText.Width - 20, 80);
         }
 
         private async Task LoginAsync()
