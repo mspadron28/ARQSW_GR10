@@ -1,58 +1,139 @@
-﻿@model VIAJECITOS_REST_CLIWEB_GR10.Models.Vuelo
+﻿@model string
 @{
-    ViewData["Title"] = "Buscar Vuelos";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Inicio";
 }
-<div class="form-container">
-    <div class="form-header">
-        <h2>Buscar Vuelos</h2>
-        @if (!string.IsNullOrEmpty(@Context.Session.GetString("Usuario")))
-        {
-            <a href="@Url.Action("Compras", "Home")" class="view-purchases-btn">Ver Mis Compras</a>
-        }
-    </div>
-    <form asp-action="BuscarVuelos" method="post">
-        <div class="form-group form-group-inline">
-            <div class="select-group">
-                <label for="ciudadOrigen">Ciudad Origen:</label>
-                <select id="ciudadOrigen" name="ciudadOrigen" required>
-                    <option value="" disabled selected>Selecciona una ciudad</option>
-                    <option value="Bogotá">BOG - Bogotá</option>
-                    <option value="Medellín">MDE - Medellín</option>
-                    <option value="Buenos Aires">BUE - Buenos Aires</option>
-                    <option value="Córdoba">COR - Córdoba</option>
-                    <option value="Quito">UIO - Quito</option>
-                    <option value="Guayaquil">GYE - Guayaquil</option>
-                    <option value="Cali">CLO - Cali</option>
-                    <option value="Cartagena">CTG - Cartagena</option>
-                    <option value="Mendoza">MDZ - Mendoza</option>
-                </select>
-            </div>
-            <span class="dash">-</span>
-            <div class="select-group">
-                <label for="ciudadDestino">Ciudad Destino:</label>
-                <select id="ciudadDestino" name="ciudadDestino" required>
-                    <option value="" disabled selected>Selecciona una ciudad</option>
-                    <option value="Bogotá">BOG - Bogotá</option>
-                    <option value="Medellín">MDE - Medellín</option>
-                    <option value="Buenos Aires">BUE - Buenos Aires</option>
-                    <option value="Córdoba">COR - Córdoba</option>
-                    <option value="Quito">UIO - Quito</option>
-                    <option value="Guayaquil">GYE - Guayaquil</option>
-                    <option value="Cali">CLO - Cali</option>
-                    <option value="Cartagena">CTG - Cartagena</option>
-                    <option value="Mendoza">MDZ - Mendoza</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="fecha">Fecha de Viaje:</label>
-            <input type="date" id="fecha" name="fecha" required>
-        </div>
-        <button type="submit">Buscar</button>
-    </form>
-    @if (!string.IsNullOrEmpty(ViewBag.Error))
+
+<div class="welcome-container">
+    <h2>Bienvenido a Viajecitos SA</h2>
+    <p class="subtitle">Encuentra y compra tus boletos de avión de forma fácil y segura.</p>
+    @if (ViewBag.Error != null)
     {
-        <p class="error">@ViewBag.Error</p>
+        <div class="error-message">@ViewBag.Error</div>
+    }
+    @if (!string.IsNullOrEmpty(Context.Session.GetString("NombreUsuario")))
+    {
+        <p class="user-greeting">Hola, @Context.Session.GetString("NombreUsuario")!</p>
+        <div class="nav-actions">
+            <a href="@Url.Action("BuscarVuelos", "Home")" class="nav-button">Buscar Vuelos</a>
+            <a href="@Url.Action("SeleccionarClienteFacturas", "Home")" class="nav-button">Facturas de un Cliente</a>
+            <a href="@Url.Action("TodasFacturas", "Home")" class="nav-button">Todas las Facturas</a>
+            <a href="@Url.Action("Logout", "Home")" class="nav-button logout">Cerrar Sesión</a>
+        </div>
+    }
+    else
+    {
+        <div class="nav-actions">
+            <a href="@Url.Action("Login", "Home")" class="nav-button primary">Iniciar Sesión</a>
+        </div>
     }
 </div>
+
+<style>
+    :root {
+        --primary-color: #1e3a8a; /* Deep blue for professionalism */
+        --secondary-color: #3b82f6; /* Lighter blue for accents */
+        --text-color: #1f2937; /* Dark gray for text */
+        --border-color: #e5e7eb; /* Light gray for borders */
+        --background-color: #f9fafb; /* Off-white background */
+        --white: #ffffff;
+        --error-color: #dc2626;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+
+    .welcome-container {
+        max-width: 900px;
+        margin: 2rem auto;
+        background: var(--white);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1.125rem;
+        color: var(--text-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .error-message {
+        background: #fef2f2;
+        color: var(--error-color);
+        padding: 0.75rem;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        font-size: 0.875rem;
+    }
+
+    .user-greeting {
+        font-size: 1.25rem;
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
+    .nav-actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+    }
+
+    .nav-button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background: var(--white);
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 4px;
+        font-size: 0.875rem;
+        text-decoration: none;
+        text-align: center;
+        transition: background 0.2s, color 0.2s;
+        min-width: 150px;
+    }
+
+        .nav-button:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .nav-button.primary {
+            background: var(--secondary-color);
+            color: var(--white);
+            border: none;
+        }
+
+            .nav-button.primary:hover {
+                background: var(--primary-color);
+            }
+
+        .nav-button.logout {
+            border-color: var(--error-color);
+            color: var(--error-color);
+        }
+
+            .nav-button.logout:hover {
+                background: var(--error-color);
+                color: var(--white);
+            }
+</style>

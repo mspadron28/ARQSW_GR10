@@ -1,8 +1,14 @@
-﻿namespace VIAJECITOS_REST_CLIWEB_GR10.Models
+﻿using ViajecitosRestServer.Models;
+
+namespace VIAJECITOS_REST_CLIWEB_GR10.Models
 {
     public class Usuario
     {
+        public int IdUsuario { get; set; }
         public int IdCliente { get; set; }
         public string NombreUsuario { get; set; }
+        public string ClaveUsuario { get; set; }
+        public string EstadoUsuario { get; set; }
+        public Cliente Cliente { get; set; }
     }
 }

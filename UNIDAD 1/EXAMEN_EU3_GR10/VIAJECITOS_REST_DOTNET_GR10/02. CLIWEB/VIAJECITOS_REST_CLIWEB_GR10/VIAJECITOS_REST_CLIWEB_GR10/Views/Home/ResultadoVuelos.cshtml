@@ -1,0 +1,282 @@
+﻿@model List<VIAJECITOS_REST_CLIWEB_GR10.Models.Vuelo>
+@{
+    ViewData["Title"] = "Vuelos Disponibles";
+    var highestPriceFlight = Model?.OrderByDescending(v => v.Valor).FirstOrDefault();
+    var otherFlights = Model?.OrderByDescending(v => v.Valor).Skip(1).ToList() ?? new List<VIAJECITOS_REST_CLIWEB_GR10.Models.Vuelo>();
+}
+
+<div class="results-container">
+    <div class="header-row">
+        <h2>Vuelos Disponibles</h2>
+        <a href="@Url.Action("BuscarVuelos", "Home")" class="new-search-button">Nueva Búsqueda</a>
+    </div>
+    @if (ViewBag.Error != null)
+    {
+        <div class="error-message">@ViewBag.Error</div>
+    }
+    @if (Model != null && Model.Any())
+    {
+        @if (highestPriceFlight != null)
+        {
+            <div class="highest-price-flight">
+                <h3>Vuelo con Mayor Costo</h3>
+                <div class="flight-card">
+                    <div class="flight-row">
+                        <div class="flight-field">
+                            <span class="label">ID Vuelo</span>
+                            <span class="value">@highestPriceFlight.IdVuelo</span>
+                        </div>
+                        <div class="flight-field">
+                            <span class="label">Origen</span>
+                            <span class="value">@highestPriceFlight.CiudadOrigen</span>
+                        </div>
+                        <div class="flight-field">
+                            <span class="label">Destino</span>
+                            <span class="value">@highestPriceFlight.CiudadDestino</span>
+                        </div>
+                        <div class="flight-field highlight">
+                            <span class="label">Valor</span>
+                            <span class="value">@highestPriceFlight.Valor.ToString("C")</span>
+                        </div>
+                        <div class="flight-field">
+                            <span class="label">Fecha de Salida</span>
+                            <span class="value">@highestPriceFlight.HoraSalida.ToString("yyyy-MM-dd")</span>
+                        </div>
+                        <div class="flight-field">
+                            <span class="label">Hora de Salida</span>
+                            <span class="value">@highestPriceFlight.HoraSalida.ToString("HH:mm")</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        @if (otherFlights.Any())
+        {
+            <table class="flights-table">
+                <thead>
+                    <tr>
+                        <th>ID Vuelo</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Valor</th>
+                        <th>Fecha de Salida</th>
+                        <th>Hora de Salida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var vuelo in otherFlights)
+                    {
+                        <tr>
+                            <td>@vuelo.IdVuelo</td>
+                            <td>@vuelo.CiudadOrigen</td>
+                            <td>@vuelo.CiudadDestino</td>
+                            <td>@vuelo.Valor.ToString("C")</td>
+                            <td>@vuelo.HoraSalida.ToString("yyyy-MM-dd")</td>
+                            <td>@vuelo.HoraSalida.ToString("HH:mm")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        <div class="action-buttons">
+            <a href="@Url.Action("Comprar", "Home")" class="action-button">Comprar</a>
+            <a href="@Url.Action("Index", "Home")" class="action-button secondary">Volver</a>
+        </div>
+    }
+    else
+    {
+        <p class="no-results">No se encontraron vuelos.</p>
+        <div class="action-buttons">
+            <a href="@Url.Action("BuscarVuelos", "Home")" class="action-button">Nueva Búsqueda</a>
+            <a href="@Url.Action("Index", "Home")" class="action-button secondary">Volver</a>
+        </div>
+    }
+</div>
+
+<style>
+    :root {
+        --primary-color: #3b82f6; /* Softer blue */
+        --text-color: #111827; /* Dark gray */
+        --border-color: #e5e7eb; /* Light gray */
+        --background-color: #fafafa; /* Warm background */
+        --error-color: #ef4444; /* Softer red */
+        --white: #ffffff;
+        --highlight-bg: #eff6ff; /* Light blue for highlight */
+        --highlight-text: #1e3a8a; /* Darker blue for emphasis */
+    }
+
+    .results-container {
+        max-width: 800px;
+        margin: 1.5rem auto;
+        padding: 1.25rem;
+        background: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--text-color);
+        margin: 0;
+    }
+
+    .new-search-button {
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 0.4rem 1.2rem;
+        background: var(--primary-color);
+        color: var(--white);
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.2s, transform 0.1s;
+    }
+
+        .new-search-button:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+    .error-message {
+        font-size: 0.75rem;
+        color: var(--error-color);
+        background: #fef2f2;
+        padding: 0.4rem 0.8rem;
+        border-radius: 5px;
+        margin-bottom: 0.75rem;
+        text-align: center;
+    }
+
+    .highest-price-flight {
+        background: var(--highlight-bg);
+        border: 1px solid var(--primary-color);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+        .highest-price-flight h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 0 0 0.75rem 0;
+            text-align: left;
+        }
+
+    .flight-card {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.875rem;
+        color: var(--text-color);
+    }
+
+    .flight-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.75rem;
+        background: var(--white);
+        border-radius: 6px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .flight-field {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-width: 0;
+    }
+
+        .flight-field .label {
+            font-weight: 500;
+            color: #6b7280;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .flight-field .value {
+            font-weight: 600;
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+
+        .flight-field.highlight .value {
+            color: var(--highlight-text);
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+    .flights-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.875rem;
+        color: var(--text-color);
+    }
+
+        .flights-table th,
+        .flights-table td {
+            padding: 0.5rem 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .flights-table th {
+            font-weight: 500;
+            color: #6b7280;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .flights-table tr:hover {
+            background: #f9fafb;
+        }
+
+    .no-results {
+        font-size: 0.875rem;
+        color: var(--text-color);
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .action-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .action-button {
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 0.4rem 1.2rem;
+        background: var(--primary-color);
+        color: var(--white);
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.2s, transform 0.1s;
+    }
+
+        .action-button:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        .action-button.secondary {
+            background: #6b7280;
+        }
+
+            .action-button.secondary:hover {
+                background: #4b5563;
+            }
+
+
+</style>

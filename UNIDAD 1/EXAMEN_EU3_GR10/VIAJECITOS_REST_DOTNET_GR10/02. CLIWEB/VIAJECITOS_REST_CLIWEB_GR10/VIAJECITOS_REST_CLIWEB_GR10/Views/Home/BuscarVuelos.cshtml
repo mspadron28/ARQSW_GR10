@@ -1,0 +1,220 @@
+﻿@model VIAJECITOS_REST_CLIWEB_GR10.Controllers.BuscarVuelosModel
+@{
+    ViewData["Title"] = "Buscar Vuelos";
+}
+
+<div class="search-container">
+    <h2>Buscar Vuelos</h2>
+    @if (ViewBag.Error != null)
+    {
+        <div class="error-message">@ViewBag.Error</div>
+    }
+    <form asp-action="BuscarVuelos" method="post" class="needs-validation search-form" novalidate>
+        <div class="form-row-wrapper">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="CiudadOrigen">Origen</label>
+                    <input asp-for="CiudadOrigen" class="form-control" id="CiudadOrigen" placeholder="Ej. Quito" required />
+                    <div class="invalid-feedback">La ciudad de origen es requerida.</div>
+                </div>
+                <span class="hyphen">-</span>
+                <div class="form-group">
+                    <label for="CiudadDestino">Destino</label>
+                    <input asp-for="CiudadDestino" class="form-control" id="CiudadDestino" placeholder="Ej. Guayaquil" required />
+                    <div class="invalid-feedback">La ciudad de destino es requerida.</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group date-group">
+            <label for="Fecha">Fecha</label>
+            <input type="date" asp-for="Fecha" class="form-control" id="Fecha" required />
+            <div class="invalid-feedback">La fecha es requerida y debe ser válida.</div>
+        </div>
+        <button type="submit" class="search-button">
+            <span>Buscar</span>
+          
+        </button>
+    </form>
+    <div class="nav-links">
+        <a href="@Url.Action("Index", "Home")">Volver</a>
+    </div>
+</div>
+
+<script>
+    (function () {
+        'use strict';
+        var forms = document.querySelectorAll('.needs-validation');
+        Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    })();
+</script>
+
+<style>
+    :root {
+        --primary-color: #3b82f6; /* Softer blue for buttons */
+        --text-color: #111827; /* Darker gray for text */
+        --border-color: #e5e7eb; /* Softer gray for borders */
+        --background-color: #fafafa; /* Slightly warmer background */
+        --error-color: #ef4444; /* Softer red for errors */
+        --white: #ffffff;
+    }
+
+    .search-container {
+        max-width: 600px;
+        margin: 1.5rem auto;
+        padding: 1.25rem;
+        background: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--text-color);
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .search-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .form-row-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-row {
+        display: flex;
+        align-items: flex-end;
+        gap: 0.5rem;
+        width: 90%;
+    }
+
+    .form-group {
+        flex: 1;
+        margin-bottom: 1rem;
+    }
+
+    .hyphen {
+        font-size: 1.25rem;
+        color: var(--text-color);
+        margin: 0 0.25rem;
+        align-self: center;
+    }
+
+    .date-group {
+        width: 100%;
+    }
+
+    label {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: var(--text-color);
+        margin-bottom: 0.2rem;
+        display: block;
+    }
+
+    .form-control {
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem; 
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        background: var(--white);
+        transition: border-color 0.2s, box-shadow 0.2s;
+        height: 40px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+        }
+
+        .form-control::placeholder {
+            color: #9ca3af;
+            font-style: italic;
+        }
+
+    .invalid-feedback {
+        font-size: 0.7rem;
+        color: var(--error-color);
+        margin-top: 0.2rem;
+        display: none;
+    }
+
+    .was-validated .form-control:invalid ~ .invalid-feedback {
+        display: block;
+    }
+
+    .was-validated .form-control:invalid {
+        border-color: var(--error-color);
+    }
+
+    .search-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0.5rem 0.75rem;
+        background: var(--primary-color);
+        color: var(--white);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.1s;
+        align-self: center; 
+        min-width: 100px;
+    }
+
+
+        .search-button:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+      
+
+    .error-message {
+        font-size: 0.75rem;
+        color: var(--error-color);
+        background: #fef2f2;
+        padding: 0.4rem 0.8rem;
+        border-radius: 5px;
+        margin-bottom: 0.75rem;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 0.75rem;
+        text-align: center;
+    }
+
+        .nav-links a {
+            font-size: 1rem;
+
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+            .nav-links a:hover {
+                color: #2563eb;
+            }
+</style>

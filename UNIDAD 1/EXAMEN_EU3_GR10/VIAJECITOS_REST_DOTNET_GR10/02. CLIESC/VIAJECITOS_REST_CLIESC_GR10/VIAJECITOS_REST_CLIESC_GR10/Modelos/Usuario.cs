@@ -6,6 +6,7 @@
         public int IdCliente { get; set; }
         public string NombreUsuario { get; set; }
         public string ClaveUsuario { get; set; }
-        public bool Activo { get; set; }
+        public string EstadoUsuario { get; set; }
+        public Cliente Cliente { get; set; }
     }
 }

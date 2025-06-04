@@ -1,0 +1,239 @@
+﻿@model List<VIAJECITOS_REST_CLIWEB_GR10.Models.ClienteFacturas>
+@{
+    ViewData["Title"] = "Todas las Facturas";
+}
+
+<div class="table-container">
+    <h2>Todas las Facturas</h2>
+    @if (ViewBag.Error != null)
+    {
+        <div class="error-message">@ViewBag.Error</div>
+    }
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var cliente in Model.OrderBy(c => c.Nombre))
+        {
+            <div class="cliente-section">
+                <h3>Cliente: @cliente.Nombre (ID: @cliente.ClienteId)</h3>
+                <div class="cliente-details">
+                    <p><strong>Email:</strong> @cliente.Email</p>
+                    <p><strong>Documento:</strong> @cliente.DocumentoIdentidad</p>
+                </div>
+                @if (cliente.Facturas != null && cliente.Facturas.Any())
+                {
+                    <table class="facturas-table">
+                        <thead>
+                            <tr>
+                                <th>Número Factura</th>
+                                <th>Fecha</th>
+                                <th>Subtotal</th>
+                                <th>Descuento</th>
+                                <th>IVA</th>
+                                <th>Total</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var factura in cliente.Facturas.OrderBy(f => f.FechaEmision))
+                            {
+                                <tr>
+                                    <td>@factura.NumeroFactura</td>
+                                    <td>@factura.FechaEmision.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                                    <td class="numeric">@factura.Subtotal.ToString("C")</td>
+                                    <td class="numeric">@factura.Descuento.ToString("C")</td>
+                                    <td class="numeric">@factura.Iva.ToString("C")</td>
+                                    <td class="numeric">@factura.Total.ToString("C")</td>
+                                    <td>
+                                        <a href="@Url.Action("DetallesFactura", "Home", new { idCliente = factura.IdCliente, numeroFactura = factura.NumeroFactura })" class="action-button">Detalles</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p class="no-data">No hay facturas para este cliente.</p>
+                }
+            </div>
+        }
+    }
+    else
+    {
+        <p class="no-data">No hay facturas disponibles.</p>
+    }
+    <div class="nav-actions">
+        <a href="@Url.Action("Index", "Home")" class="nav-button">Volver</a>
+    </div>
+</div>
+
+<style>
+    :root {
+        --primary-color: #1e3a8a; /* Deep blue for professionalism */
+        --secondary-color: #3b82f6; /* Lighter blue for accents */
+        --text-color: #1f2937; /* Dark gray for text */
+        --border-color: #e5e7eb; /* Light gray for borders */
+        --background-color: #f9fafb; /* Off-white background */
+        --white: #ffffff;
+        --error-color: #dc2626;
+        --table-header-bg: #f3f4f6; /* Light gray for table headers */
+        --table-row-alt: #f9fafb; /* Alternating row color */
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+
+    .table-container {
+        max-width: 900px;
+        margin: 2rem auto;
+        background: var(--white);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .error-message {
+        background: #fef2f2;
+        color: var(--error-color);
+        padding: 0.75rem;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 0.875rem;
+    }
+
+    .cliente-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+        .cliente-section:last-child {
+            border-bottom: none;
+        }
+
+    h3 {
+        font-size: 1.25rem;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .cliente-details {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 0.875rem;
+    }
+
+        .cliente-details p {
+            color: var(--text-color);
+        }
+
+            .cliente-details p strong {
+                color: var(--primary-color);
+            }
+
+    .facturas-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.875rem;
+        margin-bottom: 1.5rem;
+    }
+
+        .facturas-table th,
+        .facturas-table td {
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        .facturas-table th {
+            background: var(--table-header-bg);
+            font-weight: 600;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+
+        .facturas-table tbody tr:nth-child(even) {
+            background: var(--table-row-alt);
+        }
+
+        .facturas-table td.numeric {
+            text-align: right;
+        }
+
+        .facturas-table td {
+            color: var(--text-color);
+        }
+
+    .action-button {
+        display: inline-block;
+        padding: 0.4rem 0.8rem;
+        background: var(--white);
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 4px;
+        font-size: 0.75rem;
+        text-decoration: none;
+        text-align: center;
+        transition: background 0.2s, color 0.2s;
+    }
+
+        .action-button:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+        }
+
+    .no-data {
+        font-size: 0.875rem;
+        color: var(--text-color);
+        text-align: center;
+        padding: 1rem;
+        background: var(--table-row-alt);
+        border-radius: 4px;
+        margin-bottom: 1.5rem;
+    }
+
+    .nav-actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .nav-button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background: var(--white);
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 4px;
+        font-size: 0.875rem;
+        text-decoration: none;
+        text-align: center;
+        transition: background 0.2s, color 0.2s;
+    }
+
+        .nav-button:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+        }
+</style>
