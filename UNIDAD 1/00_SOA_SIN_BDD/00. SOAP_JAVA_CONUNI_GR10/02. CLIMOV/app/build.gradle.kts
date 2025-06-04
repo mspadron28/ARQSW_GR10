@@ -69,6 +69,12 @@ dependencies {
 
     // Material Icons Extended (incluye Schedule y AirplaneTicket)
     implementation("androidx.compose.material:material-icons-extended:1.7.4")
+    implementation(libs.okhttp)
+    implementation(libs.json)
+    implementation(libs.androidx.compiler)
+    // Añadimos la dependencia para resolver el conflicto de ListenableFuture
+    implementation("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

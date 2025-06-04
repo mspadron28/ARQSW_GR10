@@ -1,12 +1,55 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\",
+  "WorkspaceRootPath": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|c:\\users\\matias\\desktop\\espe\\octavo semestre\\arquitectura de software\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. clicon\\viajecitos_rest_clicon_gr10\\viajecitos_rest_clicon_gr10\\vista\\mainconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\vista\\mainconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\vista\\mainconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. clicon\\viajecitos_rest_clicon_gr10\\viajecitos_rest_clicon_gr10\\servicio\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\servicio\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|d:\\arquitectura\\arqsw_gr10\\unidad 1\\examen_eu3_gr10\\viajecitos_rest_dotnet_gr10\\02. clicon\\viajecitos_rest_clicon_gr10\\viajecitos_rest_clicon_gr10\\controlador\\viajecitoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\controlador\\viajecitoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\viajecitos_rest_clicon_gr10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\viajecitos_rest_clicon_gr10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\modelos\\vuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\modelos\\vuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\modelos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\modelos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\modelos\\metodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\modelos\\metodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\modelos\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\modelos\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\modelos\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\modelos\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\modelos\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\modelos\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\modelos\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\modelos\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\modelos\\clientefacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
       "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\servicio\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\servicio\\viajecitosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -40,6 +83,7 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\viajecitos_rest_clicon_gr10\\modelos\\clientefacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 2fa81aa234af99f76e1257dff918fcfa181d47e5
       "RelativeMoniker": "D:0:0:{D343B318-2A5B-4C86-A5EB-BD88189F3C6F}|VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.csproj|solutionrelative:viajecitos_rest_clicon_gr10\\modelos\\clientefacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,18 +98,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
+          "SelectedChildIndex": 3,
+=======
           "SelectedChildIndex": 10,
+>>>>>>> 2fa81aa234af99f76e1257dff918fcfa181d47e5
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 2,
+              "Title": "ViajecitosController.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Controlador\\ViajecitosController.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Controlador\\ViajecitosController.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Controlador\\ViajecitosController.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Controlador\\ViajecitosController.cs",
+              "ViewState": "AgIAANoAAAAAAAAAAAAQwPoAAAABAAAAAAAAAA==",
+=======
               "DocumentIndex": 5,
               "Title": "MetodoPago.cs",
               "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\MetodoPago.cs",
@@ -99,12 +152,24 @@
               "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\DetalleFactura.cs",
               "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\DetalleFactura.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+>>>>>>> 2fa81aa234af99f76e1257dff918fcfa181d47e5
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T03:41:19.78Z",
+              "WhenOpened": "2025-06-04T03:39:12.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 3,
+              "Title": "VIAJECITOS_REST_CLICON_GR10.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:06:36.766Z"
+=======
               "DocumentIndex": 6,
               "Title": "Factura.cs",
               "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Factura.cs",
@@ -154,6 +219,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T03:38:02.283Z",
               "EditorCaption": ""
+>>>>>>> 2fa81aa234af99f76e1257dff918fcfa181d47e5
             },
             {
               "$type": "Document",
@@ -172,17 +238,32 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainConsole.cs",
-              "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Vista\\MainConsole.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Vista\\MainConsole.cs",
               "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Vista\\MainConsole.cs",
-              "ToolTip": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Vista\\MainConsole.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Vista\\MainConsole.cs",
               "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Vista\\MainConsole.cs",
+<<<<<<< HEAD
+              "ViewState": "AgIAAO8CAAAAAAAAAAAQwAsDAAABAAAAAAAAAA==",
+=======
               "ViewState": "AgIAAEYBAAAAAAAAAAAkwAwBAAAVAAAAAAAAAA==",
+>>>>>>> 2fa81aa234af99f76e1257dff918fcfa181d47e5
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T01:43:15.843Z",
+              "WhenOpened": "2025-06-03T21:06:12.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 1,
+              "Title": "ViajecitosService.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Servicio\\ViajecitosService.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Servicio\\ViajecitosService.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Servicio\\ViajecitosService.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Servicio\\ViajecitosService.cs",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAYwCMBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:05:30.559Z",
+=======
               "DocumentIndex": 4,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Usuario.cs",
@@ -192,10 +273,106 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T04:41:29.499Z",
+>>>>>>> 2fa81aa234af99f76e1257dff918fcfa181d47e5
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 4,
+              "Title": "Vuelo.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Vuelo.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\Vuelo.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Vuelo.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\Vuelo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:05:07.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Usuario.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\Usuario.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Usuario.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:04:56.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MetodoPago.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\MetodoPago.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\MetodoPago.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\MetodoPago.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\MetodoPago.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:04:43.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Factura.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\Factura.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Factura.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\Factura.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:04:30.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Empleado.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\Empleado.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Empleado.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\Empleado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:04:18.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DetalleFactura.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\DetalleFactura.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\DetalleFactura.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\DetalleFactura.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\DetalleFactura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:04:00.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Compra.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Compra.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\Compra.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Compra.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\Compra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:02:51.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClienteFacturas.cs",
+              "DocumentMoniker": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\ClienteFacturas.cs",
+              "RelativeDocumentMoniker": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\ClienteFacturas.cs",
+              "ToolTip": "D:\\Arquitectura\\ARQSW_GR10\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\ClienteFacturas.cs",
+              "RelativeToolTip": "VIAJECITOS_REST_CLICON_GR10\\Modelos\\ClienteFacturas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:02:33.621Z"
+=======
               "DocumentIndex": 3,
               "Title": "Vuelo.cs",
               "DocumentMoniker": "C:\\Users\\MATIAS\\Desktop\\ESPE\\Octavo Semestre\\Arquitectura de Software\\UNIDAD 1\\EXAMEN_EU3_GR10\\VIAJECITOS_REST_DOTNET_GR10\\02. CLICON\\VIAJECITOS_REST_CLICON_GR10\\VIAJECITOS_REST_CLICON_GR10\\Modelos\\Vuelo.cs",
@@ -206,6 +383,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T04:41:43.682Z",
               "EditorCaption": ""
+>>>>>>> 2fa81aa234af99f76e1257dff918fcfa181d47e5
             }
           ]
         }

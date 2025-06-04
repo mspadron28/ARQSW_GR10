@@ -48,7 +48,7 @@ GO
 INSERT INTO Metodo_Pago (nombre_metodo, descripcion) VALUES
 ('Tarjeta Crédito', 'Pago con tarjeta de crédito'),
 ('Efectivo', 'Pago en efectivo'),
-('Tarjeta Debito', 'Pago con tarjeta de débito'),
+('Tarjeta Debito', 'Pago con tarjeta de débito')
 ;
 
 GO
@@ -61,5 +61,6 @@ GO
 -- Inserción de detalles de factura
 INSERT INTO Detalle_Factura (id_factura, id_vuelo, cantidad, valor_unitario, total) VALUES
 (1, 5, 3, 183.75, 551.25),
-(1, 18, 3, 327.10, 981.30);
+(1, 18, 3, 327.10, 981.30)
+;
 GO
