@@ -3,27 +3,137 @@
     ViewData["Title"] = "Inicio";
 }
 
-<div class="result-container">
+<div class="welcome-container">
     <h2>Bienvenido a Viajecitos SA</h2>
-    <p>Encuentra y compra tus boletos de avión de forma fácil y segura.</p>
+    <p class="subtitle">Encuentra y compra tus boletos de avión de forma fácil y segura.</p>
     @if (ViewBag.Error != null)
     {
-        <div class="error">@ViewBag.Error</div>
+        <div class="error-message">@ViewBag.Error</div>
     }
-    @if (!string.IsNullOrEmpty(@Context.Session.GetString("NombreUsuario")))
+    @if (!string.IsNullOrEmpty(Context.Session.GetString("NombreUsuario")))
     {
-        <p>Hola, @Context.Session.GetString("NombreUsuario")!</p>
-        <div class="nav-links">
-            <a href="@Url.Action("BuscarVuelos", "Home")">Buscar Vuelos</a>
-            <a href="@Url.Action("SeleccionarClienteFacturas", "Home")">Facturas de un Cliente</a>
-            <a href="@Url.Action("TodasFacturas", "Home")">Todas las Facturas</a>
-            <a href="@Url.Action("Logout", "Home")">Cerrar Sesión</a>
+        <p class="user-greeting">Hola, @Context.Session.GetString("NombreUsuario")!</p>
+        <div class="nav-actions">
+            <a href="@Url.Action("BuscarVuelos", "Home")" class="nav-button">Buscar Vuelos</a>
+            <a href="@Url.Action("SeleccionarClienteFacturas", "Home")" class="nav-button">Facturas de un Cliente</a>
+            <a href="@Url.Action("TodasFacturas", "Home")" class="nav-button">Todas las Facturas</a>
+            <a href="@Url.Action("Logout", "Home")" class="nav-button logout">Cerrar Sesión</a>
         </div>
     }
     else
     {
-        <div class="nav-links">
-            <a href="@Url.Action("Login", "Home")">Iniciar Sesión</a>
+        <div class="nav-actions">
+            <a href="@Url.Action("Login", "Home")" class="nav-button primary">Iniciar Sesión</a>
         </div>
     }
 </div>
+
+<style>
+    :root {
+        --primary-color: #1e3a8a; /* Deep blue for professionalism */
+        --secondary-color: #3b82f6; /* Lighter blue for accents */
+        --text-color: #1f2937; /* Dark gray for text */
+        --border-color: #e5e7eb; /* Light gray for borders */
+        --background-color: #f9fafb; /* Off-white background */
+        --white: #ffffff;
+        --error-color: #dc2626;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+
+    .welcome-container {
+        max-width: 900px;
+        margin: 2rem auto;
+        background: var(--white);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1.125rem;
+        color: var(--text-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .error-message {
+        background: #fef2f2;
+        color: var(--error-color);
+        padding: 0.75rem;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        font-size: 0.875rem;
+    }
+
+    .user-greeting {
+        font-size: 1.25rem;
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
+    .nav-actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+    }
+
+    .nav-button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background: var(--white);
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 4px;
+        font-size: 0.875rem;
+        text-decoration: none;
+        text-align: center;
+        transition: background 0.2s, color 0.2s;
+        min-width: 150px;
+    }
+
+        .nav-button:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .nav-button.primary {
+            background: var(--secondary-color);
+            color: var(--white);
+            border: none;
+        }
+
+            .nav-button.primary:hover {
+                background: var(--primary-color);
+            }
+
+        .nav-button.logout {
+            border-color: var(--error-color);
+            color: var(--error-color);
+        }
+
+            .nav-button.logout:hover {
+                background: var(--error-color);
+                color: var(--white);
+            }
+</style>

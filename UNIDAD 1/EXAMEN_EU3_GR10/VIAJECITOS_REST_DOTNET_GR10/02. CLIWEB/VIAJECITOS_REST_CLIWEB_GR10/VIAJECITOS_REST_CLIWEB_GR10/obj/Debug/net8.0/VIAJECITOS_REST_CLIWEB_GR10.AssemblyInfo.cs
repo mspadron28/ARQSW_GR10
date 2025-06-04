@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VIAJECITOS_REST_CLIWEB_GR10")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+097fc21b7513120f958320c7a80bfdb7a82d0405")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f757e7392750dd98ef6714843ff61511fc09533")]
 [assembly: System.Reflection.AssemblyProductAttribute("VIAJECITOS_REST_CLIWEB_GR10")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VIAJECITOS_REST_CLIWEB_GR10")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,67 +8,356 @@
         3 => "Tarjeta de Débito",
         _ => "Desconocido"
     };
+    var fechaEmision = Model?.FechaEmision.ToString("yyyy-MM-dd HH:mm:ss") ?? "N/A";
+    var fechaVencimiento = Model?.FechaEmision.AddDays(30).ToString("yyyy-MM-dd") ?? "N/A";
 }
 
-<div class="result-container">
-    <h2>Detalles de Factura</h2>
+<div class="invoice-container">
     @if (ViewBag.Error != null)
     {
-        <div class="error">@ViewBag.Error</div>
+        <div class="error-message">@ViewBag.Error</div>
     }
+    <div class="invoice-header">
+        <div class="company-details">
+            <h1>Viajecitos SA</h1>
+            <p>Av. de los Viajes 123, Quito, Ecuador</p>
+            <p>RUC: 1791234567001</p>
+            <p>Email: contacto@viajecitossa.com</p>
+            <p>Teléfono: +593 2 123 4567</p>
+        </div>
+        <div class="invoice-title">
+            <h2>FACTURA</h2>
+            <p>Número: <strong>@(Model?.NumeroFactura ?? "N/A")</strong></p>
+        </div>
+        <div class="company-logo">
+            <img src="~/images/travel-agency.jpg" alt="Viajecitos SA Logo" />
+        </div>
+    </div>
+
+    <div class="invoice-info">
+        <table class="minimalist-table">
+            <tr>
+                <td><strong>Facturado a:</strong></td>
+                <td>@(Model?.Cliente?.Nombre ?? "N/A")</td>
+                <td><strong>Fecha de Emisión:</strong></td>
+                <td>@fechaEmision</td>
+            </tr>
+            <tr>
+                <td><strong>Documento:</strong></td>
+                <td>@(Model?.Cliente?.DocumentoIdentidad ?? "N/A")</td>
+                <td><strong>Fecha de Vencimiento:</strong></td>
+                <td>@fechaVencimiento</td>
+            </tr>
+            <tr>
+                <td><strong>Email:</strong></td>
+                <td>@(Model?.Cliente?.Email ?? "N/A")</td>
+                <td><strong>Método de Pago:</strong></td>
+                <td>@metodoPago</td>
+            </tr>
+            <tr>
+                <td><strong>Atendido por:</strong></td>
+                <td>Viajecitos SA</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
     @if (Model != null && !string.IsNullOrEmpty(Model.NumeroFactura))
     {
-        <p><strong>Número de Factura:</strong> @Model.NumeroFactura</p>
-        <p><strong>Fecha de Emisión:</strong> @Model.FechaEmision.ToString("yyyy-MM-dd HH:mm:ss")</p>
-        <p><strong>Cliente:</strong> @(Model.Cliente?.Nombre ?? "N/A") (ID: @Model.IdCliente)</p>
-        <p><strong>Email:</strong> @(Model.Cliente?.Email ?? "N/A")</p>
-        <p><strong>Documento:</strong> @(Model.Cliente?.DocumentoIdentidad ?? "N/A")</p>
-        <p><strong>Método de Pago:</strong> @metodoPago</p>
-        <h3>Detalles</h3>
-        @if (Model.DetallesFactura != null && Model.DetallesFactura.Any())
-        {
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>ID Vuelo</th>
-                        <th>Origen</th>
-                        <th>Destino</th>
-                        <th>Cantidad</th>
-                        <th>Valor Unitario</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var detalle in Model.DetallesFactura)
-                    {
+        <div class="invoice-details">
+            <h3>Detalles de la Compra</h3>
+            @if (Model.DetallesFactura != null && Model.DetallesFactura.Any())
+            {
+                <table class="invoice-table">
+                    <thead>
                         <tr>
-                            <td>@detalle.IdVuelo</td>
-                            <td>@(detalle.Vuelo?.CiudadOrigen ?? "N/A")</td>
-                            <td>@(detalle.Vuelo?.CiudadDestino ?? "N/A")</td>
-                            <td>@detalle.Cantidad</td>
-                            <td>@detalle.ValorUnitario.ToString("C")</td>
-                            <td>@detalle.Total.ToString("C")</td>
+                            <th>Vuelo</th>
+                            <th>Cantidad</th>
+                            <th>Valor Unitario</th>
+                            <th>Total</th>
                         </tr>
-                    }
-                </tbody>
-            </table>
-        }
-        else
-        {
-            <p>No hay detalles para esta factura.</p>
-        }
-        <p><strong>Subtotal:</strong> @Model.Subtotal.ToString("C")</p>
-        <p><strong>Descuento:</strong> @Model.Descuento.ToString("C")</p>
-        <p><strong>IVA (15%):</strong> @Model.Iva.ToString("C")</p>
-        <p><strong>Total:</strong> @Model.Total.ToString("C")</p>
+                    </thead>
+                    <tbody>
+                        @foreach (var detalle in Model.DetallesFactura)
+                        {
+                            <tr>
+                                <td>@(detalle.Vuelo != null ? $"{detalle.Vuelo.CiudadOrigen} a {detalle.Vuelo.CiudadDestino} ({detalle.Vuelo.HoraSalida:yyyy-MM-dd HH:mm})" : "N/A")</td>
+                                <td>@detalle.Cantidad</td>
+                                <td>@detalle.ValorUnitario.ToString("C")</td>
+                                <td>@detalle.Total.ToString("C")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p class="no-details">No hay detalles para esta factura.</p>
+            }
+        </div>
+
+        <div class="invoice-summary">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span>@Model.Subtotal.ToString("C")</span>
+            </div>
+            <div class="summary-row">
+                <span>Descuento:</span>
+                <span>@Model.Descuento.ToString("C")</span>
+            </div>
+            <div class="summary-row">
+                <span>IVA (15%):</span>
+                <span>@Model.Iva.ToString("C")</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span>@Model.Total.ToString("C")</span>
+            </div>
+        </div>
     }
     else
     {
-        <p>No se encontraron detalles de la factura.</p>
+        <p class="no-details">No se encontraron detalles de la factura.</p>
     }
-    <div class="nav-links">
-        <a href="@Url.Action("SeleccionarClienteFacturas", "Home")">Seleccionar Cliente</a>
-        <a href="@Url.Action("TodasFacturas", "Home")">Todas las Facturas</a>
-        <a href="@Url.Action("Index", "Home")">Inicio</a>
+
+    <div class="invoice-footer">
+        <h4>Términos y Condiciones</h4>
+        <p>Gracias por su compra. El pago debe realizarse dentro de los 30 días posteriores a la fecha de emisión. Para consultas, contáctenos en contacto@viajecitossa.com.</p>
+        <p>Los boletos no son reembolsables una vez emitidos, salvo en casos excepcionales aprobados por Viajecitos SA.</p>
+    </div>
+
+    <div class="invoice-actions">
+        <button onclick="window.print()" class="print-button">Imprimir Factura</button>
+        <a href="@Url.Action("Index", "Home")" class="home-button">Inicio</a>
     </div>
 </div>
+
+<style>
+    :root {
+        --primary-color: #2c3e50; /* Dark slate for professionalism */
+        --secondary-color: #3498db; /* Soft blue for accents */
+        --text-color: #333333; /* Neutral dark gray for text */
+        --border-color: #e0e0e0; /* Light gray for borders */
+        --background-color: #ffffff; /* Clean white background */
+        --white: #ffffff;
+        --success-color: #2ecc71;
+        --error-color: #e74c3c;
+        --table-header-bg: #ecf0f1; /* Light gray for table headers */
+        --table-row-alt: #f8f9fa; /* Subtle alternating row color */
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.5;
+    }
+
+    .invoice-container {
+        max-width: 900px;
+        margin: 2rem auto;
+        background: var(--white);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 1.5rem;
+    }
+
+    .error-message {
+        background: #fff1f0;
+        color: var(--error-color);
+        padding: 0.5rem;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+
+    .invoice-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .company-logo img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .company-details h1 {
+        font-size: 1.4rem;
+        color: var(--primary-color);
+        margin-bottom: 0.4rem;
+    }
+
+    .company-details p {
+        font-size: 0.8rem;
+        color: var(--text-color);
+    }
+
+    .invoice-title h2 {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        margin: 0;
+    }
+
+    .invoice-title p {
+        font-size: 0.8rem;
+        color: var(--text-color);
+    }
+
+    .invoice-info {
+        margin-bottom: 1.5rem;
+    }
+
+    .minimalist-table {
+        width: 100%;
+        font-size: 0.85rem;
+        border-collapse: collapse;
+    }
+
+        .minimalist-table td {
+            padding: 0.5rem 0;
+            border: none;
+            color: var(--text-color);
+        }
+
+            .minimalist-table td:first-child {
+                font-weight: 500;
+                width: 20%;
+            }
+
+    .invoice-details h3 {
+        font-size: 1rem;
+        color: var(--primary-color);
+        margin-bottom: 0.8rem;
+    }
+
+    .invoice-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1.5rem;
+        font-size: 0.85rem;
+    }
+
+        .invoice-table th,
+        .invoice-table td {
+            padding: 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .invoice-table th {
+            background: var(--table-header-bg);
+            font-weight: 500;
+            color: var(--primary-color);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .invoice-table tbody tr:nth-child(even) {
+            background: var(--table-row-alt);
+        }
+
+        .invoice-table td {
+            color: var(--text-color);
+        }
+
+    .no-details {
+        font-size: 0.85rem;
+        color: var(--text-color);
+        text-align: center;
+        padding: 0.8rem;
+        background: var(--table-row-alt);
+        border-radius: 4px;
+    }
+
+    .invoice-summary {
+        max-width: 250px;
+        margin-left: auto;
+        font-size: 0.85rem;
+    }
+
+    .summary-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.4rem 0;
+        border-top: 1px solid var(--border-color);
+    }
+
+        .summary-row.total {
+            font-weight: 500;
+            color: var(--primary-color);
+            border-top: 2px solid var(--primary-color);
+            padding-top: 0.6rem;
+        }
+
+    .invoice-footer {
+        margin-top: 1.5rem;
+        padding-top: 0.8rem;
+        border-top: 1px solid var(--border-color);
+    }
+
+        .invoice-footer h4 {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            margin-bottom: 0.4rem;
+        }
+
+        .invoice-footer p {
+            font-size: 0.7rem;
+            color: var(--text-color);
+        }
+
+    .invoice-actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .print-button {
+        padding: 0.4rem 0.8rem;
+        background: var(--secondary-color);
+        color: var(--white);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.85rem;
+        transition: background 0.2s;
+    }
+
+        .print-button:hover {
+            background: var(--primary-color);
+        }
+
+    .home-button {
+        display: inline-block;
+        padding: 0.4rem 0.8rem;
+        background: var(--white);
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 4px;
+        font-size: 0.85rem;
+        text-decoration: none;
+        text-align: center;
+        transition: background 0.2s, color 0.2s;
+    }
+
+        .home-button:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+            text-decoration: none;
+        }
+</style>
